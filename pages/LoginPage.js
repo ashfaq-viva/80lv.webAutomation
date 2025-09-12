@@ -24,7 +24,7 @@ export class LoginPage extends BasePage {
     await this.page.goto('/',{waitUntil:'networkidle'} );
   }
   async acceptCookies(){
-    await this.expectAndClick(this.allowCookiesBtn,'Accept Cookies');
+    await this.expectAndClick(this.allowCookiesBtnOld,'Accept Cookies');
   }
   async doLogin(username,password) {
     // await this.expectAndClick(this.profileLogIn,'Login Link');
