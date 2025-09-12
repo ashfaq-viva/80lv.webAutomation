@@ -42,6 +42,8 @@ coverage/
 # ==============================
 .env
 tokens&cookies_80LV_PROD/
+tokens&cookies_80LV_QA/
+tokens_80LV_PROD/
 tokens_80LV_QA/
 tokens_80LV_DEV/
 LoginAuth_default.json
