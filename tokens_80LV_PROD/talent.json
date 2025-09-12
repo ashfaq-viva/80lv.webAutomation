@@ -1,0 +1,145 @@
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFzaGZhcS5haG1lZEB2aXZhc29mdGx0ZC5jb20iLCJleHAiOjE3NTc2ODkyNjgsImdyb3VwcyI6W3siaWQiOjQxNTIsIm5hbWUiOiJEZWZhdWx0IiwiaXNfYWN0aXZlIjp0cnVlLCJpc19kZWZhdWx0Ijp0cnVlfV0sImlhdCI6MTc1NzA4NDQ2OCwiaXNfbWFzdGVyIjp0cnVlLCJpc3MiOiJodHRwczovL2xvZ2luLnhzb2xsYS5jb20iLCJqdGkiOiI4MDRmYmE3Mi00NmFjLTQwYTUtOGJmMy0wMGRlNzBkYmVhNzkiLCJwYXlsb2FkIjoie1wicmVnaXN0cmF0aW9uX3NvdXJjZVwiOlwiODBsdlwiLFwicmVkaXJlY3RVcmxcIjpcImh0dHBzOi8vODAubHYvXCJ9IiwicHJvbW9fZW1haWxfYWdyZWVtZW50IjpmYWxzZSwicHVibGlzaGVyX2lkIjoyOTEwMCwic3ViIjoiMDA4YzM5YjctMWE5ZS00Zjk4LWJjYWYtZjUxMDBmM2IxYjc2IiwidHlwZSI6Inhzb2xsYV9sb2dpbiIsInVzZXJuYW1lIjoiYXNoZmFxLmFobWVkQHZpdmFzb2Z0bHRkLmNvbSIsInhzb2xsYV9sb2dpbl9hY2Nlc3Nfa2V5IjoiNnZDalR2UmtXZXl3andwdE9qMmNQWndqWG1taDNLV2RvWWNHWFN1Y2lBNCIsInhzb2xsYV9sb2dpbl9wcm9qZWN0X2lkIjoiOGI4M2FmMTItMDk3NC0xMWU3LTkzYWUtOTIzNjFmMDAyNjcxIn0.OQAgIZQm0xOPOAAHd7mKGGGReN8vkPNNX5dFyzBBznc",
+  "cookies": [
+    {
+      "name": "_mm_uid_6a919793-9bb3-4cca-b242-2ef98a61c3ca",
+      "value": "1757084462814773712",
+      "domain": ".80.lv",
+      "path": "/",
+      "expires": 1791644462.387278,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_mm_vid_6a919793-9bb3-4cca-b242-2ef98a61c3ca",
+      "value": "1757084462146050881",
+      "domain": ".80.lv",
+      "path": "/",
+      "expires": 1757086270,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_gcl_au",
+      "value": "1.1.42384481.1757084463",
+      "domain": ".80.lv",
+      "path": "/",
+      "expires": 1764860463,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ga",
+      "value": "GA1.1.827612737.1757084463",
+      "domain": ".80.lv",
+      "path": "/",
+      "expires": 1791644470.494278,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "FPID",
+      "value": "FPID2.2.NWrUWTVvywijYnjBIn2YdPo0r1viIqFcjtyI7q2VaIk%3D.1757084463",
+      "domain": ".80.lv",
+      "path": "/",
+      "expires": 1791644471.046493,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "FPLC",
+      "value": "wW2v%2F%2FtvEWGuQXXPksYH8PFnkjxDdItZo5W7pab8Gml%2Fla%2B0SKgmBMaVrPU%2FwXrfh2Smwy68FDROveclMbRQqxpU3LpfCWsKyf2LcrhinYdPRsoCwNyLvCpngZomlg%3D%3D",
+      "domain": ".80.lv",
+      "path": "/",
+      "expires": 1757156463.724766,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "FPGSID",
+      "value": "1.1757084463.1757084463.G-E9PWFGKFPG.WFE1TX5AgnE9LwQNjiGEVw",
+      "domain": ".80.lv",
+      "path": "/",
+      "expires": 1757086263.724783,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Strict"
+    },
+    {
+      "name": "accept_gdpr",
+      "value": "true",
+      "domain": "80.lv",
+      "path": "/",
+      "expires": 1772722864,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "xsollauid",
+      "value": "406544939296489541",
+      "domain": ".xsolla.com",
+      "path": "/",
+      "expires": 1791644467.008397,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "xl-8b83af12-0974-11e7-93ae-92361f002671-sso-session",
+      "value": "WfBefVXDV6dNDO8bh8NUVDnPG6O7zHKRCKMRGnsp7qOhkxVnUFPC7mQ9xAmJUG6U",
+      "domain": ".xsolla.com",
+      "path": "/",
+      "expires": 1759676468.629623,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "token",
+      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFzaGZhcS5haG1lZEB2aXZhc29mdGx0ZC5jb20iLCJleHAiOjE3NTc2ODkyNjgsImdyb3VwcyI6W3siaWQiOjQxNTIsIm5hbWUiOiJEZWZhdWx0IiwiaXNfYWN0aXZlIjp0cnVlLCJpc19kZWZhdWx0Ijp0cnVlfV0sImlhdCI6MTc1NzA4NDQ2OCwiaXNfbWFzdGVyIjp0cnVlLCJpc3MiOiJodHRwczovL2xvZ2luLnhzb2xsYS5jb20iLCJqdGkiOiI4MDRmYmE3Mi00NmFjLTQwYTUtOGJmMy0wMGRlNzBkYmVhNzkiLCJwYXlsb2FkIjoie1wicmVnaXN0cmF0aW9uX3NvdXJjZVwiOlwiODBsdlwiLFwicmVkaXJlY3RVcmxcIjpcImh0dHBzOi8vODAubHYvXCJ9IiwicHJvbW9fZW1haWxfYWdyZWVtZW50IjpmYWxzZSwicHVibGlzaGVyX2lkIjoyOTEwMCwic3ViIjoiMDA4YzM5YjctMWE5ZS00Zjk4LWJjYWYtZjUxMDBmM2IxYjc2IiwidHlwZSI6Inhzb2xsYV9sb2dpbiIsInVzZXJuYW1lIjoiYXNoZmFxLmFobWVkQHZpdmFzb2Z0bHRkLmNvbSIsInhzb2xsYV9sb2dpbl9hY2Nlc3Nfa2V5IjoiNnZDalR2UmtXZXl3andwdE9qMmNQWndqWG1taDNLV2RvWWNHWFN1Y2lBNCIsInhzb2xsYV9sb2dpbl9wcm9qZWN0X2lkIjoiOGI4M2FmMTItMDk3NC0xMWU3LTkzYWUtOTIzNjFmMDAyNjcxIn0.OQAgIZQm0xOPOAAHd7mKGGGReN8vkPNNX5dFyzBBznc",
+      "domain": ".80.lv",
+      "path": "/",
+      "expires": 1757689268.941986,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "sliderType",
+      "value": "featured-jobs",
+      "domain": "80.lv",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ga_E9PWFGKFPG",
+      "value": "GS2.1.s1757084463$o1$g1$t1757084470$j53$l0$h1350477303",
+      "domain": ".80.lv",
+      "path": "/",
+      "expires": 1791644470.752472,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "IDE",
+      "value": "AHWqTUnQBFP8vuuL7nzUqdYnqnLZitZaI9N4TPTBGR2cocWpScY63a9gdF1ILVtt",
+      "domain": ".doubleclick.net",
+      "path": "/",
+      "expires": 1791644470.805847,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    }
+  ]
+}

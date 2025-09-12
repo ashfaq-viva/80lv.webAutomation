@@ -1,0 +1,127 @@
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFzaGZhcS5haG1lZEB2aXZhc29mdGx0ZC5jb20iLCJleHAiOjE3NTgyNjU2NzksImdyb3VwcyI6W3siaWQiOjc1NDgsIm5hbWUiOiJEZWZhdWx0IiwiaXNfYWN0aXZlIjp0cnVlLCJpc19kZWZhdWx0Ijp0cnVlfSx7ImlkIjo3Njk3LCJuYW1lIjoiQ29tcGFueSIsImlzX2FjdGl2ZSI6dHJ1ZSwiaXNfZGVmYXVsdCI6ZmFsc2V9XSwiaWF0IjoxNzU3NjYwODc5LCJpc19tYXN0ZXIiOnRydWUsImlzcyI6Imh0dHBzOi8vbG9naW4ueHNvbGxhLmNvbSIsImp0aSI6IjgzODk3ODBhLTIxNzItNGUzMi1iMzU1LTczMjVkZWJhZjliYiIsInBheWxvYWQiOiJ7XCJyZWdpc3RyYXRpb25fc291cmNlXCI6XCI4MGx2XCIsXCJyZWRpcmVjdFVybFwiOlwiaHR0cHM6Ly90ZXN0LjgwbHYuc3J2LmxvY2FsL1wifSIsInByb21vX2VtYWlsX2FncmVlbWVudCI6ZmFsc2UsInB1Ymxpc2hlcl9pZCI6MjkxMDAsInN1YiI6IjhkZjI3MTQ2LTIxNDQtNGY0Zi1hYTAyLTY2MDYxYmU4NzAwMiIsInR5cGUiOiJ4c29sbGFfbG9naW4iLCJ1c2VybmFtZSI6ImFzaGZhcS5haG1lZEB2aXZhc29mdGx0ZC5jb20iLCJ4c29sbGFfbG9naW5fYWNjZXNzX2tleSI6IlhCcFZJWEhzZ1l2V2xhUHhKd2JUVjN4b3RldFU0RHh2NXRrX3JYRk9HdDAiLCJ4c29sbGFfbG9naW5fcHJvamVjdF9pZCI6Ijc5ZjlkYjY1LWFhNDItMTFlYS1hODViLTQyMDEwYWE4MDAwNCJ9.twsdakQm9aG1AA9Pj7WmFXDuEqFLr7d-z2dsnYcuhiQ",
+  "cookies": [
+    {
+      "name": "accept_gdpr",
+      "value": "true",
+      "domain": ".test.80lv.srv.local",
+      "path": "/",
+      "expires": 1773212877,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "consent_id",
+      "value": "3d073d9c-4cb7-44b9-a1d4-c59583abf695",
+      "domain": ".xsolla.com",
+      "path": "/",
+      "expires": 1792220884.469269,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None",
+      "partitionKey": "https://srv.local",
+      "_crHasCrossSiteAncestor": true
+    },
+    {
+      "name": "_gcl_au",
+      "value": "1.1.1003606946.1757660878",
+      "domain": ".srv.local",
+      "path": "/",
+      "expires": 1765436878,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ga",
+      "value": "GA1.1.1619101142.1757660877",
+      "domain": ".srv.local",
+      "path": "/",
+      "expires": 1792220884.590185,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "test_cookie",
+      "value": "CheckForPermission",
+      "domain": ".doubleclick.net",
+      "path": "/",
+      "expires": 1757661778.924032,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "xsollauid",
+      "value": "407511997421191182",
+      "domain": ".xsolla.com",
+      "path": "/",
+      "expires": 1792220879.743142,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "xl-79f9db65-aa42-11ea-a85b-42010aa80004-sso-session",
+      "value": "HhimJxQpR4xP53anI5S4SCP55R4IPVVN35PUfMSLsPhTcQSBp4b5A9gYRpMVmHnm",
+      "domain": ".xsolla.com",
+      "path": "/",
+      "expires": 1760252880.630135,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "token",
+      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFzaGZhcS5haG1lZEB2aXZhc29mdGx0ZC5jb20iLCJleHAiOjE3NTgyNjU2NzksImdyb3VwcyI6W3siaWQiOjc1NDgsIm5hbWUiOiJEZWZhdWx0IiwiaXNfYWN0aXZlIjp0cnVlLCJpc19kZWZhdWx0Ijp0cnVlfSx7ImlkIjo3Njk3LCJuYW1lIjoiQ29tcGFueSIsImlzX2FjdGl2ZSI6dHJ1ZSwiaXNfZGVmYXVsdCI6ZmFsc2V9XSwiaWF0IjoxNzU3NjYwODc5LCJpc19tYXN0ZXIiOnRydWUsImlzcyI6Imh0dHBzOi8vbG9naW4ueHNvbGxhLmNvbSIsImp0aSI6IjgzODk3ODBhLTIxNzItNGUzMi1iMzU1LTczMjVkZWJhZjliYiIsInBheWxvYWQiOiJ7XCJyZWdpc3RyYXRpb25fc291cmNlXCI6XCI4MGx2XCIsXCJyZWRpcmVjdFVybFwiOlwiaHR0cHM6Ly90ZXN0LjgwbHYuc3J2LmxvY2FsL1wifSIsInByb21vX2VtYWlsX2FncmVlbWVudCI6ZmFsc2UsInB1Ymxpc2hlcl9pZCI6MjkxMDAsInN1YiI6IjhkZjI3MTQ2LTIxNDQtNGY0Zi1hYTAyLTY2MDYxYmU4NzAwMiIsInR5cGUiOiJ4c29sbGFfbG9naW4iLCJ1c2VybmFtZSI6ImFzaGZhcS5haG1lZEB2aXZhc29mdGx0ZC5jb20iLCJ4c29sbGFfbG9naW5fYWNjZXNzX2tleSI6IlhCcFZJWEhzZ1l2V2xhUHhKd2JUVjN4b3RldFU0RHh2NXRrX3JYRk9HdDAiLCJ4c29sbGFfbG9naW5fcHJvamVjdF9pZCI6Ijc5ZjlkYjY1LWFhNDItMTFlYS1hODViLTQyMDEwYWE4MDAwNCJ9.twsdakQm9aG1AA9Pj7WmFXDuEqFLr7d-z2dsnYcuhiQ",
+      "domain": ".srv.local",
+      "path": "/",
+      "expires": 1758265680.4964,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "sliderType",
+      "value": "featured-jobs",
+      "domain": "test.80lv.srv.local",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_mm_uid_6a919793-9bb3-4cca-b242-2ef98a61c3ca",
+      "value": "1757660884363312873",
+      "domain": ".test.80lv.srv.local",
+      "path": "/",
+      "expires": 1792220884.056148,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_mm_vid_6a919793-9bb3-4cca-b242-2ef98a61c3ca",
+      "value": "1757660884161982646",
+      "domain": ".test.80lv.srv.local",
+      "path": "/",
+      "expires": 1757662684,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ga_E9PWFGKFPG",
+      "value": "GS2.1.s1757660876$o1$g1$t1757660884$j54$l0$h1568679133",
+      "domain": ".srv.local",
+      "path": "/",
+      "expires": 1792220884.598262,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ]
+}
