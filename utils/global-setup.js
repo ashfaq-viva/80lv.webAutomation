@@ -10,7 +10,7 @@ async function globalSetup() {
   console.log(ENV + 'Global setup-------------------------');
   console.log(`🌍 Using ENV: ${ENV}, baseURL: ${BASE_URL}`);
 
-  const browser = await chromium.launch({ headless: false, ignoreHTTPSErrors: true });
+  const browser = await chromium.launch({ headless: process.env.CI ? true : false, ignoreHTTPSErrors: true });
   const usersToLogin = ['talent', 'recruiter'];
 
   for (const role of usersToLogin) {
