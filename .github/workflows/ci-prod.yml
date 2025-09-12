@@ -23,9 +23,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      # ✅ Build project (if applicable)
-      - name: Build project (if applicable)
-        run: npm run build --if-present
+      # # ✅ Build project (if applicable)
+      # - name: Build project (if applicable)
+      #   run: npm run build --if-present
 
       # ✅ Install Playwright browsers
       - name: Install Playwright Browsers
