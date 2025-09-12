@@ -8,7 +8,7 @@ Thumbs.db
 # Node.js dependencies & locks
 # ==============================
 node_modules/
-package-lock.json
+# package-lock.json
 yarn.lock
 pnpm-lock.yaml
 locks/
