@@ -1,5 +1,6 @@
 import { expect } from '@playwright/test';
 import BasePage from './BasePage';
+import { allure } from 'allure-playwright';
 
 export class LoginPage extends BasePage {
   constructor(page, context) {
