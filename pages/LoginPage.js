@@ -1,6 +1,5 @@
 import { expect } from '@playwright/test';
 import BasePage from './BasePage';
-import { allure } from 'allure-playwright';
 
 export class LoginPage extends BasePage {
   constructor(page, context) {
@@ -29,7 +28,7 @@ export class LoginPage extends BasePage {
   async acceptCookies(){
     await this.expectAndClick(this.allowCookiesBtnOld,'Accept Cookies');
   }
-    async _waitForWidget() {
+  async _waitForWidget() {
     await this.page.waitForSelector('#xl_widget iframe', { state: 'attached', timeout: 20000 });
     // give the embedded app time to boot/render
     await this.page.waitForLoadState('networkidle');
@@ -50,9 +49,9 @@ export class LoginPage extends BasePage {
     await this.assert({locator: this.profileLoggedIn,state: 'visible',alias:'Profile Icon'} );
   }
 async globalLogin(email, password) {
+  await this.allowCookiesBtnOld.click();
   for (let attempt = 1; attempt <= 2; attempt++) {
     try {
-      await this.allowCookiesBtnOld.click();
       await this.profileLogIn.click();
       await this._waitForWidget();
       await expect(this.emailTxt).toBeVisible({ timeout: 10000 });
