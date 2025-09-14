@@ -42,7 +42,7 @@ export class LoginPage extends BasePage {
     await this.assert({locator: this.profileLoggedIn,state: 'visible',alias:'Profile Icon'} );
   }
   async globalLogin(email,password){
-    await this.allowCookiesBtn.click();
+    await this.allowCookiesBtnOld.click();
     await this.profileLogIn.click();
     await this.emailTxt.fill(email);
     await this.passwordTxt.fill(password);
