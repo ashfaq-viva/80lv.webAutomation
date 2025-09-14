@@ -264,32 +264,6 @@ jobs:
           path: artifacts/global-setup/**/*
           if-no-files-found: ignore  
 
-      - name: Upload Playwright HTML Report
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: playwright-report
-          path: playwright-report
-          if-no-files-found: ignore
-
-
-      - name: Upload Allure Report Videos 
-        if: always() 
-        uses: actions/upload-artifact@v4 
-        with: 
-          name: allure-videos 
-          path: allure-report/data/attachments/*.webm 
-          if-no-files-found: ignore
-        
-      - name: Upload Failure Screenshots
-        if: always()
-        continue-on-error: true
-        uses: actions/upload-artifact@v4
-        with:
-          name: failure-screenshots
-          path: allure-report/data/attachments/*.png
-          retention-days: 7
-          if-no-files-found: ignore
 
       # ===============================
       # 🔽 Allure GitHub Pages publish
@@ -314,14 +288,6 @@ jobs:
           ref: gh-pages
           path: gh-pages
           persist-credentials: false
-      # - name: Checkout gh-pages (history restore)
-      #   if: always()
-      #   continue-on-error: true  
-      #   uses: actions/checkout@v4
-      #   with:
-      #     ref: gh-pages
-      #     path: gh-pages
-      #     persist-credentials: false
 
       - name: Restore Allure history
         if: always()
@@ -341,6 +307,24 @@ jobs:
           allure generate allure-results --clean -o allure-report
           ls -lah allure-report || true
 
+      - name: Upload Allure Report Videos 
+        if: always() 
+        uses: actions/upload-artifact@v4 
+        with: 
+          name: allure-videos 
+          path: allure-report/data/attachments/*.webm 
+          if-no-files-found: ignore
+        
+      - name: Upload Failure Screenshots
+        if: always()
+        continue-on-error: true
+        uses: actions/upload-artifact@v4
+        with:
+          name: failure-screenshots
+          path: allure-report/data/attachments/*.png
+          retention-days: 7
+          if-no-files-found: ignore
+
       - name: Setup Pages
         if: always()
         uses: actions/configure-pages@v5
@@ -355,3 +339,10 @@ jobs:
         if: always()
         id: deploy
         uses: actions/deploy-pages@v4
+
+      - name: Add Report Link to Summary
+        if: always()
+        run: |
+          echo "## ✅ Test Report" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "[👉 Click to view report](https://ashfaq-viva.github.io/80lv.webAutomation)" >> $GITHUB_STEP_SUMMARY
