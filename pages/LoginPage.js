@@ -1,3 +1,4 @@
+import { expect } from '@playwright/test';
 import BasePage from './BasePage';
 
 export class LoginPage extends BasePage {
@@ -44,6 +45,7 @@ export class LoginPage extends BasePage {
   async globalLogin(email,password){
     await this.allowCookiesBtnOld.click();
     await this.profileLogIn.click();
+    await expect(this.emailTxt).toBeVisible();
     await this.emailTxt.fill(email);
     await this.passwordTxt.fill(password);
     await this.loginBtn.click();
