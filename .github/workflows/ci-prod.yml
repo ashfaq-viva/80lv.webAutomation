@@ -222,7 +222,7 @@ jobs:
       - name: Use cached Allure
         if: steps.cache-allure.outputs.cache-hit == 'true'
         run: |
-          echo "/opt/allure-2.24.0/bin" >> $GITHUB_PATH
+          export PATH="/opt/allure-2.24.0/bin:$PATH"
           allure --version
 
 
