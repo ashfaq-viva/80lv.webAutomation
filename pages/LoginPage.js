@@ -49,15 +49,26 @@ export class LoginPage extends BasePage {
     await this.expectAndClick(this.loginBtn,'Login Button');
     await this.assert({locator: this.profileLoggedIn,state: 'visible',alias:'Profile Icon'} );
   }
-  async globalLogin(email,password){
-    await this.allowCookiesBtnOld.click();
-    await this.profileLogIn.click();
-    await this._waitForWidget();
-    await expect(this.emailTxt).toBeVisible({ timeout: 20000 });
-    await this.emailTxt.fill(email);
-    await this.passwordTxt.fill(password);
-    await this.loginBtn.click();
+async globalLogin(email, password) {
+  for (let attempt = 1; attempt <= 2; attempt++) {
+    try {
+      await this.allowCookiesBtnOld.click();
+      await this.profileLogIn.click();
+      await this._waitForWidget();
+      await expect(this.emailTxt).toBeVisible({ timeout: 10000 });
+      break; // success → exit loop
+    } catch (error) {
+      if (attempt === 2) throw error; // fail after 2 attempts
+      console.log('Retrying login…');
+      await this.page.reload();
+    }
   }
+
+  await this.emailTxt.fill(email);
+  await this.passwordTxt.fill(password);
+  await this.loginBtn.click();
+}
+
   async assertLoggedIn(){
     await this.assert({locator: this.profileLoggedIn,state: 'visible',alias:'Profile Icon'} );
   }
