@@ -45,7 +45,17 @@ export class LoginPage extends BasePage {
   async globalLogin(email,password){
     await this.allowCookiesBtnOld.click();
     await this.profileLogIn.click();
-    await expect(this.emailTxt).toBeVisible();
+    await this.page.waitForTimeout(2000);
+    try {
+  await expect(this.emailTxt).toBeVisible({ timeout: 10000 });
+  } catch (error) {
+    // 📸 Take screenshot if element not visible
+    const screenshot = await this.page.screenshot();
+    await allure.attachment('Login Failed Screenshot', screenshot, 'image/png');
+    
+    // rethrow so the test still fails
+    throw error;
+}
     await this.emailTxt.fill(email);
     await this.passwordTxt.fill(password);
     await this.loginBtn.click();
