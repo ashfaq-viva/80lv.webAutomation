@@ -24,6 +24,7 @@ trace.zip
 *.trace
 .playwright/
 playwright/
+artifacts/
 
 # ==============================
 # Allure reports
