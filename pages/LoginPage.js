@@ -54,7 +54,7 @@ async globalLogin(email, password) {
     try {
       await this.profileLogIn.click();
       await this._waitForWidget();
-      await expect(this.emailTxt).toBeVisible({ timeout: 10000 });
+      await expect(this.emailTxt).toBeVisible({ timeout: 7000 });
       break; // success → exit loop
     } catch (error) {
       if (attempt === 2) throw error; // fail after 2 attempts
