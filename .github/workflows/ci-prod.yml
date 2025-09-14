@@ -273,13 +273,6 @@ jobs:
           if-no-files-found: ignore
 
 
-      - name: Upload Allure Report
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: allure-report
-          path: allure-report
-
       - name: Upload Allure Report Videos 
         if: always() 
         uses: actions/upload-artifact@v4 
