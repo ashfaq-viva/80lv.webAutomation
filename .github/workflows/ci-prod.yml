@@ -1,37 +1,203 @@
+# name: Prod CI/CD
+
+# on:
+#   workflow_dispatch:
+
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+
+#     steps:
+#       # ✅ Checkout your repository
+#       - name: Checkout repository
+#         uses: actions/checkout@v4
+
+#        # ✅ Setup Node.js
+#       - name: Setup NodeJS
+#         uses: actions/setup-node@v4
+#         with:
+#           node-version: '20'
+#           cache: 'npm'
+
+#       # ✅ Install dependencies
+#       - name: Install dependencies
+#         run: npm ci
+
+#       # # ✅ Build project (if applicable)
+#       # - name: Build project (if applicable)
+#       #   run: npm run build --if-present
+
+#       # ✅ Install Playwright browsers
+#       - name: Install Playwright Browsers
+#         run: npx playwright install 
+
+#       # ✅ Cache Allure CLI (Prevents downloading Allure every run)
+#       - name: Cache Allure CLI
+#         id: cache-allure
+#         uses: actions/cache@v3
+#         with:
+#           path: /opt/allure-2.24.0
+#           key: allure-${{ runner.os }}-2.24.0
+#           restore-keys: allure-${{ runner.os }}-
+
+#       - name: Install Allure CLI
+#         run: |
+#           echo "📦 Installing Allure CLI..."
+#           sudo apt update
+#           sudo apt install -y curl unzip
+
+#           # ✅ Download a fixed version instead of latest
+#           echo "📥 Downloading Allure (Fixed Version)..."
+#           curl -L -o allure.tgz https://github.com/allure-framework/allure2/releases/download/2.24.0/allure-2.24.0.tgz
+
+#           echo "📂 Extracting Allure..."
+#           tar -zxvf allure.tgz -C /opt/ || { echo "❌ Extraction failed!"; exit 1; }
+
+#           echo "🔗 Creating Symlink for Allure..."
+#           sudo ln -s /opt/allure-2.24.0/bin/allure /usr/local/bin/allure
+
+#           echo "✅ Installed Allure CLI Version: $(allure --version)"
+
+#       - name: Clear Previous Allure Results
+#         run: |
+#           echo "🧹 Cleaning previous Allure results..."
+#           rm -rf allure-results allure-report allure-history || true
+#           mkdir -p allure-results allure-report allure-history  # ✅ Ensure fresh directories exist
+
+#       # ✅ Run Playwright tests
+#       - name: Run Playwright Tests
+#         run: npx cross-env ENV=80LV_PROD playwright test
+
+#       # # ✅ Upload Playwright HTML Report (always run, even if tests fail)
+#       # - name: Upload Playwright HTML Report
+#       #   if: always()
+#       #   uses: actions/upload-artifact@v4
+#       #   with:
+#       #     name: playwright-report
+#       #     path: playwright-report
+
+#       # # ✅ Upload Playwright Videos (always run)
+#       # - name: Upload Playwright Videos
+#       #   if: always()
+#       #   uses: actions/upload-artifact@v4
+#       #   with:
+#       #     name: playwright-videos
+#       #     path: test-results/**/video.webm
+      
+#       - name: Generate Fresh Allure Report
+#         if: always()
+#         run: |
+#           echo "📊 Generating Allure Report..."
+#           allure generate allure-results --clean -o allure-report  # ✅ Generate new report
+#           ls -lah allure-report
+
+#       - name: Upload Allure Report
+#         if: always()
+#         uses: actions/upload-artifact@v4
+#         with:
+#           name: allure-report
+#           path: allure-report
+
+#       # ✅ Upload Allure Report Videos (from allure-report)
+#       - name: Upload Allure Report Videos
+#         if: always()
+#         uses: actions/upload-artifact@v4
+#         with:
+#           name: allure-videos
+#           path: allure-report/data/attachments/*.webm
+
+#       - name: Upload Failure Screenshots
+#         uses: actions/upload-artifact@v4
+#         if: always()
+#         continue-on-error: true
+#         with:
+#           name: failure-screenshots
+#           path: allure-report/data/attachments/*.png  # ✅ Upload screenshots if they exist
+#           retention-days: 7
+      
+# #for result sent to email configure by own email
+
+#       # - name: Install mailx
+#       #   run: sudo apt-get install -y mailutils
+
+#       # - name: Install jq
+#       #   run: sudo apt-get install -y jq
+
+#       # - name: Configure mailx for SMTP
+#       #   run: |
+#       #     echo "set smtp=smtps://smtp.gmail.com:465" >> ~/.mailrc
+#       #     echo "set smtp-auth=login" >> ~/.mailrc
+#       #     echo "set smtp-auth-user=${{ secrets.SMTP_USERNAME }}" >> ~/.mailrc
+#       #     echo "set smtp-auth-password=${{ secrets.SMTP_PASSWORD }}" >> ~/.mailrc
+#       #     echo "set ssl-verify=ignore" >> ~/.mailrc
+
+#       # - name: Extract Key Test Summary
+#       #   run: |
+#       #     if [ -f allure-report/widgets/summary.json ]; then
+#       #         jq -r '"Report: \(.reportName) | Passed: \(.statistic.passed) | Failed: \(.statistic.failed) | Total: \(.statistic.total)"' allure-report/widgets/summary.json > summary.txt
+#       #     else
+#       #         echo "No summary found. Check if tests executed correctly." > summary.txt
+#       #     fi
+
+#       # - name: Send Email with Allure Report
+#       #   run: |
+#       #     cat summary.txt | mailx -s "Allure Test Report Summary"  ashfaq.ahmed@findit.id
+
 name: Prod CI/CD
 
 on:
   workflow_dispatch:
+    inputs:
+      target_env:
+        description: "Target environment"
+        required: true
+        default: "80LV_PROD"
+        type: choice
+        options: [80LV_PROD, 80LV_QA, 80LV_DEV]
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
+    env:
+      ENV: ${{ github.event.inputs.target_env }}
+
     steps:
-      # ✅ Checkout your repository
       - name: Checkout repository
         uses: actions/checkout@v4
 
-       # ✅ Setup Node.js
+      # ✅ Caches npm’s download cache automatically
       - name: Setup NodeJS
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
-          cache: 'npm'
+          node-version: "20"
+          cache: "npm"
+          cache-dependency-path: |
+            package-lock.json
+            **/package-lock.json
 
-      # ✅ Install dependencies
       - name: Install dependencies
         run: npm ci
 
-      # # ✅ Build project (if applicable)
-      # - name: Build project (if applicable)
-      #   run: npm run build --if-present
+      # ✅ Cache Playwright browsers (Linux path)
+      - name: Cache Playwright Browsers
+        id: cache-pw
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/ms-playwright
+          key: pw-browsers-${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: pw-browsers-${{ runner.os }}-
 
-      # ✅ Install Playwright browsers
+      # Install browsers only if cache miss
       - name: Install Playwright Browsers
-        run: npx playwright install 
+        if: steps.cache-pw.outputs.cache-hit != 'true'
+        run: npx playwright install
 
-      # ✅ Cache Allure CLI (Prevents downloading Allure every run)
+      # (Optional) ensure OS deps (usually not needed on GH Ubuntu)
+      # - name: Install Playwright OS deps
+      #   run: npx playwright install-deps
+
+      # ✅ Cache Allure CLI (you already had this)
       - name: Cache Allure CLI
         id: cache-allure
         uses: actions/cache@v3
@@ -41,55 +207,44 @@ jobs:
           restore-keys: allure-${{ runner.os }}-
 
       - name: Install Allure CLI
+        if: steps.cache-allure.outputs.cache-hit != 'true'
         run: |
-          echo "📦 Installing Allure CLI..."
           sudo apt update
           sudo apt install -y curl unzip
-
-          # ✅ Download a fixed version instead of latest
-          echo "📥 Downloading Allure (Fixed Version)..."
           curl -L -o allure.tgz https://github.com/allure-framework/allure2/releases/download/2.24.0/allure-2.24.0.tgz
-
-          echo "📂 Extracting Allure..."
-          tar -zxvf allure.tgz -C /opt/ || { echo "❌ Extraction failed!"; exit 1; }
-
-          echo "🔗 Creating Symlink for Allure..."
-          sudo ln -s /opt/allure-2.24.0/bin/allure /usr/local/bin/allure
-
-          echo "✅ Installed Allure CLI Version: $(allure --version)"
+          sudo tar -zxvf allure.tgz -C /opt/
+          sudo ln -sf /opt/allure-2.24.0/bin/allure /usr/local/bin/allure
+          allure --version
 
       - name: Clear Previous Allure Results
         run: |
-          echo "🧹 Cleaning previous Allure results..."
           rm -rf allure-results allure-report allure-history || true
-          mkdir -p allure-results allure-report allure-history  # ✅ Ensure fresh directories exist
+          mkdir -p allure-results allure-report allure-history
 
-      # ✅ Run Playwright tests
+      # 🔑 Create a .env for the tests from Variables + Secrets
+      - name: Generate .env for tests
+        shell: bash
+        run: |
+          set -e
+          echo "BASE_URL_80LV_PROD=${{ vars.BASE_URL_80LV_PROD }}"   >> .env
+          echo "BASE_URL_80LV_QA=${{ vars.BASE_URL_80LV_QA }}"       >> .env
+          echo "TALENT_EMAIL=${{ secrets.TALENT_EMAIL }}"               >> .env
+          echo "TALENT_PASSWORD=${{ secrets.TALENT_PASSWORD }}"         >> .env
+          echo "RECRUITER_EMAIL=${{ secrets.RECRUITER_EMAIL }}"         >> .env
+          echo "RECRUITER_PASSWORD=${{ secrets.RECRUITER_PASSWORD }}"   >> .env
+          echo "ENV=${ENV}" >> .env
+          echo "----- .env (sanitized) -----"
+          grep -E '^(ENV|BASE_URL)' .env || true
+          echo "----------------------------"
+
       - name: Run Playwright Tests
-        run: npx cross-env ENV=80LV_PROD playwright test
+        run: npx cross-env ENV=${ENV} playwright test
 
-      # # ✅ Upload Playwright HTML Report (always run, even if tests fail)
-      # - name: Upload Playwright HTML Report
-      #   if: always()
-      #   uses: actions/upload-artifact@v4
-      #   with:
-      #     name: playwright-report
-      #     path: playwright-report
-
-      # # ✅ Upload Playwright Videos (always run)
-      # - name: Upload Playwright Videos
-      #   if: always()
-      #   uses: actions/upload-artifact@v4
-      #   with:
-      #     name: playwright-videos
-      #     path: test-results/**/video.webm
-      
       - name: Generate Fresh Allure Report
         if: always()
         run: |
-          echo "📊 Generating Allure Report..."
-          allure generate allure-results --clean -o allure-report  # ✅ Generate new report
-          ls -lah allure-report
+          allure generate allure-results --clean -o allure-report
+          ls -lah allure-report || true
 
       - name: Upload Allure Report
         if: always()
@@ -98,7 +253,6 @@ jobs:
           name: allure-report
           path: allure-report
 
-      # ✅ Upload Allure Report Videos (from allure-report)
       - name: Upload Allure Report Videos
         if: always()
         uses: actions/upload-artifact@v4
@@ -107,38 +261,10 @@ jobs:
           path: allure-report/data/attachments/*.webm
 
       - name: Upload Failure Screenshots
-        uses: actions/upload-artifact@v4
         if: always()
         continue-on-error: true
+        uses: actions/upload-artifact@v4
         with:
           name: failure-screenshots
-          path: allure-report/data/attachments/*.png  # ✅ Upload screenshots if they exist
+          path: allure-report/data/attachments/*.png
           retention-days: 7
-      
-#for result sent to email configure by own email
-
-      # - name: Install mailx
-      #   run: sudo apt-get install -y mailutils
-
-      # - name: Install jq
-      #   run: sudo apt-get install -y jq
-
-      # - name: Configure mailx for SMTP
-      #   run: |
-      #     echo "set smtp=smtps://smtp.gmail.com:465" >> ~/.mailrc
-      #     echo "set smtp-auth=login" >> ~/.mailrc
-      #     echo "set smtp-auth-user=${{ secrets.SMTP_USERNAME }}" >> ~/.mailrc
-      #     echo "set smtp-auth-password=${{ secrets.SMTP_PASSWORD }}" >> ~/.mailrc
-      #     echo "set ssl-verify=ignore" >> ~/.mailrc
-
-      # - name: Extract Key Test Summary
-      #   run: |
-      #     if [ -f allure-report/widgets/summary.json ]; then
-      #         jq -r '"Report: \(.reportName) | Passed: \(.statistic.passed) | Failed: \(.statistic.failed) | Total: \(.statistic.total)"' allure-report/widgets/summary.json > summary.txt
-      #     else
-      #         echo "No summary found. Check if tests executed correctly." > summary.txt
-      #     fi
-
-      # - name: Send Email with Allure Report
-      #   run: |
-      #     cat summary.txt | mailx -s "Allure Test Report Summary"  ashfaq.ahmed@findit.id
