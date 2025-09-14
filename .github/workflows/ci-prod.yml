@@ -197,7 +197,7 @@ jobs:
       # - name: Install Playwright OS deps
       #   run: npx playwright install-deps
 
-      # ✅ Cache Allure
+     # ✅ Cache Allure
       - name: Cache Allure CLI
         id: cache-allure
         uses: actions/cache@v3
@@ -214,16 +214,18 @@ jobs:
           sudo apt install -y curl unzip
           curl -L -o allure.tgz https://github.com/allure-framework/allure2/releases/download/2.24.0/allure-2.24.0.tgz
           sudo tar -zxvf allure.tgz -C /opt/
-          # expose to PATH for this run
+          # add to PATH for subsequent steps
           echo "/opt/allure-2.24.0/bin" >> $GITHUB_PATH
-          allure --version
 
-      # ✅ Use cached Allure when cache HIT (ensure PATH!)
-      - name: Use cached Allure
+      # ✅ Use cached Allure (also add PATH)
+      - name: Setup Allure from cache
         if: steps.cache-allure.outputs.cache-hit == 'true'
-        run: |
-          export PATH="/opt/allure-2.24.0/bin:$PATH"
-          allure --version
+        run: echo "/opt/allure-2.24.0/bin" >> $GITHUB_PATH
+
+      # ✅ Verify Allure (separate step so PATH works)
+      - name: Verify Allure
+        run: allure --version
+
 
 
       - name: Clear Previous Allure Results
