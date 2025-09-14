@@ -10,7 +10,8 @@ export class LoginPage extends BasePage {
     this.allowCookiesBtn= page.getByRole('button', { name: 'Accept all cookies' });
     this.allowCookiesBtnOld=page.locator('._3xpoo');
     this.loginLnk= page.getByText('LogIn');
-    this.emailTxt = page.locator('#xl_widget iframe').contentFrame().getByTestId('log-in-form__fields-universal');
+    this.widgetFrame = page.frameLocator('#xl_widget iframe');
+    this.emailTxt    = this.widgetFrame.getByTestId('log-in-form__fields-universal');
     this.passwordTxt = page.locator('#xl_widget iframe').contentFrame().getByTestId('log-in-form__fields-password');
     this.loginBtn= page.locator('#xl_widget iframe').contentFrame().getByTestId('login-form__button-submit');
     this.profileLoggedIn = page.getByRole('img', { name: 'profile_loggedin' });
@@ -27,6 +28,11 @@ export class LoginPage extends BasePage {
   }
   async acceptCookies(){
     await this.expectAndClick(this.allowCookiesBtnOld,'Accept Cookies');
+  }
+    async _waitForWidget() {
+    await this.page.waitForSelector('#xl_widget iframe', { state: 'attached', timeout: 20000 });
+    // give the embedded app time to boot/render
+    await this.page.waitForLoadState('networkidle');
   }
   async doLogin(username,password) {
     // await this.expectAndClick(this.profileLogIn,'Login Link');
@@ -46,17 +52,8 @@ export class LoginPage extends BasePage {
   async globalLogin(email,password){
     await this.allowCookiesBtnOld.click();
     await this.profileLogIn.click();
-    await this.page.waitForTimeout(2000);
-    try {
-  await expect(this.emailTxt).toBeVisible({ timeout: 10000 });
-  } catch (error) {
-    // 📸 Take screenshot if element not visible
-    const screenshot = await this.page.screenshot();
-    await allure.attachment('Login Failed Screenshot', screenshot, 'image/png');
-    
-    // rethrow so the test still fails
-    throw error;
-}
+    await this._waitForWidget();
+    await expect(this.emailTxt).toBeVisible({ timeout: 20000 });
     await this.emailTxt.fill(email);
     await this.passwordTxt.fill(password);
     await this.loginBtn.click();
