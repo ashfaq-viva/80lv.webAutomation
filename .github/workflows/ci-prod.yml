@@ -294,15 +294,34 @@ jobs:
       # ===============================
       # 🔽 Allure GitHub Pages publish
       # ===============================
+      - name: Check gh-pages existence
+        id: has-ghpages
+        shell: bash
+        run: |
+          if git ls-remote --heads "https://github.com/${{ github.repository }}.git" gh-pages | grep gh-pages >/dev/null; then
+            echo "exists=true" >> "$GITHUB_OUTPUT"
+            echo "✅ gh-pages exists"
+          else
+            echo "exists=false" >> "$GITHUB_OUTPUT"
+            echo "ℹ️ gh-pages does not exist yet (first deploy)"
+          fi
 
+      # ✅ Only checkout gh-pages when it actually exists
       - name: Checkout gh-pages (history restore)
-        if: always()
-        continue-on-error: true  
+        if: always() && steps.has-ghpages.outputs.exists == 'true'
         uses: actions/checkout@v4
         with:
           ref: gh-pages
           path: gh-pages
           persist-credentials: false
+      # - name: Checkout gh-pages (history restore)
+      #   if: always()
+      #   continue-on-error: true  
+      #   uses: actions/checkout@v4
+      #   with:
+      #     ref: gh-pages
+      #     path: gh-pages
+      #     persist-credentials: false
 
       - name: Restore Allure history
         if: always()
