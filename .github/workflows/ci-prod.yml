@@ -197,7 +197,7 @@ jobs:
       # - name: Install Playwright OS deps
       #   run: npx playwright install-deps
 
-      # ✅ Cache Allure CLI (you already had this)
+      # ✅ Cache Allure
       - name: Cache Allure CLI
         id: cache-allure
         uses: actions/cache@v3
@@ -206,6 +206,7 @@ jobs:
           key: allure-${{ runner.os }}-2.24.0
           restore-keys: allure-${{ runner.os }}-
 
+      # ✅ Install when cache MISS
       - name: Install Allure CLI
         if: steps.cache-allure.outputs.cache-hit != 'true'
         run: |
@@ -213,8 +214,17 @@ jobs:
           sudo apt install -y curl unzip
           curl -L -o allure.tgz https://github.com/allure-framework/allure2/releases/download/2.24.0/allure-2.24.0.tgz
           sudo tar -zxvf allure.tgz -C /opt/
-          sudo ln -sf /opt/allure-2.24.0/bin/allure /usr/local/bin/allure
+          # expose to PATH for this run
+          echo "/opt/allure-2.24.0/bin" >> $GITHUB_PATH
           allure --version
+
+      # ✅ Use cached Allure when cache HIT (ensure PATH!)
+      - name: Use cached Allure
+        if: steps.cache-allure.outputs.cache-hit == 'true'
+        run: |
+          echo "/opt/allure-2.24.0/bin" >> $GITHUB_PATH
+          allure --version
+
 
       - name: Clear Previous Allure Results
         run: |
@@ -268,3 +278,4 @@ jobs:
           name: failure-screenshots
           path: allure-report/data/attachments/*.png
           retention-days: 7
+          if-no-files-found: ignore
