@@ -8,7 +8,7 @@ export default class BasePage {
   constructor(page, context) {
     this.page = page;
     this.context = context;
-    this.defaultTimeout = 5000;
+    this.defaultTimeout = 10000;
   }
 // 🔹 Get the friendly viewport name using the shared util
   #_viewportName() {
