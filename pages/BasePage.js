@@ -1,5 +1,3 @@
-import fs from 'fs';
-import path from 'path';
 import { expect } from '@playwright/test';
 import { getViewportNameFromPage } from '../utils/viewports.js';
 import { allure } from 'allure-playwright';
