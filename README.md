@@ -26,14 +26,8 @@
   - Attached videos and screenshots for failed tests
 
 ## Code-Coverage
-```
-npm run test:coverage
-npm run coverage:report
-start coverage/index.html
-npx serve coverage
 
-
-```
+- Implemented using c8, nyc, and Istanbul to measure test coverage. It tracks which parts of the codebase are executed during automated tests, providing detailed reports on statements, branches, functions, and lines to ensure better test quality and maintainability.
 
 # Testcase-Automation-plan-you-can-find-here
 ```
@@ -43,7 +37,7 @@ https://docs.google.com/spreadsheets/d/16fnrdXbXpV1eSJgLBmWRLfrqAbtk1gcuFDp7reBp
 
 ## Pre-requisites
 
-* Playwright requires Node.js version 14 or above. If you are using node version less than 14 then you can download Node.js version 14 or above from nvm (nvm allows you to easily switch between node versions depending on the project)
+* Playwright requires Node.js version 18 or above. If you are using node version less than 18 then you can download Node.js version 18 or above from nvm (nvm allows you to easily switch between node versions depending on the project)
 
   * If you are not using nvm already, you can download it and install Node.js from [here](https://catalins.tech/node-version-manager-macos/)
 
@@ -99,6 +93,15 @@ RECRUITER_PASSWORD=
 npx allure generate ./allure-results --clean -o ./allure-report
 npx allure open ./allure-report
 ```
+## Code-Coverage
+```
+npm run test:coverage
+npm run coverage:report
+start coverage/index.html
+npx serve coverage
+
+```
+
 ## 📂 Project Folder Structure
 
     80LV.WEBAUTOMATION/

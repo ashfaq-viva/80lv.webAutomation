@@ -29,9 +29,20 @@ export class LoginPage extends BasePage {
     await this.expectAndClick(this.allowCookiesBtnOld,'Accept Cookies');
   }
   async _waitForWidget() {
-    await this.page.waitForSelector('#xl_widget iframe', { state: 'attached', timeout: 20000 });
+    for (let attempt = 1; attempt <= 2; attempt++) {
+    try {
+      await this.profileLogIn.click();
+      await this.page.waitForSelector('#xl_widget iframe', { state: 'attached', timeout: 5000 });
+      break; 
+    } catch (error) {
+      if (attempt === 2) throw error; 
+      console.log('Retrying widget…');
+      await this.page.reload();
+    }
+  }
+    
     // give the embedded app time to boot/render
-    await this.page.waitForLoadState('networkidle');
+    // await this.page.waitForLoadState('networkidle');
   }
   async doLogin(username,password) {
     // await this.expectAndClick(this.profileLogIn,'Login Link');
@@ -52,7 +63,7 @@ async globalLogin(email, password) {
   await this.allowCookiesBtnOld.click();
   for (let attempt = 1; attempt <= 2; attempt++) {
     try {
-      await this.profileLogIn.click();
+      // await this.profileLogIn.click();
       await this._waitForWidget();
       await expect(this.emailTxt).toBeVisible();
       break; 

@@ -1,7 +1,6 @@
 import { setViewport, Laptop, Mobile } from '../../../utils/viewports.js';
 import { test } from '../../../utils/sessionUse.js';
 import { config } from '../../../config/testConfig.js';
-import fs from "fs";
 
 test.describe.serial('Login to 80LV', () => {
   
@@ -14,10 +13,10 @@ test.describe.serial('Login to 80LV', () => {
     });
   }
     for (const vp of [Laptop]) {
-    test(`${vp.name} @regression @talent Successful login with session`, async ({ page, useSession, loginPage }) => {
+    test(`${vp.name} @regression Successful login with session`, async ({ page, useSession, loginPage }) => {
       await setViewport(page, vp.size);
-      await useSession('talent'); 
-      await page.goto('/');
+      await useSession('talent');
+      await loginPage.visit();
       await loginPage.assertLoggedIn(); 
     });
   }
