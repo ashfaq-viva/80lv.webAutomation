@@ -45,11 +45,12 @@ export const test = base.extend({
   },
 });
 
-// // utils/sessionUse.js
+// utils/sessionUse.js
 // import { test as base } from '../lib/BaseTest.js';
 // import fs from 'fs';
 // import path from 'path';
-// import pwConfig from '../playwright.config.js';
+// // import pwConfig from '../playwright.config.js';
+// import pwConfig, { ENV } from '../playwright.config.js';
 
 // // Helper: get domain host
 // function getHost() {
@@ -60,7 +61,7 @@ export const test = base.extend({
 
 // // Helper: read saved session
 // function readSession(role) {
-//   const tokenPath = path.resolve(`./tokens/${role}.json`);
+//   const tokenPath = path.resolve(`./tokens&cookies_${ENV}/${role}.json`);
 //   if (!fs.existsSync(tokenPath)) {
 //     throw new Error(`Token file not found for role: ${role}. Run globalSetup first.`);
 //   }

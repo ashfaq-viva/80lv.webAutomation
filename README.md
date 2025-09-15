@@ -55,6 +55,17 @@ https://docs.google.com/spreadsheets/d/16fnrdXbXpV1eSJgLBmWRLfrqAbtk1gcuFDp7reBp
 npm ci
 npx playwright install
 ```
+## .env Setup
+
+* create a .env file in project root with this variable and give desired value:
+```
+BASE_URL_80LV_PROD=
+BASE_URL_80LV_QA=
+TALENT_EMAIL=
+TALENT_PASSWORD=
+RECRUITER_EMAIL=
+RECRUITER_PASSWORD=
+```
 
 ## Playwright Commands
 
@@ -84,10 +95,82 @@ npx playwright install
 
 
 #### Allure Reports
+```
+npx allure generate ./allure-results --clean -o ./allure-report
+npx allure open ./allure-report
+```
+## 📂 Project Folder Structure
 
-* npx allure generate ./allure-results --clean -o ./allure-report
-* npx allure open ./allure-report
+    80LV.WEBAUTOMATION/
+    ├── .github/
+    │ └── workflows/
+    │     └── ci-automation-pipeline.yml # GitHub Actions CI/CD pipeline
+    ├── config/ 
+    | └── testConfig.js # # Config files (env/test setup)
+    ├── lib/
+    │ └── BaseTest.js # Base test class
+    ├── pages/
+    │ ├── BasePage.js # Page object base class
+    │ └── LoginPage.js # Login page object
+    ├── tests/
+    │ └── functional/
+    |       └── 1_Login/
+    |           └── login.spec.js # Login test spec
+    ├── utils/
+    │ ├── global-setup.js # Global setup logic
+    │ ├── sessionUse.js # Session handling
+    │ └── viewports.js # Viewport configs
+    ├── .babelrc # Babel config
+    ├── .gitattributes # Git attributes
+    ├── .gitignore # Git ignore rules
+    ├── eslint.config.mjs # ESLint config
+    ├── LICENSE # Project license
+    ├── package-lock.json
+    ├── package.json # Dependencies & scripts
+    ├── playwright.config.js # Playwright config
+    └── README.md # Project documentation
 
+## How to Add a New Test Case
+
+Follow the steps below to create and organize a new test case in this project:
+
+* **Create a Page Object**
+
+If the feature requires a new page, add a file inside the pages/ directory.
+
+Example: pages/TestPage.js
+
+This file should contain the locators and actions for that page.
+
+* **Register the Page in BaseTest**
+
+Go to lib/BaseTest.js.
+
+Extend the base test by adding the new page so that it can be injected into your test cases.
+
+This ensures the page is reusable across different specs.
+
+📌 Name for this addition: Page Extension Setup
+
+* **Write the Test Case**
+
+Create a new test file under tests/functional/.
+
+Example: tests/functional/test.spec.js
+
+Write your test scenarios using the page objects you created and registered.
+
+* **Use Helpers** (if needed)
+
+Place any reusable functions, utilities, or custom logic inside the utils/ folder.
+
+Example: session handling, viewport setup, API utilities, etc.
+
+* **Keep Test Data Organized**
+
+Store all test data, environment values, or constants in config/testConfig.js.
+
+This helps keep test scripts clean and maintainable.
 
 ## Key Findings
 
@@ -107,29 +190,3 @@ npx playwright install
  Playwright has proven to be the most suitable choice. The selection between Playwright and Cypress depends on the system's requirements, considering factors such as browser support and the complexity of testing scenarios. Playwright's versatility and comprehensive browser compatibility make it ideal for diverse testing needs, while Cypress offers simplicity and ease of use for straightforward scenarios. It is crucial to evaluate these frameworks in relation to your project's unique demands to make an informed decision.
 
  Based on the specific scope of my web application, my application opens multipletab instance so playwright can handle that seamlessly.
-
-
- ### Creator of this Project
-
- * **Name:**Ashfaq Ahmed
-
- * **Email:**ashfaq.ahmed@vivasoftltd.com
-
-     // "test:coverage": "cross-env NODE_ENV=test nyc --reporter=lcov npx playwright test",
-    // "coverage:report": "nyc report --reporter=html",
-      //  "nyc": {
-  //   "all": true,
-  //   "include": [
-  //     "tests/**/*.js"
-  //   ],
-  //   "exclude": [
-  //     "playwright.config.js"
-  //   ],
-  //   "reporter": [
-  //     "lcov",
-  //     "text-summary"
-  //   ]
-  // }
-
-  npx nyc report --reporter=html --reporter=text
-npx nyc merge .nyc_output coverage.json
