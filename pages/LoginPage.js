@@ -1,3 +1,4 @@
+import { expect } from '@playwright/test';
 import BasePage from './BasePage';
 
 export class LoginPage extends BasePage {
@@ -8,7 +9,8 @@ export class LoginPage extends BasePage {
     this.allowCookiesBtn= page.getByRole('button', { name: 'Accept all cookies' });
     this.allowCookiesBtnOld=page.locator('._3xpoo');
     this.loginLnk= page.getByText('LogIn');
-    this.emailTxt = page.locator('#xl_widget iframe').contentFrame().getByTestId('log-in-form__fields-universal');
+    this.widgetFrame = page.frameLocator('#xl_widget iframe');
+    this.emailTxt    = this.widgetFrame.getByTestId('log-in-form__fields-universal');
     this.passwordTxt = page.locator('#xl_widget iframe').contentFrame().getByTestId('log-in-form__fields-password');
     this.loginBtn= page.locator('#xl_widget iframe').contentFrame().getByTestId('login-form__button-submit');
     this.profileLoggedIn = page.getByRole('img', { name: 'profile_loggedin' });
@@ -26,6 +28,11 @@ export class LoginPage extends BasePage {
   async acceptCookies(){
     await this.expectAndClick(this.allowCookiesBtnOld,'Accept Cookies');
   }
+  async _waitForWidget() {
+    await this.page.waitForSelector('#xl_widget iframe', { state: 'attached', timeout: 20000 });
+    // give the embedded app time to boot/render
+    await this.page.waitForLoadState('networkidle');
+  }
   async doLogin(username,password) {
     // await this.expectAndClick(this.profileLogIn,'Login Link');
    await this.expectAndClick(
@@ -41,13 +48,26 @@ export class LoginPage extends BasePage {
     await this.expectAndClick(this.loginBtn,'Login Button');
     await this.assert({locator: this.profileLoggedIn,state: 'visible',alias:'Profile Icon'} );
   }
-  async globalLogin(email,password){
-    await this.allowCookiesBtnOld.click();
-    await this.profileLogIn.click();
-    await this.emailTxt.fill(email);
-    await this.passwordTxt.fill(password);
-    await this.loginBtn.click();
+async globalLogin(email, password) {
+  await this.allowCookiesBtnOld.click();
+  for (let attempt = 1; attempt <= 2; attempt++) {
+    try {
+      await this.profileLogIn.click();
+      await this._waitForWidget();
+      await expect(this.emailTxt).toBeVisible();
+      break; 
+    } catch (error) {
+      if (attempt === 2) throw error; 
+      console.log('Retrying login…');
+      await this.page.reload();
+    }
   }
+
+  await this.emailTxt.fill(email);
+  await this.passwordTxt.fill(password);
+  await this.loginBtn.click();
+}
+
   async assertLoggedIn(){
     await this.assert({locator: this.profileLoggedIn,state: 'visible',alias:'Profile Icon'} );
   }
