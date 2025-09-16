@@ -217,11 +217,11 @@ jobs:
 # ===============================
 # 🔽 Sent Email of results
 # ===============================
-      - name: Install mailx
-        run: sudo apt-get install -y mailutils
-
-      - name: Install jq
-        run: sudo apt-get install -y jq
+      - name: Setup mailutils and jq
+        uses: awalsh128/cache-apt-pkgs-action@latest
+        with:
+          packages: mailutils jq
+          version: 1.0
 
       - name: Configure mailx for SMTP
         run: |
