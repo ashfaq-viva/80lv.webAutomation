@@ -5,7 +5,7 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-const ENV = process.env.ENV || '80LV_QA';
+const ENV = process.env.ENV || '80LV_PROD';
 const allowed = ['80LV_PROD', '80LV_QA', '80LV_DEV', 'ADMIN_PROD', 'ADMIN_QA'];
 if (!allowed.includes(ENV)) {
   console.error('Please provide a correct environment value from testConfig');
