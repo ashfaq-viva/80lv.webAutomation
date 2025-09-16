@@ -9,6 +9,8 @@ on:
         default: "80LV_PROD"
         type: choice
         options: [80LV_PROD, 80LV_QA, 80LV_DEV]
+  push:
+    branches: [main]
 
 permissions:
   contents: read
@@ -20,8 +22,8 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      ENV: ${{ github.event.inputs.target_env }}
-
+      # ENV: ${{ github.event.inputs.target_env }}
+        ENV: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' && '80LV_PROD' || github.event.inputs.target_env }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
