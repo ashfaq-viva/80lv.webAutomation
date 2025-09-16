@@ -220,7 +220,7 @@ jobs:
       - name: Setup mailutils and jq
         uses: awalsh128/cache-apt-pkgs-action@latest
         with:
-          packages: mailutils jq
+          packages: bsd-mailx jq jq
           version: 1.0
 
       - name: Configure mailx for SMTP
@@ -242,7 +242,17 @@ jobs:
               echo "" >> summary.txt
               echo "👉 View full report: https://ashfaq-viva.github.io/80lv.webAutomation" >> summary.txt
           fi
-
+      - name: Ensure mail client present
+        run: |
+          if command -v mailx >/dev/null 2>&1; then
+            echo "mailx present"
+          elif command -v mail >/dev/null 2>&1; then
+            echo "mail present"
+          else
+            echo "No mail client found, installing bsd-mailx..."
+            sudo apt-get update
+            sudo apt-get install -y bsd-mailx
+          fi
       - name: Send Email with Allure Report
         run: |
           cat summary.txt | mailx -s "80LV Automation Test Report Summary"  ashfaq.ahmed@vivasoftltd.com
