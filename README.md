@@ -25,6 +25,16 @@
   - Failure details
   - Attached videos and screenshots for failed tests
 
+### 🐳 Dockerized Playwright + Allure Setup
+- Prebuilt Playwright image (mcr.microsoft.com/playwright) with Chromium, Firefox, WebKit, and all dependencies included.
+- Allure integration:
+  - Test results automatically saved into a shared volume (allure-results).
+  - Allure report generated and viewable via Docker (allure + allure-ui services).
+- Cross-platform environment switching:
+  - Easily run tests against PROD, QA, or DEV by setting ENV.
+-Lightweight & reproducible:
+  - No need to install Playwright browsers or Allure locally — everything runs inside Docker.
+
 ## Code-Coverage
 
 - Implemented using c8, nyc, and Istanbul to measure test coverage. It tracks which parts of the codebase are executed during automated tests, providing detailed reports on statements, branches, functions, and lines to ensure better test quality and maintainability.
@@ -99,8 +109,37 @@ npm run test:coverage
 npm run coverage:report
 start coverage/index.html
 npx serve coverage
-
 ```
+## Running Tests with Docker
+
+* Install **Docker** and **Docker Compose**  on your machine.
+* Build the containers:
+```
+docker compose build
+```
+Run the tests
+Windows powershell
+```
+$env:ENV="80LV_PROD"; docker compose run --rm e2e
+```
+Linux / macOS
+```
+ENV=80LV_PROD docker compose run --rm e2e
+```
+windows cmd
+```
+set ENV=80LV_PROD && docker compose run --rm e2e
+```
+👉 Replace 80LV_PROD with 80LV_QA or 80LV_DEV as needed & By default, if ENV is not provided, it runs against PROD.
+
+* View the Allure report locally
+```
+docker compose up -d allure allure-ui
+```
+Open:
+API (service): http://localhost:5252/allure-docker-service
+UI (Docker Allure web interface): http://localhost:5253/allure-docker-service-ui/projects/default
+Full static report:http://localhost:5252/allure-docker-service/projects/default/reports/latest/index.html
 
 ## 📂 Project Folder Structure
 
@@ -193,3 +232,17 @@ This helps keep test scripts clean and maintainable.
  Playwright has proven to be the most suitable choice. The selection between Playwright and Cypress depends on the system's requirements, considering factors such as browser support and the complexity of testing scenarios. Playwright's versatility and comprehensive browser compatibility make it ideal for diverse testing needs, while Cypress offers simplicity and ease of use for straightforward scenarios. It is crucial to evaluate these frameworks in relation to your project's unique demands to make an informed decision.
 
  Based on the specific scope of my web application, my application opens multipletab instance so playwright can handle that seamlessly.
+
+docker compose build --no-cache
+docker compose run --rm e2e  
+$env:ENV="80LV_PROD"; docker compose run --rm e2e(powesheell)
+set ENV=80LV_PROD && docker compose run --rm e2e(cmd)
+ENV=80LV_PROD docker compose run --rm e2e (mac/linux )
+docker compose up -d allure allure-ui
+
+docker compose down
+docker volume rm 80lvwebautomation_allure-report 80lvwebautomation_allure-history
+docker compose up -d allure allure-ui
+
+http://localhost:5253/allure-docker-service-ui/projects/default
+http://localhost:5252/allure-docker-service/projects/default/reports/latest/index.html
