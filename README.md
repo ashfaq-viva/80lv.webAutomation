@@ -233,16 +233,5 @@ This helps keep test scripts clean and maintainable.
 
  Based on the specific scope of my web application, my application opens multipletab instance so playwright can handle that seamlessly.
 
-docker compose build --no-cache
-docker compose run --rm e2e  
-$env:ENV="80LV_PROD"; docker compose run --rm e2e(powesheell)
-set ENV=80LV_PROD && docker compose run --rm e2e(cmd)
-ENV=80LV_PROD docker compose run --rm e2e (mac/linux )
-docker compose up -d allure allure-ui
-
-docker compose down
-docker volume rm 80lvwebautomation_allure-report 80lvwebautomation_allure-history
-docker compose up -d allure allure-ui
-
-http://localhost:5253/allure-docker-service-ui/projects/default
-http://localhost:5252/allure-docker-service/projects/default/reports/latest/index.html
+## License
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
