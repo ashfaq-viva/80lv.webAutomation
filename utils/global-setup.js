@@ -53,7 +53,7 @@ async function globalSetup() {
     const loginPage = new LoginPage(page);
 
     try {
-      await page.goto(BASE_URL, { waitUntil: 'networkidle'});
+      await page.goto(BASE_URL, { waitUntil: 'networkidle',timeout:30000 });
       await loginPage.globalLogin(email, password);
       await page.waitForTimeout(3000);
 
