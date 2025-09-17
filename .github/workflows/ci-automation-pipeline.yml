@@ -463,10 +463,11 @@ jobs:
 # ===============================
 # 🔽 Sent Email of results
 # ===============================
-      - name: Install mailx + jq
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y bsd-mailx jq
+      - name: Install mailx
+        run: sudo apt-get install -y mailutils
+
+      - name: Install jq
+        run: sudo apt-get install -y jq
 
       - name: Configure mailx for SMTP
         run: |
