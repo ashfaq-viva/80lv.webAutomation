@@ -136,10 +136,10 @@ set ENV=80LV_PROD && docker compose run --rm e2e
 ```
 docker compose up -d allure allure-ui
 ```
-Open:
-API (service): http://localhost:5252/allure-docker-service
-UI (Docker Allure web interface): http://localhost:5253/allure-docker-service-ui/projects/default
-Full static report:http://localhost:5252/allure-docker-service/projects/default/reports/latest/index.html
+- Open:
+  - API (service): http://localhost:5252/allure-docker-service
+  - UI (Docker Allure web interface): http://localhost:5253/allure-docker-service-ui/projects/default
+  - Full static report:http://localhost:5252/allure-docker-service/projects/default/reports/latest/index.html
 
 ## 📂 Project Folder Structure
 
