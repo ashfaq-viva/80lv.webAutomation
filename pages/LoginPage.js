@@ -66,22 +66,27 @@ async globalLogin(email, password) {
   } else {
     console.log("No cookies banner found, skipping...");
   }
-  for (let attempt = 1; attempt <= 3; attempt++) {
+  for (let attempt = 1; attempt <= 4; attempt++) {
     try {
       await this.profileLogIn.click();
+      console.log("Login widget opened.");
       // await this._waitForWidget();
       await expect(this.emailTxt).toBeVisible();
+      console.log("Email Field is visible.");
       break; 
     } catch (error) {
-      if (attempt === 3) throw error; 
+      if (attempt === 4) throw error; 
       console.log('Retrying login…');
       await this.page.reload();
     }
   }
 
   await this.emailTxt.fill(email);
+  console.log("Email entered.");
   await this.passwordTxt.fill(password);
+  console.log("Password entered.");
   await this.loginBtn.click();
+  console.log("Login button clicked.");
 }
 
   async assertLoggedIn(){
