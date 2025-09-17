@@ -1,0 +1,158 @@
+name: CI_80LV-docker
+
+on:
+  workflow_dispatch:
+    inputs:
+      target_env:
+        description: "Target environment"
+        required: true
+        default: "80LV_PROD"
+        type: choice
+        options: [80LV_PROD, 80LV_QA, 80LV_DEV]
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  e2e-docker:
+    runs-on: ubuntu-latest
+    env:
+      ENV: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' && '80LV_PROD' || github.event.inputs.target_env }}
+      PROJECT_ID: docker
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # ---------- Prepare .env for the tests ----------
+      - name: Generate .env for tests
+        shell: bash
+        run: |
+          set -e
+          echo "BASE_URL_80LV_PROD=${{ vars.BASE_URL_80LV_PROD }}"   >> .env
+          echo "BASE_URL_80LV_QA=${{ vars.BASE_URL_80LV_QA }}"       >> .env
+          echo "TALENT_EMAIL=${{ secrets.TALENT_EMAIL }}"             >> .env
+          echo "TALENT_PASSWORD=${{ secrets.TALENT_PASSWORD }}"       >> .env
+          echo "RECRUITER_EMAIL=${{ secrets.RECRUITER_EMAIL }}"       >> .env
+          echo "RECRUITER_PASSWORD=${{ secrets.RECRUITER_PASSWORD }}" >> .env
+          echo "ENV=${ENV}" >> .env
+          echo "----- .env (sanitized) -----"
+          grep -E '^(ENV|BASE_URL)' .env || true
+          echo "----------------------------"
+
+      # ---------- Docker build & compose run ----------
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build e2e image (from your Dockerfile)
+        run: docker compose -f docker-compose.yml build e2e
+
+      - name: Run tests in Docker (bind-mount results)
+        shell: bash
+        run: |
+          rm -rf allure-results allure-report playwright-report || true
+          mkdir -p allure-results allure-report playwright-report
+
+          # 👇 Tell Compose to use bind mounts in CI
+          export ALLURE_RESULTS_MOUNT=./allure-results
+          export PLAYWRIGHT_REPORT_MOUNT=./playwright-report
+          export ALLURE_REPORT_MOUNT=./allure-report
+          export ALLURE_HISTORY_MOUNT=./allure-history
+
+          ENV="${ENV}" docker compose run --rm e2e
+
+      # ---------- Check gh-pages existence ----------
+      - name: Check gh-pages existence
+        id: has-ghpages
+        shell: bash
+        run: |
+          if git ls-remote --heads "https://github.com/${{ github.repository }}.git" gh-pages | grep gh-pages >/dev/null; then
+            echo "exists=true" >> "$GITHUB_OUTPUT"
+            echo "✅ gh-pages exists"
+          else
+            echo "exists=false" >> "$GITHUB_OUTPUT"
+            echo "ℹ️ gh-pages does not exist yet (first deploy)"
+          fi
+
+      - name: Checkout gh-pages (history restore)
+        if: always() && steps.has-ghpages.outputs.exists == 'true'
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: gh-pages
+          persist-credentials: false
+
+      - name: Restore Allure history
+        if: always()
+        run: |
+          if [ -d gh-pages/projects/${PROJECT_ID}/history ]; then
+            echo "🔁 Restoring Allure history for project=${PROJECT_ID}"
+            rm -rf allure-results/history
+            mkdir -p allure-results/history
+            cp -r gh-pages/projects/${PROJECT_ID}/history/* allure-results/history/ || true
+          else
+            echo "ℹ️ No previous history found for ${PROJECT_ID}"
+          fi
+
+      # ---------- Generate Allure report (multi-project) ----------
+      - name: Generate Allure Report
+        if: always()
+        run: |
+          docker run --rm \
+            -e ALLURE_PROJECT_ID=${PROJECT_ID} \
+            -v "${{ github.workspace }}:/src" \
+            ghcr.io/kochetkov-ma/allure-cli:2.27.0 \
+            generate /src/allure-results --clean -o /src/allure-report/projects/${PROJECT_ID}
+          ls -lah allure-report/projects/${PROJECT_ID} || true
+
+      # ---------- Upload helpful artifacts ----------
+      - name: Upload Allure HTML (artifact)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-report-${{ env.PROJECT_ID }}
+          path: allure-report/projects/${{ env.PROJECT_ID }}
+          if-no-files-found: warn
+
+      - name: Upload Videos
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-videos-${{ env.PROJECT_ID }}
+          path: allure-report/projects/${{ env.PROJECT_ID }}/data/attachments/*.webm
+          if-no-files-found: ignore
+
+      - name: Upload Failure Screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: failure-screenshots-${{ env.PROJECT_ID }}
+          path: allure-report/projects/${{ env.PROJECT_ID }}/data/attachments/*.png
+          if-no-files-found: ignore
+          retention-days: 7
+
+      # ---------- GitHub Pages publish ----------
+      - name: Setup Pages
+        if: always()
+        uses: actions/configure-pages@v5
+
+      - name: Upload Allure site to Pages
+        if: always()
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: allure-report
+
+      - name: Deploy to GitHub Pages
+        if: always()
+        id: deploy
+        uses: actions/deploy-pages@v4
+
+      - name: Add Report Link to Summary
+        if: always()
+        run: |
+          echo "## ✅ Docker Test Report" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "[👉 View Docker Report](https://ashfaq-viva.github.io/80lv.webAutomation/projects/${PROJECT_ID})" >> $GITHUB_STEP_SUMMARY
