@@ -64,7 +64,7 @@ jobs:
 
           export RUN_NPM_CI=1
           export E2E_USER=root
-          
+
           ENV="${ENV}" docker compose run --rm e2e
 
       # ---------- Check gh-pages existence ----------
@@ -107,9 +107,10 @@ jobs:
           docker run --rm \
             -e ALLURE_PROJECT_ID=${PROJECT_ID} \
             -v "${{ github.workspace }}:/src" \
-            ghcr.io/kochetkov-ma/allure-cli:2.27.0 \
+            -w /src \
+            allureframework/allure2:2.27.0 \
             generate /src/allure-results --clean -o /src/allure-report/projects/${PROJECT_ID}
-          ls -lah allure-report/projects/${PROJECT_ID} || true
+            ls -lah allure-report/projects/${PROJECT_ID} || true
 
       # ---------- Upload helpful artifacts ----------
       - name: Upload Allure HTML (artifact)
