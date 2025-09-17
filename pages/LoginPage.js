@@ -66,14 +66,14 @@ async globalLogin(email, password) {
   } else {
     console.log("No cookies banner found, skipping...");
   }
-  for (let attempt = 1; attempt <= 2; attempt++) {
+  for (let attempt = 1; attempt <= 3; attempt++) {
     try {
       await this.profileLogIn.click();
       // await this._waitForWidget();
       await expect(this.emailTxt).toBeVisible();
       break; 
     } catch (error) {
-      if (attempt === 2) throw error; 
+      if (attempt === 3) throw error; 
       console.log('Retrying login…');
       await this.page.reload();
     }
