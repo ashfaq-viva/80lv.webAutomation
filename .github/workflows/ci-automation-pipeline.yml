@@ -220,7 +220,7 @@ jobs:
       - name: Install mailx + jq
         run: |
           sudo apt-get update
-          sudo apt-get install -y mailutils jq
+          sudo apt-get install -y bsd-mailx
 
       - name: Configure mailx for SMTP
         run: |
