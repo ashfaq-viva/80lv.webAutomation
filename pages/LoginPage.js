@@ -71,7 +71,7 @@ async globalLogin(email, password) {
       await this.profileLogIn.click();
       console.log("Login widget opened.");
       // await this._waitForWidget();
-      await expect(this.emailTxt).toBeVisible();
+      await expect(this.emailTxt).toBeVisible({timeout: 5000});
       console.log("Email Field is visible.");
       break; 
     } catch (error) {
