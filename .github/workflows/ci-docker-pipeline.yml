@@ -62,6 +62,8 @@ jobs:
           export ALLURE_REPORT_MOUNT=./allure-report
           export ALLURE_HISTORY_MOUNT=./allure-history
 
+          export RUN_NPM_CI=1
+          
           ENV="${ENV}" docker compose run --rm e2e
 
       # ---------- Check gh-pages existence ----------
