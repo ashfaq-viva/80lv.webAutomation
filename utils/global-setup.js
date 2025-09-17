@@ -1,4 +1,3 @@
-// globalSetup.js
 import { chromium } from '@playwright/test';
 import { config } from '../config/testConfig.js';
 import fs from 'fs';
@@ -9,6 +8,52 @@ import pwConfig, { ENV, BASE_URL } from '../playwright.config.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+
+// 🔄 added: retry wrapper for login + cookie fetch
+async function loginAndSaveToken(context, role, email, password, tokenPath, lockFilePath, artBase, retries = 3) {
+  const page = await context.newPage();
+  const loginPage = new LoginPage(page);
+
+  for (let attempt = 1; attempt <= retries; attempt++) {
+    console.log(`🔐 [${role}] Attempt ${attempt}/${retries}`);
+
+    try {
+      await page.goto(BASE_URL, { waitUntil: 'networkidle', timeout: 30000 });
+      await loginPage.globalLogin(email, password);
+
+      // 🔄 changed: wait dynamically for token cookie instead of fixed sleep
+      await page.waitForFunction(() => document.cookie.includes('token='), { timeout: 10000 });
+
+      const cookies = await context.cookies();
+      const tokenCookie = cookies.find(c => c.name === 'token');
+
+      if (!tokenCookie) {
+        if (attempt === retries) throw new Error(`❌ Token cookie not found for ${role} after ${retries} retries`);
+        console.warn(`⚠️ Token not found, retrying in 2s...`);
+        await page.waitForTimeout(2000);
+        continue;
+      }
+
+      const token = tokenCookie.value;
+
+      fs.mkdirSync(path.dirname(tokenPath), { recursive: true });
+      fs.writeFileSync(tokenPath, JSON.stringify({ token, cookies }, null, 2));
+      fs.mkdirSync(path.dirname(lockFilePath), { recursive: true });
+      fs.writeFileSync(lockFilePath, 'done');
+
+      console.log(`✅ Token & cookies saved for ${role}`);
+      await page.close();
+      return; // success
+    } catch (err) {
+      if (attempt === retries) {
+        console.error(`❌ Failed after ${retries} attempts: ${err.message}`);
+        throw err;
+      }
+      console.warn(`⚠️ Login attempt ${attempt} failed for ${role}, retrying...`);
+      await page.waitForTimeout(2000);
+    }
+  }
+}
 
 async function globalSetup() {
   console.log(ENV + ' Global setup-------------------------');
@@ -36,69 +81,43 @@ async function globalSetup() {
 
     console.log(`🔐 Logging in as ${role}: ${email}`);
 
-    // per-role artifact folders (safe to upload)
+    // per-role artifact folders
     const artBase = path.resolve(`./artifacts/global-setup/${role}`);
     fs.mkdirSync(artBase, { recursive: true });
 
-    // record trace & video for debugging CI-only flakiness
     const context = await browser.newContext({
       ignoreHTTPSErrors: true,
       recordVideo: { dir: path.join(artBase, 'video') },
     });
 
-    // Trace: start ASAP
     await context.tracing.start({ screenshots: true, snapshots: true, sources: true });
 
-    const page = await context.newPage();
-    const loginPage = new LoginPage(page);
-
     try {
-      await page.goto(BASE_URL, { waitUntil: 'networkidle',timeout:30000 });
-      await loginPage.globalLogin(email, password);
-      await page.waitForTimeout(3000);
+      // 🔄 changed: wrapped login + cookie handling in retry function
+      await loginAndSaveToken(context, role, email, password, tokenPath, lockFilePath, artBase, 3);
 
-      const cookies = await context.cookies();
-      const tokenCookie = cookies.find(c => c.name === 'token');
-      if (!tokenCookie) {
-        throw new Error(`❌ Token cookie not found for ${role}.`);
-      }
-
-      const token = tokenCookie.value;
-
-      fs.mkdirSync(path.dirname(tokenPath), { recursive: true });
-      fs.writeFileSync(tokenPath, JSON.stringify({ token, cookies }, null, 2));
-      fs.mkdirSync(path.dirname(lockFilePath), { recursive: true });
-      fs.writeFileSync(lockFilePath, 'done');
-
-      console.log(`✅ Token & cookies saved for ${role}`);
+      try {
+        await context.tracing.stop({ path: path.join(artBase, 'trace.zip') });
+      } catch {}
+      await context.close();
     } catch (err) {
       console.error(`❌ Global setup failed for ${role}:`, err?.message || err);
 
-      // Dump artifacts for debugging
       try {
+        const page = await context.newPage();
         await page.screenshot({ path: path.join(artBase, 'page.png'), fullPage: true });
-      } catch {}
-      try {
         fs.writeFileSync(path.join(artBase, 'page.html'), await page.content());
       } catch {}
       try {
         await context.tracing.stop({ path: path.join(artBase, 'trace.zip') });
       } catch {}
-
-      await context.close(); // flush video
-      throw err; // fail setup so CI shows red
+      await context.close();
+      throw err;
     }
-
-    // On success, stop trace & close context to flush video
-    try {
-      await context.tracing.stop({ path: path.join(artBase, 'trace.zip') });
-    } catch {}
-    await context.close();
   }
 
   await browser.close();
 }
 
 export default globalSetup;
-
 

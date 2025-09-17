@@ -29,13 +29,13 @@ export class LoginPage extends BasePage {
     await this.expectAndClick(this.allowCookiesBtnOld,'Accept Cookies');
   }
   async _waitForWidget() {
-    for (let attempt = 1; attempt <= 2; attempt++) {
+    for (let attempt = 1; attempt <= 3; attempt++) {
     try {
       await this.profileLogIn.click();
       await this.page.waitForSelector('#xl_widget iframe', { state: 'attached', timeout: 5000 });
       break; 
     } catch (error) {
-      if (attempt === 2) throw error; 
+      if (attempt === 3) throw error; 
       console.log('Retrying widget…');
       await this.page.reload();
     }
@@ -60,23 +60,33 @@ export class LoginPage extends BasePage {
     await this.assert({locator: this.profileLoggedIn,state: 'visible',alias:'Profile Icon'} );
   }
 async globalLogin(email, password) {
-  await this.allowCookiesBtnOld.click();
-  for (let attempt = 1; attempt <= 2; attempt++) {
+  if (await this.allowCookiesBtnOld.isVisible().catch(() => false)) {
+    await this.allowCookiesBtnOld.click();
+    console.log("Cookies accepted.");
+  } else {
+    console.log("No cookies banner found, skipping...");
+  }
+  for (let attempt = 1; attempt <= 4; attempt++) {
     try {
-      // await this.profileLogIn.click();
-      await this._waitForWidget();
+      await this.profileLogIn.click();
+      console.log("Login widget opened.");
+      // await this._waitForWidget();
       await expect(this.emailTxt).toBeVisible();
+      console.log("Email Field is visible.");
       break; 
     } catch (error) {
-      if (attempt === 2) throw error; 
+      if (attempt === 4) throw error; 
       console.log('Retrying login…');
       await this.page.reload();
     }
   }
 
   await this.emailTxt.fill(email);
+  console.log("Email entered.");
   await this.passwordTxt.fill(password);
+  console.log("Password entered.");
   await this.loginBtn.click();
+  console.log("Login button clicked.");
 }
 
   async assertLoggedIn(){
