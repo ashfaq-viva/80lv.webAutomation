@@ -10,11 +10,12 @@ services:
     shm_size: "2gb"
     env_file:
       - .env
+    user: ${E2E_USER:-pwuser} 
     volumes:
       - ./:/app:rw
       - ${ALLURE_RESULTS_MOUNT:-allure-results}:/app/allure-results
       - ${PLAYWRIGHT_REPORT_MOUNT:-playwright-report}:/app/playwright-report
-      
+
     command: ["sh","-lc","${RUN_NPM_CI:+npm ci && } npx playwright test --reporter=line,allure-playwright"]
 
   allure:
