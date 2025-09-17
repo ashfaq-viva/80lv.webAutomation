@@ -63,6 +63,7 @@ jobs:
           export ALLURE_HISTORY_MOUNT=./allure-history
 
           export RUN_NPM_CI=1
+          export E2E_USER=root
           
           ENV="${ENV}" docker compose run --rm e2e
 
