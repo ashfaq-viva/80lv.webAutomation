@@ -190,7 +190,7 @@ jobs:
         run: |
           echo "## ✅ Docker Test Report" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "[👉 View Docker Report](https://ashfaq-viva.github.io/80lv.webAutomation/projects/${PROJECT_ID})" >> $GITHUB_STEP_SUMMARY
+          echo "[👉 View Docker Report](https://ashfaq-viva.github.io/80lv.webAutomation/projects/${{ env.REPORT_ID }})" >> $GITHUB_STEP_SUMMARY
 # ===============================
 # 🔽 Sent Email of results
 # ===============================
@@ -210,14 +210,14 @@ jobs:
 
       - name: Extract Key Test Summary
         run: |
-          if [ -f allure-report/projects/${PROJECT_ID}/widgets/summary.json ]; then
+          if [ -f allure-report/projects/${{ env.REPORT_ID }}/widgets/summary.json ]; then
               jq -r '"80LV Automation Report(Docker): \(.reportName) | Passed: \(.statistic.passed) | Failed: \(.statistic.failed) | Total: \(.statistic.total)"' allure-report/projects/${PROJECT_ID}/widgets/summary.json > summary.txt
               echo "" >> summary.txt
-              echo "👉 View full report: https://ashfaq-viva.github.io/80lv.webAutomation/projects/${PROJECT_ID}" >> summary.txt
+              echo "👉 View full report: https://ashfaq-viva.github.io/80lv.webAutomation/projects/${{ env.REPORT_ID }}" >> summary.txt
           else
               echo "No summary found. Check if tests executed correctly." > summary.txt
               echo "" >> summary.txt
-              echo "👉 View full report: (https://ashfaq-viva.github.io/80lv.webAutomation/projects/${{ env.REPORT_ID }})" >> summary.txt
+              echo "👉 View full report: https://ashfaq-viva.github.io/80lv.webAutomation/projects/${{ env.REPORT_ID }}" >> summary.txt
           fi
 
       - name: Send Email with Allure Report
