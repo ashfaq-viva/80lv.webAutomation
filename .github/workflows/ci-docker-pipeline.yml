@@ -23,6 +23,7 @@ jobs:
     env:
       ENV: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' && '80LV_PROD' || github.event.inputs.target_env }}
       PROJECT_ID: docker
+      REPORT_ID: ${{ github.sha }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -129,8 +130,8 @@ jobs:
         if: always()                                 
         run: |                                       
           allure --version
-          allure generate allure-results --clean -o allure-report/projects/${PROJECT_ID}
-          ls -lah allure-report/projects/${PROJECT_ID} || true
+          allure generate allure-results --clean -o allure-report/projects/${REPORT_ID}
+          ls -lah allure-report/projects/${REPORT_ID} || true
 # ============================
 # 🔽 Upload helpful artifacts
 # ============================
@@ -138,8 +139,8 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: allure-report-${{ env.PROJECT_ID }}
-          path: allure-report/projects/${{ env.PROJECT_ID }}
+          name: allure-report-${{ env.REPORT_ID }}
+          path: allure-report/projects/${{ env.REPORT_ID }}
           if-no-files-found: warn
 
       - name: Upload Global Setup Artifacts
@@ -154,16 +155,16 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: allure-videos-${{ env.PROJECT_ID }}
-          path: allure-report/projects/${{ env.PROJECT_ID }}/data/attachments/*.webm
+          name: allure-videos-${{ env.REPORT_ID }}
+          path: allure-report/projects/${{ env.REPORT_ID }}/data/attachments/*.webm
           if-no-files-found: ignore
 
       - name: Upload Failure Screenshots
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: failure-screenshots-${{ env.PROJECT_ID }}
-          path: allure-report/projects/${{ env.PROJECT_ID }}/data/attachments/*.png
+          name: failure-screenshots-${{ env.REPORT_ID }}
+          path: allure-report/projects/${{ env.REPORT_ID }}/data/attachments/*.png
           if-no-files-found: ignore
           retention-days: 7
 # ========================
@@ -216,7 +217,7 @@ jobs:
           else
               echo "No summary found. Check if tests executed correctly." > summary.txt
               echo "" >> summary.txt
-              echo "👉 View full report: https://ashfaq-viva.github.io/80lv.webAutomation/projects/${PROJECT_ID}" >> summary.txt
+              echo "👉 View full report: (https://ashfaq-viva.github.io/80lv.webAutomation/projects/${{ env.REPORT_ID }})" >> summary.txt
           fi
 
       - name: Send Email with Allure Report
