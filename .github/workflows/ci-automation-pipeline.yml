@@ -259,7 +259,7 @@ on:
     branches: [main]
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -269,7 +269,8 @@ jobs:
 
     env:
         ENV: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' && '80LV_PROD' || github.event.inputs.target_env }}
-        PROJECT_ID: default
+        PROJECT_ID: ci
+        REPORT_ID: ${{ github.run_number }}-${{ github.run_id }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -413,8 +414,17 @@ jobs:
       - name: Generate Allure Report for Pages
         if: always()
         run: |
-          allure generate allure-results --clean -o allure-report/projects/${PROJECT_ID}
-          ls -lah allure-report/projects/${PROJECT_ID} || true
+          allure generate allure-results --clean -o allure-report/projects/${REPORT_ID}
+          ls -lah allure-report/projects/${REPORT_ID} || true
+# ============================
+# 🔽 Merge history and upload
+# ============================
+      - name: Merge existing history with the new report
+        if: always()
+        run: |
+          mkdir -p allure-report/projects/${REPORT_ID}/history
+          cp -r allure-results/history/* allure-report/projects/${REPORT_ID}/history/ || true
+          touch allure-report/projects/${REPORT_ID}/.nojekyll
 # ===============================
 # 🔽 Upload Videos Of Tests
 # ===============================
@@ -423,7 +433,7 @@ jobs:
         uses: actions/upload-artifact@v4 
         with: 
           name: allure-videos 
-          path: allure-report/projects/${{ env.PROJECT_ID }}/data/attachments/*.webm 
+          path: allure-report/projects/${{ env.REPORT_ID }}/data/attachments/*.webm 
           if-no-files-found: ignore
 # ===============================
 # 🔽 Upload Failure Screenshots 
@@ -434,7 +444,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: failure-screenshots
-          path: allure-report/projects/${{ env.PROJECT_ID }}/data/attachments/*.png
+          path: allure-report/projects/${{ env.REPORT_ID }}/data/attachments/*.png
           retention-days: 7
           if-no-files-found: ignore
 
@@ -446,19 +456,23 @@ jobs:
         if: always()
         uses: actions/upload-pages-artifact@v3
         with:
-          path: allure-report
+          path: allure-report/projects/${{ env.REPORT_ID }}
 
       - name: Deploy to GitHub Pages
         if: always()
-        id: deploy
-        uses: actions/deploy-pages@v4
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: allure-report/projects/${{ env.REPORT_ID }}
+          destination_dir: projects/${{ env.REPORT_ID }}
+          keep_files: true
 
       - name: Add Report Link to Summary
         if: always()
         run: |
-          echo "## ✅ Test Report" >> $GITHUB_STEP_SUMMARY
+          echo "## ✅ Ci Test Report" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "[👉 Click to view report](https://ashfaq-viva.github.io/80lv.webAutomation/projects/${PROJECT_ID})" >> $GITHUB_STEP_SUMMARY
+          echo "[👉 Click to view report](https://ashfaq-viva.github.io/80lv.webAutomation/projects/${{ env.REPORT_ID }})" >> $GITHUB_STEP_SUMMARY
 
 # ===============================
 # 🔽 Sent Email of results
@@ -479,15 +493,25 @@ jobs:
 
       - name: Extract Key Test Summary
         run: |
-          if [ -f allure-report/projects/${PROJECT_ID}/widgets/summary.json ]; then
-              jq -r '"80LV Automation Report: \(.reportName) | Passed: \(.statistic.passed) | Failed: \(.statistic.failed) | Total: \(.statistic.total)"' allure-report/projects/${PROJECT_ID}/widgets/summary.json > summary.txt
-              echo "" >> summary.txt
-              echo "👉 View full report: https://ashfaq-viva.github.io/80lv.webAutomation/projects/${PROJECT_ID}" >> summary.txt
+          REPORT_PATH="allure-report/projects/${{ env.REPORT_ID }}/widgets/summary.json"
+          
+          if [ -f "$REPORT_PATH" ]; then
+            jq -r '"80LV Automation Report(CI): Passed: \(.statistic.passed) | Failed: \(.statistic.failed) | Total: \(.statistic.total)"' $REPORT_PATH > summary.txt
+            echo "" >> summary.txt
+            echo "👉 View full report(CI): https://ashfaq-viva.github.io/80lv.webAutomation/projects/${{ env.REPORT_ID }}" >> summary.txt
           else
-              echo "No summary found. Check if tests executed correctly." > summary.txt
-              echo "" >> summary.txt
-              echo "👉 View full report: https://ashfaq-viva.github.io/80lv.webAutomation/projects/${PROJECT_ID}" >> summary.txt
+            echo "No summary found. Check if tests executed correctly." > summary.txt
+            echo "" >> summary.txt
+            echo "👉 View full report(CI): https://ashfaq-viva.github.io/80lv.webAutomation/projects/${{ env.REPORT_ID }}" >> summary.txt
           fi
+        # shell: /usr/bin/bash -e {0}
+        # env:
+        #   ENV: 80LV_PROD
+        #   PROJECT_ID: ci
+        #   REPORT_ID: ${{ github.run_number }}-${{ github.run_id }}
+        #   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.16-8/x64
+        #   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.16-8/x64
+        #   GITHUB_PAGES: true
 
       - name: Send Email with Allure Report
         run: |
