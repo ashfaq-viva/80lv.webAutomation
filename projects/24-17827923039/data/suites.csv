@@ -1,0 +1,3 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Thu Sep 18 12:04:33 UTC 2025","Thu Sep 18 12:04:45 UTC 2025","11543","chrome","functional/1_Login/login.spec.js","Login to 80LV","","","Laptop  @regression Successful login",""
+"passed","Thu Sep 18 12:04:45 UTC 2025","Thu Sep 18 12:04:47 UTC 2025","2535","chrome","functional/1_Login/login.spec.js","Login to 80LV","","","Laptop @regression Successful login with session",""
