@@ -210,15 +210,26 @@ jobs:
 
       - name: Extract Key Test Summary
         run: |
-          if [ -f allure-report/projects/${{ env.REPORT_ID }}/widgets/summary.json ]; then
-              jq -r '"80LV Automation Report(Docker): \(.reportName) | Passed: \(.statistic.passed) | Failed: \(.statistic.failed) | Total: \(.statistic.total)"' allure-report/projects/${PROJECT_ID}/widgets/summary.json > summary.txt
-              echo "" >> summary.txt
-              echo "👉 View full report: https://ashfaq-viva.github.io/80lv.webAutomation/projects/${{ env.REPORT_ID }}" >> summary.txt
+          REPORT_PATH="allure-report/projects/${{ env.REPORT_ID }}/widgets/summary.json"
+          
+          if [ -f "$REPORT_PATH" ]; then
+            jq -r '"80LV Automation Report(Docker): \(.reportName) | Passed: \(.statistic.passed) | Failed: \(.statistic.failed) | Total: \(.statistic.total)"' $REPORT_PATH > summary.txt
+            echo "" >> summary.txt
+            echo "👉 View full report(docker): https://ashfaq-viva.github.io/80lv.webAutomation/projects/${{ env.REPORT_ID }}" >> summary.txt
           else
-              echo "No summary found. Check if tests executed correctly." > summary.txt
-              echo "" >> summary.txt
-              echo "👉 View full report: https://ashfaq-viva.github.io/80lv.webAutomation/projects/${{ env.REPORT_ID }}" >> summary.txt
+            echo "No summary found. Check if tests executed correctly." > summary.txt
+            echo "" >> summary.txt
+            echo "👉 View full report: https://ashfaq-viva.github.io/80lv.webAutomation/projects/${{ env.REPORT_ID }}" >> summary.txt
           fi
+        shell: /usr/bin/bash -e {0}
+        env:
+          ENV: 80LV_PROD
+          PROJECT_ID: docker
+          REPORT_ID: 4ec2dabd8685d7e38b302415606059436f1a9e06
+          JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.16-8/x64
+          JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.16-8/x64
+          GITHUB_PAGES: true
+
 
       - name: Send Email with Allure Report
         run: |
