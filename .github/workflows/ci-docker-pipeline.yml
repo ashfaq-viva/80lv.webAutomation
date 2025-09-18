@@ -187,12 +187,16 @@ jobs:
         if: always()
         uses: actions/upload-pages-artifact@v3
         with:
-          path: allure-report
+          path: allure-report/projects/${{ env.REPORT_ID }}
 
       - name: Deploy to GitHub Pages
         if: always()
-        id: deploy
-        uses: actions/deploy-pages@v4
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: allure-report/projects/${{ env.REPORT_ID }}
+          destination_dir: projects/${{ env.REPORT_ID }}
+          keep_files: true
 
       - name: Add Report Link to Summary
         if: always()
