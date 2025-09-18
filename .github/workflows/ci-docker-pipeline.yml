@@ -226,7 +226,7 @@ jobs:
           REPORT_PATH="allure-report/projects/${{ env.REPORT_ID }}/widgets/summary.json"
           
           if [ -f "$REPORT_PATH" ]; then
-            jq -r '"80LV Automation Report(Docker): \(.reportName) | Passed: \(.statistic.passed) | Failed: \(.statistic.failed) | Total: \(.statistic.total)"' $REPORT_PATH > summary.txt
+            jq -r '"80LV Automation Report(Docker): Passed: \(.statistic.passed) | Failed: \(.statistic.failed) | Total: \(.statistic.total)"' $REPORT_PATH > summary.txt
             echo "" >> summary.txt
             echo "👉 View full report(Docker): https://ashfaq-viva.github.io/80lv.webAutomation/projects/${{ env.REPORT_ID }}" >> summary.txt
           else
