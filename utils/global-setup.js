@@ -56,7 +56,7 @@ async function loginAndSaveToken(context, role, email, password, tokenPath, lock
 }
 
 async function globalSetup() {
-  console.log(ENV + ' Global setup-------------------------');
+  console.log('TC_001:Global setup---------');
   console.log(`🌍 Using ENV: ${ENV}, baseURL: ${BASE_URL}`);
 
   const browser = await chromium.launch({
