@@ -1,4 +1,3 @@
-// const { defineConfig, devices, chromium } = require('@playwright/test');
 import { defineConfig} from '@playwright/test';
 import { config as fallback } from './config/testConfig.js';
 import dotenv from 'dotenv';
@@ -21,7 +20,7 @@ const baseUrlMap = {
 };
 const BASE_URL = baseUrlMap[ENV] || fallback[ENV];
 if (!BASE_URL) throw new Error(`BASE_URL not set for ${ENV} in .env`);
-console.log(ENV + '-------------------------');
+console.log('-----------------' + ENV + '-----------------');
 /**
  * @see https://playwright.dev/docs/test-configuration
  */
