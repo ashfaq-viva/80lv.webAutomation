@@ -137,7 +137,7 @@ async expectAndClick(
       // --- API assertion and Allure logging
       if (response && apiAssertion) {
         const actualStatus = response.status();
-        console.log(`🔗 Captured API: ${response.url()} → Method: ${response.request().method()} | Status: ${actualStatus}`); 
+        console.log(`🌐 Captured API: ${response.url()} → Method: ${response.request().method()} | Status: ${actualStatus}`); 
         console.log(`🔗 Expected API: ${apiAssertion.url} → Method: ${apiAssertion.method} | Status: ${apiAssertion.expectedStatus}`); 
         const passed = actualStatus === apiAssertion.expectedStatus; 
         console.log(`✅Assertion API: ${passed ? "Passed " : "Failed ❌"}`);
