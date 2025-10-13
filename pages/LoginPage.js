@@ -1,6 +1,6 @@
 import { expect } from '@playwright/test';
 import BasePage from './BasePage';
-
+import { config } from '../config/testConfig.js';
 export class LoginPage extends BasePage {
   constructor(page, context) {
     super(page, context);
@@ -15,18 +15,17 @@ export class LoginPage extends BasePage {
     this.loginBtn= page.locator('#xl_widget iframe').contentFrame().getByTestId('login-form__button-submit');
     this.profileLoggedIn = page.getByRole('img', { name: 'profile_loggedin' });
     this.profileLogIn = page.getByRole('img', { name: 'profile_login' });
-    this.articleMenu= page.locator('div').filter({ hasText: /^Articles$/ }).nth(1);
-    this.allArticlesSubMenu= page.getByRole('link', { name: 'All articles' });
-    this.articleMenuOld = page.getByRole('banner').getByText('Articles');
-    this.allArticlesSubMenuOld = page.getByText('All Articles', { exact: true });
-    this.specificArticleLink= page.getByRole('link', { name: 'Hollow Knight: Silksong\'s' });
+    this.profileLogInOld = page.getByRole('img', { name: 'profile-login' });
+    this.navbarThreeDotMenuOld =  page.getByRole('button', { name: 'Menu' });
+    this.profileLoggedInOld = page.locator(`text=${config.credentials.talentEmail}`);
+    this.profileLoggedInResponsive = page.getByRole('link', { name: 'profile-loggedin Profile' })
   }
 
   async visit() {
     await this.page.goto('/',{waitUntil:'networkidle'} );
   }
   async acceptCookies(){
-    await this.expectAndClick(this.allowCookiesBtnOld,'Accept Cookies');
+    await this.expectAndClick(this.allowCookiesBtnOld,'Accept Cookies','cookieApi:GET');
   }
   async _waitForWidget() {
     for (let attempt = 1; attempt <= 3; attempt++) {
@@ -40,24 +39,30 @@ export class LoginPage extends BasePage {
       await this.page.reload();
     }
   }
-    
-    // give the embedded app time to boot/render
-    // await this.page.waitForLoadState('networkidle');
   }
   async doLogin(username,password) {
-    // await this.expectAndClick(this.profileLogIn,'Login Link');
    await this.expectAndClick(
   {
     default: this.profileLogIn,
-    Tablet:  this.profileLogIn,
-    Mobile:  this.profileLogIn,
+    Laptop:  [this.navbarThreeDotMenuOld,this.profileLogInOld],
+    Tablet:  [this.navbarThreeDotMenuOld,this.profileLogInOld],
+    Mobile:  [this.navbarThreeDotMenuOld,this.profileLogInOld],
   },
-  'Login Button'
+  'Login Button','loginApi:POST'
 );
     await this.waitAndFill(this.emailTxt,username,'Email');
     await this.waitAndFill(this.passwordTxt, password,'Password');
-    await this.expectAndClick(this.loginBtn,'Login Button');
-    await this.assert({locator: this.profileLoggedIn,state: 'visible',alias:'Profile Icon'} );
+    await this.expectAndClick(this.loginBtn,'Login Button','loginApi:POST');
+    await this.assert({
+        locator: {
+          default: this.profileLoggedIn,
+          Laptop: [this.navbarThreeDotMenuOld, this.profileLogInOldResponsive],
+          Tablet: [this.navbarThreeDotMenuOld, this.profileLogInOldResponsive],
+          Mobile: [this.navbarThreeDotMenuOld, this.profileLogInOldResponsive],
+        },
+        state: 'visible',
+        alias: 'Logged-in Profile Icon'
+      });
   }
 async globalLogin(email, password) {
   if (await this.allowCookiesBtnOld.isVisible().catch(() => false)) {
@@ -70,7 +75,6 @@ async globalLogin(email, password) {
     try {
       await this.profileLogIn.click();
       console.log("Login widget opened.");
-      // await this._waitForWidget();
       await expect(this.emailTxt).toBeVisible({timeout: 5000});
       console.log("Email Field is visible.");
       break; 
@@ -90,16 +94,16 @@ async globalLogin(email, password) {
 }
 
   async assertLoggedIn(){
-    await this.assert({locator: this.profileLoggedIn,state: 'visible',alias:'Profile Icon'} );
-  }
-
-   async ariticlePage(){
-    await this.expectAndClick(this.articleMenuOld,'Article Menu');
-    await this.expectAndClick(this.allArticlesSubMenuOld,'All Articles Sub Menu');
-    // await this.expectAndClick(this.allArticlesSubMenuOld,'All Articles Sub Menu',{
-    //   apiSlug: 'articles/hollow-knight-silksong-s-steam-score-drops-over-poor-chinese-localization',
-    //   method: 'GET'
-    // });
+     await this.assert({
+        locator: {
+          Desktop: this.profileLoggedIn,
+          Laptop: [this.navbarThreeDotMenuOld, this.profileLogInOldResponsive],
+          Tablet: [this.navbarThreeDotMenuOld, this.profileLogInOldResponsive],
+          Mobile: [this.navbarThreeDotMenuOld, this.profileLogInOldResponsive],
+        },
+        state: 'visible',
+        alias: 'Logged-in Profile Icon'
+      });
   }
 }
 
