@@ -2,7 +2,7 @@ import { setViewport, Laptop, Mobile,Desktop,Tablet } from '../../../utils/viewp
 import { test } from '../../../utils/sessionUse.js';
 import { config } from '../../../config/testConfig.js';
 
-test.describe.serial('Login to 80LV', () => {
+test.describe('Login to 80LV', () => {
   
   for (const vp of [Desktop,Laptop,Tablet,Mobile]) {
     test(`${vp.name}  @regression TC_002:Successful login(Without session)`, async ({ page, loginPage }) => {
