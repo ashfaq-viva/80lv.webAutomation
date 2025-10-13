@@ -1,6 +1,7 @@
 import { defineConfig} from '@playwright/test';
 import { config as fallback } from './config/testConfig.js';
 import dotenv from 'dotenv';
+import os from 'os';
 
 dotenv.config();
 
@@ -46,7 +47,7 @@ export default defineConfig({
   retries: process.env.CI ? 2 : 0,
   // retries: 2,
   /* Opt out of parallel tests on CI. */
-  workers: process.env.CI ? 1 : 1,
+  workers: process.env.CI ? 5 : Math.min(os.cpus().length - 1, 5),
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   // reporter: 'html',
   reporter: [
