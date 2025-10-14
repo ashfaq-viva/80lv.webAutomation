@@ -110,6 +110,8 @@ jobs:
           echo "TALENT_PASSWORD=${{ secrets.TALENT_PASSWORD }}"         >> .env
           echo "RECRUITER_EMAIL=${{ secrets.RECRUITER_EMAIL }}"         >> .env
           echo "RECRUITER_PASSWORD=${{ secrets.RECRUITER_PASSWORD }}"   >> .env
+          echo "GMAIL_EMAIL=${{ secrets.GMAIL_EMAIL }}"   >> .env
+          echo "GMAIL_APP_PASSWORD=${{ secrets.GMAIL_APP_PASSWORD }}"   >> .env
           echo "ENV=${ENV}" >> .env
           echo "----- .env (sanitized) -----"
           grep -E '^(ENV|BASE_URL)' .env || true
