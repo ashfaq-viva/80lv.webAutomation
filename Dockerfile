@@ -1,5 +1,5 @@
 # ✅ Official image with Chromium/Firefox/WebKit + deps preinstalled
-FROM mcr.microsoft.com/playwright:v1.55.0-jammy
+FROM mcr.microsoft.com/playwright:v1.56.0-jammy
 
 # Use non-root user that Playwright image provides
 USER pwuser
