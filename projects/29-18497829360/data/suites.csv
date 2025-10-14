@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Tue Oct 14 13:21:59 UTC 2025","Tue Oct 14 13:22:27 UTC 2025","28712","chrome","functional/2_Signup/signup.spec.js","Signup to 80LV","","","Desktop  @regression TC_010:Successful Sign up",""
+"passed","Tue Oct 14 13:21:59 UTC 2025","Tue Oct 14 13:22:30 UTC 2025","30897","chrome","functional/2_Signup/signup.spec.js","Signup to 80LV","","","Laptop  @regression TC_010:Successful Sign up",""
+"passed","Tue Oct 14 13:21:59 UTC 2025","Tue Oct 14 13:22:30 UTC 2025","31355","chrome","functional/2_Signup/signup.spec.js","Signup to 80LV","","","Tablet  @regression TC_010:Successful Sign up",""
+"passed","Tue Oct 14 13:21:59 UTC 2025","Tue Oct 14 13:22:25 UTC 2025","26290","chrome","functional/2_Signup/signup.spec.js","Signup to 80LV","","","Mobile  @regression TC_010:Successful Sign up",""
