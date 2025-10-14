@@ -1,0 +1,712 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e5]:
+        - img "logo80lv" [ref=e8] [cursor=pointer]
+        - generic [ref=e9]:
+          - link "Order Research" [ref=e10] [cursor=pointer]:
+            - /url: "https://80level.typeform.com/request-form?utm_source=website_80lv&utm_medium=top-button "
+          - button "Menu" [ref=e11] [cursor=pointer]:
+            - img "Menu" [ref=e13]
+      - generic [ref=e14]:
+        - generic [ref=e17]:
+          - link "logo80lv" [ref=e18] [cursor=pointer]:
+            - /url: /
+            - img "logo80lv" [ref=e19]
+          - link "Order Research" [ref=e20] [cursor=pointer]:
+            - /url: "https://80level.typeform.com/request-form?utm_source=website_80lv&utm_medium=top-button "
+          - button "Close" [ref=e21] [cursor=pointer]:
+            - img "Close" [ref=e23]
+        - generic [ref=e26]:
+          - generic [ref=e27] [cursor=pointer]:
+            - text: Articles
+            - img "click_arrow" [ref=e28]
+          - generic [ref=e29] [cursor=pointer]: Research
+          - generic [ref=e30] [cursor=pointer]:
+            - text: Talents
+            - img "click_arrow" [ref=e31]
+          - generic [ref=e32] [cursor=pointer]: Events
+          - generic [ref=e33] [cursor=pointer]: Workshops
+          - generic [ref=e34] [cursor=pointer]:
+            - text: About
+            - img "click_arrow" [ref=e35]
+          - generic [ref=e36] [cursor=pointer]:
+            - text: Advertise
+            - img "player" [ref=e37]
+          - generic [ref=e38] [cursor=pointer]:
+            - text: Search
+            - img "search" [ref=e39]
+        - generic [ref=e42] [cursor=pointer]:
+          - img "profile-login" [ref=e43]
+          - generic [ref=e44]: LogIn
+    - main [ref=e46]:
+      - link [ref=e50] [cursor=pointer]:
+        - /url: https://80lv.gumroad.com/l/cloud-gaming-and-beyond-survey?utm_source=website_80lv&utm_medium=big-image-banner&utm_campaign=cloudgaming
+      - generic [ref=e53]:
+        - generic [ref=e55]:
+          - generic [ref=e59]:
+            - link [ref=e61] [cursor=pointer]:
+              - /url: /articles/news
+            - heading "News" [level=1] [ref=e64]:
+              - link "News" [ref=e65] [cursor=pointer]:
+                - /url: /articles/news
+            - list [ref=e66]:
+              - generic [ref=e68]:
+                - link [ref=e69] [cursor=pointer]:
+                  - /url: /articles/check-out-this-fantastic-wip-portrait-of-pedro-pascal
+                - generic [ref=e72]:
+                  - heading "Check Out This Fantastic WIP Portrait of Pedro Pascal" [level=3] [ref=e73]:
+                    - link "Check Out This Fantastic WIP Portrait of Pedro Pascal" [ref=e74] [cursor=pointer]:
+                      - /url: /articles/check-out-this-fantastic-wip-portrait-of-pedro-pascal
+                  - list [ref=e77]:
+                    - listitem [ref=e78] [cursor=pointer]:
+                      - link "News" [ref=e79]:
+                        - /url: /articles/news
+                    - listitem [ref=e80] [cursor=pointer]: "+5"
+              - generic [ref=e82]:
+                - link [ref=e83] [cursor=pointer]:
+                  - /url: /articles/breathing-sea-inside-magical-fan-made-in-live2d
+                - generic [ref=e86]:
+                  - heading "Breathing Sea inside Magical Fan Made in Live2D" [level=3] [ref=e87]:
+                    - link "Breathing Sea inside Magical Fan Made in Live2D" [ref=e88] [cursor=pointer]:
+                      - /url: /articles/breathing-sea-inside-magical-fan-made-in-live2d
+                  - list [ref=e91]:
+                    - listitem [ref=e92] [cursor=pointer]:
+                      - link "News" [ref=e93]:
+                        - /url: /articles/news
+                    - listitem [ref=e94] [cursor=pointer]:
+                      - link "2D Art" [ref=e95]:
+                        - /url: /articles/2d-art
+                    - listitem [ref=e96] [cursor=pointer]:
+                      - link "Animation" [ref=e97]:
+                        - /url: /articles/animation
+              - generic [ref=e99]:
+                - link [ref=e100] [cursor=pointer]:
+                  - /url: /articles/new-method-for-achieving-guaranteed-penetration-free-3d-simulation
+                - generic [ref=e103]:
+                  - heading "New Method For Achieving Guaranteed Penetration-Free 3D Simulation" [level=3] [ref=e104]:
+                    - link "New Method For Achieving Guaranteed Penetration-Free 3D Simulation" [ref=e105] [cursor=pointer]:
+                      - /url: /articles/new-method-for-achieving-guaranteed-penetration-free-3d-simulation
+                  - list [ref=e108]:
+                    - listitem [ref=e109] [cursor=pointer]:
+                      - link "News" [ref=e110]:
+                        - /url: /articles/news
+              - generic [ref=e112]:
+                - link [ref=e113] [cursor=pointer]:
+                  - /url: /articles/artist-creates-tesseract-from-interstellar-other-cool-projects-in-blender-5-0
+                - generic [ref=e116]:
+                  - heading "Artist Creates Tesseract from Interstellar & Other Cool Projects in Blender 5.0" [level=3] [ref=e117]:
+                    - link "Artist Creates Tesseract from Interstellar & Other Cool Projects in Blender 5.0" [ref=e118] [cursor=pointer]:
+                      - /url: /articles/artist-creates-tesseract-from-interstellar-other-cool-projects-in-blender-5-0
+                  - list [ref=e121]:
+                    - listitem [ref=e122] [cursor=pointer]:
+                      - link "News" [ref=e123]:
+                        - /url: /articles/news
+                    - listitem [ref=e124] [cursor=pointer]:
+                      - link "Blender" [ref=e125]:
+                        - /url: /articles/blender
+              - generic [ref=e127]:
+                - link [ref=e128] [cursor=pointer]:
+                  - /url: /articles/houdini-connect-bringing-fallout-tv-series-to-life
+                - generic [ref=e131]:
+                  - 'heading "Houdini Connect: Bringing Fallout TV Series To Life" [level=3] [ref=e132]':
+                    - 'link "Houdini Connect: Bringing Fallout TV Series To Life" [ref=e133] [cursor=pointer]':
+                      - /url: /articles/houdini-connect-bringing-fallout-tv-series-to-life
+                  - list [ref=e136]:
+                    - listitem [ref=e137] [cursor=pointer]:
+                      - link "News" [ref=e138]:
+                        - /url: /articles/news
+                    - listitem [ref=e139] [cursor=pointer]:
+                      - link "Houdini" [ref=e140]:
+                        - /url: /articles/houdini
+                    - listitem [ref=e141] [cursor=pointer]:
+                      - link "VFX" [ref=e142]:
+                        - /url: /articles/vfx
+              - generic [ref=e144]:
+                - link [ref=e145] [cursor=pointer]:
+                  - /url: /articles/check-out-sekiro-style-grappling-hook-mechanics-in-upcoming-roguelite
+                - generic [ref=e148]:
+                  - heading "Check Out Sekiro-Style Grappling Hook Mechanics in Upcoming Roguelite" [level=3] [ref=e149]:
+                    - link "Check Out Sekiro-Style Grappling Hook Mechanics in Upcoming Roguelite" [ref=e150] [cursor=pointer]:
+                      - /url: /articles/check-out-sekiro-style-grappling-hook-mechanics-in-upcoming-roguelite
+                  - list [ref=e153]:
+                    - listitem [ref=e154] [cursor=pointer]:
+                      - link "News" [ref=e155]:
+                        - /url: /articles/news
+                    - listitem [ref=e156] [cursor=pointer]:
+                      - link "Video Games" [ref=e157]:
+                        - /url: /articles/video-game
+            - generic [ref=e158]:
+              - button "Subscribe to newsletter" [ref=e159] [cursor=pointer]:
+                - generic [ref=e160]:
+                  - text: Subscribe to newsletter
+                  - img [ref=e161]
+              - link "Check out the latest news" [ref=e163] [cursor=pointer]:
+                - /url: /articles/news
+                - generic [ref=e164]: Check out the latest news
+                - img [ref=e166]
+          - generic [ref=e170]:
+            - heading "Latest articles" [level=5] [ref=e172]
+            - generic [ref=e175]:
+              - article [ref=e177]:
+                - generic [ref=e178]:
+                  - heading "Check Out This Fantastic WIP Portrait of Pedro Pascal" [level=2] [ref=e179]:
+                    - link "Check Out This Fantastic WIP Portrait of Pedro Pascal" [ref=e180] [cursor=pointer]:
+                      - /url: /articles/check-out-this-fantastic-wip-portrait-of-pedro-pascal
+                  - generic [ref=e182]: Amirhosein Sajadi showcased a lifelike recreation of the actor.
+                  - generic [ref=e183]:
+                    - link "Emma Collins Oct 14, 2025" [ref=e184] [cursor=pointer]:
+                      - /url: /author/emma-collins
+                      - paragraph [ref=e187]: Emma Collins
+                      - paragraph [ref=e188]: Oct 14, 2025
+                    - img [ref=e191] [cursor=pointer]
+                - generic [ref=e193]:
+                  - link [ref=e195] [cursor=pointer]:
+                    - /url: /articles/check-out-this-fantastic-wip-portrait-of-pedro-pascal
+                  - list [ref=e200]:
+                    - listitem [ref=e201] [cursor=pointer]:
+                      - link "News" [ref=e202]:
+                        - /url: /articles/news
+                    - listitem [ref=e203] [cursor=pointer]:
+                      - link "Adobe Substance 3D" [ref=e204]:
+                        - /url: /articles/substance
+                    - listitem [ref=e205] [cursor=pointer]: "+4"
+              - article [ref=e207]:
+                - generic [ref=e208]:
+                  - heading "Breathing Sea inside Magical Fan Made in Live2D" [level=2] [ref=e209]:
+                    - link "Breathing Sea inside Magical Fan Made in Live2D" [ref=e210] [cursor=pointer]:
+                      - /url: /articles/breathing-sea-inside-magical-fan-made-in-live2d
+                  - generic [ref=e212]: A beautiful project by Rubrta.
+                  - generic [ref=e213]:
+                    - link "Gloria Levine Oct 14, 2025" [ref=e214] [cursor=pointer]:
+                      - /url: /author/gloria-levine
+                      - paragraph [ref=e217]: Gloria Levine
+                      - paragraph [ref=e218]: Oct 14, 2025
+                    - img [ref=e221] [cursor=pointer]
+                - generic [ref=e223]:
+                  - link [ref=e225] [cursor=pointer]:
+                    - /url: /articles/breathing-sea-inside-magical-fan-made-in-live2d
+                  - list [ref=e230]:
+                    - listitem [ref=e231] [cursor=pointer]:
+                      - link "News" [ref=e232]:
+                        - /url: /articles/news
+                    - listitem [ref=e233] [cursor=pointer]:
+                      - link "2D Art" [ref=e234]:
+                        - /url: /articles/2d-art
+                    - listitem [ref=e235] [cursor=pointer]:
+                      - link "Animation" [ref=e236]:
+                        - /url: /articles/animation
+              - article [ref=e238]:
+                - generic [ref=e239]:
+                  - heading "New Method For Achieving Guaranteed Penetration-Free 3D Simulation" [level=2] [ref=e240]:
+                    - link "New Method For Achieving Guaranteed Penetration-Free 3D Simulation" [ref=e241] [cursor=pointer]:
+                      - /url: /articles/new-method-for-achieving-guaranteed-penetration-free-3d-simulation
+                  - generic [ref=e243]: Learn more about Offset Geometric Contact and access the code.
+                  - generic [ref=e244]:
+                    - link "Amber Rutherford Oct 14, 2025" [ref=e245] [cursor=pointer]:
+                      - /url: /author/amber-rutherford
+                      - paragraph [ref=e248]: Amber Rutherford
+                      - paragraph [ref=e249]: Oct 14, 2025
+                    - img [ref=e252] [cursor=pointer]
+                - generic [ref=e254]:
+                  - link [ref=e256] [cursor=pointer]:
+                    - /url: /articles/new-method-for-achieving-guaranteed-penetration-free-3d-simulation
+                  - list [ref=e261]:
+                    - listitem [ref=e262] [cursor=pointer]:
+                      - link "News" [ref=e263]:
+                        - /url: /articles/news
+          - generic [ref=e266]:
+            - generic [ref=e267]:
+              - generic [ref=e268]:
+                - heading "Join a growing portfolio platform" [level=2] [ref=e269]
+                - heading "80 Level Talent is a human-powered job-matching platform for you and your creative portfolio" [level=3] [ref=e270]
+              - link "Explore more talents" [ref=e271] [cursor=pointer]:
+                - /url: /talent/
+                - button "Explore more talents" [ref=e272]
+            - generic [ref=e275]:
+              - link "Tudor Ani 3D Props & Environment Artist" [ref=e276] [cursor=pointer]:
+                - /url: /talent/p/tudor-ani
+                - generic [ref=e279]:
+                  - generic [ref=e281]: Tudor Ani
+                  - generic [ref=e282]: 3D Props & Environment Artist
+              - link "Roy Douglas 3D Character Artist/Generalist" [ref=e283] [cursor=pointer]:
+                - /url: /talent/p/roy-douglas
+                - generic [ref=e286]:
+                  - generic [ref=e288]: Roy Douglas
+                  - generic [ref=e289]: 3D Character Artist/Generalist
+              - link "Abbas Nikmanesh Sigaroudi 3D Character Artist | Think Tank Training Centre Alumni" [ref=e290] [cursor=pointer]:
+                - /url: /talent/p/abbas-nikmaneshsigaroudi
+                - generic [ref=e293]:
+                  - generic [ref=e295]: Abbas Nikmanesh Sigaroudi
+                  - generic [ref=e296]: 3D Character Artist | Think Tank Training Centre Alumni
+              - link "Aysu Hoscan 3D Game Artist" [ref=e297] [cursor=pointer]:
+                - /url: /talent/p/aysu-hoscan
+                - generic [ref=e300]:
+                  - generic [ref=e302]: Aysu Hoscan
+                  - generic [ref=e303]: 3D Game Artist
+              - link "Mehmet Alp Tamer Environment / Lighting Artist" [ref=e304] [cursor=pointer]:
+                - /url: /talent/p/mehmetalp-tamer
+                - generic [ref=e307]:
+                  - generic [ref=e309]: Mehmet Alp Tamer
+                  - generic [ref=e310]: Environment / Lighting Artist
+              - link "Arnaud Jézéquel 3d Character Artist / Animator" [ref=e311] [cursor=pointer]:
+                - /url: /talent/p/arnaud-jzquel
+                - generic [ref=e314]:
+                  - generic [ref=e316]: Arnaud Jézéquel
+                  - generic [ref=e317]: 3d Character Artist / Animator
+              - link "Arden Vald Art Director & Concept Artist" [ref=e318] [cursor=pointer]:
+                - /url: /talent/p/arden-vald
+                - generic [ref=e321]:
+                  - generic [ref=e323]: Arden Vald
+                  - generic [ref=e324]: Art Director & Concept Artist
+              - link "Artsiom Hvozdz 3D Environment Artist" [ref=e325] [cursor=pointer]:
+                - /url: /talent/p/artsiom-hvozdz
+                - generic [ref=e328]:
+                  - generic [ref=e330]: Artsiom Hvozdz
+                  - generic [ref=e331]: 3D Environment Artist
+              - link "Ege Ovacık 3D Character Artist" [ref=e332] [cursor=pointer]:
+                - /url: /talent/p/ege-ovack
+                - generic [ref=e335]:
+                  - generic [ref=e337]: Ege Ovacık
+                  - generic [ref=e338]: 3D Character Artist
+          - generic [ref=e341]:
+            - heading "Latest articles" [level=5] [ref=e343]
+            - generic [ref=e345]:
+              - article [ref=e347]:
+                - generic [ref=e348]:
+                  - heading "Artist Creates Tesseract from Interstellar & Other Cool Projects in Blender 5.0" [level=2] [ref=e349]:
+                    - link "Artist Creates Tesseract from Interstellar & Other Cool Projects in Blender 5.0" [ref=e350] [cursor=pointer]:
+                      - /url: /articles/artist-creates-tesseract-from-interstellar-other-cool-projects-in-blender-5-0
+                  - generic [ref=e352]: Shahzod Boyhonov will show you how well the new version works.
+                  - generic [ref=e353]:
+                    - link "Gloria Levine Oct 14, 2025" [ref=e354] [cursor=pointer]:
+                      - /url: /author/gloria-levine
+                      - paragraph [ref=e357]: Gloria Levine
+                      - paragraph [ref=e358]: Oct 14, 2025
+                    - img [ref=e361] [cursor=pointer]
+                - generic [ref=e363]:
+                  - link [ref=e365] [cursor=pointer]:
+                    - /url: /articles/artist-creates-tesseract-from-interstellar-other-cool-projects-in-blender-5-0
+                  - list [ref=e370]:
+                    - listitem [ref=e371] [cursor=pointer]:
+                      - link "News" [ref=e372]:
+                        - /url: /articles/news
+                    - listitem [ref=e373] [cursor=pointer]:
+                      - link "Blender" [ref=e374]:
+                        - /url: /articles/blender
+              - article [ref=e376]:
+                - generic [ref=e377]:
+                  - 'heading "Houdini Connect: Bringing Fallout TV Series To Life" [level=2] [ref=e378]':
+                    - 'link "Houdini Connect: Bringing Fallout TV Series To Life" [ref=e379] [cursor=pointer]':
+                      - /url: /articles/houdini-connect-bringing-fallout-tv-series-to-life
+                  - generic [ref=e381]: RISE dived into their work on Amazon's Fallout show and the Christmas comedy Red One.
+                  - generic [ref=e382]:
+                    - link "Amber Rutherford Oct 14, 2025" [ref=e383] [cursor=pointer]:
+                      - /url: /author/amber-rutherford
+                      - paragraph [ref=e386]: Amber Rutherford
+                      - paragraph [ref=e387]: Oct 14, 2025
+                    - img [ref=e390] [cursor=pointer]
+                - generic [ref=e392]:
+                  - link [ref=e394] [cursor=pointer]:
+                    - /url: /articles/houdini-connect-bringing-fallout-tv-series-to-life
+                  - list [ref=e399]:
+                    - listitem [ref=e400] [cursor=pointer]:
+                      - link "News" [ref=e401]:
+                        - /url: /articles/news
+                    - listitem [ref=e402] [cursor=pointer]:
+                      - link "Houdini" [ref=e403]:
+                        - /url: /articles/houdini
+                    - listitem [ref=e404] [cursor=pointer]:
+                      - link "VFX" [ref=e405]:
+                        - /url: /articles/vfx
+              - article [ref=e407]:
+                - generic [ref=e408]:
+                  - heading "Check Out Sekiro-Style Grappling Hook Mechanics in Upcoming Roguelite" [level=2] [ref=e409]:
+                    - link "Check Out Sekiro-Style Grappling Hook Mechanics in Upcoming Roguelite" [ref=e410] [cursor=pointer]:
+                      - /url: /articles/check-out-sekiro-style-grappling-hook-mechanics-in-upcoming-roguelite
+                  - generic [ref=e412]: "The developer of Rewilders: The Lost Spring showcased WIP gameplay footage."
+                  - generic [ref=e413]:
+                    - link "Emma Collins Oct 14, 2025" [ref=e414] [cursor=pointer]:
+                      - /url: /author/emma-collins
+                      - paragraph [ref=e417]: Emma Collins
+                      - paragraph [ref=e418]: Oct 14, 2025
+                    - img [ref=e421] [cursor=pointer]
+                - generic [ref=e423]:
+                  - link [ref=e425] [cursor=pointer]:
+                    - /url: /articles/check-out-sekiro-style-grappling-hook-mechanics-in-upcoming-roguelite
+                  - list [ref=e430]:
+                    - listitem [ref=e431] [cursor=pointer]:
+                      - link "News" [ref=e432]:
+                        - /url: /articles/news
+                    - listitem [ref=e433] [cursor=pointer]:
+                      - link "Video Games" [ref=e434]:
+                        - /url: /articles/video-game
+          - generic [ref=e437]:
+            - heading "Latest articles" [level=5] [ref=e439]
+            - generic [ref=e441]:
+              - article [ref=e443]:
+                - generic [ref=e444]:
+                  - heading "Post-Apocalyptic Survival FPS Set in Harsh North Received a Final Demo" [level=2] [ref=e445]:
+                    - link "Post-Apocalyptic Survival FPS Set in Harsh North Received a Final Demo" [ref=e446] [cursor=pointer]:
+                      - /url: /articles/post-apocalyptic-survival-fps-set-in-harsh-north-received-a-final-demo
+                  - generic [ref=e448]: Try out the challenging adventure of Road to Vostok.
+                  - generic [ref=e449]:
+                    - link "Emma Collins Oct 14, 2025" [ref=e450] [cursor=pointer]:
+                      - /url: /author/emma-collins
+                      - paragraph [ref=e453]: Emma Collins
+                      - paragraph [ref=e454]: Oct 14, 2025
+                    - img [ref=e457] [cursor=pointer]
+                - generic [ref=e459]:
+                  - link [ref=e461] [cursor=pointer]:
+                    - /url: /articles/post-apocalyptic-survival-fps-set-in-harsh-north-received-a-final-demo
+                  - list [ref=e466]:
+                    - listitem [ref=e467] [cursor=pointer]:
+                      - link "News" [ref=e468]:
+                        - /url: /articles/news
+                    - listitem [ref=e469] [cursor=pointer]:
+                      - link "Video Games" [ref=e470]:
+                        - /url: /articles/video-game
+                    - listitem [ref=e471] [cursor=pointer]:
+                      - link "Godot" [ref=e472]:
+                        - /url: /articles/godot
+              - article [ref=e474]:
+                - generic [ref=e475]:
+                  - heading "Developer Created Audio Editor in Unity to Replace Audacity" [level=2] [ref=e476]:
+                    - link "Developer Created Audio Editor in Unity to Replace Audacity" [ref=e477] [cursor=pointer]:
+                      - /url: /articles/developer-created-audio-editor-in-unity-to-replace-audacity
+                  - generic [ref=e479]: Kitler Dev's tool eliminates the need to click back and forth.
+                  - generic [ref=e480]:
+                    - link "Gloria Levine Oct 14, 2025" [ref=e481] [cursor=pointer]:
+                      - /url: /author/gloria-levine
+                      - paragraph [ref=e484]: Gloria Levine
+                      - paragraph [ref=e485]: Oct 14, 2025
+                    - img [ref=e488] [cursor=pointer]
+                - generic [ref=e490]:
+                  - link [ref=e492] [cursor=pointer]:
+                    - /url: /articles/developer-created-audio-editor-in-unity-to-replace-audacity
+                  - list [ref=e497]:
+                    - listitem [ref=e498] [cursor=pointer]:
+                      - link "News" [ref=e499]:
+                        - /url: /articles/news
+                    - listitem [ref=e500] [cursor=pointer]:
+                      - link "Unity" [ref=e501]:
+                        - /url: /articles/unity
+              - article [ref=e503]:
+                - generic [ref=e504]:
+                  - 'heading "Digital Item Ownership: A New Era of Player Sovereignty" [level=2] [ref=e505]':
+                    - 'link "Digital Item Ownership: A New Era of Player Sovereignty" [ref=e506] [cursor=pointer]':
+                      - /url: /articles/digital-item-ownership-a-new-era-of-player-sovereignty
+                  - generic [ref=e508]: From pixelated beginnings to limitless virtual frontiers, the story of gaming has always been one of transformation – and now it’s redefining what it means to truly own something in the digital realm.
+                  - generic [ref=e509]:
+                    - link "Xsolla Backpack Oct 14, 2025" [ref=e510] [cursor=pointer]:
+                      - /url: /author/xsolla-backpack
+                      - paragraph [ref=e513]: Xsolla Backpack
+                      - paragraph [ref=e514]: Oct 14, 2025
+                    - img [ref=e517] [cursor=pointer]
+                - generic [ref=e519]:
+                  - link [ref=e521] [cursor=pointer]:
+                    - /url: /articles/digital-item-ownership-a-new-era-of-player-sovereignty
+                  - list [ref=e526]:
+                    - listitem [ref=e527] [cursor=pointer]:
+                      - link "Feature" [ref=e528]:
+                        - /url: /articles/feature
+                    - listitem [ref=e529] [cursor=pointer]:
+                      - link "Xsolla" [ref=e530]:
+                        - /url: /articles/xsolla
+                    - listitem [ref=e531] [cursor=pointer]:
+                      - link "Sponsored Article" [ref=e532]:
+                        - /url: /articles/sponsored-article
+            - list [ref=e533]:
+              - listitem [ref=e534]:
+                - button [disabled] [ref=e535] [cursor=pointer]:
+                  - img [ref=e537]
+              - listitem [ref=e539]:
+                - link "1":
+                  - /url: /
+              - listitem [ref=e540]:
+                - link "2" [ref=e541] [cursor=pointer]:
+                  - /url: /
+              - listitem [ref=e542]:
+                - link "3" [ref=e543] [cursor=pointer]:
+                  - /url: /
+              - listitem [ref=e544]:
+                - link "4" [ref=e545] [cursor=pointer]:
+                  - /url: /
+              - listitem [ref=e546]:
+                - link "5" [ref=e547] [cursor=pointer]:
+                  - /url: /
+              - listitem [ref=e548]:
+                - link [ref=e549] [cursor=pointer]:
+                  - /url: /
+                  - img [ref=e551]
+          - generic [ref=e554]:
+            - generic [ref=e556]:
+              - heading "Trending articles" [level=5] [ref=e558]
+              - list [ref=e560]:
+                - listitem [ref=e561]:
+                  - link "1 Return to School with This Indie Game Set in an Early 2000s High School" [ref=e562] [cursor=pointer]:
+                    - /url: /articles/return-to-school-with-this-indie-game-set-in-an-early-2000s-high-school
+                    - generic [ref=e563]:
+                      - generic [ref=e564]: "1"
+                      - img [ref=e566]
+                    - text: Return to School with This Indie Game Set in an Early 2000s High School
+                - listitem [ref=e568]:
+                  - link "2 Epic Games Will Allow Fortnite Players to Sell Items from Their Islands" [ref=e569] [cursor=pointer]:
+                    - /url: /articles/epic-games-will-allow-fortnite-players-to-sell-their-in-game-items
+                    - generic [ref=e570]:
+                      - generic [ref=e571]: "2"
+                      - img [ref=e573]
+                    - text: Epic Games Will Allow Fortnite Players to Sell Items from Their Islands
+                - listitem [ref=e575]:
+                  - link "3 Signature Review Confirms 97% Validity Rate for Stop Killing Games Petition" [ref=e576] [cursor=pointer]:
+                    - /url: /articles/signature-review-confirms-97-validity-rate-for-stop-killing-games-petition
+                    - generic [ref=e577]:
+                      - generic [ref=e578]: "3"
+                      - img [ref=e580]
+                    - text: Signature Review Confirms 97% Validity Rate for Stop Killing Games Petition
+                - listitem [ref=e582]:
+                  - link "4 Blender CEO Announced His Decision to Step Down After Over 30 Years" [ref=e583] [cursor=pointer]:
+                    - /url: /articles/blender-ceo-announced-his-decision-to-step-down-after-over-30-years
+                    - generic [ref=e584]:
+                      - generic [ref=e585]: "4"
+                      - img [ref=e587]
+                    - text: Blender CEO Announced His Decision to Step Down After Over 30 Years
+                - listitem [ref=e589]:
+                  - link "5 Saudi Arabia Prince Apparently Celebrates Buying EA on His Steam Page" [ref=e590] [cursor=pointer]:
+                    - /url: /articles/saudi-arabia-prince-apparently-celebrates-buying-ea-on-his-steam-page
+                    - generic [ref=e591]:
+                      - generic [ref=e592]: "5"
+                      - img [ref=e594]
+                    - text: Saudi Arabia Prince Apparently Celebrates Buying EA on His Steam Page
+                - listitem [ref=e596]:
+                  - link "6 A New Turn-Based Game Mixes Warhammer and XCOM – Demo Available" [ref=e597] [cursor=pointer]:
+                    - /url: /articles/a-new-turn-based-game-mixes-warhammer-and-xcom-demo-available
+                    - generic [ref=e598]:
+                      - generic [ref=e599]: "6"
+                      - img [ref=e601]
+                    - text: A New Turn-Based Game Mixes Warhammer and XCOM – Demo Available
+              - button "Subscribe to newsletter" [ref=e603] [cursor=pointer]:
+                - generic [ref=e604]:
+                  - text: Subscribe to newsletter
+                  - img [ref=e605]
+            - generic [ref=e608]:
+              - heading "Popular discussions" [level=5] [ref=e610]
+              - list [ref=e612]:
+                - listitem [ref=e613]:
+                  - 'link "Hollow Knight: Silksong Launches to 500K Players & Even Pirates Skip Piracy Check \"Apocalypse of the Universe\" - Steam Really nice RP... 1 · :) v.a.c.u.u.m." [ref=e614] [cursor=pointer]':
+                    - /url: /articles/hollow-knight-silksong-launches-to-500k-players-even-pirates-skip-piracy
+                    - paragraph [ref=e615]: "Hollow Knight: Silksong Launches to 500K Players & Even Pirates Skip Piracy"
+                    - generic [ref=e616]:
+                      - text: Check "Apocalypse of the Universe" - Steam
+                      - text: Really nice RP...
+                    - generic [ref=e617]:
+                      - button "1" [ref=e618]:
+                        - img [ref=e619]
+                        - generic [ref=e621]: "1"
+                      - generic [ref=e622]: ·
+                      - paragraph [ref=e623]: :) v.a.c.u.u.m.
+                - listitem [ref=e624]:
+                  - 'link "Azerbaijan: From Indie Spirit to State Strategy So interesting. 1 · :) v.a.c.u.u.m." [ref=e625] [cursor=pointer]':
+                    - /url: /articles/azerbaijan-from-indie-spirit-to-state-strategy
+                    - paragraph [ref=e626]: "Azerbaijan: From Indie Spirit to State Strategy"
+                    - generic [ref=e627]: So interesting.
+                    - generic [ref=e628]:
+                      - button "1" [ref=e629]:
+                        - img [ref=e630]
+                        - generic [ref=e632]: "1"
+                      - generic [ref=e633]: ·
+                      - paragraph [ref=e634]: :) v.a.c.u.u.m.
+                - listitem [ref=e635]:
+                  - link "Trick For Reducing Vertex Count For Custom Unity Grass Renderer Are there any benchmarks that prove the single triangle approach would... 1 · Anonymous user" [ref=e636] [cursor=pointer]:
+                    - /url: /articles/trick-for-reducing-vertex-count-for-custom-unity-grass-renderer
+                    - paragraph [ref=e637]: Trick For Reducing Vertex Count For Custom Unity Grass Renderer
+                    - generic [ref=e638]: Are there any benchmarks that prove the single triangle approach would...
+                    - generic [ref=e639]:
+                      - button "1" [ref=e640]:
+                        - img [ref=e641]
+                        - generic [ref=e643]: "1"
+                      - generic [ref=e644]: ·
+                      - paragraph [ref=e645]: Anonymous user
+                - listitem [ref=e646]:
+                  - link "Return to School with This Indie Game Set in an Early 2000s High School Looks like my old school. East High in Denver. 1 · Anonymous user" [ref=e647] [cursor=pointer]:
+                    - /url: /articles/return-to-school-with-this-indie-game-set-in-an-early-2000s-high-school
+                    - paragraph [ref=e648]: Return to School with This Indie Game Set in an Early 2000s High School
+                    - generic [ref=e649]: Looks like my old school. East High in Denver.
+                    - generic [ref=e650]:
+                      - button "1" [ref=e651]:
+                        - img [ref=e652]
+                        - generic [ref=e654]: "1"
+                      - generic [ref=e655]: ·
+                      - paragraph [ref=e656]: Anonymous user
+              - generic [ref=e657]:
+                - heading "Join discussion" [level=6] [ref=e658]
+                - paragraph [ref=e659]: "Talk to thousands of game designers and find tips & answers to your most burning questions. Sign up or log in to continue:"
+                - generic [ref=e661] [cursor=pointer]:
+                  - button "Sign up" [ref=e662]:
+                    - generic [ref=e663]: Sign up
+                  - button "Log in" [ref=e664]:
+                    - generic [ref=e665]: Log in
+                    - img [ref=e667]
+            - generic [ref=e670]:
+              - generic [ref=e671]:
+                - heading "Partners" [level=5] [ref=e673]
+                - generic [ref=e683]:
+                  - generic [ref=e684]:
+                    - figure [ref=e685]:
+                      - link [ref=e686] [cursor=pointer]:
+                        - /url: /partners/vertex-school
+                    - paragraph [ref=e692]: Vertex School is a leader in online Game Design classes that offers intensive Bootcamps based on the ever-changing needs of the gaming industry.
+                  - generic [ref=e693]:
+                    - figure [ref=e694]:
+                      - link [ref=e695] [cursor=pointer]:
+                        - /url: /partners/unreal-engine
+                    - paragraph [ref=e699]: The world's most open and advanced real-time 3D creation tool for photoreal visuals and immersive experiences.
+                  - generic [ref=e700]:
+                    - figure [ref=e701]:
+                      - link [ref=e702] [cursor=pointer]:
+                        - /url: /partners/umodeler
+                    - paragraph [ref=e706]: UModeler is a Unity3D editor extension to empower you to design your level and mesh without leaving Unity.
+                  - generic [ref=e707]:
+                    - figure [ref=e708]:
+                      - link [ref=e709] [cursor=pointer]:
+                        - /url: /partners/reallusion
+                    - paragraph [ref=e713]: Reallusion software is a platform for digital human character creativity and animation. Emphasizing character scalability for creative and industry projects, Reallusion real-time characters are populating across Media and Entertainment, Metaverse, Digital Twin factories, Architectural visualizations, and AI Simulations.
+                  - generic [ref=e714]:
+                    - figure [ref=e715]:
+                      - link [ref=e716] [cursor=pointer]:
+                        - /url: /partners/adobe-substance-3d
+                    - paragraph [ref=e720]: Adobe Substance 3D brings you an ecosystem of apps and content that empower you to design 3D.
+                  - generic [ref=e721]:
+                    - figure [ref=e722]:
+                      - link [ref=e723] [cursor=pointer]:
+                        - /url: /partners/houdini
+                    - generic [ref=e726]: "Houdini combines superior performance and dramatic, ease-of-use to deliver a powerful and accessible 3D animation experience to CG artists creating feature films, commercials or video games. With its procedural node-based workflow, Houdini lets \x03you create more content faster to reduce timelines and enjoy enhanced flexibility in all your creative tasks. Houdini is ideal for modelers, lighters, character riggers and animators to use on its own or as a layout and lighting tool for visual effects created in Houdini FX."
+                  - generic [ref=e727]:
+                    - figure [ref=e728]:
+                      - link [ref=e729] [cursor=pointer]:
+                        - /url: /partners/nvidia
+                    - paragraph [ref=e733]: NVIDIA is a full-stack computing company with data-center-scale offerings that are reshaping industry.
+                  - generic [ref=e734]:
+                    - figure [ref=e735]:
+                      - link [ref=e736] [cursor=pointer]:
+                        - /url: /partners/vertex-school
+                    - paragraph [ref=e742]: Vertex School is a leader in online Game Design classes that offers intensive Bootcamps based on the ever-changing needs of the gaming industry.
+                  - generic [ref=e743]:
+                    - figure [ref=e744]:
+                      - link [ref=e745] [cursor=pointer]:
+                        - /url: /partners/unreal-engine
+                    - paragraph [ref=e749]: The world's most open and advanced real-time 3D creation tool for photoreal visuals and immersive experiences.
+              - link "Explore Partners" [ref=e750] [cursor=pointer]:
+                - /url: /partners
+                - generic [ref=e751]: Explore Partners
+                - img [ref=e753]
+            - link "Sponsored Ad" [ref=e757] [cursor=pointer]:
+              - /url: https://www.viewconference.it/
+              - generic [ref=e759]: Sponsored Ad
+        - generic [ref=e761]:
+          - heading "Our partners" [level=3] [ref=e763]
+          - generic [ref=e764]:
+            - list [ref=e765]:
+              - listitem [ref=e766]:
+                - link "CG Boost" [ref=e767] [cursor=pointer]:
+                  - /url: /partners/cg-boost
+              - listitem [ref=e769]:
+                - link "HeartStamp" [ref=e770] [cursor=pointer]:
+                  - /url: /partners/heartstamp
+              - listitem [ref=e772]:
+                - link "Render Network" [ref=e773] [cursor=pointer]:
+                  - /url: /partners/render-network
+              - listitem [ref=e775]:
+                - link "Emperia" [ref=e776] [cursor=pointer]:
+                  - /url: /partners/emperia
+            - generic [ref=e778]:
+              - link "More partners" [ref=e779] [cursor=pointer]:
+                - /url: /partners
+                - generic [ref=e780]: More partners
+                - img [ref=e782]
+              - link "Become a partner" [ref=e784] [cursor=pointer]:
+                - /url: mailto:contact@80.lv
+                - generic [ref=e785]: Become a partner
+    - generic [ref=e786]:
+      - generic [ref=e787]:
+        - link "Sponsored Ad" [ref=e789] [cursor=pointer]:
+          - /url: https://coloso.global/en/event/gamepath?utm_source=etc&utm_medium=paid&utm_campaign=gamepath_conv_all&utm_content=game_gamepath_80LV-520-B-250923
+          - generic [ref=e791]: Sponsored Ad
+        - link [ref=e793] [cursor=pointer]:
+          - /url: https://80lv.gumroad.com/l/gamedev-report-outsourcing-vs-in-house?utm_source=website_80lv&utm_medium=image-bannerr&utm_campaign=outsourcingresearch
+      - contentinfo [ref=e795]:
+        - generic [ref=e796]:
+          - heading "Subscribe" [level=2] [ref=e797]
+          - paragraph [ref=e798]: Start receiving our weekly newsletter
+          - generic [ref=e799]:
+            - textbox [ref=e802]:
+              - /placeholder: Email address
+            - button "Subscribe" [ref=e803] [cursor=pointer]:
+              - generic [ref=e804]: Subscribe
+          - list [ref=e805]:
+            - listitem [ref=e806]:
+              - img "Facebook" [ref=e808]
+              - link "@LevelEighty" [ref=e809] [cursor=pointer]:
+                - /url: https://www.facebook.com/LevelEighty
+            - listitem [ref=e810]:
+              - img "Twitter" [ref=e812]
+              - link "@80Level" [ref=e813] [cursor=pointer]:
+                - /url: https://twitter.com/80Level
+            - listitem [ref=e814]:
+              - img "YouTube" [ref=e816]
+              - link "@80lv" [ref=e817] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UCI8IFlI7_0xU9Dc60xoZuiA
+            - listitem [ref=e818]:
+              - img "Instagram" [ref=e820]
+              - link "@eighty_level" [ref=e821] [cursor=pointer]:
+                - /url: https://www.instagram.com/eighty_level/
+            - listitem [ref=e822]:
+              - img "Podcasts" [ref=e824]
+              - link "Round Table" [ref=e825] [cursor=pointer]:
+                - /url: https://80levelroundtable.buzzsprout.com/
+          - generic [ref=e826]:
+            - list [ref=e827]:
+              - listitem [ref=e828]:
+                - link "About & Contact us" [ref=e829] [cursor=pointer]:
+                  - /url: /contact-us
+              - listitem [ref=e830]:
+                - link "Privacy Policy" [ref=e831] [cursor=pointer]:
+                  - /url: /privacy-policy
+              - listitem [ref=e832]:
+                - link "Republishing policy" [ref=e833] [cursor=pointer]:
+                  - /url: /republishing-policy
+              - listitem [ref=e834]:
+                - link "Terms of use" [ref=e835] [cursor=pointer]:
+                  - /url: /terms-of-use
+              - listitem [ref=e836]:
+                - link "Disclaimer" [ref=e837] [cursor=pointer]:
+                  - /url: /disclaimer
+            - paragraph [ref=e838]:
+              - text: © 2025. All rights reserved. 80 level
+              - img [ref=e839]
+              - text: 80LV logo are registered trademarks of 80LV LLC.
+  - button "popover trigger icon button Take 80lv survey" [ref=e844] [cursor=pointer]:
+    - img "popover trigger icon button" [ref=e846]
+    - generic [ref=e847]: Take 80lv survey
+  - generic [ref=e853]:
+    - iframe [active] [ref=e855]:
+      - generic [ref=f1e7]:
+        - img [ref=f1e11]
+        - generic [ref=f1e13]:
+          - text: Please confirm your account following the instructions we sent to ashfaq.ahmed+5983@vivasoftltd.com.
+          - text: If you cannot find the confirmation email, please check the spam folder.
+        - button "Resend message (53)" [disabled]:
+          - generic: Resend message (53)
+        - button "Thanks, dismiss" [ref=f1e15] [cursor=pointer]:
+          - generic [ref=f1e16]: Thanks, dismiss
+    - paragraph [ref=e856]:
+      - text: By signing up and using our site, you agree to our
+      - link "Terms of Use" [ref=e857] [cursor=pointer]:
+        - /url: /terms-of-use
+      - text: and our
+      - link "Privacy Policy" [ref=e858] [cursor=pointer]:
+        - /url: /privacy-policy
+```

@@ -1,0 +1,30 @@
+[
+  {
+    "id": 2820,
+    "type": "image",
+    "quantity_show": 103731,
+    "is_free_download": false,
+    "is_sponsored": false,
+    "content": {
+      "url": "https://80lv.gumroad.com/l/3d-creature-production-and-animation?utm_source=website_80lv&utm_medium=image-banner&utm_campaign=80levelcourses2",
+      "sponsored": "Sponsored Ad",
+      "sponsored_color": "#a1a490",
+      "image": "https://cdn.80.lv/api/upload/promo/2820/68bee80a127fc.jpg",
+      "type": "image"
+    }
+  },
+  {
+    "id": 2810,
+    "type": "image",
+    "quantity_show": 145945,
+    "is_free_download": false,
+    "is_sponsored": true,
+    "content": {
+      "url": "https://rendernetwork.com/",
+      "sponsored": "Sponsored Ad",
+      "sponsored_color": "#a1a490",
+      "image": "https://cdn.80.lv/api/upload/promo/2810/68ada65743280.jpg",
+      "type": "image"
+    }
+  }
+]

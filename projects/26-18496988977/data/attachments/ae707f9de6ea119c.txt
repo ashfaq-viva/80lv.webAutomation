@@ -1,0 +1,12 @@
+curl -X POST \
+  -H "sec-ch-ua-platform: "Linux"" \
+  -H "referer: https://login-widget.xsolla.com/" \
+  -H "accept-language: en-US" \
+  -H "sec-ch-ua: "HeadlessChrome";v="141", "Not?A_Brand";v="8", "Chromium";v="141"" \
+  -H "x-test-env: 80LV_PROD" \
+  -H "sec-ch-ua-mobile: ?0" \
+  -H "user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.7390.37 Safari/537.36" \
+  -H "accept: application/json, text/plain, */*" \
+  -H "content-type: application/json" \
+  -d '{"password":"Aa@1234","email":"ashfaq.ahmed+5948@vivasoftltd.com","username":"ashfaq.ahmed+5948@vivasoftltd.com","fields":{}}' \
+  'https://login.xsolla.com/api/user?projectId=8b83af12-0974-11e7-93ae-92361f002671&locale=en_US&login_url=https:%2F%2F80.lv%2Fapi%2Fuser%2Fauth&payload=%7B%22registration_source%22:%2280lv%22,%22redirectUrl%22:%22https:%2F%2F80.lv%2F%22%7D'

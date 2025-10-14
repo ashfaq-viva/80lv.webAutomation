@@ -1,0 +1,30 @@
+[
+  {
+    "id": 2658,
+    "type": "image",
+    "quantity_show": 977137,
+    "is_free_download": false,
+    "is_sponsored": true,
+    "content": {
+      "url": "https://www.speech-graphics.com/",
+      "sponsored": "Sponsored Ad",
+      "sponsored_color": "#a1a490",
+      "image": "https://cdn.80.lv/api/upload/promo/2658/67d99d0de06b5.gif",
+      "type": "image"
+    }
+  },
+  {
+    "id": 2871,
+    "type": "image",
+    "quantity_show": 11116,
+    "is_free_download": false,
+    "is_sponsored": true,
+    "content": {
+      "url": "https://cgboost.link/5e1110",
+      "sponsored": "Sponsored",
+      "sponsored_color": "#a1a490",
+      "image": "https://cdn.80.lv/api/upload/promo/2871/68e6ab6c4df3f.jpg",
+      "type": "image"
+    }
+  }
+]

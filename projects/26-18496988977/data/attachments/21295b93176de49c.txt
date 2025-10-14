@@ -1,0 +1,2 @@
+✅ Restored session for talent on 80.lv
+✅ Assert: element is visible [Logged-in Profile Icon @ Desktop]

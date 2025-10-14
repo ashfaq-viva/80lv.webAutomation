@@ -1,0 +1,5 @@
+✅ Clicked [Login Button (Step 1) @ Mobile] → "Login Button (Step 1)"
+✅ Clicked [Login Button (Step 2) @ Mobile] → "profile-login"
+✅ Clicked [Login with Google button @ Mobile] → "Login with Google button"
+🌐 Captured API → GET https://login.xsolla.com/api/social/google/login_redirect?projectId=8b83af12-0974-11e7-93ae-92361f002671&login_url=https%3A%2F%2F80.lv%2Fapi%2Fuser%2Fauth&payload=%7B%22registration_source%22%3A%2280lv%22%2C%22redirectUrl%22%3A%22https%3A%2F%2F80.lv%2F%22%7D&locale=en_US&trackId= | Status: 302
+✅ Assert: page URL is "/accounts\.google\.com\/v3\/signin\/identifier/"
