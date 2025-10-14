@@ -184,11 +184,9 @@ async waitAndFill(locatorOrMap, value, alias = 'element', timeout = this.default
   }
 
   const vp = this.#_viewportName();
-
-  // Support multiple sequential locators (e.g., Mobile menu → input field)
   const lastLocator = locators[locators.length - 1];
 
-  // If there are multiple steps, click all but the last one first
+  // Handle multistep locators
   for (let i = 0; i < locators.length - 1; i++) {
     const stepAlias = `${alias} (Step ${i + 1})`;
     await locators[i].waitFor({ state: 'visible', timeout });
@@ -196,7 +194,6 @@ async waitAndFill(locatorOrMap, value, alias = 'element', timeout = this.default
     console.log(`✅ Clicked [${stepAlias} @ ${vp}] to reach input`);
   }
 
-  // Fill in the last locator
   await lastLocator.waitFor({ state: 'visible', timeout });
 
   const label =
@@ -204,10 +201,38 @@ async waitAndFill(locatorOrMap, value, alias = 'element', timeout = this.default
     (await lastLocator.getAttribute('placeholder').catch(() => '')) ||
     (await lastLocator.innerText().catch(() => '')).trim();
 
-  await lastLocator.fill(value);
+  // 🧠 Handle value smartly
+  let fillValue;
 
-  console.log(`✅ Filled [${alias} @ ${vp}] → "${label || 'Unnamed field'}" with: "${value}"`);
+  if (typeof value === 'string' || typeof value === 'number') {
+    fillValue = String(value);
+  } 
+  else if (typeof value === 'object' && value !== null) {
+    // 👇 Infer field from alias if userModel is passed
+    const key = alias.toLowerCase();
+    if (key in value) {
+      fillValue = String(value[key]);
+    } 
+    else if ('text' in value) {
+      fillValue = String(value.text);
+    } 
+    else if ('value' in value) {
+      fillValue = String(value.value);
+    } 
+    else {
+      throw new Error(`waitAndFill: alias "${alias}" not found in provided object.`);
+    }
+  } 
+  else {
+    throw new Error(
+      `waitAndFill: Unsupported value type for [${alias}] → ${typeof value}`
+    );
+  }
+
+  await lastLocator.fill(fillValue);
+  console.log(`✅ Filled [${alias} @ ${vp}] → "${label || 'Unnamed field'}" with: "${fillValue}"`);
 }
+
 
 
   /* ---------------------------
@@ -245,15 +270,16 @@ async assert(options = {}) {
   } = options;
 
   const locators = this.#_resolveLocator(locatorOrMap); // resolves viewport-specific
-  if (!locators || !locators.length && !toHaveURL) {
+  if (!(locators && locators.length) && !toHaveURL) {
     throw new Error(`❌ assert: no locator(s) resolved for [${alias}]`);
   }
 
   const vp = this.#_viewportName();
-  const target = locators[locators.length - 1]; // always last element for assertion
-
+  // const target = locators[locators.length - 1]; // always last element for assertion
+const target = (locators && locators.length) ? locators[locators.length - 1] : null;
   // Click intermediate steps if more than 1
-  if (locators.length > 1) {
+  // if (locators.length > 1) {
+  if (locators && locators.length > 1) {
     for (let i = 0; i < locators.length - 1; i++) {
       const stepLocator = locators[i];
       const stepAlias = `${alias} (Step ${i + 1})`;
