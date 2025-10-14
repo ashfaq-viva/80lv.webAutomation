@@ -59,6 +59,51 @@ https://docs.google.com/spreadsheets/d/16fnrdXbXpV1eSJgLBmWRLfrqAbtk1gcuFDp7reBp
 npm ci
 npx playwright install
 ```
+## App password
+
+GMAIL_EMAIL= the gmail account you want to create GMAIL_APP_PASSWORD / GMAIL_API_TOKEN
+
+* Option 1 — Generate Gmail API token (OAuth 2.0 Playground)
+
+- When to use: preferred for production or when you need OAuth refresh tokens (safer and Google-recommended). 
+
+- Use OAuth 2.0 Playground to get tokens
+- Open OAuth 2.0 Playground: https://developers.google.com/oauthplayground
+- On the left side of the Playground, under Step 1 — Select & authorize APIs, scroll the list or use the search box and locate Gmail API v1.
+- Under Gmail API expand it and check the scope:
+
+`https://www.googleapis.com/auth/gmail.readonly`
+
+
+- (that scope gives read-only access to mail). 
+- Then click Authorize APIs. 
+- Playground will display an Access token, Refresh token, and expiry. Copy these values.
+- Where to put tokens in .env (example)
+- GMAIL_API_TOKEN=<ya29.a0Af...>         # the access token from Playground
+
+* Option 2- When to use: quick for personal accounts or development when the app accepts username+password (but not preferable for production). App passwords require 2-Step Verification on the Google account. 
+
+  GMAIL_APP_PASSWORD:
+
+Step-by-step (desktop / web browser):
+
+- Open https://myaccount.google.com
+- and sign in to the Google account you want to use.
+- In the left column click Security (or click the grid icon → Manage your Google Account → Security). 
+- Under “How you sign in to Google” find 2-Step Verification → click it → click Get started (or Turn on) and follow the prompts:
+- Enter account password, add a phone number or authenticator app, and verify the second factor. Complete setup. 
+- After 2-Step Verification is enabled, Scroll down and click App passwords.
+
+In App passwords:
+
+- Select app: choose Mail (or choose Other (Custom name) and type a recognizable name like gmail-otp-extractor).
+- Select device: choose the appropriate device or Other → give a name.
+- Click Generate.
+- Google will display a 16-character app password (grouped like abcd efgh ijkl mnop). Copy this password now — you will not be able to view it again after closing.
+- Put this in your .env (example):
+
+`GMAIL_APP_PASSWORD=abcd efgh ijkl mnop`
+
 ## .env Setup
 
 * create a .env file in project root with this variable and give desired value:
@@ -69,6 +114,8 @@ TALENT_EMAIL=
 TALENT_PASSWORD=
 RECRUITER_EMAIL=
 RECRUITER_PASSWORD=
+GMAIL_EMAIL=
+GMAIL_APP_PASSWORD=
 ```
 
 ## Playwright Commands
