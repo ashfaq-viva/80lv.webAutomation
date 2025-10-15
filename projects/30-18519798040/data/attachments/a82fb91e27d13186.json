@@ -1,0 +1,30 @@
+[
+  {
+    "id": 2856,
+    "type": "image",
+    "quantity_show": 39753,
+    "is_free_download": false,
+    "is_sponsored": false,
+    "content": {
+      "url": "https://80.lv/talent/companies?utm_source=website_80lv&utm_medium=image-banner&utm_campaign=january2025",
+      "sponsored": "Sponsored Ad",
+      "sponsored_color": "#a1a490",
+      "image": "https://cdn.80.lv/api/upload/promo/2856/68daf061b7c5f.jpg",
+      "type": "image"
+    }
+  },
+  {
+    "id": 2866,
+    "type": "image",
+    "quantity_show": 23161,
+    "is_free_download": false,
+    "is_sponsored": false,
+    "content": {
+      "url": "https://80lv.gumroad.com/l/intro-to-geometry-nodes?utm_source=website_80lv&utm_medium=image-banner&utm_campaign=80levelcourses3",
+      "sponsored": "Sponsored Ad",
+      "sponsored_color": "#a1a490",
+      "image": "https://cdn.80.lv/api/upload/promo/2866/68e3c47646267.jpg",
+      "type": "image"
+    }
+  }
+]

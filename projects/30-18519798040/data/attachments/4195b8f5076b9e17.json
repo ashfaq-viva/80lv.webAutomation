@@ -1,0 +1,30 @@
+[
+  {
+    "id": 2838,
+    "type": "image",
+    "quantity_show": 75906,
+    "is_free_download": false,
+    "is_sponsored": false,
+    "content": {
+      "url": "https://80lv.gumroad.com/l/non-gaming-brands-transforming-the-virtual-world?utm_source=website_80lv&utm_medium=image-bannerr&utm_campaign=nongamingbrands",
+      "sponsored": "Sponsored Ad",
+      "sponsored_color": "#a1a490",
+      "image": "https://cdn.80.lv/api/upload/promo/2838/68c953d58abc6.jpg",
+      "type": "image"
+    }
+  },
+  {
+    "id": 2812,
+    "type": "image",
+    "quantity_show": 203008,
+    "is_free_download": false,
+    "is_sponsored": true,
+    "content": {
+      "url": "https://80.lv/articles/why-3d-artists-are-choosing-the-render-network-over-traditional-render-farms",
+      "sponsored": "Sponsored Ad",
+      "sponsored_color": "#a1a490",
+      "image": "https://cdn.80.lv/api/upload/promo/2812/68c42057ac25e.jpg",
+      "type": "image"
+    }
+  }
+]
