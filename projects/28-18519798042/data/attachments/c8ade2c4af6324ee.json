@@ -1,0 +1,30 @@
+[
+  {
+    "id": 2866,
+    "type": "image",
+    "quantity_show": 23160,
+    "is_free_download": false,
+    "is_sponsored": false,
+    "content": {
+      "url": "https://80lv.gumroad.com/l/intro-to-geometry-nodes?utm_source=website_80lv&utm_medium=image-banner&utm_campaign=80levelcourses3",
+      "sponsored": "Sponsored Ad",
+      "sponsored_color": "#a1a490",
+      "image": "https://cdn.80.lv/api/upload/promo/2866/68e3c47646267.jpg",
+      "type": "image"
+    }
+  },
+  {
+    "id": 2837,
+    "type": "image",
+    "quantity_show": 75781,
+    "is_free_download": false,
+    "is_sponsored": false,
+    "content": {
+      "url": "https://80lv.gumroad.com/l/gamedev-report-outsourcing-vs-in-house?utm_source=website_80lv&utm_medium=image-bannerr&utm_campaign=outsourcingresearch",
+      "sponsored": "Sponsored Ad",
+      "sponsored_color": "#a1a490",
+      "image": "https://cdn.80.lv/api/upload/promo/2837/68c953b553b13.jpg",
+      "type": "image"
+    }
+  }
+]

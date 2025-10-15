@@ -1,0 +1,30 @@
+[
+  {
+    "id": 2844,
+    "type": "image",
+    "quantity_show": 54994,
+    "is_free_download": false,
+    "is_sponsored": true,
+    "content": {
+      "url": "https://coloso.global/en/event/gamepath?utm_source=etc&utm_medium=paid&utm_campaign=gamepath_conv_all&utm_content=game_gamepath_80LV-520-A-250923",
+      "sponsored": "Sponsored Ad",
+      "sponsored_color": "#a1a490",
+      "image": "https://cdn.80.lv/api/upload/promo/2844/68cd4f2c8af00.jpg",
+      "type": "image"
+    }
+  },
+  {
+    "id": 2871,
+    "type": "image",
+    "quantity_show": 13869,
+    "is_free_download": false,
+    "is_sponsored": true,
+    "content": {
+      "url": "https://cgboost.link/5e1110",
+      "sponsored": "Sponsored",
+      "sponsored_color": "#a1a490",
+      "image": "https://cdn.80.lv/api/upload/promo/2871/68e6ab6c4df3f.jpg",
+      "type": "image"
+    }
+  }
+]
