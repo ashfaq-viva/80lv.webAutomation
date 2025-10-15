@@ -4,8 +4,6 @@ import { config } from '../config/testConfig.js';
 export class LoginPage extends BasePage {
   constructor(page, context) {
     super(page, context);
-    this.page = page;
-    this.context = context;
     this.allowCookiesBtn= page.getByRole('button', { name: 'Accept all cookies' });
     this.allowCookiesBtnOld=page.locator('._3xpoo');
     this.loginLnk= page.getByText('LogIn');
@@ -18,8 +16,15 @@ export class LoginPage extends BasePage {
     this.profileLogInOld = page.getByRole('img', { name: 'profile-login' });
     this.navbarThreeDotMenuOld =  page.getByRole('button', { name: 'Menu' });
     this.profileLoggedInOld = page.locator(`text=${config.credentials.talentEmail}`);
-    this.profileLoggedInResponsive = page.getByRole('link', { name: 'profile-loggedin Profile' })
-  }
+    this.loginWithFacebookBtn = this.widgetFrame.getByTestId('login-form__primary-social--facebook');
+    this.loginWithXsollaBtn = this.widgetFrame.getByTestId('login-form__primary-social--babka');
+    this.loginWithTwitterBtn = this.widgetFrame.getByTestId('login-form__secondary-social--twitter');
+    this.loginWithTwitterPrimaryBtn = this.widgetFrame.getByTestId('login-form__primary-social--twitter');
+    this.loginWithGoogleBtn = this.widgetFrame.getByTestId('login-form__secondary-social--google');
+    this.loginWithGooglePrimaryBtn = this.widgetFrame.getByTestId('login-form__primary-social--google');
+    this.loginWithLinkdinBtn = this.widgetFrame.getByTestId('login-form__secondary-social--linkedin');
+    this.loginWithLinkdinPrimaryBtn = this.widgetFrame.getByTestId('login-form__primary-social--linkedin');
+}
 
   async visit() {
     await this.page.goto('/',{waitUntil:'networkidle'} );
@@ -40,16 +45,44 @@ export class LoginPage extends BasePage {
     }
   }
   }
+  async globalLogin(email, password) {
+    if (await this.allowCookiesBtnOld.isVisible().catch(() => false)) {
+      await this.allowCookiesBtnOld.click();
+      console.log("Cookies accepted.");
+    } else {
+      console.log("No cookies banner found, skipping...");
+    }
+    for (let attempt = 1; attempt <= 4; attempt++) {
+      try {
+        await this.profileLogIn.click();
+        console.log("Login widget opened.");
+        await expect(this.emailTxt).toBeVisible({timeout: 5000});
+        console.log("Email Field is visible.");
+        break; 
+      } catch (error) {
+        if (attempt === 4) throw error; 
+        console.log('Retrying login…');
+        await this.page.reload();
+      }
+    }
+    await this.emailTxt.fill(email);
+    console.log("Email entered.");
+    await this.passwordTxt.fill(password);
+    console.log("Password entered.");
+    await this.loginBtn.click();
+    console.log("Login button clicked.");
+  }
+
   async doLogin(username,password) {
    await this.expectAndClick(
-  {
-    default: this.profileLogIn,
-    Laptop:  [this.navbarThreeDotMenuOld,this.profileLogInOld],
-    Tablet:  [this.navbarThreeDotMenuOld,this.profileLogInOld],
-    Mobile:  [this.navbarThreeDotMenuOld,this.profileLogInOld],
-  },
-  'Login Button','loginApi:POST'
-);
+      {
+        default: this.profileLogIn,
+        Laptop:  [this.navbarThreeDotMenuOld,this.profileLogInOld],
+        Tablet:  [this.navbarThreeDotMenuOld,this.profileLogInOld],
+        Mobile:  [this.navbarThreeDotMenuOld,this.profileLogInOld],
+      },
+      'Login Button','loginApi:POST'
+    );
     await this.waitAndFill(this.emailTxt,username,'Email');
     await this.waitAndFill(this.passwordTxt, password,'Password');
     await this.expectAndClick(this.loginBtn,'Login Button','loginApi:POST');
@@ -64,35 +97,6 @@ export class LoginPage extends BasePage {
         alias: 'Logged-in Profile Icon'
       });
   }
-async globalLogin(email, password) {
-  if (await this.allowCookiesBtnOld.isVisible().catch(() => false)) {
-    await this.allowCookiesBtnOld.click();
-    console.log("Cookies accepted.");
-  } else {
-    console.log("No cookies banner found, skipping...");
-  }
-  for (let attempt = 1; attempt <= 4; attempt++) {
-    try {
-      await this.profileLogIn.click();
-      console.log("Login widget opened.");
-      await expect(this.emailTxt).toBeVisible({timeout: 5000});
-      console.log("Email Field is visible.");
-      break; 
-    } catch (error) {
-      if (attempt === 4) throw error; 
-      console.log('Retrying login…');
-      await this.page.reload();
-    }
-  }
-
-  await this.emailTxt.fill(email);
-  console.log("Email entered.");
-  await this.passwordTxt.fill(password);
-  console.log("Password entered.");
-  await this.loginBtn.click();
-  console.log("Login button clicked.");
-}
-
   async assertLoggedIn(){
      await this.assert({
         locator: {
@@ -105,5 +109,85 @@ async globalLogin(email, password) {
         alias: 'Logged-in Profile Icon'
       });
   }
+  async loginWithFacebook(){
+    await this.expectAndClick({
+        default: this.profileLogIn,
+        Laptop:  [this.navbarThreeDotMenuOld,this.profileLogInOld],
+        Tablet:  [this.navbarThreeDotMenuOld,this.profileLogInOld],
+        Mobile:  [this.navbarThreeDotMenuOld,this.profileLogInOld],
+      },
+      'Login Button','loginApi:POST');
+    await this.expectAndClick(this.loginWithFacebookBtn,'Login with facebook button');
+    await this.assert({
+    toHaveURL: /facebook\.com\/login\.php/,
+    alias: 'Facebook OAuth Redirect'
+});
+  }
+
+  async loginWithXsolla(){
+    await this.expectAndClick({
+        default: this.profileLogIn,
+        Laptop:  [this.navbarThreeDotMenuOld,this.profileLogInOld],
+        Tablet:  [this.navbarThreeDotMenuOld,this.profileLogInOld],
+        Mobile:  [this.navbarThreeDotMenuOld,this.profileLogInOld],
+      },
+      'Login Button','loginApi:POST');
+    await this.expectAndClick(this.loginWithXsollaBtn,'Login with xsolla button');
+    await this.assert({
+      toHaveURL: /wallet\.xsolla\.com\/oauth2\/profile/,
+      alias: 'Xsolla Wallet OAuth Redirect'
+    });
+  }
+  async loginWithGoogle(){
+    await this.expectAndClick({
+        default: this.profileLogIn,
+        Laptop:  [this.navbarThreeDotMenuOld,this.profileLogInOld],
+        Tablet:  [this.navbarThreeDotMenuOld,this.profileLogInOld],
+        Mobile:  [this.navbarThreeDotMenuOld,this.profileLogInOld],
+      },
+      'Login Button','loginApi:POST');
+      try {
+      await this.expectAndClick(this.loginWithGoogleBtn, 'Login with Google button');
+      } catch (error) {
+      await this.expectAndClick(this.loginWithGooglePrimaryBtn, 'Login with Google Primary button');
+      }
+      await this.assert({
+      toHaveURL: /accounts\.google\.com\/v3\/signin\/identifier/,
+      alias: 'Google OAuth Redirect'
+    });
+  }
+  async loginWithLinkdIn(){
+    await this.expectAndClick({
+        default: this.profileLogIn,
+        Laptop:  [this.navbarThreeDotMenuOld,this.profileLogInOld],
+        Tablet:  [this.navbarThreeDotMenuOld,this.profileLogInOld],
+        Mobile:  [this.navbarThreeDotMenuOld,this.profileLogInOld],
+      },
+      'Login Button','loginApi:POST');
+      try {
+      await this.expectAndClick(this.loginWithLinkdinBtn, 'Login with LinkdIn button');
+      } catch (error) {
+      await this.expectAndClick(this.loginWithLinkdinPrimaryBtn, 'Login with LinkdIn Primary button');
+      }
+      await this.assert({
+        toHaveURL: /linkedin\.com\/uas\/login/,
+        alias: 'LinkedIn OAuth Redirect'
+      });
+  }
+  async loginWithTwitter(){
+    await this.expectAndClick({
+        default: this.profileLogIn,
+        Laptop:  [this.navbarThreeDotMenuOld,this.profileLogInOld],
+        Tablet:  [this.navbarThreeDotMenuOld,this.profileLogInOld],
+        Mobile:  [this.navbarThreeDotMenuOld,this.profileLogInOld],
+      },
+      'Login Button','loginApi:POST');
+      try {
+      await this.expectAndClick(this.loginWithTwitterBtn, 'Login with Xsolla button');
+      } catch (error) {
+      await this.expectAndClick(this.loginWithTwitterPrimaryBtn, 'Login with Xsolla Primary button');
+      }
+  }
+    
 }
 

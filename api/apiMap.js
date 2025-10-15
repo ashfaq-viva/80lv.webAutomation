@@ -15,11 +15,13 @@ const apiMap = {
   "80LV_PROD": {
     cookieApi: { url: "https://cdn.80.lv/api", methods: { ...defaultMethods } },
     loginApi: { url: "https://login.xsolla.com/api/login",methods: { ...defaultMethods },
+    signupApi: { url:"https://login.xsolla.com/api/user",methods: { ...defaultMethods }},
     }
   },
   "80LV_QA": {
     cookieApi: { url: "https://cdn.80.lv/api", methods: { ...defaultMethods } },
     loginApi: { url: "https://login.xsolla.com/api/login",methods: { ...defaultMethods },
+    signupApi: { url:"https://login.xsolla.com/api/user",methods: { ...defaultMethods }},
     }
   }
 };
