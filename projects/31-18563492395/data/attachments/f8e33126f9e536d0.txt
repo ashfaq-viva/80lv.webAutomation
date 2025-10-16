@@ -1,0 +1,5 @@
+✅ Clicked [Accept Cookies @ Mobile] → "Accept Cookies"
+✅ Clicked [Search (Step 1) @ Mobile] → "Search (Step 1)"
+✅ Clicked [Search (Step 2) @ Mobile] → "search"
+✅ Typed directly [Search Field] → "watch j hil"
+✅ Clicked [Search cleared @ Mobile] → "×"

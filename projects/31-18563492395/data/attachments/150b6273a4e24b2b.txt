@@ -1,0 +1,4 @@
+✅ Clicked [Accept Cookies @ Tablet] → "Accept Cookies"
+✅ Clicked [Search (Step 1) @ Tablet] → "Search (Step 1)"
+✅ Clicked [Search (Step 2) @ Tablet] → "search"
+✅ Assert: element is visible [Cross icon @ Tablet]

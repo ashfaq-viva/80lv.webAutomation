@@ -1,0 +1,4 @@
+✅ Clicked [Accept Cookies @ Desktop] → "Accept Cookies"
+✅ Clicked [Search @ Desktop] → "Search"
+✅ Typed directly [Search Field] → "watch j hil"
+✅ Clicked [Search cleared @ Desktop] → "×"

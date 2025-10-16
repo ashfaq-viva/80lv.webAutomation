@@ -1,0 +1,32 @@
+[
+  {
+    "id": 2811,
+    "type": "image",
+    "quantity_show": 187344,
+    "is_free_download": false,
+    "is_sponsored": true,
+    "is_co_branded": false,
+    "content": {
+      "url": "https://rendernetwork.com/",
+      "sponsored": "Sponsored Ad",
+      "sponsored_color": "#a1a490",
+      "image": "https://cdn.80.lv/api/upload/promo/2811/68c420c426565.gif",
+      "type": "image"
+    }
+  },
+  {
+    "id": 2866,
+    "type": "image",
+    "quantity_show": 27630,
+    "is_free_download": false,
+    "is_sponsored": false,
+    "is_co_branded": false,
+    "content": {
+      "url": "https://80lv.gumroad.com/l/intro-to-geometry-nodes?utm_source=website_80lv&utm_medium=image-banner&utm_campaign=80levelcourses3",
+      "sponsored": "Sponsored Ad",
+      "sponsored_color": "#a1a490",
+      "image": "https://cdn.80.lv/api/upload/promo/2866/68e3c47646267.jpg",
+      "type": "image"
+    }
+  }
+]
