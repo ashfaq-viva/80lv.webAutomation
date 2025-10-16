@@ -56,7 +56,7 @@ export class LoginPage extends BasePage {
       try {
         await this.profileLogIn.click();
         console.log("Login widget opened.");
-        await expect(this.emailTxt).toBeVisible({timeout: 5000});
+        await this.page.waitForSelector(this.emailTxt, { state: 'visible', timeout: 5000 });
         console.log("Email Field is visible.");
         break; 
       } catch (error) {
