@@ -179,8 +179,17 @@ async expectAndClick(
 }
 async waitAndFill(locatorOrMap, value, alias = 'element', timeout = this.defaultTimeout) {
   const locators = this.#_resolveLocator(locatorOrMap);
+  
+  // ✅ Handle case where locator isn't provided — just type directly
   if (!locators || !locators.length) {
-    throw new Error(`waitAndFill: no locator(s) resolved for [${alias}]`);
+    console.warn(`⚠️ No locator resolved for [${alias}], typing directly...`);
+    const fillValue =
+      typeof value === 'object' && value !== null
+        ? (value.text || value.value || '')
+        : String(value);
+    await this.page.keyboard.type(fillValue);
+    console.log(`✅ Typed directly [${alias}] → "${fillValue}"`);
+    return;
   }
 
   const vp = this.#_viewportName();
@@ -235,6 +244,7 @@ async waitAndFill(locatorOrMap, value, alias = 'element', timeout = this.default
 
 
 
+
   /* ---------------------------
    * 🔹 Assertions
    * --------------------------- */
@@ -256,7 +266,7 @@ await this.assert({
   alias: 'Dashboard Page'
 });*/
 
-async assert(options = {}) {
+async assert(options = {},page = this.page) {
   const {
     locator: locatorOrMap,
     state,
@@ -326,7 +336,7 @@ const target = (locators && locators.length) ? locators[locators.length - 1] : n
   }
 
   if (toHaveURL) {
-    await expect(this.page).toHaveURL(toHaveURL);
+    await expect(page).toHaveURL(toHaveURL);
     console.log(`✅ Assert: page URL is "${toHaveURL}"`);
   }
 }
