@@ -46,17 +46,18 @@ export class LoginPage extends BasePage {
   }
   }
   async globalLogin(email, password) {
-    if (await this.allowCookiesBtnOld.isVisible().catch(() => false)) {
+    try {
+      await this.allowCookiesBtnOld.waitFor({ state: 'visible', timeout: 3000 });
       await this.allowCookiesBtnOld.click();
       console.log("Cookies accepted.");
-    } else {
-      console.log("No cookies banner found, skipping...");
+    } catch {
+      console.log("No cookie popup detected.Skipping...");
     }
     for (let attempt = 1; attempt <= 4; attempt++) {
       try {
         await this.profileLogIn.click();
         console.log("Login widget opened.");
-        await expect(this.emailTxt).toBeVisible({timeout: 5000});
+        await this.emailTxt.waitFor({ state: 'visible', timeout: 5000 });
         console.log("Email Field is visible.");
         break; 
       } catch (error) {

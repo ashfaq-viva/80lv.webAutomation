@@ -90,7 +90,7 @@ export default defineConfig({
   /* Configure projects for major browsers */
   projects: [
     {
-      name: "chrome",
+      name: "Browser:Google Chrome",
       // use: { ...devices["Desktop Chrome"], 
         use: { 
         baseURL: BASE_URL,
@@ -98,12 +98,12 @@ export default defineConfig({
     // },
     
     /*{
-      name: 'firefox',
+      name: 'Browser:Firefox',
       use: { ...devices['Desktop Firefox'] },
     },
 
     {
-      name: 'webkit',
+      name: 'Browser: Webkit',
       use: { ...devices['Desktop Safari'] },
     },*/
 
@@ -119,7 +119,7 @@ export default defineConfig({
 
     /* Test against branded browsers. */
     // {
-    //   name: 'Microsoft Edge',
+    //   name: 'Browser: Microsoft Edge',
     //   use: { channel: 'msedge' },
     // },
     // {

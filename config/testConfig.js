@@ -18,5 +18,9 @@ export const config = {
     "recruiterPassword": process.env.RECRUITER_PASSWORD,
 
   },
+  "data":{
+    "invalidSearch": "adasd",
+    "validSearch": "watch j hil"
+  }
 }
 
