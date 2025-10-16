@@ -1,0 +1,689 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - banner [ref=e4]:
+        - generic [ref=e5]:
+          - img "logo80lv" [ref=e8] [cursor=pointer]
+          - generic [ref=e9]:
+            - link "Order Research" [ref=e10] [cursor=pointer]:
+              - /url: "https://80level.typeform.com/request-form?utm_source=website_80lv&utm_medium=top-button "
+            - button "Menu" [ref=e11] [cursor=pointer]:
+              - img "Menu" [ref=e13]
+        - generic [ref=e14]:
+          - generic [ref=e17]:
+            - link "logo80lv" [ref=e18] [cursor=pointer]:
+              - /url: /
+              - img "logo80lv" [ref=e19]
+            - link "Order Research" [ref=e20] [cursor=pointer]:
+              - /url: "https://80level.typeform.com/request-form?utm_source=website_80lv&utm_medium=top-button "
+            - button "Close" [ref=e21] [cursor=pointer]:
+              - img "Close" [ref=e23]
+          - generic [ref=e26]:
+            - generic [ref=e27] [cursor=pointer]:
+              - text: Articles
+              - img "click_arrow" [ref=e28]
+            - generic [ref=e29] [cursor=pointer]: Research
+            - generic [ref=e30] [cursor=pointer]:
+              - text: Talents
+              - img "click_arrow" [ref=e31]
+            - generic [ref=e32] [cursor=pointer]: Events
+            - generic [ref=e33] [cursor=pointer]: Workshops
+            - generic [ref=e34] [cursor=pointer]:
+              - text: About
+              - img "click_arrow" [ref=e35]
+            - generic [ref=e36] [cursor=pointer]:
+              - text: Advertise
+              - img "player" [ref=e37]
+            - generic [ref=e38] [cursor=pointer]:
+              - text: Search
+              - img "search" [ref=e39]
+          - generic [ref=e42] [cursor=pointer]:
+            - img "profile-login" [ref=e43]
+            - generic [ref=e44]: LogIn
+      - main [ref=e46]:
+        - generic [ref=e49]:
+          - link [ref=e50] [cursor=pointer]:
+            - /url: https://www.viewconference.it/
+          - generic [ref=e52]: Sponsored Ad
+        - generic [ref=e54]:
+          - generic [ref=e56]:
+            - generic [ref=e60]:
+              - link [ref=e62] [cursor=pointer]:
+                - /url: /articles/news
+              - heading "News" [level=1] [ref=e65]:
+                - link "News" [ref=e66] [cursor=pointer]:
+                  - /url: /articles/news
+              - generic [ref=e69]:
+                - generic [ref=e71]:
+                  - link [ref=e72] [cursor=pointer]:
+                    - /url: /articles/adjusting-mortar-covered-bricks-on-2d-plane-in-blender-with-ucupaint
+                  - generic [ref=e75]:
+                    - heading "Adjusting Mortar-Covered Bricks On 2D Plane In Blender With Ucupaint" [level=3] [ref=e76]:
+                      - link "Adjusting Mortar-Covered Bricks On 2D Plane In Blender With Ucupaint" [ref=e77] [cursor=pointer]:
+                        - /url: /articles/adjusting-mortar-covered-bricks-on-2d-plane-in-blender-with-ucupaint
+                    - list [ref=e80]:
+                      - listitem [ref=e81] [cursor=pointer]:
+                        - link "News" [ref=e82]:
+                          - /url: /articles/news
+                      - listitem [ref=e83] [cursor=pointer]: "+2"
+                - generic [ref=e85]:
+                  - link [ref=e86] [cursor=pointer]:
+                    - /url: /articles/fall-into-memory-pool-with-this-cozy-stylized-scene
+                  - generic [ref=e89]:
+                    - heading "Fall into Memory Pool with This Cozy Stylized Scene" [level=3] [ref=e90]:
+                      - link "Fall into Memory Pool with This Cozy Stylized Scene" [ref=e91] [cursor=pointer]:
+                        - /url: /articles/fall-into-memory-pool-with-this-cozy-stylized-scene
+                    - list [ref=e94]:
+                      - listitem [ref=e95] [cursor=pointer]:
+                        - link "News" [ref=e96]:
+                          - /url: /articles/news
+                      - listitem [ref=e97] [cursor=pointer]: "+3"
+                - generic [ref=e99]:
+                  - link [ref=e100] [cursor=pointer]:
+                    - /url: /articles/get-this-pack-of-over-200-ghibli-style-foliage-assets-for-blender
+                  - generic [ref=e103]:
+                    - heading "Get This Pack of Over 200 Ghibli-Style Foliage Assets for Blender" [level=3] [ref=e104]:
+                      - link "Get This Pack of Over 200 Ghibli-Style Foliage Assets for Blender" [ref=e105] [cursor=pointer]:
+                        - /url: /articles/get-this-pack-of-over-200-ghibli-style-foliage-assets-for-blender
+                    - list [ref=e108]:
+                      - listitem [ref=e109] [cursor=pointer]:
+                        - link "News" [ref=e110]:
+                          - /url: /articles/news
+                      - listitem [ref=e111] [cursor=pointer]: "+2"
+                - generic [ref=e113]:
+                  - link [ref=e114] [cursor=pointer]:
+                    - /url: /articles/grab-this-free-tool-for-easy-face-expansion-in-blender
+                  - generic [ref=e117]:
+                    - heading "Grab This Free Tool For Easy Face Expansion In Blender" [level=3] [ref=e118]:
+                      - link "Grab This Free Tool For Easy Face Expansion In Blender" [ref=e119] [cursor=pointer]:
+                        - /url: /articles/grab-this-free-tool-for-easy-face-expansion-in-blender
+                    - list [ref=e122]:
+                      - listitem [ref=e123] [cursor=pointer]:
+                        - link "News" [ref=e124]:
+                          - /url: /articles/news
+                      - listitem [ref=e125] [cursor=pointer]: "+2"
+                - generic [ref=e127]:
+                  - link [ref=e128] [cursor=pointer]:
+                    - /url: /articles/this-sweet-2d-like-anime-girl-is-3d-model-you-might-want-in-your-vrchat-session
+                  - generic [ref=e131]:
+                    - heading "This Sweet 2D-Like Anime Girl Is 3D Model You Might Want in Your VRChat Session" [level=3] [ref=e132]:
+                      - link "This Sweet 2D-Like Anime Girl Is 3D Model You Might Want in Your VRChat Session" [ref=e133] [cursor=pointer]:
+                        - /url: /articles/this-sweet-2d-like-anime-girl-is-3d-model-you-might-want-in-your-vrchat-session
+                    - list [ref=e136]:
+                      - listitem [ref=e137] [cursor=pointer]:
+                        - link "News" [ref=e138]:
+                          - /url: /articles/news
+                      - listitem [ref=e139] [cursor=pointer]:
+                        - link "Blender" [ref=e140]:
+                          - /url: /articles/blender
+                - generic [ref=e142]:
+                  - link [ref=e143] [cursor=pointer]:
+                    - /url: /articles/check-out-this-sci-fi-horror-with-monsters-from-multiple-scary-stories
+                  - generic [ref=e146]:
+                    - heading "Check Out This Sci-Fi Horror with Monsters from Multiple Scary Stories" [level=3] [ref=e147]:
+                      - link "Check Out This Sci-Fi Horror with Monsters from Multiple Scary Stories" [ref=e148] [cursor=pointer]:
+                        - /url: /articles/check-out-this-sci-fi-horror-with-monsters-from-multiple-scary-stories
+                    - list [ref=e151]:
+                      - listitem [ref=e152] [cursor=pointer]:
+                        - link "News" [ref=e153]:
+                          - /url: /articles/news
+                      - listitem [ref=e154] [cursor=pointer]:
+                        - link "Video Games" [ref=e155]:
+                          - /url: /articles/video-game
+              - generic [ref=e156]:
+                - button "Subscribe to newsletter" [ref=e157] [cursor=pointer]:
+                  - generic [ref=e158]:
+                    - text: Subscribe to newsletter
+                    - img [ref=e159]
+                - link "Check out the latest news" [ref=e161] [cursor=pointer]:
+                  - /url: /articles/news
+                  - generic [ref=e162]: Check out the latest news
+                  - img [ref=e164]
+            - generic [ref=e166]:
+              - generic [ref=e168]:
+                - heading "Latest articles" [level=5] [ref=e170]
+                - generic [ref=e173]:
+                  - article [ref=e175]:
+                    - generic [ref=e176]:
+                      - heading "Adjusting Mortar-Covered Bricks On 2D Plane In Blender With Ucupaint" [level=2] [ref=e177]:
+                        - link "Adjusting Mortar-Covered Bricks On 2D Plane In Blender With Ucupaint" [ref=e178] [cursor=pointer]:
+                          - /url: /articles/adjusting-mortar-covered-bricks-on-2d-plane-in-blender-with-ucupaint
+                      - generic [ref=e179]:
+                        - link "Amber Rutherford Oct 16, 2025" [ref=e180] [cursor=pointer]:
+                          - /url: /author/amber-rutherford
+                          - paragraph [ref=e181]: Amber Rutherford
+                          - paragraph [ref=e183]: Oct 16, 2025
+                        - img [ref=e186] [cursor=pointer]
+                    - generic [ref=e188]:
+                      - link [ref=e190] [cursor=pointer]:
+                        - /url: /articles/adjusting-mortar-covered-bricks-on-2d-plane-in-blender-with-ucupaint
+                      - list [ref=e195]:
+                        - listitem [ref=e196] [cursor=pointer]:
+                          - link "News" [ref=e197]:
+                            - /url: /articles/news
+                        - listitem [ref=e198] [cursor=pointer]:
+                          - link "Marketplace" [ref=e199]:
+                            - /url: /articles/marketplace
+                        - listitem [ref=e200] [cursor=pointer]:
+                          - link "Blender" [ref=e201]:
+                            - /url: /articles/blender
+                  - article [ref=e203]:
+                    - generic [ref=e204]:
+                      - heading "Fall into Memory Pool with This Cozy Stylized Scene" [level=2] [ref=e205]:
+                        - link "Fall into Memory Pool with This Cozy Stylized Scene" [ref=e206] [cursor=pointer]:
+                          - /url: /articles/fall-into-memory-pool-with-this-cozy-stylized-scene
+                      - generic [ref=e207]:
+                        - link "Gloria Levine Oct 16, 2025" [ref=e208] [cursor=pointer]:
+                          - /url: /author/gloria-levine
+                          - paragraph [ref=e209]: Gloria Levine
+                          - paragraph [ref=e211]: Oct 16, 2025
+                        - img [ref=e214] [cursor=pointer]
+                    - generic [ref=e216]:
+                      - link [ref=e218] [cursor=pointer]:
+                        - /url: /articles/fall-into-memory-pool-with-this-cozy-stylized-scene
+                      - list [ref=e223]:
+                        - listitem [ref=e224] [cursor=pointer]:
+                          - link "News" [ref=e225]:
+                            - /url: /articles/news
+                        - listitem [ref=e226] [cursor=pointer]:
+                          - link "3D Art" [ref=e227]:
+                            - /url: /articles/3d-art
+                        - listitem [ref=e228] [cursor=pointer]:
+                          - link "Maya" [ref=e229]:
+                            - /url: /articles/maya
+                        - listitem [ref=e230] [cursor=pointer]:
+                          - link "ZBrush" [ref=e231]:
+                            - /url: /articles/zbrush
+                  - article [ref=e233]:
+                    - generic [ref=e234]:
+                      - heading "Get This Pack of Over 200 Ghibli-Style Foliage Assets for Blender" [level=2] [ref=e235]:
+                        - link "Get This Pack of Over 200 Ghibli-Style Foliage Assets for Blender" [ref=e236] [cursor=pointer]:
+                          - /url: /articles/get-this-pack-of-over-200-ghibli-style-foliage-assets-for-blender
+                      - generic [ref=e237]:
+                        - link "Emma Collins Oct 16, 2025" [ref=e238] [cursor=pointer]:
+                          - /url: /author/emma-collins
+                          - paragraph [ref=e239]: Emma Collins
+                          - paragraph [ref=e241]: Oct 16, 2025
+                        - img [ref=e244] [cursor=pointer]
+                    - generic [ref=e246]:
+                      - link [ref=e248] [cursor=pointer]:
+                        - /url: /articles/get-this-pack-of-over-200-ghibli-style-foliage-assets-for-blender
+                      - list [ref=e253]:
+                        - listitem [ref=e254] [cursor=pointer]:
+                          - link "News" [ref=e255]:
+                            - /url: /articles/news
+                        - listitem [ref=e256] [cursor=pointer]:
+                          - link "Marketplace" [ref=e257]:
+                            - /url: /articles/marketplace
+                        - listitem [ref=e258] [cursor=pointer]:
+                          - link "Blender" [ref=e259]:
+                            - /url: /articles/blender
+              - generic [ref=e261]:
+                - heading "Trending articles" [level=5] [ref=e263]
+                - list [ref=e265]:
+                  - listitem [ref=e266]:
+                    - link "1 Return to School with This Indie Game Set in an Early 2000s High School" [ref=e267] [cursor=pointer]:
+                      - /url: /articles/return-to-school-with-this-indie-game-set-in-an-early-2000s-high-school
+                      - generic [ref=e268]:
+                        - generic [ref=e269]: "1"
+                        - img [ref=e271]
+                      - text: Return to School with This Indie Game Set in an Early 2000s High School
+                  - listitem [ref=e273]:
+                    - link "2 Epic Games Will Allow Fortnite Players to Sell Items from Their Islands" [ref=e274] [cursor=pointer]:
+                      - /url: /articles/epic-games-will-allow-fortnite-players-to-sell-their-in-game-items
+                      - generic [ref=e275]:
+                        - generic [ref=e276]: "2"
+                        - img [ref=e278]
+                      - text: Epic Games Will Allow Fortnite Players to Sell Items from Their Islands
+                  - listitem [ref=e280]:
+                    - link "3 Blender CEO Announced His Decision to Step Down After Over 30 Years" [ref=e281] [cursor=pointer]:
+                      - /url: /articles/blender-ceo-announced-his-decision-to-step-down-after-over-30-years
+                      - generic [ref=e282]:
+                        - generic [ref=e283]: "3"
+                        - img [ref=e285]
+                      - text: Blender CEO Announced His Decision to Step Down After Over 30 Years
+                  - listitem [ref=e287]:
+                    - 'link "4 Pokémon Legends: Z-A''s Entire Lumiose City is a Single Model With 355,000 Vertices" [ref=e288] [cursor=pointer]':
+                      - /url: /articles/pok-mon-legends-z-a-s-entire-lumiose-city-is-a-single-model-with-355-000-vertices
+                      - generic [ref=e289]:
+                        - generic [ref=e290]: "4"
+                        - img [ref=e292]
+                      - text: "Pokémon Legends: Z-A's Entire Lumiose City is a Single Model With 355,000 Vertices"
+                  - listitem [ref=e294]:
+                    - link "5 Saudi Arabia Prince Apparently Celebrates Buying EA on His Steam Page" [ref=e295] [cursor=pointer]:
+                      - /url: /articles/saudi-arabia-prince-apparently-celebrates-buying-ea-on-his-steam-page
+                      - generic [ref=e296]:
+                        - generic [ref=e297]: "5"
+                        - img [ref=e299]
+                      - text: Saudi Arabia Prince Apparently Celebrates Buying EA on His Steam Page
+                  - listitem [ref=e301]:
+                    - link "6 Try KWS2 Dynamic Water System Demo For Free" [ref=e302] [cursor=pointer]:
+                      - /url: /articles/try-kws2-dynamic-water-system-demo-for-free
+                      - generic [ref=e303]:
+                        - generic [ref=e304]: "6"
+                        - img [ref=e306]
+                      - text: Try KWS2 Dynamic Water System Demo For Free
+                - button "Subscribe to newsletter" [ref=e308] [cursor=pointer]:
+                  - generic [ref=e309]:
+                    - text: Subscribe to newsletter
+                    - img [ref=e310]
+            - generic [ref=e314]:
+              - generic [ref=e316]:
+                - heading "Join a growing portfolio platform" [level=2] [ref=e317]
+                - heading "80 Level Talent is a human-powered job-matching platform for you and your creative portfolio" [level=3] [ref=e318]
+              - generic [ref=e321]:
+                - link "Unreal Engine Artist Alejandro Trejo" [ref=e322] [cursor=pointer]:
+                  - /url: /talent/p/alejandro-trejo
+                  - generic [ref=e325]: Unreal Engine Artist
+                  - generic [ref=e328]: Alejandro Trejo
+                - link "3D Modeler Laney Desroches" [ref=e329] [cursor=pointer]:
+                  - /url: /talent/p/laney-desroches
+                  - generic [ref=e332]: 3D Modeler
+                  - generic [ref=e335]: Laney Desroches
+                - link "3D Artist for Games & Cinematics Artur Ledur" [ref=e336] [cursor=pointer]:
+                  - /url: /talent/p/artur-ledur
+                  - generic [ref=e339]: 3D Artist for Games & Cinematics
+                  - generic [ref=e342]: Artur Ledur
+                - link "Director, compositor and Unreal artist David Lea" [ref=e343] [cursor=pointer]:
+                  - /url: /talent/p/david-lea
+                  - generic [ref=e346]: Director, compositor and Unreal artist
+                  - generic [ref=e349]: David Lea
+                - link "3D Environment Artist Iryna Makovska" [ref=e350] [cursor=pointer]:
+                  - /url: /talent/p/iryna-makovska
+                  - generic [ref=e353]: 3D Environment Artist
+                  - generic [ref=e356]: Iryna Makovska
+                - link "3D Character Artist Eugene Tertychnyi" [ref=e357] [cursor=pointer]:
+                  - /url: /talent/p/eugene-tertychnyi-8267
+                  - generic [ref=e360]: 3D Character Artist
+                  - generic [ref=e363]: Eugene Tertychnyi
+                - link "3D Character Artist Oguzalp Yilmaz" [ref=e364] [cursor=pointer]:
+                  - /url: /talent/p/alp-yilmaz
+                  - generic [ref=e367]: 3D Character Artist
+                  - generic [ref=e370]: Oguzalp Yilmaz
+                - link "3D Artist Jamine Goh" [ref=e371] [cursor=pointer]:
+                  - /url: /talent/p/jamine-goh
+                  - generic [ref=e374]: 3D Artist
+                  - generic [ref=e377]: Jamine Goh
+              - link "Explore more talents" [ref=e378] [cursor=pointer]:
+                - /url: /talent/
+                - button "Explore more talents" [ref=e379]
+            - generic [ref=e382]:
+              - heading "Latest articles" [level=5] [ref=e384]
+              - generic [ref=e386]:
+                - article [ref=e388]:
+                  - generic [ref=e389]:
+                    - 'heading "Game Development Education: The UK Case Study" [level=2] [ref=e390]':
+                      - 'link "Game Development Education: The UK Case Study" [ref=e391] [cursor=pointer]':
+                        - /url: /articles/game-development-education-the-uk-case-study
+                    - generic [ref=e392]:
+                      - link "Irina Ignatova Oct 16, 2025" [ref=e393] [cursor=pointer]:
+                        - /url: /author/irina-ignatova
+                        - paragraph [ref=e394]: Irina Ignatova
+                        - paragraph [ref=e396]: Oct 16, 2025
+                      - img [ref=e399] [cursor=pointer]
+                  - generic [ref=e401]:
+                    - link [ref=e403] [cursor=pointer]:
+                      - /url: /articles/game-development-education-the-uk-case-study
+                    - list [ref=e408]:
+                      - listitem [ref=e409] [cursor=pointer]:
+                        - link "Gamedev" [ref=e410]:
+                          - /url: /articles/gamedev
+                      - listitem [ref=e411] [cursor=pointer]:
+                        - link "News" [ref=e412]:
+                          - /url: /articles/news
+                      - listitem [ref=e413] [cursor=pointer]:
+                        - link "Research" [ref=e414]:
+                          - /url: /articles/research
+                      - listitem [ref=e415] [cursor=pointer]:
+                        - link "Video Games" [ref=e416]:
+                          - /url: /articles/video-game
+                      - listitem [ref=e417] [cursor=pointer]:
+                        - link "Education" [ref=e418]:
+                          - /url: /articles/education
+                - article [ref=e420]:
+                  - generic [ref=e421]:
+                    - heading "Grab This Free Tool For Easy Face Expansion In Blender" [level=2] [ref=e422]:
+                      - link "Grab This Free Tool For Easy Face Expansion In Blender" [ref=e423] [cursor=pointer]:
+                        - /url: /articles/grab-this-free-tool-for-easy-face-expansion-in-blender
+                    - generic [ref=e424]:
+                      - link "Amber Rutherford Oct 16, 2025" [ref=e425] [cursor=pointer]:
+                        - /url: /author/amber-rutherford
+                        - paragraph [ref=e426]: Amber Rutherford
+                        - paragraph [ref=e428]: Oct 16, 2025
+                      - img [ref=e431] [cursor=pointer]
+                  - generic [ref=e433]:
+                    - link [ref=e435] [cursor=pointer]:
+                      - /url: /articles/grab-this-free-tool-for-easy-face-expansion-in-blender
+                    - list [ref=e440]:
+                      - listitem [ref=e441] [cursor=pointer]:
+                        - link "News" [ref=e442]:
+                          - /url: /articles/news
+                      - listitem [ref=e443] [cursor=pointer]:
+                        - link "Marketplace" [ref=e444]:
+                          - /url: /articles/marketplace
+                      - listitem [ref=e445] [cursor=pointer]:
+                        - link "Blender" [ref=e446]:
+                          - /url: /articles/blender
+                - article [ref=e448]:
+                  - generic [ref=e449]:
+                    - heading "How to Make a Common Object Tell a Story Using Maya, Substance 3D Painter & Marmoset Toolbag" [level=2] [ref=e450]:
+                      - link "How to Make a Common Object Tell a Story Using Maya, Substance 3D Painter & Marmoset Toolbag" [ref=e451] [cursor=pointer]:
+                        - /url: /articles/how-to-make-a-common-object-tell-a-story-using-maya-substance-3d-painter-marmoset-toolbag
+                    - generic [ref=e452]:
+                      - link "Sanjay SM Oct 16, 2025" [ref=e453] [cursor=pointer]:
+                        - /url: /author/sanjay-sm
+                        - paragraph [ref=e454]: Sanjay SM
+                        - paragraph [ref=e456]: Oct 16, 2025
+                      - img [ref=e459] [cursor=pointer]
+                  - generic [ref=e461]:
+                    - link [ref=e463] [cursor=pointer]:
+                      - /url: /articles/how-to-make-a-common-object-tell-a-story-using-maya-substance-3d-painter-marmoset-toolbag
+                    - list [ref=e468]:
+                      - listitem [ref=e469] [cursor=pointer]:
+                        - link "Interviews" [ref=e470]:
+                          - /url: /articles/interview
+                      - listitem [ref=e471] [cursor=pointer]:
+                        - link "Marmoset Toolbag" [ref=e472]:
+                          - /url: /articles/marmoset-toolbag
+                      - listitem [ref=e473] [cursor=pointer]:
+                        - link "Maya" [ref=e474]:
+                          - /url: /articles/maya
+                      - listitem [ref=e475] [cursor=pointer]: "+1"
+            - generic [ref=e478]:
+              - heading "Latest articles" [level=5] [ref=e480]
+              - generic [ref=e482]:
+                - article [ref=e484]:
+                  - generic [ref=e485]:
+                    - heading "This Sweet 2D-Like Anime Girl Is 3D Model You Might Want in Your VRChat Session" [level=2] [ref=e486]:
+                      - link "This Sweet 2D-Like Anime Girl Is 3D Model You Might Want in Your VRChat Session" [ref=e487] [cursor=pointer]:
+                        - /url: /articles/this-sweet-2d-like-anime-girl-is-3d-model-you-might-want-in-your-vrchat-session
+                    - generic [ref=e488]:
+                      - link "Gloria Levine Oct 16, 2025" [ref=e489] [cursor=pointer]:
+                        - /url: /author/gloria-levine
+                        - paragraph [ref=e490]: Gloria Levine
+                        - paragraph [ref=e492]: Oct 16, 2025
+                      - img [ref=e495] [cursor=pointer]
+                  - generic [ref=e497]:
+                    - link [ref=e499] [cursor=pointer]:
+                      - /url: /articles/this-sweet-2d-like-anime-girl-is-3d-model-you-might-want-in-your-vrchat-session
+                    - list [ref=e504]:
+                      - listitem [ref=e505] [cursor=pointer]:
+                        - link "News" [ref=e506]:
+                          - /url: /articles/news
+                      - listitem [ref=e507] [cursor=pointer]:
+                        - link "Blender" [ref=e508]:
+                          - /url: /articles/blender
+                - article [ref=e510]:
+                  - generic [ref=e511]:
+                    - heading "Capturing a Rainy Day in Islamabad with Unreal Engine 5" [level=2] [ref=e512]:
+                      - link "Capturing a Rainy Day in Islamabad with Unreal Engine 5" [ref=e513] [cursor=pointer]:
+                        - /url: /articles/capturing-a-rainy-day-in-islamabad-with-unreal-engine-5
+                    - generic [ref=e514]:
+                      - link "Zubair Tanoli Oct 16, 2025" [ref=e515] [cursor=pointer]:
+                        - /url: /author/zubair-tanoli
+                        - paragraph [ref=e516]: Zubair Tanoli
+                        - paragraph [ref=e518]: Oct 16, 2025
+                      - img [ref=e521] [cursor=pointer]
+                  - generic [ref=e523]:
+                    - link [ref=e525] [cursor=pointer]:
+                      - /url: /articles/capturing-a-rainy-day-in-islamabad-with-unreal-engine-5
+                    - list [ref=e530]:
+                      - listitem [ref=e531] [cursor=pointer]:
+                        - link "Interviews" [ref=e532]:
+                          - /url: /articles/interview
+                      - listitem [ref=e533] [cursor=pointer]:
+                        - link "Unreal Engine" [ref=e534]:
+                          - /url: /articles/unreal-engine
+                      - listitem [ref=e535] [cursor=pointer]:
+                        - link "Megascans" [ref=e536]:
+                          - /url: /articles/megascans
+                      - listitem [ref=e537] [cursor=pointer]:
+                        - link "Nuke" [ref=e538]:
+                          - /url: /articles/nuke
+                - article [ref=e540]:
+                  - generic [ref=e541]:
+                    - heading "Check Out This Sci-Fi Horror with Monsters from Multiple Scary Stories" [level=2] [ref=e542]:
+                      - link "Check Out This Sci-Fi Horror with Monsters from Multiple Scary Stories" [ref=e543] [cursor=pointer]:
+                        - /url: /articles/check-out-this-sci-fi-horror-with-monsters-from-multiple-scary-stories
+                    - generic [ref=e544]:
+                      - link "Emma Collins Oct 16, 2025" [ref=e545] [cursor=pointer]:
+                        - /url: /author/emma-collins
+                        - paragraph [ref=e546]: Emma Collins
+                        - paragraph [ref=e548]: Oct 16, 2025
+                      - img [ref=e551] [cursor=pointer]
+                  - generic [ref=e553]:
+                    - link [ref=e555] [cursor=pointer]:
+                      - /url: /articles/check-out-this-sci-fi-horror-with-monsters-from-multiple-scary-stories
+                    - list [ref=e560]:
+                      - listitem [ref=e561] [cursor=pointer]:
+                        - link "News" [ref=e562]:
+                          - /url: /articles/news
+                      - listitem [ref=e563] [cursor=pointer]:
+                        - link "Video Games" [ref=e564]:
+                          - /url: /articles/video-game
+              - list [ref=e565]:
+                - listitem [ref=e566]:
+                  - button [disabled] [ref=e567] [cursor=pointer]:
+                    - img [ref=e569]
+                - listitem [ref=e571]:
+                  - link "1":
+                    - /url: /
+                - listitem [ref=e572]:
+                  - link "2" [ref=e573] [cursor=pointer]:
+                    - /url: /
+                - listitem [ref=e574]:
+                  - link "3" [ref=e575] [cursor=pointer]:
+                    - /url: /
+                - listitem [ref=e576]:
+                  - link "4" [ref=e577] [cursor=pointer]:
+                    - /url: /
+                - listitem [ref=e578]:
+                  - link "5" [ref=e579] [cursor=pointer]:
+                    - /url: /
+                - listitem [ref=e580]:
+                  - link [ref=e581] [cursor=pointer]:
+                    - /url: /
+                    - img [ref=e583]
+            - generic [ref=e586]:
+              - link "Sponsored" [ref=e589] [cursor=pointer]:
+                - /url: https://cgboost.link/5e1110
+                - generic [ref=e591]: Sponsored
+              - generic [ref=e593]:
+                - heading "Popular discussions" [level=5] [ref=e595]
+                - list [ref=e597]:
+                  - listitem [ref=e598]:
+                    - link "The Original 2007 Witcher Game Was Designed to Let You Drink Beer While Gaming Great article! Keep up the good work! 1 · Anonymous user" [ref=e599] [cursor=pointer]:
+                      - /url: /articles/the-original-2007-witcher-game-was-designed-to-let-you-drink-beer-while-gaming
+                      - paragraph [ref=e600]: The Original 2007 Witcher Game Was Designed to Let You Drink Beer While Gaming
+                      - generic [ref=e601]: Great article! Keep up the good work!
+                      - generic [ref=e602]:
+                        - button "1" [ref=e603]:
+                          - img [ref=e604]
+                          - generic [ref=e606]: "1"
+                        - generic [ref=e607]: ·
+                        - paragraph [ref=e608]: Anonymous user
+                  - listitem [ref=e609]:
+                    - link "Developer Created Audio Editor in Unity to Replace Audacity Alok (Kitler Dev) here! USM combines complete audio management with a... 1 · Dev Kitler" [ref=e610] [cursor=pointer]:
+                      - /url: /articles/developer-created-audio-editor-in-unity-to-replace-audacity
+                      - paragraph [ref=e611]: Developer Created Audio Editor in Unity to Replace Audacity
+                      - generic [ref=e612]: Alok (Kitler Dev) here! USM combines complete audio management with a...
+                      - generic [ref=e613]:
+                        - button "1" [ref=e614]:
+                          - img [ref=e615]
+                          - generic [ref=e617]: "1"
+                        - generic [ref=e618]: ·
+                        - paragraph [ref=e619]: Dev Kitler
+                  - listitem [ref=e620]:
+                    - 'link "Hollow Knight: Silksong Launches to 500K Players & Even Pirates Skip Piracy Check \"Apocalypse of the Universe\" - Steam Really nice RP... 1 · :) v.a.c.u.u.m." [ref=e621] [cursor=pointer]':
+                      - /url: /articles/hollow-knight-silksong-launches-to-500k-players-even-pirates-skip-piracy
+                      - paragraph [ref=e622]: "Hollow Knight: Silksong Launches to 500K Players & Even Pirates Skip Piracy"
+                      - generic [ref=e623]:
+                        - text: Check "Apocalypse of the Universe" - Steam
+                        - text: Really nice RP...
+                      - generic [ref=e624]:
+                        - button "1" [ref=e625]:
+                          - img [ref=e626]
+                          - generic [ref=e628]: "1"
+                        - generic [ref=e629]: ·
+                        - paragraph [ref=e630]: :) v.a.c.u.u.m.
+                  - listitem [ref=e631]:
+                    - 'link "Azerbaijan: From Indie Spirit to State Strategy So interesting. 1 · :) v.a.c.u.u.m." [ref=e632] [cursor=pointer]':
+                      - /url: /articles/azerbaijan-from-indie-spirit-to-state-strategy
+                      - paragraph [ref=e633]: "Azerbaijan: From Indie Spirit to State Strategy"
+                      - generic [ref=e634]: So interesting.
+                      - generic [ref=e635]:
+                        - button "1" [ref=e636]:
+                          - img [ref=e637]
+                          - generic [ref=e639]: "1"
+                        - generic [ref=e640]: ·
+                        - paragraph [ref=e641]: :) v.a.c.u.u.m.
+                - generic [ref=e642]:
+                  - heading "Join discussion" [level=6] [ref=e643]
+                  - paragraph [ref=e644]: "Talk to thousands of game designers and find tips & answers to your most burning questions. Sign up or log in to continue:"
+                  - generic [ref=e646] [cursor=pointer]:
+                    - button "Sign up" [ref=e647]:
+                      - generic [ref=e648]: Sign up
+                    - button "Log in" [ref=e649]:
+                      - generic [ref=e650]: Log in
+                      - img [ref=e652]
+              - generic [ref=e655]:
+                - generic [ref=e656]:
+                  - heading "Partners" [level=5] [ref=e658]
+                  - generic [ref=e668]:
+                    - generic [ref=e669]:
+                      - figure [ref=e670]:
+                        - link [ref=e671] [cursor=pointer]:
+                          - /url: /partners/vertex-school
+                      - paragraph [ref=e677]: Vertex School is a leader in online Game Design classes that offers intensive Bootcamps based on the ever-changing needs of the gaming industry.
+                    - generic [ref=e678]:
+                      - figure [ref=e679]:
+                        - link [ref=e680] [cursor=pointer]:
+                          - /url: /partners/unreal-engine
+                      - paragraph [ref=e684]: The world's most open and advanced real-time 3D creation tool for photoreal visuals and immersive experiences.
+                    - generic [ref=e685]:
+                      - figure [ref=e686]:
+                        - link [ref=e687] [cursor=pointer]:
+                          - /url: /partners/umodeler
+                      - paragraph [ref=e691]: UModeler is a Unity3D editor extension to empower you to design your level and mesh without leaving Unity.
+                    - generic [ref=e692]:
+                      - figure [ref=e693]:
+                        - link [ref=e694] [cursor=pointer]:
+                          - /url: /partners/reallusion
+                      - paragraph [ref=e698]: Reallusion software is a platform for digital human character creativity and animation. Emphasizing character scalability for creative and industry projects, Reallusion real-time characters are populating across Media and Entertainment, Metaverse, Digital Twin factories, Architectural visualizations, and AI Simulations.
+                    - generic [ref=e699]:
+                      - figure [ref=e700]:
+                        - link [ref=e701] [cursor=pointer]:
+                          - /url: /partners/adobe-substance-3d
+                      - paragraph [ref=e705]: Adobe Substance 3D brings you an ecosystem of apps and content that empower you to design 3D.
+                    - generic [ref=e706]:
+                      - figure [ref=e707]:
+                        - link [ref=e708] [cursor=pointer]:
+                          - /url: /partners/houdini
+                      - generic [ref=e711]: "Houdini combines superior performance and dramatic, ease-of-use to deliver a powerful and accessible 3D animation experience to CG artists creating feature films, commercials or video games. With its procedural node-based workflow, Houdini lets \x03you create more content faster to reduce timelines and enjoy enhanced flexibility in all your creative tasks. Houdini is ideal for modelers, lighters, character riggers and animators to use on its own or as a layout and lighting tool for visual effects created in Houdini FX."
+                    - generic [ref=e712]:
+                      - figure [ref=e713]:
+                        - link [ref=e714] [cursor=pointer]:
+                          - /url: /partners/nvidia
+                      - paragraph [ref=e718]: NVIDIA is a full-stack computing company with data-center-scale offerings that are reshaping industry.
+                    - generic [ref=e719]:
+                      - figure [ref=e720]:
+                        - link [ref=e721] [cursor=pointer]:
+                          - /url: /partners/vertex-school
+                      - paragraph [ref=e727]: Vertex School is a leader in online Game Design classes that offers intensive Bootcamps based on the ever-changing needs of the gaming industry.
+                    - generic [ref=e728]:
+                      - figure [ref=e729]:
+                        - link [ref=e730] [cursor=pointer]:
+                          - /url: /partners/unreal-engine
+                      - paragraph [ref=e734]: The world's most open and advanced real-time 3D creation tool for photoreal visuals and immersive experiences.
+                - link "Explore Partners" [ref=e735] [cursor=pointer]:
+                  - /url: /partners
+                  - generic [ref=e736]: Explore Partners
+                  - img [ref=e738]
+          - generic [ref=e741]:
+            - heading "Our partners" [level=3] [ref=e743]
+            - generic [ref=e744]:
+              - list [ref=e745]:
+                - listitem [ref=e746]:
+                  - link "CG Boost" [ref=e747] [cursor=pointer]:
+                    - /url: /partners/cg-boost
+                - listitem [ref=e749]:
+                  - link "HeartStamp" [ref=e750] [cursor=pointer]:
+                    - /url: /partners/heartstamp
+                - listitem [ref=e752]:
+                  - link "Render Network" [ref=e753] [cursor=pointer]:
+                    - /url: /partners/render-network
+                - listitem [ref=e755]:
+                  - link "Emperia" [ref=e756] [cursor=pointer]:
+                    - /url: /partners/emperia
+              - generic [ref=e758]:
+                - link "More partners" [ref=e759] [cursor=pointer]:
+                  - /url: /partners
+                  - generic [ref=e760]: More partners
+                  - img [ref=e762]
+                - link "Become a partner" [ref=e764] [cursor=pointer]:
+                  - /url: mailto:contact@80.lv
+                  - generic [ref=e765]: Become a partner
+      - contentinfo [ref=e767]:
+        - generic [ref=e768]:
+          - heading "Subscribe" [level=2] [ref=e769]
+          - paragraph [ref=e770]: Start receiving our weekly newsletter
+          - generic [ref=e771]:
+            - textbox [ref=e774]:
+              - /placeholder: Email address
+            - button "Subscribe" [ref=e775] [cursor=pointer]:
+              - generic [ref=e776]: Subscribe
+          - list [ref=e777]:
+            - listitem [ref=e778]:
+              - img "Facebook" [ref=e780]
+              - link "@LevelEighty" [ref=e781] [cursor=pointer]:
+                - /url: https://www.facebook.com/LevelEighty
+            - listitem [ref=e782]:
+              - img "Twitter" [ref=e784]
+              - link "@80Level" [ref=e785] [cursor=pointer]:
+                - /url: https://twitter.com/80Level
+            - listitem [ref=e786]:
+              - img "YouTube" [ref=e788]
+              - link "@80lv" [ref=e789] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UCI8IFlI7_0xU9Dc60xoZuiA
+            - listitem [ref=e790]:
+              - img "Instagram" [ref=e792]
+              - link "@eighty_level" [ref=e793] [cursor=pointer]:
+                - /url: https://www.instagram.com/eighty_level/
+            - listitem [ref=e794]:
+              - img "Podcasts" [ref=e796]
+              - link "Round Table" [ref=e797] [cursor=pointer]:
+                - /url: https://80levelroundtable.buzzsprout.com/
+          - generic [ref=e798]:
+            - list [ref=e799]:
+              - listitem [ref=e800]:
+                - link "About & Contact us" [ref=e801] [cursor=pointer]:
+                  - /url: /contact-us
+              - listitem [ref=e802]:
+                - link "Privacy Policy" [ref=e803] [cursor=pointer]:
+                  - /url: /privacy-policy
+              - listitem [ref=e804]:
+                - link "Republishing policy" [ref=e805] [cursor=pointer]:
+                  - /url: /republishing-policy
+              - listitem [ref=e806]:
+                - link "Terms of use" [ref=e807] [cursor=pointer]:
+                  - /url: /terms-of-use
+              - listitem [ref=e808]:
+                - link "Disclaimer" [ref=e809] [cursor=pointer]:
+                  - /url: /disclaimer
+            - paragraph [ref=e810]:
+              - text: © 2025. All rights reserved. 80 level
+              - img [ref=e811]
+              - text: 80LV logo are registered trademarks of 80LV LLC.
+    - generic [ref=e818]:
+      - generic [ref=e819]:
+        - heading "We need your consent" [level=3] [ref=e820]
+        - paragraph [ref=e821]:
+          - text: We use cookies on this website to make your browsing experience better. By using the site you agree to our use of cookies.
+          - link "Learn more" [ref=e822] [cursor=pointer]:
+            - /url: /privacy-policy/#cookies
+      - img [ref=e824] [cursor=pointer]
+  - iframe [ref=e833]
+```

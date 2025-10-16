@@ -1,0 +1,2 @@
+✅ Clicked [Login Button (Step 1) @ Mobile] → "Login Button (Step 1)"
+✅ Clicked [Login Button (Step 2) @ Mobile] → "profile-login"
