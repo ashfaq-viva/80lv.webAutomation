@@ -1,0 +1,2 @@
+✅ Clicked [Login Button (Step 1) @ Laptop] → "Login Button (Step 1)"
+✅ Clicked [Login Button (Step 2) @ Laptop] → "profile-login"

@@ -1,0 +1,4 @@
+✅ Clicked [Accept Cookies @ Laptop] → "Accept Cookies"
+✅ Clicked [Search (Step 1) @ Laptop] → "Search (Step 1)"
+✅ Clicked [Search (Step 2) @ Laptop] → "search"
+✅ Assert: element is visible [Cross icon @ Laptop]

@@ -1,0 +1,4 @@
+✅ Clicked [Accept Cookies @ Desktop] → "Accept Cookies"
+✅ Clicked [Company Logo @ Desktop] → "logo80lv"
+🌐 Captured API → GET https://cdn.80.lv/api/upload/portfolio/9966/images/68e9b11400b9c/heighten_0x640.jpg | Status: 200
+✅ Assert: page URL is "https://80.lv"

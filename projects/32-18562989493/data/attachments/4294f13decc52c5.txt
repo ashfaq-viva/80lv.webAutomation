@@ -1,0 +1,3 @@
+✅ Clicked [Accept Cookies @ Laptop] → "Accept Cookies"
+✅ Clicked [Advertise Button @ Laptop] → "Order Research"
+✅ Assert: page URL is "https://80level.typeform.com/request-form?utm_source=website_80lv&utm_medium=top-button"

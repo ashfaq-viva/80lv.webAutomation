@@ -1,0 +1,32 @@
+[
+  {
+    "id": 2836,
+    "type": "image",
+    "quantity_show": 79488,
+    "is_free_download": false,
+    "is_sponsored": false,
+    "is_co_branded": false,
+    "content": {
+      "url": "https://80lv.gumroad.com/l/cloud-gaming-and-beyond-survey?utm_source=website_80lv&utm_medium=image-bannerr&utm_campaign=cloudgaming",
+      "sponsored": "Sponsored Ad",
+      "sponsored_color": "#a1a490",
+      "image": "https://cdn.80.lv/api/upload/promo/2836/68c95384a99b8.jpg",
+      "type": "image"
+    }
+  },
+  {
+    "id": 2857,
+    "type": "image",
+    "quantity_show": 43939,
+    "is_free_download": false,
+    "is_sponsored": false,
+    "is_co_branded": false,
+    "content": {
+      "url": "https://80.lv/talent/?utm_source=website_80lv&utm_medium=image-banner&utm_campaign=january2025",
+      "sponsored": "Sponsored Ad",
+      "sponsored_color": "#a1a490",
+      "image": "https://cdn.80.lv/api/upload/promo/2857/68daf09e0816f.jpg",
+      "type": "image"
+    }
+  }
+]

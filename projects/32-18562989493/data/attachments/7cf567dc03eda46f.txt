@@ -1,0 +1,5 @@
+✅ Clicked [Accept Cookies @ Tablet] → "Accept Cookies"
+✅ Clicked [Search (Step 1) @ Tablet] → "Search (Step 1)"
+✅ Clicked [Search (Step 2) @ Tablet] → "search"
+✅ Clicked [Search @ Tablet] → "Search"
+✅ Assert: element is visible [Company logo visible @ Tablet]

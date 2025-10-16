@@ -1,0 +1,17 @@
+✅ Clicked [Accept Cookies @ Tablet] → "Accept Cookies"
+🌐 Captured API: https://cdn.80.lv/api/upload/promo/2793/68920ae44de48.jpg → Method: GET | Status: 200
+🔗 Expected API: https://cdn.80.lv/api → Method: GET | Status: 200
+✅Assertion API: Passed 
+Generated Signup Email: ashfaq.ahmed+7611@vivasoftltd.com
+✅ Email saved to: /app/savedData/signupEmails/signup_email_Tablet_2025-10-16T13-34-52-357Z.txt
+✅ Clicked [Login Button (Step 1) @ Tablet] → "Login Button (Step 1)"
+✅ Clicked [Login Button (Step 2) @ Tablet] → "profile-login"
+✅ Filled [Email @ Tablet] → "email" with: "ashfaq.ahmed+7611@vivasoftltd.com"
+✅ Filled [Password @ Tablet] → "password" with: "Aa@1234"
+✅ Clicked [Create Account Button @ Tablet] → "CREATE ACCOUNT"
+🌐 Captured API → POST https://login.xsolla.com/api/user?projectId=8b83af12-0974-11e7-93ae-92361f002671&locale=en_US&login_url=https:%2F%2F80.lv%2Fapi%2Fuser%2Fauth&payload=%7B%22registration_source%22:%2280lv%22,%22redirectUrl%22:%22https:%2F%2F80.lv%2F%22%7D | Status: 204
+Using App Password method to fetch email
+📧 Email Subject: Account confirmation
+🔘 Button Name: CONFIRM ACCOUNT
+🔗 Confirmation Link: https://login.xsolla.com/api/user/0900f176-5105-40c7-901d-bacd65eb82eb/confirm?code=yiIxFr5n2iGCG4jv2FSMJh_uOwJ31NnzZC7PgYTU0wA&locale=en_US&login_url=https%3A%2F%2F80.lv%2Fapi%2Fuser%2Fauth&payload=%257B%2522registration_source%2522%253A%252280lv%2522%252C%2522redirectUrl%2522%253A%2522https%253A%252F%252F80.lv%252F%2522%257D&projectId=8b83af12-0974-11e7-93ae-92361f002671
+✅ Clicked [Logged-in Profile Icon (Step 1) @ Tablet]

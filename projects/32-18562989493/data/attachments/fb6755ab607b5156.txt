@@ -1,0 +1,9 @@
+curl -X GET \
+  -H "sec-ch-ua-platform: "Linux"" \
+  -H "referer: https://80.lv/" \
+  -H "user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.7390.37 Safari/537.36" \
+  -H "sec-ch-ua: "HeadlessChrome";v="141", "Not?A_Brand";v="8", "Chromium";v="141"" \
+  -H "accept-language: en-US" \
+  -H "x-test-env: 80LV_PROD" \
+  -H "sec-ch-ua-mobile: ?0" \
+  'https://cdn.80.lv/api/upload/portfolio/9966/images/68e9b11400b9c/heighten_0x640.jpg'

@@ -1,0 +1,4 @@
+✅ Clicked [Accept Cookies @ Desktop] → "Accept Cookies"
+✅ Clicked [Advertise Button @ Desktop] → "Advertise"
+🌐 Captured API → GET https://80.lv/api/updpromos?promos%5B0%5D%5Btype%5D=image&promos%5B0%5D%5Bcount%5D=2 | Status: 200
+✅ Assert: page URL is "https://80.lv/contact-us#Promote"
