@@ -11,5 +11,21 @@ test.describe('Navbar', () => {
       await navbarPage.advertiseRedirection(); 
     });
   }
+   for (const vp of [Desktop,Laptop,Tablet,Mobile]) {
+    test(`${vp.name}  @regression TC_012:Successful Order research redirection`, async ({ page, loginPage , navbarPage }) => {
+      await setViewport(page, vp.size);
+      await loginPage.visit();
+      await loginPage.acceptCookies();
+      await navbarPage.orderResearchRedirection(); 
+    });
+  }
+  for (const vp of [Desktop,Laptop,Tablet,Mobile]) {
+    test(`${vp.name}  @regression TC_013:Successful Company Logo Redirection`, async ({ page, loginPage , navbarPage }) => {
+      await setViewport(page, vp.size);
+      await loginPage.visit();
+      await loginPage.acceptCookies();
+      await navbarPage.companyLogoRedirection(); 
+    });
+  }
 })
 
