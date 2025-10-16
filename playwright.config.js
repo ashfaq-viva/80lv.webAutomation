@@ -90,7 +90,7 @@ export default defineConfig({
   /* Configure projects for major browsers */
   projects: [
     {
-      name: "chrome",
+      name: "Browser:Google Chrome",
       // use: { ...devices["Desktop Chrome"], 
         use: { 
         baseURL: BASE_URL,
