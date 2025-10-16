@@ -1,0 +1,8 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Thu Oct 16 13:43:23 UTC 2025","Thu Oct 16 13:43:32 UTC 2025","8508","Browser:Google Chrome","functional/1_Login/login.spec.js","Login to 80LV","","","Desktop @regression TC_003:Successful login with session (talent)",""
+"passed","Thu Oct 16 13:43:39 UTC 2025","Thu Oct 16 13:43:47 UTC 2025","7439","Browser:Google Chrome","functional/1_Login/login.spec.js","Login to 80LV","","","Tablet @regression TC_003:Successful login with session (talent)",""
+"passed","Thu Oct 16 13:43:47 UTC 2025","Thu Oct 16 13:43:52 UTC 2025","5451","Browser:Google Chrome","functional/1_Login/login.spec.js","Login to 80LV","","","Desktop @regression TC_004:Successful login with session (recruiter)",""
+"passed","Thu Oct 16 13:43:23 UTC 2025","Thu Oct 16 13:43:44 UTC 2025","21068","Browser:Google Chrome","functional/1_Login/login.spec.js","Login to 80LV","","","Mobile  @regression TC_002:Successful login(Without session)",""
+"passed","Thu Oct 16 13:43:23 UTC 2025","Thu Oct 16 13:43:47 UTC 2025","23693","Browser:Google Chrome","functional/1_Login/login.spec.js","Login to 80LV","","","Desktop  @regression TC_002:Successful login(Without session)",""
+"passed","Thu Oct 16 13:43:23 UTC 2025","Thu Oct 16 13:43:50 UTC 2025","27308","Browser:Google Chrome","functional/1_Login/login.spec.js","Login to 80LV","","","Tablet  @regression TC_002:Successful login(Without session)",""
+"passed","Thu Oct 16 13:43:32 UTC 2025","Thu Oct 16 13:43:39 UTC 2025","7465","Browser:Google Chrome","functional/1_Login/login.spec.js","Login to 80LV","","","Laptop @regression TC_003:Successful login with session (talent)",""
