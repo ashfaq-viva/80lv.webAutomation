@@ -1,0 +1,4 @@
+✅ Clicked [Accept Cookies @ Desktop] → "Accept Cookies"
+✅ Clicked [Search @ Desktop] → "Search"
+✅ Clicked [Search @ Desktop] → "Search"
+✅ Assert: element is visible [Company logo visible @ Desktop]

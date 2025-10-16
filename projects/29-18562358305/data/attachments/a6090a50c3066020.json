@@ -1,0 +1,32 @@
+[
+  {
+    "id": 2853,
+    "type": "image",
+    "quantity_show": 97334,
+    "is_free_download": false,
+    "is_sponsored": true,
+    "is_co_branded": false,
+    "content": {
+      "url": "https://www.viewconference.it/",
+      "sponsored": "Sponsored Ad",
+      "sponsored_color": "#a1a490",
+      "image": "https://cdn.80.lv/api/upload/promo/2853/68d2c78585977.jpg",
+      "type": "image"
+    }
+  },
+  {
+    "id": 2837,
+    "type": "image",
+    "quantity_show": 80078,
+    "is_free_download": false,
+    "is_sponsored": false,
+    "is_co_branded": false,
+    "content": {
+      "url": "https://80lv.gumroad.com/l/gamedev-report-outsourcing-vs-in-house?utm_source=website_80lv&utm_medium=image-bannerr&utm_campaign=outsourcingresearch",
+      "sponsored": "Sponsored Ad",
+      "sponsored_color": "#a1a490",
+      "image": "https://cdn.80.lv/api/upload/promo/2837/68c953b553b13.jpg",
+      "type": "image"
+    }
+  }
+]

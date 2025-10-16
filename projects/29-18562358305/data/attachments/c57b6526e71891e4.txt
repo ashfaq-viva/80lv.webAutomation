@@ -1,0 +1,12 @@
+✅ Clicked [Accept Cookies @ Desktop] → "Accept Cookies"
+Generated Signup Email: ashfaq.ahmed+6642@vivasoftltd.com
+✅ Email saved to: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/signupEmails/signup_email_Desktop_2025-10-16T13-15-10-246Z.txt
+✅ Clicked [Login Button @ Desktop] → "LogIn"
+✅ Filled [Email @ Desktop] → "email" with: "ashfaq.ahmed+6642@vivasoftltd.com"
+✅ Filled [Password @ Desktop] → "password" with: "Aa@1234"
+✅ Clicked [Create Account Button @ Desktop] → "CREATE ACCOUNT"
+🌐 Captured API → POST https://login.xsolla.com/api/user?projectId=8b83af12-0974-11e7-93ae-92361f002671&locale=en_US&login_url=https:%2F%2F80.lv%2Fapi%2Fuser%2Fauth&payload=%7B%22registration_source%22:%2280lv%22,%22redirectUrl%22:%22https:%2F%2F80.lv%2F%22%7D | Status: 204
+Using App Password method to fetch email
+📧 Email Subject: Account confirmation
+🔘 Button Name: CONFIRM ACCOUNT
+🔗 Confirmation Link: https://login.xsolla.com/api/user/b2f1dcc2-8ba7-4e0f-b84e-ad0372bf425c/confirm?code=kyLEigvXcf9FedPJiTgRuSHgyWEj-kfxbvI4PMbqn6M&locale=en_US&login_url=https%3A%2F%2F80.lv%2Fapi%2Fuser%2Fauth&payload=%257B%2522registration_source%2522%253A%252280lv%2522%252C%2522redirectUrl%2522%253A%2522https%253A%252F%252F80.lv%252F%2522%257D&projectId=8b83af12-0974-11e7-93ae-92361f002671

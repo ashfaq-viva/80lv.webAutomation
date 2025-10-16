@@ -1,0 +1,5 @@
+✅ Clicked [Accept Cookies @ Laptop] → "Accept Cookies"
+✅ Clicked [Search (Step 1) @ Laptop] → "Search (Step 1)"
+✅ Clicked [Search (Step 2) @ Laptop] → "search"
+✅ Typed directly [Search Field] → "adasd"
+✅ Assert: element is visible [No result Text @ Laptop]

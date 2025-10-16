@@ -1,0 +1,32 @@
+[
+  {
+    "id": 2845,
+    "type": "image",
+    "quantity_show": 66267,
+    "is_free_download": false,
+    "is_sponsored": true,
+    "is_co_branded": false,
+    "content": {
+      "url": "https://coloso.global/en/event/gamepath?utm_source=etc&utm_medium=paid&utm_campaign=gamepath_conv_all&utm_content=game_gamepath_80LV-520-B-250923",
+      "sponsored": "Sponsored Ad",
+      "sponsored_color": "#a1a490",
+      "image": "https://cdn.80.lv/api/upload/promo/2845/68cd4f576ea4d.jpg",
+      "type": "image"
+    }
+  },
+  {
+    "id": 2856,
+    "type": "image",
+    "quantity_show": 44152,
+    "is_free_download": false,
+    "is_sponsored": false,
+    "is_co_branded": false,
+    "content": {
+      "url": "https://80.lv/talent/companies?utm_source=website_80lv&utm_medium=image-banner&utm_campaign=january2025",
+      "sponsored": "Sponsored Ad",
+      "sponsored_color": "#a1a490",
+      "image": "https://cdn.80.lv/api/upload/promo/2856/68daf061b7c5f.jpg",
+      "type": "image"
+    }
+  }
+]
