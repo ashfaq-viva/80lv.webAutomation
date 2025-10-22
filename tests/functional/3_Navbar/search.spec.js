@@ -5,7 +5,7 @@ import { config } from '../../../config/testConfig.js';
 test.describe('Navbar Search', () => {
 
   for (const vp of [Desktop,Laptop,Tablet,Mobile]) {
-    test(`${vp.name}  @regression TC_014:Successful search modal seen`, async ({ page, loginPage , navbarPage }) => {
+    test(`${vp.name} TC_014:Successful search modal seen @regression`, async ({ page, loginPage , navbarPage }) => {
       await setViewport(page, vp.size);
       await loginPage.visit();
       await loginPage.acceptCookies();
@@ -13,7 +13,7 @@ test.describe('Navbar Search', () => {
     });
   }
   for (const vp of [Desktop,Laptop,Tablet,Mobile]) {
-    test(`${vp.name}  @regression TC_015:Successful search results`, async ({ page, loginPage , navbarPage }) => {
+    test(`${vp.name} TC_015:Successful search results @regression`, async ({ page, loginPage , navbarPage }) => {
       await setViewport(page, vp.size);
       await loginPage.visit();
       await loginPage.acceptCookies();
@@ -21,7 +21,7 @@ test.describe('Navbar Search', () => {
     });
   }
   for (const vp of [Desktop,Laptop,Tablet,Mobile]) {
-    test(`${vp.name}  @regression TC_016:Invaild Search results`, async ({ page, loginPage , navbarPage }) => {
+    test(`${vp.name} TC_016:Invaild Search results @regression`, async ({ page, loginPage , navbarPage }) => {
       await setViewport(page, vp.size);
       await loginPage.visit();
       await loginPage.acceptCookies();
@@ -29,7 +29,7 @@ test.describe('Navbar Search', () => {
     });
   }
     for (const vp of [Desktop,Laptop,Tablet,Mobile]) {
-        test(`${vp.name}  @regression TC_017:Successfully clearred searched value`, async ({ page, loginPage , navbarPage }) => {
+        test(`${vp.name} TC_017:Successfully clearred searched value @regression`, async ({ page, loginPage , navbarPage }) => {
         await setViewport(page, vp.size);
         await loginPage.visit();
         await loginPage.acceptCookies();
@@ -37,7 +37,7 @@ test.describe('Navbar Search', () => {
         });
     }
   for (const vp of [Desktop,Laptop,Tablet,Mobile]) {
-    test(`${vp.name}  @regression TC_018:Successful search modal close`, async ({ page, loginPage , navbarPage }) => {
+    test(`${vp.name} TC_018:Successful search modal close @regression`, async ({ page, loginPage , navbarPage }) => {
       await setViewport(page, vp.size);
       await loginPage.visit();
       await loginPage.acceptCookies();
