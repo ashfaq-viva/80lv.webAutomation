@@ -1,4 +1,3 @@
-import { expect } from '@playwright/test';
 import BasePage from './BasePage';
 import { config } from '../config/testConfig.js';
 export class LoginPage extends BasePage {
@@ -26,11 +25,18 @@ export class LoginPage extends BasePage {
     this.loginWithLinkdinPrimaryBtn = this.widgetFrame.getByTestId('login-form__primary-social--linkedin');
 }
 
-  async visit() {
-    await this.page.goto('/',{waitUntil:'networkidle'} );
+  async visit(slugKeyOrPath = '') {
+    let path = '';
+    if (config.slug[slugKeyOrPath]) {
+      path = config.slug[slugKeyOrPath];
+    } else {
+      path = slugKeyOrPath;
+    }
+    const finalPath = path.startsWith('/') ? path : `/${path}`;
+    await this.page.goto(finalPath, { waitUntil: 'networkidle' });
   }
   async acceptCookies(){
-    await this.expectAndClick(this.allowCookiesBtnOld,'Accept Cookies','cookieApi:GET');
+    await this.expectAndClick(this.allowCookiesBtnOld,'Accept Cookies');
   }
   async _waitForWidget() {
     for (let attempt = 1; attempt <= 3; attempt++) {
