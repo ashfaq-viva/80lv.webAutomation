@@ -113,6 +113,8 @@ async expectAndClick(
                   res.request().method().toUpperCase() === apiAssertion.method
               : (res) => {
                   const u = new URL(res.url());
+                  if (u.hostname.includes("cdn.80.lv")) return false; 
+                  if (u.href.includes("/api/updpromos")) return false;
                   const pathIsApi = u.pathname.replace(/^\//, "").toLowerCase().startsWith("api");
                   const firstLabel = u.hostname.split(".")[0].toLowerCase();
                   const hostIsApi = /^api(\d+)?(?:$|-)/.test(firstLabel) || /-api$/.test(firstLabel);
