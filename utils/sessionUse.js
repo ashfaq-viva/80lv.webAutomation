@@ -8,7 +8,7 @@ import pwConfig, { ENV } from '../playwright.config.js';
 function getHost() {
   const baseURL = pwConfig?.use?.baseURL;
   if (!baseURL) throw new Error('playwright.config.js → use.baseURL is missing.');
-  return new URL(baseURL).host; // e.g. "80.lv"
+  return new URL(baseURL).host; 
 }
 
 // Helper: read saved session
