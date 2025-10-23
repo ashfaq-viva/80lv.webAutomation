@@ -36,6 +36,15 @@ test.describe('Menubar', () => {
     });
   }
   for (const vp of [Desktop,Laptop,Tablet,Mobile]) {
+    test(`${vp.name} TC_033:Successful redirection on Talent Platform submenu (with recruiter login) @regression`, async ({ page, loginPage, menubarPage ,talentPage,useSession  }) => {
+      await setViewport(page, vp.size);
+      await loginPage.visit();
+      await useSession('recruiter');
+      await menubarPage.navigateToTalentPlatform();
+      await talentPage.assertLoggedIn();
+    });
+  }
+  for (const vp of [Desktop,Laptop,Tablet,Mobile]) {
     test(`${vp.name} TC_036:Successful redirection on events @regression`, async ({ page, loginPage, menubarPage  }) => {
       await setViewport(page, vp.size);
       await loginPage.visit();
