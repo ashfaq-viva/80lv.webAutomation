@@ -2,9 +2,10 @@ import BasePage from './BasePage';
 import  { BASE_URL } from '../playwright.config.js';
 
 export class MenubarPage extends BasePage {
-  constructor(page, context, loginpage) {
+  constructor(page, context, loginpage ,talentPage) {
     super(page, context);
     this.loginpage = loginpage;
+    this.talentPage = talentPage;
     this.articlesMenu = page.locator('div').filter({ hasText: /^Articles$/ }).getByRole('img');
     this.allArticlesSubMenu = page.getByText('All Articles');
     this.researchMenu = page.getByText('Research', { exact: true });
@@ -67,7 +68,7 @@ export class MenubarPage extends BasePage {
       this.context.waitForEvent('page'),
       await this.expectAndClick(this.talentPlatformSubMenu,'Talent Platform submenu'),
     ]);
-    
+    await newPage.setViewportSize(this.page.viewportSize());
     await newPage.waitForLoadState('load');
     await this.assert(
       {
@@ -76,7 +77,10 @@ export class MenubarPage extends BasePage {
       },
       newPage 
     );
+    this.talentPage.initLocators(newPage);
+  return this.talentPage;
   }
+
   async navigateToJobBoard() {
     await this.expectAndClick({
         default: this.talentsMenu,
