@@ -2,9 +2,10 @@ import BasePage from './BasePage';
 import  { BASE_URL } from '../playwright.config.js';
 
 export class NavbarPage extends BasePage {
-  constructor(page, context, loginpage) {
+  constructor(page, context, loginpage,bookamarkPage) {
     super(page, context);
     this.loginpage = loginpage;
+    this.bookamarkPage = bookamarkPage;
     this.adevertiseBtn= page.getByText('Advertise');
     this.orderResearchBtn= page.getByRole('link', { name: 'Order Research' });
     this.companyLogo= page.getByRole('img', { name: 'logo80lv' });
@@ -16,6 +17,8 @@ export class NavbarPage extends BasePage {
     this.noResultTxt= page.getByText('No Results');
     this.resultDiv1= page.locator('.gsc-expansionArea > div').first();
     this.navbarThreeDotMenuOld =  page.getByRole('button', { name: 'Menu' });
+    this.profileIcon= page.getByRole('img', { name: 'profile_loggedin' });
+    this.bookmarkOption= page.getByRole('link', { name: 'bookmark Bookmarks' });
   }
 
   async advertiseRedirection() {
@@ -139,6 +142,24 @@ export class NavbarPage extends BasePage {
         alias: 'Company logo visible'
       });
   }
-    
+  async navigateToBookmarkPage(){
+    await this.expectAndClick({
+        default: this.profileIcon,
+        Laptop:  [this.loginpage.navbarThreeDotMenuOld],
+        Tablet:  [this.loginpage.navbarThreeDotMenuOld],
+        Mobile:  [this.loginpage.navbarThreeDotMenuOld],
+      },
+      'Profile Menu');
+    await this.expectAndClick(this.bookmarkOption,'Bookmark Option');
+    await this.assert({
+        locator: this.bookamarkPage.bookmarkTxt,
+        state: 'visible',
+        alias: 'Bookmark Text'
+    });
+      await this.assert({
+        toHaveURL: '/bookmarks',
+        alias: 'Bookmark Page'
+      });
+  }  
 }
 
