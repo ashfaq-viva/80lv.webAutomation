@@ -195,6 +195,12 @@ export class LoginPage extends BasePage {
       await this.expectAndClick(this.loginWithTwitterPrimaryBtn, 'Login with Xsolla Primary button');
       }
   }
-    
+  async assertLoginModalVisibility(){
+     await this.assert({
+        locator: this.emailTxt,
+        state: 'visible',
+        alias: 'Login Modal Widget'
+      });
+  }  
 }
 
