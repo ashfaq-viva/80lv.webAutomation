@@ -39,16 +39,12 @@ export class SignupPage extends BasePage {
   async storeEmail(userModel) {
     this.generatedEmail = userModel.email;
     console.log("Generated Signup Email:", this.generatedEmail);
-    const viewportName = getViewportNameFromPage(this.page);
-    const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
-    const fileName = `signup_email_${viewportName}_${timestamp}.txt`;
-    const filePath = path.join(process.cwd(), 'savedData/signupEmails', fileName);
-
-    if (!fs.existsSync(path.dirname(filePath))) {
-        fs.mkdirSync(path.dirname(filePath), { recursive: true });
-    }
-
-    fs.appendFileSync(filePath, `Email: ${this.generatedEmail}\n`, 'utf8');
+     const filePath = await this.createSavedFile(
+    'signupEmails',              // folder name under savedData
+    'signup_email',              // base file name
+    'txt',                       // file extension
+    `Email: ${this.generatedEmail}\n` // content
+  );
     console.log(`✅ Email saved to: ${filePath}`);
 }
   async doSignup(request){
