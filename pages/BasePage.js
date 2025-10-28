@@ -2,6 +2,9 @@ import { expect } from '@playwright/test';
 import { getViewportNameFromPage } from '../utils/viewports.js';
 import { allure } from 'allure-playwright';
 import apiMap from '../api/apiMap.js';
+import  { BASE_URL } from '../playwright.config.js';
+import fs from 'fs';
+import path from 'path';
 
 export default class BasePage {
   constructor(page, context) {
@@ -365,12 +368,131 @@ const target = (locators && locators.length) ? locators[locators.length - 1] : n
   }
 
   if (toHaveURL) {
+  if (toHaveURL.startsWith('http') || toHaveURL.startsWith(BASE_URL)) {
     await expect(page).toHaveURL(toHaveURL);
-    console.log(`✅ Assert: page URL is "${toHaveURL}"`);
+    console.log(`✅ Assert: page URL is exactly "${toHaveURL}"`);
+  } else {
+    await expect(page.url()).toContain(toHaveURL);
+    console.log(`✅ Assert: page URL contains "${toHaveURL}"`);
   }
 }
+}
+  async extractDetailsAndSaveAsJson(locatorStr, dirName, prefix = 'CardData' , getViewportNameFn,) {
+    const locator = this.page.locator(locatorStr);
 
+    // Common text-bearing tags
+    const textTags = [
+      'h1', 'h2', 'h3', 'h4', 'h5', 'h6',
+      'p', 'span', 'div', 'a', 'li', 'strong', 'em', 'blockquote', 'label', 'button'
+    ];
 
+    const extractedData = {};
 
+    for (const tag of textTags) {
+      const elements = await locator.locator(tag).allTextContents();
+      if (elements.length > 0) {
+        extractedData[tag] = elements.map(t => t.trim()).filter(Boolean);
+      }
+    }
 
+    // Generate dynamic file name
+    const viewportName = getViewportNameFn(this.page);
+    const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
+    const fileName = `${prefix}_${viewportName}_${timestamp}.json`;
+
+    // Create directory and save JSON
+    const dirPath = path.resolve(`savedData/${dirName}`);
+    const filePath = path.join(dirPath, fileName);
+
+    fs.mkdirSync(dirPath, { recursive: true });
+    fs.writeFileSync(filePath, JSON.stringify(extractedData, null, 2), 'utf-8');
+
+    console.log(`✅ Extracted and saved data to: ${filePath}`);
+    return extractedData;
+  }
+async assertFromSavedJsonData(relativePathWithPattern, tagsToAssert = []) {
+    // Split into folder and file pattern
+    const parts = relativePathWithPattern.split('/');
+    const folder = parts.slice(0, -1).join('/');
+    const filePattern = parts[parts.length - 1];
+
+    const dirPath = path.resolve('savedData', folder);
+
+    if (!fs.existsSync(dirPath)) {
+      throw new Error(`Directory not found: ${dirPath}`);
+    }
+
+    // Find the first file that matches the pattern
+    const files = fs.readdirSync(dirPath);
+    const matchedFile = files.find(f => f.includes(filePattern) && f.endsWith('.json'));
+
+    if (!matchedFile) {
+      throw new Error(`No JSON file found matching "${filePattern}" in ${dirPath}`);
+    }
+
+    const filePath = path.join(dirPath, matchedFile);
+
+    // Read and parse JSON
+    const rawData = fs.readFileSync(filePath, 'utf-8');
+    const savedData = JSON.parse(rawData);
+
+    // Default tags if none specified
+    const defaultTags = ['h1','h2','h3','h4','h5','h6','p','span','div','a','li','strong','em','blockquote','label','button'];
+    const tags = tagsToAssert.length > 0 ? tagsToAssert : defaultTags;
+
+    // Assert specified tags
+    for (const tag of tags) {
+      if (savedData[tag]) {
+        for (const text of savedData[tag]) {
+          if (tag.startsWith('h')) {
+            await expect(this.page.getByRole('heading', { name: text })).toBeVisible();
+          } else {
+            await expect(this.page.locator(`${tag}:has-text("${text}")`)).toBeVisible();
+          }
+          console.log(`✅ Asserted ${tag}: "${text}"`);
+        }
+      }
+    }
+
+    console.log(`✅ All specified tag assertions passed from file: ${matchedFile}`);
+  }
+  async createSavedFile(folderName = null, baseFileName, extension = 'txt', content = null) {
+    const viewportName = getViewportNameFromPage(this.page);
+    const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
+
+    // Determine directory path
+    const baseDir = path.join(process.cwd(), 'savedData');
+    const dirPath = folderName ? path.join(baseDir, folderName) : baseDir;
+
+    // Ensure directory exists
+    if (!fs.existsSync(dirPath)) {
+      fs.mkdirSync(dirPath, { recursive: true });
+    }
+
+    // Build file name and path
+    const fileName = `${baseFileName}${viewportName}_${timestamp}.${extension}`;
+    const filePath = path.join(dirPath, fileName);
+
+    // Write content if provided
+    if (content !== null) {
+      let dataToWrite = '';
+
+      if (typeof content === 'object' && extension === 'json') {
+        dataToWrite = JSON.stringify(content, null, 2);
+      } else if (typeof content === 'string') {
+        dataToWrite = content;
+      } else {
+        throw new Error(
+          `Unsupported content type for ".${extension}". Must be string or object (for JSON).`
+        );
+      }
+
+      fs.writeFileSync(filePath, dataToWrite, 'utf-8');
+    } else {
+      fs.writeFileSync(filePath, '');
+    }
+
+    console.log(`📁 File created: ${filePath}`);
+    return filePath;
+  }
 }
