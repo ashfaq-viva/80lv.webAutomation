@@ -16,10 +16,11 @@ export const config = {
     "talentPassword": process.env.TALENT_PASSWORD,
     "recruiterEmail": process.env.RECRUITER_EMAIL,
     "recruiterPassword": process.env.RECRUITER_PASSWORD,
+    "invalidEmail": "invalidEmail.com"
 
   },
   "slug":{
-    
+    "allArticlesPage": "/articles",
   },
   "data":{
     "invalidSearch": "adasd",
