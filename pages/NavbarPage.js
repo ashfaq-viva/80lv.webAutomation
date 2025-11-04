@@ -7,7 +7,7 @@ export class NavbarPage extends BasePage {
     this.loginpage = loginpage;
     this.bookamarkPage = bookamarkPage;
     this.adevertiseBtn= page.getByText('Advertise');
-    this.orderResearchBtn= page.getByRole('link', { name: 'Order Research' });
+    this.headerButton= page.getByRole('link', { name: 'Newsletter' });
     this.companyLogo= page.getByRole('img', { name: 'logo80lv' });
     this.search= page.getByRole('button', { name: 'search' });
     this.searchResponsive= page.getByRole('img', { name: 'search' });
@@ -34,11 +34,11 @@ export class NavbarPage extends BasePage {
         alias: 'Advertise Redirect'
       });
   }
-  async orderResearchRedirection() {
+  async headerButtonRedirection() {
     const [newPage] = await Promise.all([
       this.context.waitForEvent('page'),
       this.expectAndClick(
-        { default: this.orderResearchBtn },
+        { default: this.headerButton },
         'Advertise Button'
       ),
     ]);
@@ -46,7 +46,7 @@ export class NavbarPage extends BasePage {
     await this.assert(
       {
         toHaveURL: 'https://80level.typeform.com/request-form?utm_source=website_80lv&utm_medium=top-button',
-        alias: 'Order Research redirection'
+        alias: 'Header Button redirection'
       },
       newPage 
     );
