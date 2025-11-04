@@ -34,9 +34,20 @@ export class LoginPage extends BasePage {
     }
     const finalPath = path.startsWith('/') ? path : `/${path}`;
     await this.page.goto(finalPath, { waitUntil: 'networkidle' });
+    await this.acceptCookies();
   }
   async acceptCookies(){
-    await this.expectAndClick(this.allowCookiesBtnOld,'Accept Cookies');
+    const buttons = [this.allowCookiesBtnOld, this.allowCookiesBtn];
+    for (const button of buttons) {
+      try {
+        if (await button.isVisible()) {
+          await this.expectAndClick(button, 'Accept Cookies');
+          console.log('✅ Clicked Accept Cookies button.');
+          return;
+        }
+      } catch {}
+    }
+  console.log('⏭️ No Accept Cookies button found, skipping.');
   }
   async _waitForWidget() {
     for (let attempt = 1; attempt <= 3; attempt++) {
