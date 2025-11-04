@@ -16,11 +16,14 @@ const apiMap = {
     loginApi: { url: "https://login.xsolla.com/api/login",methods: { ...defaultMethods }},
     signupApi: { url:"https://login.xsolla.com/api/user",methods: { ...defaultMethods }},
     partnersApi: { url:"https://80.lv/api/partners",methods: { ...defaultMethods }},
+    articlePopularListApi: { url:"https://api.test.80lv.srv.local/articles/list?category=&page=1&total=9&sort=popular",methods: { ...defaultMethods }},
     },
   "80LV_QA": {
     loginApi: { url: "https://login.xsolla.com/api/login",methods: { ...defaultMethods }},
     signupApi: { url:"https://login.xsolla.com/api/user",methods: { ...defaultMethods }},
     partnersApi: { url:"https://80.lv/api/partners",methods: { ...defaultMethods }},
+    articlePopularListApi: { url:"https://api.test.80lv.srv.local/articles/list?category=&page=1&total=9&sort=popular",methods: { ...defaultMethods }},
+    subscribeApi: { url:"https://api.test.80lv.srv.local/user/subscribe",methods: { ...defaultMethods }},
   }
 };
 
