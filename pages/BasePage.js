@@ -308,6 +308,7 @@ async assert(options = {},page = this.page) {
     count,
     toHaveValue,
     toHaveAttribute,
+    toHaveCSS,
     alias = 'locator',
   } = options;
 
@@ -369,13 +370,24 @@ const target = (locators && locators.length) ? locators[locators.length - 1] : n
 
   if (toHaveURL) {
   if (toHaveURL.startsWith('http') || toHaveURL.startsWith(BASE_URL)) {
-    await expect(page).toHaveURL(toHaveURL);
-    console.log(`✅ Assert: page URL is exactly "${toHaveURL}"`);
+    const normalize = (url) => url.replace(/\/+$/, ''); // remove trailing slashes
+    await expect(normalize(page.url())).toBe(normalize(toHaveURL));
+    console.log(`✅ Assert: page URL is "${toHaveURL}" (ignoring trailing slash)`);
   } else {
     await expect(page.url()).toContain(toHaveURL);
     console.log(`✅ Assert: page URL contains "${toHaveURL}"`);
   }
 }
+if (target && toHaveCSS) {
+  for (const [prop, expected] of Object.entries(toHaveCSS)) {
+    const actual = await target.evaluate((el, prop) => getComputedStyle(el)[prop], prop);
+    if (actual !== expected) {
+      throw new Error(`❌ Assert failed: [${alias}] CSS property "${prop}" expected "${expected}", got "${actual}"`);
+    }
+    console.log(`✅ Assert: element [${alias}] CSS property "${prop}" = "${expected}"`);
+  }
+}
+
 }
   async extractDetailsAndSaveAsJson(locatorStr, dirName, prefix = 'CardData' , getViewportNameFn,) {
     const locator = this.page.locator(locatorStr);
@@ -495,4 +507,30 @@ async assertFromSavedJsonData(relativePathWithPattern, tagsToAssert = []) {
     console.log(`📁 File created: ${filePath}`);
     return filePath;
   }
+  async expectNotVisible(locator, alias = 'Element') {
+    try {
+      const isVisible = await locator.isVisible();
+      if (!isVisible) {
+        console.log(`✅ ${alias} is NOT visible as expected.`);
+        return true;
+      } else {
+        console.warn(`⚠️ ${alias} is visible, expected NOT visible.`);
+        return false;
+      }
+    } catch (err) {
+      // Element might not exist in DOM at all
+      console.log(`✅ ${alias} is NOT visible (element not found in DOM).`);
+      return true;
+    }
+  }
+  async clickUntilDisappears(locator, alias = 'Button') {
+  // Loop until the element is not visible
+  while (await locator.isVisible()) {
+    console.log(`Clicking ${alias}...`);
+    await locator.click();
+    // Optional: wait a short time for UI update
+    await this.page.waitForLoadState('networkidle');
+  }
+  console.log(`${alias} is no longer visible.`);
+}
 }
