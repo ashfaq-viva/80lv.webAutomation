@@ -99,7 +99,7 @@ export class LoginPage extends BasePage {
         Tablet:  [this.navbarThreeDotMenuOld,this.profileLogInOld],
         Mobile:  [this.navbarThreeDotMenuOld,this.profileLogInOld],
       },
-      'Login Button','loginApi:POST'
+      'Login Button'
     );
     await this.waitAndFill(this.emailTxt,username,'Email');
     await this.waitAndFill(this.passwordTxt, password,'Password');

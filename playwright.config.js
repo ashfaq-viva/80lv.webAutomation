@@ -65,7 +65,7 @@ export default defineConfig({
     actionTimeout: 0,
     ignoreHTTPSErrors: true,
     browserName: 'chromium',
-    headless: process.env.CI ? true : false,
+    headless: process.env.CI ? true : true,
     screenshot: 'only-on-failure',
     video:'on',
     trace: 'retain-on-failure',
@@ -82,6 +82,9 @@ export default defineConfig({
         '--allow-running-insecure-content',
         '--disable-site-isolation-trials',
         '--ignore-certificate-errors',
+        "--disable-features=ExternalProtocolDialog",
+        "--no-default-browser-check",
+        "--disable-default-apps"
       ],
     },
     // storageState: './LoginAuth_default.json', 

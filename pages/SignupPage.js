@@ -11,7 +11,7 @@ export class SignupPage extends BasePage {
   constructor(page , context, loginPage) {
     super(page, context);
     this.loginPage = loginPage;
-    this.loginBtn = page.getByText("LogIn");
+    this.loginBtn = page.getByRole('img', { name: 'profile_login' });
     this.frame = page.frameLocator("#xl_widget iframe");
     this.signUpBtn = this.frame.getByTestId("signUp_tab-link");
     this.emailInput = this.frame.getByTestId("sign-up-form__fields-email");

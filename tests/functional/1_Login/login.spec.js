@@ -21,9 +21,9 @@ test.describe('Login to 80LV', () => {
     });
   }
     for (const vp of [Desktop,Laptop,Tablet,Mobile]) {
-    test(`${vp.name} TC_004:Successful login with session (recruiter) @regression`, async ({ page, useSession, loginPage }) => {
+    test(`${vp.name} TC_004:Successful login with session (company) @regression`, async ({ page, useSession, loginPage }) => {
       await setViewport(page, vp.size);
-      await useSession('recruiter');
+      await useSession('company');
       await loginPage.visit();
       await loginPage.assertLoggedIn(); 
     });

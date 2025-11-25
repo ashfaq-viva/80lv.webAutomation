@@ -64,7 +64,7 @@ async function globalSetup() {
     ignoreHTTPSErrors: true,
   });
 
-  const usersToLogin = ['talent', 'recruiter'];
+  const usersToLogin = ['talent', 'company'];
 
   for (const role of usersToLogin) {
     const email = config.credentials[`${role}Email`];

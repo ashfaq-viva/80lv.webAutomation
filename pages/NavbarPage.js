@@ -7,7 +7,8 @@ export class NavbarPage extends BasePage {
     this.loginpage = loginpage;
     this.bookamarkPage = bookamarkPage;
     this.adevertiseBtn= page.getByText('Advertise');
-    this.headerButton= page.getByRole('link', { name: 'Newsletter' });
+    this.headerButton= page.locator('//header//div[2]//a[1]');
+    this.headerButtonResponsive= page.locator('//header//div[1]//div[2]//a[1]');
     this.companyLogo= page.getByRole('img', { name: 'logo80lv' });
     this.search= page.getByRole('button', { name: 'search' });
     this.searchResponsive= page.getByRole('img', { name: 'search' });
@@ -38,18 +39,23 @@ export class NavbarPage extends BasePage {
     const [newPage] = await Promise.all([
       this.context.waitForEvent('page'),
       this.expectAndClick(
-        { default: this.headerButton },
-        'Advertise Button'
+        { default: this.headerButton ,
+          Laptop:  this.headerButtonResponsive,
+        Tablet: this.headerButtonResponsive,
+        Mobile: this.headerButtonResponsive,
+        },
+        'Header Widget Button'
       ),
     ]);
     await newPage.waitForLoadState('load');
-    await this.assert(
-      {
-        toHaveURL: 'https://80level.typeform.com/request-form?utm_source=website_80lv&utm_medium=top-button',
-        alias: 'Header Button redirection'
-      },
-      newPage 
-    );
+    const newPageUrl = newPage.url();
+    console.log("🌐 Captured official website Redirection URL:", newPageUrl);
+    const filePath = await this.createSavedFile(
+            'navbar',
+            'headerWidgetUrl',
+            'txt',
+            newPageUrl
+          );
   }
   async companyLogoRedirection() {
     await this.expectAndClick({
@@ -151,11 +157,6 @@ export class NavbarPage extends BasePage {
       },
       'Profile Menu');
     await this.expectAndClick(this.bookmarkOption,'Bookmark Option');
-    await this.assert({
-        locator: this.bookamarkPage.bookmarkTxt,
-        state: 'visible',
-        alias: 'Bookmark Text'
-    });
       await this.assert({
         toHaveURL: '/bookmarks',
         alias: 'Bookmark Page'

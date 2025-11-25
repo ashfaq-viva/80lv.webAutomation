@@ -14,17 +14,20 @@ export const config = {
     "existingUserPassword": "Ashfaq123",
     "talentEmail": process.env.TALENT_EMAIL, 
     "talentPassword": process.env.TALENT_PASSWORD,
-    "recruiterEmail": process.env.RECRUITER_EMAIL,
-    "recruiterPassword": process.env.RECRUITER_PASSWORD,
+    "companyEmail": process.env.COMPANY_EMAIL,
+    "companyPassword": process.env.COMPANY_PASSWORD,
     "invalidEmail": "invalidEmail.com"
 
   },
   "slug":{
     "allArticlesPage": "/articles",
+    "eventsPage": "/events",
   },
   "data":{
     "invalidSearch": "adasd",
-    "validSearch": "watch j hil"
+    "validSearch": "watch j hil",
+    "validEventSearch": "game",
+    "invalidEventSearch": "asdfghjkl",
   }
 }
 
