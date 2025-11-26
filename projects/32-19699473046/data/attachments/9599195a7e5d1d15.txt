@@ -1,0 +1,5 @@
+✅ Clicked [Accept Cookies @ Desktop] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Clicked [Facebook Link @ Desktop] → "@LevelEighty"
+🔹 Expected URL: https://www.facebook.com/LevelEighty
+🔹 Actual URL:   https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2FLevelEighty

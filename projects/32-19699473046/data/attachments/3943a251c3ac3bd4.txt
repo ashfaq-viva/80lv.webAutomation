@@ -1,0 +1,9 @@
+✅ Clicked [Accept Cookies @ Tablet] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+⏭️ No Accept Cookies button found, skipping.
+✅ Clicked [Articles Menu Button (Step 1) @ Tablet] → "Articles Menu Button (Step 1)"
+✅ Clicked [Articles Menu Button (Step 2) @ Tablet] → "click_arrow"
+✅ Clicked [Job Board SubMenu Button @ Tablet] → "Job Board"
+🔹 Expected URL: https://80.lv/jobs
+🔹 Actual URL:   https://80.lv/jobs
+✅ Assert: page URL is "https://80.lv/jobs" (Job board Page  Redirection)

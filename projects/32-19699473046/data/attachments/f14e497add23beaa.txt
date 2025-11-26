@@ -1,0 +1,11 @@
+✅ Clicked [Accept Cookies @ Desktop] → "Accept Cookies"
+🌐 Captured API → GET https://80.lv/api/jobs?sort=new&page=1 | Status: 200
+✅ Clicked Accept Cookies button.
+✅ Clicked [Footer Promo Image Banner 1 @ Desktop] → "Footer Promo Image Banner 1"
+🌐 Captured Footer Promo Image Banner 1 Redirection URL: https://80lv.gumroad.com/l/procedural-techniques?utm_source=website_80lv&utm_medium=image-banner&utm_campaign=80levelcourses1
+📁 File created: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/allArticles/footerPromoBanner/PromoImageBanner1Desktop_2025-11-26T10-15-52-533Z.txt
+�️ Footer Promo Image Banner 1 redirection URL saved at: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/allArticles/footerPromoBanner/PromoImageBanner1Desktop_2025-11-26T10-15-52-533Z.txt
+✅ Clicked [Footer Promo Image Banner 2 @ Desktop] → "Footer Promo Image Banner 2"
+🌐 Captured Footer Promo Image Banner 2 Redirection URL: https://80.lv/talent/companies?utm_source=website_80lv&utm_medium=image-banner&utm_campaign=january2025
+📁 File created: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/allArticles/footerPromoBanner/PromoImageBanner2Desktop_2025-11-26T10-15-58-985Z.txt
+�️ Footer Promo Image Banner 2 redirection URL saved at: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/allArticles/footerPromoBanner/PromoImageBanner2Desktop_2025-11-26T10-15-58-985Z.txt

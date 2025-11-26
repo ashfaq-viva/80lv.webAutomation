@@ -1,0 +1,7 @@
+✅ Clicked [Accept Cookies @ Tablet] → "Accept Cookies"
+🌐 Captured API → GET https://80.lv/api/jobs?sort=new&page=1 | Status: 200
+✅ Clicked Accept Cookies button.
+✅ Clicked [Twitter Link @ Tablet] → "@80Level"
+🔹 Expected URL: https://x.com/80Level
+🔹 Actual URL:   https://x.com/80Level
+✅ Assert: page URL is "https://x.com/80Level" (twitter redirection link)

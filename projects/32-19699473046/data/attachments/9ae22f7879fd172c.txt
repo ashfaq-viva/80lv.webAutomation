@@ -1,0 +1,64 @@
+✅ Clicked [Accept Cookies @ Mobile] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+🧩 Total partner links found: 15
+🖥️ Current viewport: Mobile
+🖱️ Attempting to click Partner #1: /partners/unreal-engine
+🌐 Partner #1 URL: https://80.lv/partners/unreal-engine
+📁 File created: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink1Mobile_2025-11-26T10-11-12-972Z.txt
+🗂️ Partner redirection URL saved at: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink1Mobile_2025-11-26T10-11-12-972Z.txt
+🖱️ Attempting to click Partner #2: /partners/reallusion
+🌐 Partner #2 URL: https://80.lv/partners/reallusion
+📁 File created: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink2Mobile_2025-11-26T10-11-17-994Z.txt
+🗂️ Partner redirection URL saved at: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink2Mobile_2025-11-26T10-11-17-994Z.txt
+🖱️ Attempting to click Partner #3: /partners/unity-technologies
+🌐 Partner #3 URL: https://80.lv/partners/unity-technologies
+📁 File created: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink3Mobile_2025-11-26T10-11-22-352Z.txt
+🗂️ Partner redirection URL saved at: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink3Mobile_2025-11-26T10-11-22-352Z.txt
+🖱️ Attempting to click Partner #4: /partners/cgma
+🌐 Partner #4 URL: https://80.lv/partners/cgma
+📁 File created: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink4Mobile_2025-11-26T10-11-27-986Z.txt
+🗂️ Partner redirection URL saved at: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink4Mobile_2025-11-26T10-11-27-986Z.txt
+🖱️ Attempting to click Partner #5: /partners/vertex-school
+🌐 Partner #5 URL: https://80.lv/partners/vertex-school
+📁 File created: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink5Mobile_2025-11-26T10-11-32-102Z.txt
+🗂️ Partner redirection URL saved at: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink5Mobile_2025-11-26T10-11-32-102Z.txt
+🖱️ Attempting to click Partner #6: /partners/unreal-engine
+🌐 Partner #6 URL: https://80.lv/partners/unreal-engine
+📁 File created: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink6Mobile_2025-11-26T10-11-36-931Z.txt
+🗂️ Partner redirection URL saved at: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink6Mobile_2025-11-26T10-11-36-931Z.txt
+🖱️ Attempting to click Partner #7: /partners/reallusion
+🌐 Partner #7 URL: https://80.lv/partners/reallusion
+📁 File created: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink7Mobile_2025-11-26T10-11-42-560Z.txt
+🗂️ Partner redirection URL saved at: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink7Mobile_2025-11-26T10-11-42-560Z.txt
+🖱️ Attempting to click Partner #8: /partners/unity-technologies
+🌐 Partner #8 URL: https://80.lv/partners/unity-technologies
+📁 File created: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink8Mobile_2025-11-26T10-11-47-631Z.txt
+🗂️ Partner redirection URL saved at: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink8Mobile_2025-11-26T10-11-47-631Z.txt
+🖱️ Attempting to click Partner #9: /partners/cgma
+🌐 Partner #9 URL: https://80.lv/partners/cgma
+📁 File created: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink9Mobile_2025-11-26T10-11-51-806Z.txt
+🗂️ Partner redirection URL saved at: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink9Mobile_2025-11-26T10-11-51-806Z.txt
+🖱️ Attempting to click Partner #10: /partners/vertex-school
+🌐 Partner #10 URL: https://80.lv/partners/vertex-school
+📁 File created: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink10Mobile_2025-11-26T10-11-56-459Z.txt
+🗂️ Partner redirection URL saved at: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink10Mobile_2025-11-26T10-11-56-459Z.txt
+🖱️ Attempting to click Partner #11: /partners/unreal-engine
+🌐 Partner #11 URL: https://80.lv/partners/unreal-engine
+📁 File created: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink11Mobile_2025-11-26T10-12-00-615Z.txt
+🗂️ Partner redirection URL saved at: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink11Mobile_2025-11-26T10-12-00-615Z.txt
+🖱️ Attempting to click Partner #12: /partners/reallusion
+🌐 Partner #12 URL: https://80.lv/partners/reallusion
+📁 File created: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink12Mobile_2025-11-26T10-12-04-853Z.txt
+🗂️ Partner redirection URL saved at: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink12Mobile_2025-11-26T10-12-04-853Z.txt
+🖱️ Attempting to click Partner #13: /partners/unity-technologies
+🌐 Partner #13 URL: https://80.lv/partners/unity-technologies
+📁 File created: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink13Mobile_2025-11-26T10-12-10-874Z.txt
+🗂️ Partner redirection URL saved at: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink13Mobile_2025-11-26T10-12-10-874Z.txt
+🖱️ Attempting to click Partner #14: /partners/cgma
+🌐 Partner #14 URL: https://80.lv/partners/cgma
+📁 File created: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink14Mobile_2025-11-26T10-12-15-325Z.txt
+🗂️ Partner redirection URL saved at: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink14Mobile_2025-11-26T10-12-15-325Z.txt
+🖱️ Attempting to click Partner #15: /partners/vertex-school
+🌐 Partner #15 URL: https://80.lv/partners/vertex-school
+📁 File created: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink15Mobile_2025-11-26T10-13-22-805Z.txt
+🗂️ Partner redirection URL saved at: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink15Mobile_2025-11-26T10-13-22-805Z.txt

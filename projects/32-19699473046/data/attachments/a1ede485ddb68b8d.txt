@@ -1,0 +1,139 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - generic [ref=e4]:
+    - banner [ref=e5]:
+      - generic [ref=e6]:
+        - img "logo80lv" [ref=e9] [cursor=pointer]
+        - generic [ref=e10]:
+          - link "Monetize Your Game" [ref=e11] [cursor=pointer]:
+            - /url: https://80level.typeform.com/monetize-games?utm_source=80lv_website&utm_medium=header-button
+          - button "Menu" [ref=e12] [cursor=pointer]:
+            - img "Menu" [ref=e14]
+    - main [ref=e16]:
+      - link [ref=e20] [cursor=pointer]:
+        - /url: https://80lv.gumroad.com/l/robotic-wolf-vfx-in-blender?utm_source=website_80lv&utm_medium=big-image-banner&utm_campaign=80levelcourses4
+      - generic [ref=e23]:
+        - generic [ref=e24]:
+          - heading "Events" [level=1] [ref=e25]
+          - generic [ref=e31] [cursor=pointer]:
+            - generic [ref=e32]: All events
+            - combobox
+          - generic [ref=e34]:
+            - generic [ref=e35]:
+              - generic [ref=e36]:
+                - generic [ref=e41] [cursor=pointer]:
+                  - generic [ref=e42]: Oldest
+                  - combobox
+                - generic [ref=e44]:
+                  - textbox "Search by name" [ref=e46]
+                  - button [ref=e47] [cursor=pointer]:
+                    - img [ref=e48]
+              - button "SIGGRAPH Asia 2025 The 18th ACM SIGGRAPH Asia Conference on Computer Graphics and Interactive Techniques 15–18 Dec. 2025 Hong Kong" [ref=e52] [cursor=pointer]:
+                - heading "SIGGRAPH Asia 2025" [level=3] [ref=e55]
+                - paragraph [ref=e58]: The 18th ACM SIGGRAPH Asia Conference on Computer Graphics and Interactive Techniques
+                - generic [ref=e60]:
+                  - paragraph [ref=e61]: 15–18 Dec. 2025
+                  - paragraph [ref=e62]: Hong Kong
+                - button [ref=e63]:
+                  - img [ref=e64]
+              - button "Taipei Game Show 2026 Taipei Game Show is now back for the 2026 edition! 29–30 Jan. 2026 Taiwan" [ref=e67] [cursor=pointer]:
+                - heading "Taipei Game Show 2026" [level=3] [ref=e70]
+                - paragraph [ref=e73]: Taipei Game Show is now back for the 2026 edition!
+                - generic [ref=e75]:
+                  - paragraph [ref=e76]: 29–30 Jan. 2026
+                  - paragraph [ref=e77]: Taiwan
+                - button [ref=e78]:
+                  - img [ref=e79]
+              - button "devcom leadership summit 2026 Shape the Future of Gaming at the devcom leadership summit 2026 25–27 Feb. 2026 Portugal" [ref=e82] [cursor=pointer]:
+                - heading "devcom leadership summit 2026" [level=3] [ref=e85]
+                - paragraph [ref=e88]:
+                  - text: Shape the Future of Gaming at the
+                  - strong [ref=e89]: devcom leadership summit 2026
+                - generic [ref=e91]:
+                  - paragraph [ref=e92]: 25–27 Feb. 2026
+                  - paragraph [ref=e93]: Portugal
+                - button [ref=e94]:
+                  - img [ref=e95]
+            - generic [ref=e98]:
+              - generic [ref=e99]: "Export:"
+              - link "Google" [ref=e100] [cursor=pointer]:
+                - /url: http://www.google.com/calendar/hosted/80.lv/render?cid=http://80.lv/events.ics&pli=1
+                - generic [ref=e101]: Google
+                - img [ref=e103]
+              - link "iCalendar" [ref=e105] [cursor=pointer]:
+                - /url: webcal://80.lv/events/calendar/all.ics
+                - generic [ref=e106]: iCalendar
+                - img [ref=e108]
+        - generic [ref=e110]:
+          - generic [ref=e111]:
+            - heading "Featured events" [level=3] [ref=e112]
+            - list [ref=e114]:
+              - listitem [ref=e115]:
+                - generic: "1"
+              - listitem [ref=e116]:
+                - generic [ref=e117] [cursor=pointer]: "2"
+              - listitem [ref=e118]:
+                - generic [ref=e119] [cursor=pointer]: "3"
+              - listitem [ref=e120]:
+                - button [ref=e121] [cursor=pointer]:
+                  - img [ref=e123]
+          - link "click_arrow SIGGRAPH Asia 2025 15–18 Dec. 2025" [ref=e127] [cursor=pointer]:
+            - /url: /events
+            - generic [ref=e130]:
+              - img "click_arrow" [ref=e132]
+              - generic [ref=e133]:
+                - heading "SIGGRAPH Asia 2025" [level=4] [ref=e134]
+                - paragraph [ref=e135]: 15–18 Dec. 2025
+  - contentinfo [ref=e137]:
+    - generic [ref=e138]:
+      - heading "Subscribe" [level=2] [ref=e139]
+      - paragraph [ref=e140]: Start receiving our weekly newsletter
+      - generic [ref=e141]:
+        - textbox [ref=e144]:
+          - /placeholder: Email address
+        - button "Subscribe" [ref=e145] [cursor=pointer]:
+          - generic [ref=e146]: Subscribe
+      - list [ref=e147]:
+        - listitem [ref=e148]:
+          - img "Facebook" [ref=e149]
+          - link "@LevelEighty" [active] [ref=e150] [cursor=pointer]:
+            - /url: https://www.facebook.com/LevelEighty
+        - listitem [ref=e151]:
+          - img "Twitter" [ref=e152]
+          - link "@80Level" [ref=e153] [cursor=pointer]:
+            - /url: https://twitter.com/80Level
+        - listitem [ref=e154]:
+          - img "YouTube" [ref=e155]
+          - link "@80lv" [ref=e156] [cursor=pointer]:
+            - /url: https://www.youtube.com/channel/UCI8IFlI7_0xU9Dc60xoZuiA
+        - listitem [ref=e157]:
+          - img "Instagram" [ref=e158]
+          - link "@eighty_level" [ref=e159] [cursor=pointer]:
+            - /url: https://www.instagram.com/eighty_level/
+        - listitem [ref=e160]:
+          - img "Podcasts" [ref=e161]
+          - link "Round Table" [ref=e162] [cursor=pointer]:
+            - /url: https://80levelroundtable.buzzsprout.com/
+      - generic [ref=e163]:
+        - paragraph [ref=e164]: © 2025. 80 level. All rights reserved
+        - list [ref=e165]:
+          - generic [ref=e166]:
+            - listitem [ref=e167]:
+              - link "About & Contact us" [ref=e168] [cursor=pointer]:
+                - /url: /contact-us
+            - listitem [ref=e169]:
+              - link "Privacy Policy" [ref=e170] [cursor=pointer]:
+                - /url: /privacy-policy
+          - generic [ref=e171]:
+            - listitem [ref=e172]:
+              - link "Republishing policy" [ref=e173] [cursor=pointer]:
+                - /url: /republishing-policy
+            - listitem [ref=e174]:
+              - link "Terms of use" [ref=e175] [cursor=pointer]:
+                - /url: /terms-of-use
+          - listitem [ref=e177]:
+            - link "Disclaimer" [ref=e178] [cursor=pointer]:
+              - /url: /disclaimer
+```

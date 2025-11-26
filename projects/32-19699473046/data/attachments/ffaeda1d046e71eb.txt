@@ -1,0 +1,14 @@
+✅ Clicked [Accept Cookies @ Tablet] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Clicked [Articles Menu Button (Step 1) @ Tablet] → "Articles Menu Button (Step 1)"
+✅ Clicked [Articles Menu Button (Step 2) @ Tablet] → "click_arrow"
+✅ Clicked [All Articles SubMenu Button @ Tablet] → "All Articles"
+🌐 Captured API → GET https://80.lv/api/jobs?sort=new&page=1 | Status: 200
+🌐 Captured API → GET https://80.lv/api/jobs?sort=new&page=1 | Status: 200
+🔹 Expected URL: https://80.lv/articles
+🔹 Actual URL:   https://80.lv/articles
+✅ Assert: page URL is "https://80.lv/articles" (All Articles Page  Redirection)
+✅ Clicked [Big Image Banner @ Tablet] → "Big Image Banner"
+🌐 Captured Banner Redirection URL: https://www.blenderkit.com/?utm_source=80lvl&utm_medium=banner&utm_campaign=blackbirthday2025
+📁 File created: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/allArticles/allArticlesBigImageBanner/BigImageBannnerTablet_2025-11-26T10-12-08-482Z.txt
+🗂️ Banner redirection URL saved at: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/allArticles/allArticlesBigImageBanner/BigImageBannnerTablet_2025-11-26T10-12-08-482Z.txt

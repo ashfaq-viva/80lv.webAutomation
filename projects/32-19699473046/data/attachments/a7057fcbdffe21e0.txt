@@ -1,0 +1,7 @@
+✅ Clicked [Accept Cookies @ Mobile] → "Accept Cookies"
+🌐 Captured API → GET https://80.lv/api/jobs?sort=new&page=1 | Status: 200
+✅ Clicked Accept Cookies button.
+✅ Clicked [Privacy Policy Link @ Mobile] → "Privacy Policy"
+🔹 Expected URL: https://80.lv/privacy-policy
+🔹 Actual URL:   https://80.lv/privacy-policy
+✅ Assert: page URL is "https://80.lv/privacy-policy" (Privacy Policy redirection link)

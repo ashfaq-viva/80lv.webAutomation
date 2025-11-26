@@ -1,0 +1,6 @@
+✅ Clicked [Accept Cookies @ Laptop] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Clicked [Twitter Link @ Laptop] → "@80Level"
+🔹 Expected URL: https://x.com/80Level
+🔹 Actual URL:   https://x.com/80Level
+✅ Assert: page URL is "https://x.com/80Level" (twitter redirection link)

@@ -1,0 +1,6 @@
+✅ Clicked [Accept Cookies @ Desktop] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Clicked [Youtube Link @ Desktop] → "@80lv"
+🔹 Expected URL: https://www.youtube.com/channel/UCI8IFlI7_0xU9Dc60xoZuiA
+🔹 Actual URL:   https://www.youtube.com/channel/UCI8IFlI7_0xU9Dc60xoZuiA
+✅ Assert: page URL is "https://www.youtube.com/channel/UCI8IFlI7_0xU9Dc60xoZuiA" (youtube redirection link)

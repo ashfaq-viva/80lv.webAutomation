@@ -1,0 +1,7 @@
+✅ Clicked [Accept Cookies @ Laptop] → "Accept Cookies"
+🌐 Captured API → GET https://80.lv/api/jobs?sort=new&page=1 | Status: 200
+✅ Clicked Accept Cookies button.
+✅ Clicked [Disclaimer Link @ Laptop] → "Disclaimer"
+🔹 Expected URL: https://80.lv/disclaimer
+🔹 Actual URL:   https://80.lv/disclaimer
+✅ Assert: page URL is "https://80.lv/disclaimer" (Disclaimer redirection link)

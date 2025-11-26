@@ -1,0 +1,100 @@
+{
+  "events": {
+    "total": 1,
+    "items": [
+      {
+        "id": 355,
+        "slug": "taipei-game-show-2026",
+        "title": "Taipei Game Show 2026",
+        "short_title": "",
+        "description": "<p>Taipei Game Show is now back for the 2026 edition!</p>",
+        "content": "<p>The Taipei Game Show, hosted by the Taipei Computer Association, has evolved from a small event attracting a few thousand attendees in 2003 to a major Asian gaming event attracting hundreds of thousands of gamers worldwide.</p>\r\n<p>As the world's leading and Taiwan's largest game show, the Taipei Game Show not only witnesses the development of the gaming industry but also strives to provide an optimal promotional platform for game developers and create a premium event experience for gamers.</p>\r\n<p>The 2025 Taipei Game Show will be held in the two-story exhibition area of ​​Hall 1 at the Nangang Exhibition Center, continuing its dual-track \"physical exhibition + online livestream\" model. This year's show will attract numerous international brands and will feature in-depth partnerships with Twitch and Bilibili, allowing gamers and industry professionals around the world to participate in this exciting gaming event together, transcending geographical boundaries.</p>\r\n<p>Date : B2B ZONE　Jan. 29 to Jan. 30, 2026<br />　　　B2C ZONE (Indie House / Board Game Wonderland)　Jan. 29 to Feb. 1, 2026<br />Venue : Taipei Nangang Exhibition Center Hall 1<br />Official Site : https://tgs.tca.org.tw/index_e.php<br />Facebook : https://www.facebook.com/taipeigameshowglobal<br />Twitter : https://twitter.com/taipeigameshow<br />Linkedin : https://www.linkedin.com/company/taipeigameshow/</p>",
+        "place": {
+          "mini": "Taiwan",
+          "company": "Taipei, Taiwan",
+          "address": "Taipei, Taiwan, Taipei Nangang Exhibition Center Hall 1",
+          "latitude": null,
+          "longitude": null
+        },
+        "official": {
+          "site": "tgs.tca.org.tw",
+          "url": "https://tgs.tca.org.tw/index_e.php"
+        },
+        "date": "29–30 Jan. 2026",
+        "date_start": "20260129",
+        "date_end": "20260130",
+        "image": {
+          "original": "https://cdn.80.lv/api/upload/event/355/691dba2ce7b1b.png",
+          "src": "https://cdn.80.lv/api/upload/event/355/images/691dba2ce7b1b/crop_2e6d5761_220x220.png",
+          "src2x": "https://cdn.80.lv/api/upload/event/355/images/691dba2ce7b1b/crop_2e6d5761_440x440.png"
+        }
+      }
+    ]
+  },
+  "meta": {
+    "meta-title": {
+      "type": "name",
+      "name": "title",
+      "content": "Conferences and events for game developers"
+    },
+    "meta-description": {
+      "type": "name",
+      "name": "description",
+      "content": "Conferences, events, trade shows, and events for game developers, designers and VR specialists such as GDC, SIGGRAPH, E3, and more."
+    },
+    "schema-name": {
+      "type": "itemprop",
+      "name": "name",
+      "content": "Conferences and events for game developers"
+    },
+    "schema-description": {
+      "type": "itemprop",
+      "name": "description",
+      "content": "Conferences, events, trade shows, and events for game developers, designers and VR specialists such as GDC, SIGGRAPH, E3, and more."
+    },
+    "og-og:title": {
+      "type": "property",
+      "name": "og:title",
+      "content": "Conferences and events for game developers"
+    },
+    "og-og:description": {
+      "type": "property",
+      "name": "og:description",
+      "content": "Conferences, events, trade shows, and events for game developers, designers and VR specialists such as GDC, SIGGRAPH, E3, and more."
+    },
+    "og-og:type": {
+      "type": "property",
+      "name": "og:type",
+      "content": "article"
+    },
+    "article-article:published_time": {
+      "type": "property",
+      "name": "article:published_time",
+      "content": "2019-07-11T11:57:46+00:00"
+    },
+    "article-article:modified_time": {
+      "type": "property",
+      "name": "article:modified_time",
+      "content": "2019-07-11T11:57:46+00:00"
+    },
+    "twitter-twitter:card": {
+      "type": "name",
+      "name": "twitter:card",
+      "content": "summary_large_image"
+    },
+    "twitter-twitter:title": {
+      "type": "name",
+      "name": "twitter:title",
+      "content": "Conferences and events for game developers"
+    },
+    "twitter-twitter:description": {
+      "type": "name",
+      "name": "twitter:description",
+      "content": "Conferences, events, trade shows, and events for game developers, designers and VR specialists such as GDC, SIGGRAPH, E3, and more."
+    }
+  },
+  "promo": {
+    "header": [],
+    "footer": []
+  }
+}

@@ -1,0 +1,27 @@
+✅ Clicked [Accept Cookies @ Desktop] → "Accept Cookies"
+🌐 Captured API → GET https://80.lv/api/jobs?sort=new&page=1 | Status: 200
+✅ Clicked Accept Cookies button.
+✅ Clicked [New Button @ Desktop] → "New"
+✅ Clicked [Filter Field @ Desktop] → "Category"
+✅ Clicked [News Option @ Desktop] → "News"
+🌐 Captured API → GET https://80.lv/api/articles/category/news?page=1&sort=new&is_chinese=0 | Status: 200
+✅ Clicked [Interviews Option @ Desktop] → "Interviews"
+🌐 Captured API → GET https://80.lv/api/articles/category/news,interview?page=1&sort=new&is_chinese=0 | Status: 200
+✅ Clicked [VFX Option @ Desktop] → "VFX"
+🌐 Captured API → GET https://80.lv/api/articles/category/news,interview,vfx?page=1&sort=new&is_chinese=0 | Status: 200
+✅ Clicked [Marketplace Option @ Desktop] → "Marketplace"
+🌐 Captured API → GET https://80.lv/api/articles/category/news,interview,marketplace,vfx?page=1&sort=new&is_chinese=0 | Status: 200
+✅ Clicked [Sculpting Option @ Desktop] → "Sculpting"
+🌐 Captured API → GET https://80.lv/api/articles/category/news,interview,marketplace,vfx,Sculpting-Artists?page=1&sort=new&is_chinese=0 | Status: 200
+✅ Clicked [Filter Field @ Desktop] → "Category"
+✅ Assert: element is visible [News Filter Chip @ Desktop]
+✅ Assert: element is visible [Interviews Filter Chip @ Desktop]
+✅ Assert: element is visible [VFX Filter Chip @ Desktop]
+✅ Assert: element is visible [Marketplace Filter Chip @ Desktop]
+✅ Assert: element is visible [Sculpting Filter Chip @ Desktop]
+🔹 Expected URL: https://80.lv/articles/news,interview,marketplace,vfx,Sculpting-Artists
+🔹 Actual URL:   https://80.lv/articles/news,interview,marketplace,vfx,Sculpting-Artists
+✅ Assert: page URL is "https://80.lv/articles/news,interview,marketplace,vfx,Sculpting-Artists" (News, Interviews, VFX, Marketplace and Sculpting Filtered Articles Page URL)
+Pagination 2 Button is present, clicking it...
+✅ Assert: element is visible [Pagination 2 Button @ Desktop]
+ℹ️ No CSS assert for [Pagination 2 Button] at viewport Desktop

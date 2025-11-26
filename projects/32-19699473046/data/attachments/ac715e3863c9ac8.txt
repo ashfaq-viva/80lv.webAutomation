@@ -1,0 +1,8 @@
+✅ Clicked [Accept Cookies @ Tablet] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+⏭️ No Accept Cookies button found, skipping.
+✅ Clicked [Research Menu Button (Step 1) @ Tablet] → "Research Menu Button (Step 1)"
+✅ Clicked [Research Menu Button (Step 2) @ Tablet] → "Research"
+🔹 Expected URL: https://80.lv/research
+🔹 Actual URL:   https://80.lv/research
+✅ Assert: page URL is "https://80.lv/research" (Research Page  Redirection)

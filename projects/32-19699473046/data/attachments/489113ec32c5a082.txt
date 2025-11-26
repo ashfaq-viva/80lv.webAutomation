@@ -1,0 +1,174 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - banner [ref=e5]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - img "logo80lv" [ref=e9] [cursor=pointer]
+        - generic [ref=e10] [cursor=pointer]:
+          - text: Articles
+          - img "click_arrow" [ref=e11]
+        - generic [ref=e12] [cursor=pointer]: Research
+        - generic [ref=e13] [cursor=pointer]:
+          - text: Talents
+          - img "click_arrow" [ref=e14]
+        - generic [ref=e15] [cursor=pointer]: Events
+        - generic [ref=e16] [cursor=pointer]: Workshops
+        - generic [ref=e17] [cursor=pointer]:
+          - text: About
+          - img "click_arrow" [ref=e18]
+      - generic [ref=e19]:
+        - generic [ref=e20]:
+          - link "Monetize Your Game" [ref=e21] [cursor=pointer]:
+            - /url: https://80level.typeform.com/monetize-games?utm_source=80lv_website&utm_medium=header-button
+          - generic [ref=e22] [cursor=pointer]:
+            - generic [ref=e23]: Advertise
+            - img "player" [ref=e24]
+        - button "search" [ref=e25] [cursor=pointer]:
+          - img "search" [ref=e27]
+        - generic [ref=e30] [cursor=pointer]:
+          - img "profile_login" [ref=e32]
+          - generic [ref=e33]: Log in
+  - main [ref=e34]:
+    - generic [ref=e37]:
+      - link [ref=e38] [cursor=pointer]:
+        - /url: https://rapidpipeline.com/?utm_source=80lv&utm_medium=cpc&utm_campaign=2025-q4-all-plugins-and-edu-top-banner
+      - generic [ref=e40] [cursor=pointer]: Sponsored
+    - generic [ref=e42]:
+      - generic [ref=e43]:
+        - heading "Events" [level=1] [ref=e44]
+        - generic [ref=e45]:
+          - button "All events":
+            - generic: All events
+          - button "Online events" [ref=e46] [cursor=pointer]:
+            - generic [ref=e47]: Online events
+          - button "Offline events" [ref=e48] [cursor=pointer]:
+            - generic [ref=e49]: Offline events
+        - generic [ref=e50]:
+          - generic [ref=e51]:
+            - generic [ref=e52]:
+              - generic [ref=e57] [cursor=pointer]:
+                - generic [ref=e58]: Oldest
+                - combobox
+              - generic [ref=e60]:
+                - textbox "Search by name" [ref=e62]
+                - button [ref=e63] [cursor=pointer]:
+                  - img [ref=e64]
+            - button "SIGGRAPH Asia 2025 The 18th ACM SIGGRAPH Asia Conference on Computer Graphics and Interactive Techniques 15–18 Dec. 2025 Hong Kong" [ref=e68] [cursor=pointer]:
+              - heading "SIGGRAPH Asia 2025" [level=3] [ref=e71]
+              - paragraph [ref=e74]: The 18th ACM SIGGRAPH Asia Conference on Computer Graphics and Interactive Techniques
+              - generic [ref=e76]:
+                - paragraph [ref=e77]: 15–18 Dec. 2025
+                - paragraph [ref=e78]: Hong Kong
+              - button [ref=e79]:
+                - img [ref=e80]
+            - button "Taipei Game Show 2026 Taipei Game Show is now back for the 2026 edition! 29–30 Jan. 2026 Taiwan" [ref=e83] [cursor=pointer]:
+              - heading "Taipei Game Show 2026" [level=3] [ref=e86]
+              - paragraph [ref=e89]: Taipei Game Show is now back for the 2026 edition!
+              - generic [ref=e91]:
+                - paragraph [ref=e92]: 29–30 Jan. 2026
+                - paragraph [ref=e93]: Taiwan
+              - button [ref=e94]:
+                - img [ref=e95]
+            - button "devcom leadership summit 2026 Shape the Future of Gaming at the devcom leadership summit 2026 25–27 Feb. 2026 Portugal" [ref=e98] [cursor=pointer]:
+              - heading "devcom leadership summit 2026" [level=3] [ref=e101]
+              - paragraph [ref=e104]:
+                - text: Shape the Future of Gaming at the
+                - strong [ref=e105]: devcom leadership summit 2026
+              - generic [ref=e107]:
+                - paragraph [ref=e108]: 25–27 Feb. 2026
+                - paragraph [ref=e109]: Portugal
+              - button [ref=e110]:
+                - img [ref=e111]
+          - generic [ref=e114]:
+            - generic [ref=e115]: "Export:"
+            - link "Google" [ref=e116] [cursor=pointer]:
+              - /url: http://www.google.com/calendar/hosted/80.lv/render?cid=http://80.lv/events.ics&pli=1
+              - generic [ref=e117]: Google
+              - img [ref=e119]
+            - link "iCalendar" [ref=e121] [cursor=pointer]:
+              - /url: webcal://80.lv/events/calendar/all.ics
+              - generic [ref=e122]: iCalendar
+              - img [ref=e124]
+      - generic [ref=e126]:
+        - heading "Featured events" [level=3] [ref=e128]
+        - generic [ref=e130]:
+          - link "click_arrow SIGGRAPH Asia 2025 15–18 Dec. 2025" [ref=e131] [cursor=pointer]:
+            - /url: /events
+            - generic [ref=e134]:
+              - img "click_arrow" [ref=e136]
+              - generic [ref=e137]:
+                - heading "SIGGRAPH Asia 2025" [level=4] [ref=e138]
+                - paragraph [ref=e139]: 15–18 Dec. 2025
+          - link "click_arrow devcom leadership summit 2026 25–27 Feb. 2026" [ref=e140] [cursor=pointer]:
+            - /url: /events
+            - generic [ref=e143]:
+              - img "click_arrow" [ref=e145]
+              - generic [ref=e146]:
+                - heading "devcom leadership summit 2026" [level=4] [ref=e147]
+                - paragraph [ref=e148]: 25–27 Feb. 2026
+          - link "click_arrow Taipei Game Show 2026 29–30 Jan. 2026" [ref=e149] [cursor=pointer]:
+            - /url: /events
+            - generic [ref=e152]:
+              - img "click_arrow" [ref=e154]
+              - generic [ref=e155]:
+                - heading "Taipei Game Show 2026" [level=4] [ref=e156]
+                - paragraph [ref=e157]: 29–30 Jan. 2026
+  - generic [ref=e158]:
+    - generic [ref=e159]:
+      - link [ref=e161] [cursor=pointer]:
+        - /url: https://80lv.gumroad.com/?utm_source=website_80lv&utm_medium=image-banner&utm_campaign=bf-2025
+      - link [ref=e164] [cursor=pointer]:
+        - /url: https://80lv.gumroad.com/l/cloud-gaming-and-beyond-survey?utm_source=website_80lv&utm_medium=image-bannerr&utm_campaign=cloudgaming
+    - contentinfo [ref=e166]:
+      - generic [ref=e167]:
+        - heading "Subscribe" [level=2] [ref=e168]
+        - paragraph [ref=e169]: Start receiving our weekly newsletter
+        - generic [ref=e170]:
+          - textbox [ref=e173]:
+            - /placeholder: Email address
+          - button "Subscribe" [ref=e174] [cursor=pointer]:
+            - generic [ref=e175]: Subscribe
+        - list [ref=e176]:
+          - listitem [ref=e177]:
+            - paragraph [ref=e178]: Facebook
+            - link "@LevelEighty" [active] [ref=e179] [cursor=pointer]:
+              - /url: https://www.facebook.com/LevelEighty
+          - listitem [ref=e180]:
+            - paragraph [ref=e181]: Twitter
+            - link "@80Level" [ref=e182] [cursor=pointer]:
+              - /url: https://twitter.com/80Level
+          - listitem [ref=e183]:
+            - paragraph [ref=e184]: YouTube
+            - link "@80lv" [ref=e185] [cursor=pointer]:
+              - /url: https://www.youtube.com/channel/UCI8IFlI7_0xU9Dc60xoZuiA
+          - listitem [ref=e186]:
+            - paragraph [ref=e187]: Instagram
+            - link "@eighty_level" [ref=e188] [cursor=pointer]:
+              - /url: https://www.instagram.com/eighty_level/
+          - listitem [ref=e189]:
+            - paragraph [ref=e190]: Podcasts
+            - link "Round Table" [ref=e191] [cursor=pointer]:
+              - /url: https://80levelroundtable.buzzsprout.com/
+        - generic [ref=e192]:
+          - paragraph [ref=e193]: © 2025. 80 level. All rights reserved
+          - list [ref=e194]:
+            - generic [ref=e195]:
+              - listitem [ref=e196]:
+                - link "About & Contact us" [ref=e197] [cursor=pointer]:
+                  - /url: /contact-us
+              - listitem [ref=e198]:
+                - link "Privacy Policy" [ref=e199] [cursor=pointer]:
+                  - /url: /privacy-policy
+            - generic [ref=e200]:
+              - listitem [ref=e201]:
+                - link "Republishing policy" [ref=e202] [cursor=pointer]:
+                  - /url: /republishing-policy
+              - listitem [ref=e203]:
+                - link "Terms of use" [ref=e204] [cursor=pointer]:
+                  - /url: /terms-of-use
+            - listitem [ref=e206]:
+              - link "Disclaimer" [ref=e207] [cursor=pointer]:
+                - /url: /disclaimer
+```
