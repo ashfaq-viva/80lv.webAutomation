@@ -108,14 +108,14 @@ In App passwords:
 
 * create a .env file in project root with this variable and give desired value:
 ```
-BASE_URL_80LV_PROD=
-BASE_URL_80LV_QA=
-TALENT_EMAIL=
-TALENT_PASSWORD=
-COMPANY_EMAIL=
-COMPANY_PASSWORD=
-GMAIL_EMAIL=
-GMAIL_APP_PASSWORD=
+BASE_URL_80LV_PROD=<url>
+BASE_URL_80LV_QA=<url>
+TALENT_EMAIL=<email>
+TALENT_PASSWORD=<password>
+COMPANY_EMAIL=<email>
+COMPANY_PASSWORD=<password>
+GMAIL_EMAIL=<for signuptest email of gmail>
+GMAIL_APP_PASSWORD=<create app password>
 ```
 
 ## Playwright Commands
@@ -125,8 +125,8 @@ GMAIL_APP_PASSWORD=
 
 * You can change environment as per the requirement. Following are the configured environment values:
 
-  * `80LV_PROD`, `80LV_QA`, `ADMIN_PROD`, `ADMIN_QA`, `80LV_DEV`
-  * `80LV_PROD`, `80LV_QA` point to one domain and `ADMIN_PROD`, `ADMIN_QA`, `80LV_DEV` point to different domain
+  * `80LV_PROD`, `80LV_QA`, `80LV_DEV`
+  * `80LV_PROD`, `80LV_QA` point to one domain and add `ADMIN_PROD`, `ADMIN_QA` point to different domain
 
 
 * To run a single test spec file use `npx cross-env ENV=80LV_PROD playwright test 1_Login/login.spec.js`
@@ -194,6 +194,7 @@ docker compose up -d allure allure-ui
     ├── .github/
     │ └── workflows/
     │     └── ci-automation-pipeline.yml # GitHub Actions CI/CD pipeline
+    |     └── ci-docker-pipeline.yml # GitHub Actions DOCKER CI/CD pipeline 
     ├── config/ 
     | └── testConfig.js # # Config files (env/test setup)
     ├── lib/
@@ -209,7 +210,6 @@ docker compose up -d allure allure-ui
     │ ├── global-setup.js # Global setup logic
     │ ├── sessionUse.js # Session handling
     │ └── viewports.js # Viewport configs
-    ├── .babelrc # Babel config
     ├── .gitattributes # Git attributes
     ├── .gitignore # Git ignore rules
     ├── eslint.config.mjs # ESLint config

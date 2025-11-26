@@ -4,12 +4,11 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { LoginPage } from '../pages/LoginPage.js';
-import pwConfig, { ENV, BASE_URL } from '../playwright.config.js';
+import { ENV, BASE_URL } from '../playwright.config.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// 🔄 added: retry wrapper for login + cookie fetch
 async function loginAndSaveToken(context, role, email, password, tokenPath, lockFilePath, artBase, retries = 3) {
   const page = await context.newPage();
   const loginPage = new LoginPage(page);
@@ -21,7 +20,6 @@ async function loginAndSaveToken(context, role, email, password, tokenPath, lock
       await page.goto(BASE_URL, { waitUntil: 'networkidle', timeout: 30000 });
       await loginPage.globalLogin(email, password);
 
-      // 🔄 changed: wait dynamically for token cookie instead of fixed sleep
       await page.waitForFunction(() => document.cookie.includes('token='), { timeout: 10000 });
 
       const cookies = await context.cookies();
@@ -81,7 +79,6 @@ async function globalSetup() {
 
     console.log(`🔐 Logging in as ${role}: ${email}`);
 
-    // per-role artifact folders
     const artBase = path.resolve(`./artifacts/global-setup/${role}`);
     fs.mkdirSync(artBase, { recursive: true });
 
@@ -93,7 +90,6 @@ async function globalSetup() {
     await context.tracing.start({ screenshots: true, snapshots: true, sources: true });
 
     try {
-      // 🔄 changed: wrapped login + cookie handling in retry function
       await loginAndSaveToken(context, role, email, password, tokenPath, lockFilePath, artBase, 3);
 
       try {

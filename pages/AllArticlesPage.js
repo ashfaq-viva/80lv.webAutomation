@@ -322,7 +322,7 @@ await this.extractDetailsAndSaveAsJson(
               getViewportNameFromPage, 
               { includeOwnText: true }                  
             );
-   await this.assertFromSavedJsonData(
+   await this.assertFromSavedJsonToJsonData(
   { 'allArticles/allArticlesRedirectedArticle/card1TC_60': ['h1']},
   { 'allArticles/articlePage/TitleH1': ['h1']}
 );

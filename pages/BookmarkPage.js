@@ -18,7 +18,7 @@ export class BookmarkPage extends BasePage {
               'card1',
               getViewportNameFromPage,                   
             );
-    await this.assertFromSavedJsonData(
+    await this.assertFromSavedJsonToJsonData(
   { 'bookmarkPageCard/card1': ['h2']},
   { 'allArticles/allArticleBookmarkedArticle/card1TC_054': ['h1']}
 );

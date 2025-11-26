@@ -2,9 +2,7 @@ import BasePage from './BasePage';
 import { generateRandomUser } from "../utils/generateRandomUser.js";
 import dotenv from "dotenv";
 import { getLatestEmailDetailsUnified } from "../utils/sigupUtils.js";
-import { getViewportNameFromPage } from '../utils/viewports.js';
-import fs from 'fs';
-import path from 'path';
+
 dotenv.config();
 
 export class SignupPage extends BasePage {
