@@ -1,0 +1,20 @@
+✅ Clicked [Accept Cookies @ Tablet] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Assert: element is visible [All Events Tab @ Tablet]
+✅ Assert: [All Events Tab] CSS property "background-color" = "rgb(72, 75, 50)" @ Tablet
+✅ Clicked [Online Events Tab @ Tablet] → "Online events"
+🌐 Captured API → GET https://80.lv/api/events?total=10&title=&page=1&sort=sort&online=1 | Status: 200
+✅ Assert: element is visible [Online Events Tab @ Tablet]
+✅ Assert: [Online Events Tab] CSS property "background-color" = "rgb(72, 75, 50)" @ Tablet
+✅ Clicked [All Events Tab @ Tablet] → "All events"
+🌐 Captured API: https://80.lv/api/events?total=10&title=&page=1&sort=sort&online= → GET | Status: 200
+🔗 Expected: https://80.lv/api/events?total=10&title=&page=1&sort=sort&online= → GET | Status: 200
+✅ Assertion API: Passed
+🗂️ API response saved at: /app/savedData/apiResponses/events/GETOldestAllEvents.json
+✅ Assert: element is visible [All Events Tab @ Tablet]
+✅ Assert: [All Events Tab] CSS property "background-color" = "rgb(72, 75, 50)" @ Tablet
+📝 Verifying 3 titles on the page...
+✅ [SIGGRAPH Asia 2025] found
+✅ [Taipei Game Show 2026] found
+✅ [devcom leadership summit 2026] found
+Pagination not present, only one page of events.

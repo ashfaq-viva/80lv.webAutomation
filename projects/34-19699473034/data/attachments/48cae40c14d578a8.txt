@@ -1,0 +1,14 @@
+✅ Clicked [Accept Cookies @ Laptop] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Clicked [Online Events Tab @ Laptop] → "Online events"
+🌐 Captured API → GET https://80.lv/api/events?total=10&title=&page=1&sort=sort&online=1 | Status: 200
+✅ Assert: element is visible [Online Events Tab @ Laptop]
+✅ Assert: [Online Events Tab] CSS property "background-color" = "rgb(72, 75, 50)" @ Laptop
+✅ Filled [Search Field @ Laptop] → "search" with: "game"
+🌐 API Captured: GET https://80.lv/api/events?total=10&title=game&page=1&sort=sort&online=1 | Status: 200
+🗂️ API responses saved at: /app/savedData/apiResponses/events/GETOnlineEventsSearchValid.json
+✅ Key pressed: [Enter @ Laptop]
+⚠️ Response at path "events.items.title" is empty. Skipping verification.
+✅ Clicked [Search Cross Icon @ Laptop] → "Search Cross Icon"
+🌐 Captured API → GET https://80.lv/api/events?total=10&title=&page=1&sort=sort&online=1 | Status: 200
+✅ Assert: element is visible [Search Field after clearing @ Laptop]

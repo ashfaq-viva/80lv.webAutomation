@@ -1,0 +1,23 @@
+✅ Clicked [Accept Cookies @ Laptop] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+Visible pagination pages: []
+Total event cards present: 3
+
+🔗 Link 1
+Event Title:   SIGGRAPH Asia 2025
+Actual HREF:   /events
+Expected HREF: /events
+✅ PASS: href matches expected
+
+🔗 Link 2
+Event Title:   devcom leadership summit 2026
+Actual HREF:   /events
+Expected HREF: /events
+✅ PASS: href matches expected
+
+🔗 Link 3
+Event Title:   Taipei Game Show 2026
+Actual HREF:   /events
+Expected HREF: /events
+✅ PASS: href matches expected
+No more pagination pages.

@@ -1,0 +1,14 @@
+✅ Clicked [Accept Cookies @ Laptop] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Extracted and saved data to: /app/savedData/data/json/allArticles/allArticlesRedirectedArticle/card1TC_60_Laptop_2025-11-26T10-10-14-454Z.json
+✅ Clicked [Article card 1 Image @ Laptop] → "Article card 1 Image"
+🌐 Captured API → GET https://80.lv/api/articles/list?id=37902&offset=0&total=12&headers=%7B%7D | Status: 200
+🌐 Captured Article Redirection URL: https://80.lv/articles/realityscan-2-1-released
+📁 File created: /app/savedData/data/txt/allArticles/articleCardRedirection/card1UrlLaptop_2025-11-26T10-10-18-496Z.txt
+✅ Extracted and saved data to: /app/savedData/data/json/allArticles/articlePage/TitleH1_Laptop_2025-11-26T10-10-19-481Z.json
+
+🔹 Comparing JSON file: card1TC_60_Desktop_2025-11-26T10-10-07-849Z.json to TitleH1_Desktop_2025-11-26T10-10-12-026Z.json
+Comparing value: h1: "RealityScan 2.1 Released" → h1: "RealityScan 2.1 Released"
+✅ MATCH OK
+
+🎉 All JSON comparisons completed with no mismatches!

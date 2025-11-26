@@ -1,0 +1,14 @@
+✅ Clicked [Accept Cookies @ Desktop] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Clicked [Offline Events Tab @ Desktop] → "Offline events"
+🌐 Captured API → GET https://80.lv/api/events?total=10&title=&page=1&sort=sort&online=0 | Status: 200
+✅ Assert: element is visible [Offline Events Tab @ Desktop]
+✅ Assert: [Offline Events Tab] CSS property "background-color" = "rgb(72, 75, 50)" @ Desktop
+✅ Filled [Search Field @ Desktop] → "search" with: "asdfghjkl"
+🌐 API Captured: GET https://80.lv/api/events?total=10&title=asdfghjkl&page=1&sort=sort&online=0 | Status: 200
+🗂️ API responses saved at: /app/savedData/apiResponses/events/GETOfflineEventsSearchInvalid.json
+✅ Key pressed: [Enter @ Desktop]
+⚠️ Response at path "events.items.title" is empty. Skipping verification.
+✅ Clicked [Search Cross Icon @ Desktop] → "Search Cross Icon"
+🌐 Captured API → GET https://80.lv/api/events?total=10&title=&page=1&sort=sort&online=0 | Status: 200
+✅ Assert: element is visible [Search Field after clearing @ Desktop]

@@ -1,0 +1,47 @@
+✅ Clicked [Accept Cookies @ Mobile] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Assert: element is visible [All Events Tab @ Mobile]
+ℹ️ No CSS assert for [All Events Tab] at viewport Mobile
+Total event cards present: 3
+✅ Clicked [Event card 1 Expanded @ Mobile] → "SIGGRAPH Asia 2025
+
+The 18th ACM SIGGRAPH Asia Conference on Computer Graphics and Interactive Techniques
+
+15–18 Dec. 2025
+
+Hong Kong"
+✅ Clicked [Event card 1 Collapsed @ Mobile] → "SIGGRAPH Asia 2025
+
+The 18th ACM SIGGRAPH Asia Conference on Computer Graphics and Interactive Techniques
+
+15–18 Dec. 2025
+
+Hong Kong"
+✅ Clicked [Event card 2 Expanded @ Mobile] → "Taipei Game Show 2026
+
+Taipei Game Show is now back for the 2026 edition!
+
+29–30 Jan. 2026
+
+Taiwan"
+✅ Clicked [Event card 2 Collapsed @ Mobile] → "Taipei Game Show 2026
+
+Taipei Game Show is now back for the 2026 edition!
+
+29–30 Jan. 2026
+
+Taiwan"
+✅ Clicked [Event card 3 Expanded @ Mobile] → "devcom leadership summit 2026
+
+Shape the Future of Gaming at the devcom leadership summit 2026
+
+25–27 Feb. 2026
+
+Portugal"
+✅ Clicked [Event card 3 Collapsed @ Mobile] → "devcom leadership summit 2026
+
+Shape the Future of Gaming at the devcom leadership summit 2026
+
+25–27 Feb. 2026
+
+Portugal"

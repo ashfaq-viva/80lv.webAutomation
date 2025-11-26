@@ -1,0 +1,14 @@
+✅ Clicked [Accept Cookies @ Desktop] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+⏭️ No Accept Cookies button found, skipping.
+Generated Signup Email: ashfaq.ahmed+2528@vivasoftltd.com
+📁 File created: /app/savedData/data/txt/signupEmails/signup_emailDesktop_2025-11-26T09-54-15-082Z.txt
+✅ Email saved to: /app/savedData/data/txt/signupEmails/signup_emailDesktop_2025-11-26T09-54-15-082Z.txt
+✅ Clicked [Login Button @ Desktop] → "profile_login"
+✅ Filled [Email @ Desktop] → "email" with: "ashfaq.ahmed+2528@vivasoftltd.com"
+✅ Filled [Password @ Desktop] → "password" with: "Aa@1234"
+✅ Clicked [Create Account Button @ Desktop] → "CREATE ACCOUNT"
+Using App Password method to fetch email
+📧 Email Subject: Action Required: Add Accumulated Storage for Trade #52f618a0-898e-47fb-b139-22740db8d679
+🔘 Button Name: Add Accumulated Storage
+🔗 Confirmation Link: https://jghjbed.r.bh.d.sendibt3.com/tr/cl/84vHkxwRyr-xp6yfVED1G99eoQ6-rskqMBVrg87AfhULeDsQZVT4njN5CzTKGXuyBLhQX-d_2xnV9ECcLToMNALzGnyP3-9XTwA0q40i3_4ZjhRpIv8BISkfZMu6xcz-ZZpQaRAeDtJqXhZUdTFcX_PWId2EGpD4s6VLNaIfKcAdRlJdzkNAgbJhMXXpG_JjR6JM6O5hnFyD_eXkNZ9FwxeUOCmHYh4Baa-N82MBm7hGsANIHu2sIi6shehQHeTjCol9ivZpH1-K28N7iYnbcLt3BvHP8w2hnt0Zka6JC7EtHbjA6fl7Ldn0YxbKemzsJP2G3VciNit2yo6-Q1Qa6ON5mW7pt0aNFicgOJLovMI0mCMd-VJSPRK3ITvzKoT03YX7PKo5Z25REonXbnUR9ayHYRG8EBk

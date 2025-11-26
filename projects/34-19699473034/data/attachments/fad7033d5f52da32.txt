@@ -1,0 +1,7 @@
+✅ Clicked [Accept Cookies @ Desktop] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Clicked [Login Button @ Desktop] → "profile_login"
+✅ Clicked [Login with facebook button @ Desktop] → "LOGIN WITH FACEBOOK"
+🌐 Captured API → GET https://login.xsolla.com/api/social/facebook/login_redirect?projectId=8b83af12-0974-11e7-93ae-92361f002671&login_url=https%3A%2F%2F80.lv%2Fapi%2Fuser%2Fauth&payload=%7B%22registration_source%22%3A%2280lv%22%2C%22redirectUrl%22%3A%22https%3A%2F%2F80.lv%2F%22%7D&locale=en_US&trackId= | Status: 302
+🔹 Expected URL: /facebook\.com\/login\.php/
+🔹 Actual URL:   https://www.facebook.com/login.php?skip_api_login=1&api_key=1602578623377997&kid_directed_site=0&app_id=1602578623377997&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv19.0%2Fdialog%2Foauth%3Fapproval_prompt%3Dauto%26client_id%3D1602578623377997%26redirect_uri%3Dhttps%253A%252F%252Flogin.xsolla.com%252Fapi%252Fsocial%252Foauth2%252Fcallback%26response_type%3Dcode%26scope%3Demail%26state%3DkYCZfLJbukDENXZLofBeuwJm1aqEs3zHE6Np96xdvqMtmRqWyeMb0JEXaplHrbYs5t7PIJLgX0Coe04dpGftOw%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3Dea9ee5a1-eab8-495c-8781-f9d2c883300e%26tp%3Dunspecified&cancel_url=https%3A%2F%2Flogin.xsolla.com%2Fapi%2Fsocial%2Foauth2%2Fcallback%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3DkYCZfLJbukDENXZLofBeuwJm1aqEs3zHE6Np96xdvqMtmRqWyeMb0JEXaplHrbYs5t7PIJLgX0Coe04dpGftOw%23_%3D_&display=page&locale=en_US&pl_dbl=0

@@ -1,0 +1,3 @@
+✅ Clicked [Accept Cookies @ Laptop] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+Pagination not present, only one page of events.

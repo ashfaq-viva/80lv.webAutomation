@@ -1,0 +1,25 @@
+✅ Clicked [Accept Cookies @ Laptop] → "Accept Cookies"
+🌐 Captured API → GET https://80.lv/api/jobs?sort=new&page=1 | Status: 200
+✅ Clicked Accept Cookies button.
+🧩 Total partner links found: 5
+🖥️ Current viewport: Laptop
+🖱️ Attempting to click Partner #1: /partners/unreal-engine
+🌐 Partner #1 URL: https://80.lv/partners/unreal-engine
+📁 File created: /app/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink1Laptop_2025-11-26T10-11-35-038Z.txt
+🗂️ Partner redirection URL saved at: /app/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink1Laptop_2025-11-26T10-11-35-038Z.txt
+🖱️ Attempting to click Partner #2: /partners/reallusion
+🌐 Partner #2 URL: https://80.lv/partners/reallusion
+📁 File created: /app/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink2Laptop_2025-11-26T10-11-40-305Z.txt
+🗂️ Partner redirection URL saved at: /app/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink2Laptop_2025-11-26T10-11-40-305Z.txt
+🖱️ Attempting to click Partner #3: /partners/unity-technologies
+🌐 Partner #3 URL: https://80.lv/partners/unity-technologies
+📁 File created: /app/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink3Laptop_2025-11-26T10-11-47-034Z.txt
+🗂️ Partner redirection URL saved at: /app/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink3Laptop_2025-11-26T10-11-47-034Z.txt
+🖱️ Attempting to click Partner #4: /partners/cgma
+🌐 Partner #4 URL: https://80.lv/partners/cgma
+📁 File created: /app/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink4Laptop_2025-11-26T10-11-51-454Z.txt
+🗂️ Partner redirection URL saved at: /app/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink4Laptop_2025-11-26T10-11-51-454Z.txt
+🖱️ Attempting to click Partner #5: /partners/vertex-school
+🌐 Partner #5 URL: https://80.lv/partners/vertex-school
+📁 File created: /app/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink5Laptop_2025-11-26T10-11-56-531Z.txt
+🗂️ Partner redirection URL saved at: /app/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink5Laptop_2025-11-26T10-11-56-531Z.txt

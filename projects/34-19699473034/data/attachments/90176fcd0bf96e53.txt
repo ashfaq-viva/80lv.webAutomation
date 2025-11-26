@@ -1,0 +1,8 @@
+✅ Clicked [Accept Cookies @ Desktop] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Clicked [Articles Menu Button @ Desktop] → "click_arrow"
+✅ Clicked [Events SubMenu Button @ Desktop] → "Events"
+🌐 Captured API → GET https://80.lv/api/jobs?sort=new&page=1 | Status: 200
+🔹 Expected URL: https://80.lv/articles/events
+🔹 Actual URL:   https://80.lv/articles/events
+✅ Assert: page URL is "https://80.lv/articles/events" (Events Page  Redirection)

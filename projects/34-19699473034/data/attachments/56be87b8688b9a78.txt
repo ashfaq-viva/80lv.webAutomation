@@ -1,0 +1,6 @@
+✅ Clicked [Accept Cookies @ Tablet] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Clicked [Privacy Policy Link @ Tablet] → "Privacy Policy"
+🔹 Expected URL: https://80.lv/privacy-policy
+🔹 Actual URL:   https://80.lv/privacy-policy
+✅ Assert: page URL is "https://80.lv/privacy-policy" (Privacy Policy redirection link)
