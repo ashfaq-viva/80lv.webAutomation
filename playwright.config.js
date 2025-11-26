@@ -6,7 +6,7 @@ import os from 'os';
 dotenv.config();
 
 const ENV = process.env.ENV || '80LV_PROD';
-const allowed = ['80LV_PROD', '80LV_QA', '80LV_DEV', 'ADMIN_PROD', 'ADMIN_QA'];
+const allowed = ['80LV_PROD', '80LV_QA', '80LV_DEV'];
 if (!allowed.includes(ENV)) {
   console.error('Please provide a correct environment value from testConfig');
   process.exit(1);
@@ -16,8 +16,6 @@ const baseUrlMap = {
   "80LV_PROD": process.env.BASE_URL_80LV_PROD,
   "80LV_QA":   process.env.BASE_URL_80LV_QA,
   "80LV_DEV":  process.env.BASE_URL_80LV_DEV,
-  "ADMIN_PROD": process.env.ADMIN_URL_ADMIN_PROD, // if you want admin as primary
-  "ADMIN_QA":   process.env.ADMIN_URL_ADMIN_QA,
 };
 const BASE_URL = baseUrlMap[ENV] || fallback[ENV];
 if (!BASE_URL) throw new Error(`BASE_URL not set for ${ENV} in .env`);
@@ -65,7 +63,7 @@ export default defineConfig({
     actionTimeout: 0,
     ignoreHTTPSErrors: true,
     browserName: 'chromium',
-    headless: process.env.CI ? true : false,
+    headless: process.env.CI ? true : true,
     screenshot: 'only-on-failure',
     video:'on',
     trace: 'retain-on-failure',
@@ -82,16 +80,17 @@ export default defineConfig({
         '--allow-running-insecure-content',
         '--disable-site-isolation-trials',
         '--ignore-certificate-errors',
+        "--disable-features=ExternalProtocolDialog",
+        "--no-default-browser-check",
+        "--disable-default-apps"
       ],
     },
-    // storageState: './LoginAuth_default.json', 
   },
 
   /* Configure projects for major browsers */
   projects: [
     {
       name: "Browser:Google Chrome",
-      // use: { ...devices["Desktop Chrome"], 
         use: { 
         baseURL: BASE_URL,
     }},

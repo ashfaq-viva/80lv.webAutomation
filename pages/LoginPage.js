@@ -1,4 +1,3 @@
-import { expect } from '@playwright/test';
 import BasePage from './BasePage';
 import { config } from '../config/testConfig.js';
 export class LoginPage extends BasePage {
@@ -26,11 +25,29 @@ export class LoginPage extends BasePage {
     this.loginWithLinkdinPrimaryBtn = this.widgetFrame.getByTestId('login-form__primary-social--linkedin');
 }
 
-  async visit() {
-    await this.page.goto('/',{waitUntil:'networkidle'} );
+  async visit(slugKeyOrPath = '') {
+    let path = '';
+    if (config.slug[slugKeyOrPath]) {
+      path = config.slug[slugKeyOrPath];
+    } else {
+      path = slugKeyOrPath;
+    }
+    const finalPath = path.startsWith('/') ? path : `/${path}`;
+    await this.page.goto(finalPath, { waitUntil: 'networkidle' });
+    await this.acceptCookies();
   }
   async acceptCookies(){
-    await this.expectAndClick(this.allowCookiesBtnOld,'Accept Cookies','cookieApi:GET');
+    const buttons = [this.allowCookiesBtnOld, this.allowCookiesBtn];
+    for (const button of buttons) {
+      try {
+        if (await button.isVisible()) {
+          await this.expectAndClick(button, 'Accept Cookies');
+          console.log('✅ Clicked Accept Cookies button.');
+          return;
+        }
+      } catch {}
+    }
+  console.log('⏭️ No Accept Cookies button found, skipping.');
   }
   async _waitForWidget() {
     for (let attempt = 1; attempt <= 3; attempt++) {
@@ -82,7 +99,7 @@ export class LoginPage extends BasePage {
         Tablet:  [this.navbarThreeDotMenuOld,this.profileLogInOld],
         Mobile:  [this.navbarThreeDotMenuOld,this.profileLogInOld],
       },
-      'Login Button','loginApi:POST'
+      'Login Button'
     );
     await this.waitAndFill(this.emailTxt,username,'Email');
     await this.waitAndFill(this.passwordTxt, password,'Password');
@@ -189,6 +206,12 @@ export class LoginPage extends BasePage {
       await this.expectAndClick(this.loginWithTwitterPrimaryBtn, 'Login with Xsolla Primary button');
       }
   }
-    
+  async assertLoginModalVisibility(){
+     await this.assert({
+        locator: this.emailTxt,
+        state: 'visible',
+        alias: 'Login Modal Widget'
+      });
+  }  
 }
 

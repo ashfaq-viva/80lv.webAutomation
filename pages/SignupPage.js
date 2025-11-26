@@ -2,16 +2,14 @@ import BasePage from './BasePage';
 import { generateRandomUser } from "../utils/generateRandomUser.js";
 import dotenv from "dotenv";
 import { getLatestEmailDetailsUnified } from "../utils/sigupUtils.js";
-import { getViewportNameFromPage } from '../utils/viewports.js';
-import fs from 'fs';
-import path from 'path';
+
 dotenv.config();
 
 export class SignupPage extends BasePage {
   constructor(page , context, loginPage) {
     super(page, context);
     this.loginPage = loginPage;
-    this.loginBtn = page.getByText("LogIn");
+    this.loginBtn = page.getByRole('img', { name: 'profile_login' });
     this.frame = page.frameLocator("#xl_widget iframe");
     this.signUpBtn = this.frame.getByTestId("signUp_tab-link");
     this.emailInput = this.frame.getByTestId("sign-up-form__fields-email");
@@ -39,16 +37,12 @@ export class SignupPage extends BasePage {
   async storeEmail(userModel) {
     this.generatedEmail = userModel.email;
     console.log("Generated Signup Email:", this.generatedEmail);
-    const viewportName = getViewportNameFromPage(this.page);
-    const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
-    const fileName = `signup_email_${viewportName}_${timestamp}.txt`;
-    const filePath = path.join(process.cwd(), 'savedData/signupEmails', fileName);
-
-    if (!fs.existsSync(path.dirname(filePath))) {
-        fs.mkdirSync(path.dirname(filePath), { recursive: true });
-    }
-
-    fs.appendFileSync(filePath, `Email: ${this.generatedEmail}\n`, 'utf8');
+     const filePath = await this.createSavedFile(
+    'signupEmails',              // folder name under savedData
+    'signup_email',              // base file name
+    'txt',                       // file extension
+    `Email: ${this.generatedEmail}\n` // content
+  );
     console.log(`✅ Email saved to: ${filePath}`);
 }
   async doSignup(request){

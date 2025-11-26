@@ -58,6 +58,8 @@ locks/
 storedValue/
 coverage.json
 savedData/
+chatmodes/
+seed.spec.ts
 
 # ==============================
 # Logs & temp files

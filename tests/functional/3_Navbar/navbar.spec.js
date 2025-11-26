@@ -4,7 +4,7 @@ import { test } from '../../../utils/sessionUse.js';
 test.describe('Navbar', () => {
   
   for (const vp of [Desktop,Laptop,Tablet,Mobile]) {
-    test(`${vp.name}  @regression TC_011:Successful Advertise redirection`, async ({ page, loginPage , navbarPage }) => {
+    test(`${vp.name} TC_011:Successful Advertise redirection @regression`, async ({ page, loginPage , navbarPage }) => {
       await setViewport(page, vp.size);
       await loginPage.visit();
       await loginPage.acceptCookies();
@@ -12,15 +12,15 @@ test.describe('Navbar', () => {
     });
   }
    for (const vp of [Desktop,Laptop,Tablet,Mobile]) {
-    test(`${vp.name}  @regression TC_012:Successful Order research redirection`, async ({ page, loginPage , navbarPage }) => {
+    test(`${vp.name} TC_012:Successful Colored Header Button redirection @regression`, async ({ page, loginPage , navbarPage }) => {
       await setViewport(page, vp.size);
       await loginPage.visit();
       await loginPage.acceptCookies();
-      await navbarPage.orderResearchRedirection(); 
+      await navbarPage.headerButtonRedirection(); 
     });
   }
   for (const vp of [Desktop,Laptop,Tablet,Mobile]) {
-    test(`${vp.name}  @regression TC_013:Successful Company Logo Redirection`, async ({ page, loginPage , navbarPage }) => {
+    test(`${vp.name} TC_013:Successful Company Logo Redirection @regression`, async ({ page, loginPage , navbarPage }) => {
       await setViewport(page, vp.size);
       await loginPage.visit();
       await loginPage.acceptCookies();
