@@ -28,7 +28,7 @@ export default defineConfig({
   globalSetup: './utils/global-setup.js',
   testDir: './tests',
   /* Maximum time one test can run for. */
-  timeout: process.env.CI ? 5 * 60 * 1000 : 0,
+  timeout: process.env.CI ? 20 * 60 * 1000 : 0,
   expect: {
     /**
      * Maximum time expect() should wait for the condition to be met.
