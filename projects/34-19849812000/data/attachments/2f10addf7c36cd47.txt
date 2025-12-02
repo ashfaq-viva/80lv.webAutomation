@@ -1,0 +1,4 @@
+✅ Clicked [Accept Cookies @ Desktop] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+🧩 Found 0 Sponsored tags on page.
+⚠️⚠️⚠️ No Sponsored tags found on the page — skipping test.⚠️⚠️⚠️

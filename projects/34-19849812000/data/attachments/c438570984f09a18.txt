@@ -1,0 +1,23 @@
+✅ Clicked [Accept Cookies @ Mobile] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Assert: element is visible [All Events Tab @ Mobile]
+ℹ️ No CSS assert for [All Events Tab] at viewport Mobile
+✅ Clicked [Offline Events Tab (Step 1) @ Mobile] → "Offline Events Tab (Step 1)"
+✅ Clicked [Offline Events Tab (Step 2) @ Mobile] → "Offline events"
+🌐 Captured API → GET https://80.lv/api/events?total=10&title=&page=1&sort=sort&online=0 | Status: 200
+✅ Assert: element is visible [Offline Events Tab @ Mobile]
+ℹ️ No CSS assert for [Offline Events Tab] at viewport Mobile
+✅ Assert: element is visible [Selected Filter Option Oldest @ Mobile]
+✅ Clicked [Filter Arrow @ Mobile] → "Filter Arrow"
+✅ Clicked [Filter Option A to Z @ Mobile] → "A-Z"
+🌐 Captured API: https://80.lv/api/events?total=10&title=&page=1&sort=title&online=0 → GET | Status: 200
+🔗 Expected: https://80.lv/api/events?total=10&title=&page=1&sort=title&online=0 → GET | Status: 200
+✅ Assertion API: Passed
+🗂️ API response saved at: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/apiResponses/events/GETofflineEventsFilterAToZ.json
+✅ Assert: element is visible [Selected Filter Option A to Z @ Mobile]
+📝 Verifying 4 titles on the page...
+✅ [devcom leadership summit 2026] found
+✅ [GDC 2026] found
+✅ [SIGGRAPH Asia 2025] found
+✅ [Taipei Game Show 2026] found
+Pagination not present, only one page of events.

@@ -1,0 +1,7 @@
+✅ Clicked [Accept Cookies @ Tablet] → "Accept Cookies"
+🌐 Captured API → GET https://80.lv/api/jobs?sort=new&page=1 | Status: 200
+✅ Clicked Accept Cookies button.
+✅ Clicked [Podcasts Link @ Tablet] → "Round Table"
+🔹 Expected URL: https://80levelroundtable.buzzsprout.com/
+🔹 Actual URL:   https://80levelroundtable.buzzsprout.com
+✅ Assert: page URL is "https://80levelroundtable.buzzsprout.com/" (podcasts redirection link)

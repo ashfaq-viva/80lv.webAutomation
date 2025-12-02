@@ -1,0 +1,463 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - banner [ref=e5]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - img "logo80lv" [ref=e9] [cursor=pointer]
+        - generic [ref=e10] [cursor=pointer]:
+          - text: Articles
+          - img "click_arrow" [ref=e11]
+        - generic [ref=e12] [cursor=pointer]: Research
+        - generic [ref=e13] [cursor=pointer]:
+          - text: Talents
+          - img "click_arrow" [ref=e14]
+        - generic [ref=e15] [cursor=pointer]: Events
+        - generic [ref=e16] [cursor=pointer]: Workshops
+        - generic [ref=e17] [cursor=pointer]:
+          - text: About
+          - img "click_arrow" [ref=e18]
+      - generic [ref=e19]:
+        - generic [ref=e20]:
+          - link "Monetize Your Game" [ref=e21] [cursor=pointer]:
+            - /url: https://80level.typeform.com/monetize-games?utm_source=80lv_website&utm_medium=header-button
+          - generic [ref=e22] [cursor=pointer]:
+            - generic [ref=e23]: Advertise
+            - img "player" [ref=e24]
+        - button "search" [ref=e25] [cursor=pointer]:
+          - img "search" [ref=e27]
+        - generic [ref=e30] [cursor=pointer]:
+          - img "profile_login" [ref=e32]
+          - generic [ref=e33]: Log in
+    - separator [ref=e34]
+    - generic [ref=e35]:
+      - generic [ref=e36] [cursor=pointer]: All Articles
+      - generic [ref=e37] [cursor=pointer]: News
+      - generic [ref=e38] [cursor=pointer]: Interviews
+      - generic [ref=e39] [cursor=pointer]: 80 Level Anniversary
+      - generic [ref=e40] [cursor=pointer]: Sponsored by Adobe Substance 3D
+      - generic [ref=e41] [cursor=pointer]: Outsourcing Cases
+      - generic [ref=e42] [cursor=pointer]: Marketplace
+      - generic [ref=e43] [cursor=pointer]: Environment Art
+      - generic [ref=e44] [cursor=pointer]: Character Art
+      - generic [ref=e45] [cursor=pointer]: VFX
+      - generic [ref=e46] [cursor=pointer]: Props
+      - generic [ref=e47] [cursor=pointer]: Animation
+      - generic [ref=e48] [cursor=pointer]: Gamedev
+      - generic [ref=e49] [cursor=pointer]: Materials
+      - generic [ref=e50] [cursor=pointer]: Tech
+      - generic [ref=e51] [cursor=pointer]: Ratings
+      - generic [ref=e52] [cursor=pointer]: Sponsored by Unreal Engine
+      - generic [ref=e53] [cursor=pointer]: Events
+      - generic [ref=e54] [cursor=pointer]: Digest
+      - generic [ref=e55] [cursor=pointer]: Feature
+      - generic [ref=e56] [cursor=pointer]: Promo
+      - generic [ref=e57] [cursor=pointer]: Sculpting
+      - generic [ref=e58] [cursor=pointer]: 80 Level China
+  - main [ref=e59]:
+    - generic [ref=e62]:
+      - link [ref=e63] [cursor=pointer]:
+        - /url: https://www.blenderkit.com/?utm_source=80lvl&utm_medium=banner&utm_campaign=blackbirthday2025
+      - generic [ref=e65] [cursor=pointer]: Sponsored
+    - generic [ref=e67]:
+      - generic [ref=e69]:
+        - button "Category" [ref=e73] [cursor=pointer]:
+          - generic [ref=e74]:
+            - text: Category
+            - img [ref=e76]
+        - generic [ref=e78]:
+          - button "New" [ref=e79] [cursor=pointer]
+          - button "Popular" [ref=e80] [cursor=pointer]
+      - generic [ref=e81]:
+        - generic [ref=e82]:
+          - generic [ref=e84]:
+            - generic [ref=e85]:
+              - link [ref=e86] [cursor=pointer]:
+                - /url: /articles/the-witcher-4-will-not-launch-in-2026-with-new-trilogy-planned-within-six-years
+              - img [ref=e91] [cursor=pointer]
+            - generic [ref=e93]:
+              - generic [ref=e94]:
+                - link "The Witcher 4 Will Not Launch in 2026, with New Trilogy Planned within Six Years" [ref=e95] [cursor=pointer]:
+                  - /url: /articles/the-witcher-4-will-not-launch-in-2026-with-new-trilogy-planned-within-six-years
+                  - heading "The Witcher 4 Will Not Launch in 2026, with New Trilogy Planned within Six Years" [level=1] [ref=e96]
+                - paragraph [ref=e97]:
+                  - generic [ref=e98]: 02 December 2025 -
+                  - text: CDPR shared the information at the Q3 earnings call.
+              - generic [ref=e99]:
+                - generic [ref=e100]: "#News"
+                - generic [ref=e101]: "#Video Games"
+          - generic [ref=e103]:
+            - generic [ref=e104]:
+              - link [ref=e105] [cursor=pointer]:
+                - /url: /articles/fortnite-s-new-season-gets-accused-of-featuring-ai-generated-images
+              - img [ref=e110] [cursor=pointer]
+            - generic [ref=e112]:
+              - generic [ref=e113]:
+                - link "Fortnite's New Season Gets Accused of Featuring AI-Generated Images" [ref=e114] [cursor=pointer]:
+                  - /url: /articles/fortnite-s-new-season-gets-accused-of-featuring-ai-generated-images
+                  - heading "Fortnite's New Season Gets Accused of Featuring AI-Generated Images" [level=1] [ref=e115]
+                - paragraph [ref=e116]:
+                  - generic [ref=e117]: 02 December 2025 -
+                  - text: On at least one occasion, the accusations were proven to be unfounded.
+              - generic [ref=e118]:
+                - generic [ref=e119]: "#News"
+                - generic [ref=e120]: "#AI"
+          - generic [ref=e122]:
+            - generic [ref=e123]:
+              - link [ref=e124] [cursor=pointer]:
+                - /url: /articles/dan-houser-says-ai-developers-aren-t-fully-rounded-humans
+              - img [ref=e129] [cursor=pointer]
+            - generic [ref=e131]:
+              - generic [ref=e132]:
+                - link "Dan Houser Says AI Developers \"Aren't Fully Rounded Humans\"" [ref=e133] [cursor=pointer]:
+                  - /url: /articles/dan-houser-says-ai-developers-aren-t-fully-rounded-humans
+                  - heading "Dan Houser Says AI Developers \"Aren't Fully Rounded Humans\"" [level=1] [ref=e134]
+                - paragraph [ref=e135]:
+                  - generic [ref=e136]: 02 December 2025 -
+                  - text: Former Rockstar writer also compared the spread of AI to mad cow disease.
+              - generic [ref=e137]:
+                - generic [ref=e138]: "#News"
+                - generic [ref=e139]: "#AI"
+          - generic [ref=e141]:
+            - generic [ref=e142]:
+              - link [ref=e143] [cursor=pointer]:
+                - /url: /articles/paying-tribute-to-swedish-nature-with-a-detailed-witch-s-hut-scene
+              - img [ref=e148] [cursor=pointer]
+            - generic [ref=e150]:
+              - generic [ref=e151]:
+                - link "Paying Tribute to Swedish Nature With a Detailed Witch's Hut Scene" [ref=e152] [cursor=pointer]:
+                  - /url: /articles/paying-tribute-to-swedish-nature-with-a-detailed-witch-s-hut-scene
+                  - heading "Paying Tribute to Swedish Nature With a Detailed Witch's Hut Scene" [level=1] [ref=e153]
+                - paragraph [ref=e154]:
+                  - generic [ref=e155]: 01 December 2025 -
+                  - text: Lena Danilova walked us through the workflow behind the Witch's Hut project, detailing how she made the nature and how she used SpeedTree to add color variation and assign weights to the needle materials to get a more natural look in the branches.
+              - generic [ref=e156]:
+                - generic [ref=e157]: "#Environment Art"
+                - generic [ref=e158]: "#Interviews"
+                - generic [ref=e159]: "#Blender"
+                - generic [ref=e160]: "#Unreal Engine"
+                - generic [ref=e161]: "#SpeedTree"
+                - generic [ref=e162]: "#ZBrush"
+                - generic [ref=e163]: "#Substance 3D Designer"
+                - generic [ref=e164]: "#Substance 3D Painter"
+          - generic [ref=e165]:
+            - generic [ref=e166]:
+              - generic [ref=e167]:
+                - link [ref=e168] [cursor=pointer]:
+                  - /url: /articles/bringing-to-life-a-semi-stylized-character-with-maya-substance-3d
+                - img [ref=e173] [cursor=pointer]
+              - generic [ref=e175]:
+                - generic [ref=e176]:
+                  - link "Bringing to Life a Semi-Stylized Character With Maya & Substance 3D" [ref=e177] [cursor=pointer]:
+                    - /url: /articles/bringing-to-life-a-semi-stylized-character-with-maya-substance-3d
+                    - heading "Bringing to Life a Semi-Stylized Character With Maya & Substance 3D" [level=1] [ref=e178]
+                  - paragraph [ref=e179]:
+                    - generic [ref=e180]: 01 December 2025 -
+                    - text: Emre Kaymak explained how he created the French Stranger 3D character model, telling us how he blended stylized shapes with realistic details to achieve this art style.
+                - generic [ref=e181]:
+                  - generic [ref=e182]: "#Character Art"
+                  - generic [ref=e183]: "#Interviews"
+                  - generic [ref=e184]: "#Character Art"
+                  - generic [ref=e185]: "#Marvelous Designer"
+                  - generic [ref=e186]: "#Maya"
+                  - generic [ref=e187]: "#ZBrush"
+                  - generic [ref=e188]: "#Substance 3D Painter"
+            - link "Ready to grow your game’s revenue worldwide? Talk to us" [ref=e189] [cursor=pointer]:
+              - /url: https://80level.typeform.com/monetize-games?utm_source=80lv_website&utm_medium=bar-widget
+              - generic [ref=e190]: Ready to grow your game’s revenue worldwide?
+              - generic [ref=e191]: Talk to us
+          - generic [ref=e193]:
+            - generic [ref=e194]:
+              - link [ref=e195] [cursor=pointer]:
+                - /url: /articles/the-new-rules-of-growing-a-game-in-a-usd500b-industry
+              - img [ref=e200] [cursor=pointer]
+            - generic [ref=e202]:
+              - generic [ref=e203]:
+                - link "The New Rules of Growing a Game in a $500B Industry" [ref=e204] [cursor=pointer]:
+                  - /url: /articles/the-new-rules-of-growing-a-game-in-a-usd500b-industry
+                  - heading "The New Rules of Growing a Game in a $500B Industry" [level=1] [ref=e205]
+                - paragraph [ref=e206]:
+                  - generic [ref=e207]: 01 December 2025 -
+                  - text: Insights from Xsolla on what developers need to scale games for a global audience.
+              - generic [ref=e208]:
+                - generic [ref=e209]: "#News"
+                - generic [ref=e210]: "#Xsolla"
+                - generic [ref=e211]: "#Sponsored Article"
+          - generic [ref=e213]:
+            - generic [ref=e214]:
+              - link [ref=e215] [cursor=pointer]:
+                - /url: /articles/realistic-dynamic-raindrop-effects-in-unity
+              - img [ref=e220] [cursor=pointer]
+            - generic [ref=e222]:
+              - generic [ref=e223]:
+                - link "Realistic Dynamic Raindrop Effects In Unity" [ref=e224] [cursor=pointer]:
+                  - /url: /articles/realistic-dynamic-raindrop-effects-in-unity
+                  - heading "Realistic Dynamic Raindrop Effects In Unity" [level=1] [ref=e225]
+                - paragraph [ref=e226]:
+                  - generic [ref=e227]: 01 December 2025 -
+                  - text: A new mobile project by Sakura Rabbit.
+              - generic [ref=e228]:
+                - generic [ref=e229]: "#News"
+                - generic [ref=e230]: "#Marketplace"
+                - generic [ref=e231]: "#Unity"
+          - generic [ref=e233]:
+            - generic [ref=e234]:
+              - link [ref=e235] [cursor=pointer]:
+                - /url: /articles/you-don-t-want-to-meet-this-giant-crab-in-mamoru-kano-s-game
+              - img [ref=e240] [cursor=pointer]
+            - generic [ref=e242]:
+              - generic [ref=e243]:
+                - link "You Don't Want to Meet This Giant Crab in Mamoru Kano's Game" [ref=e244] [cursor=pointer]:
+                  - /url: /articles/you-don-t-want-to-meet-this-giant-crab-in-mamoru-kano-s-game
+                  - heading "You Don't Want to Meet This Giant Crab in Mamoru Kano's Game" [level=1] [ref=e245]
+                - paragraph [ref=e246]:
+                  - generic [ref=e247]: 01 December 2025 -
+                  - text: It's coming. No, running.
+              - generic [ref=e248]:
+                - generic [ref=e249]: "#News"
+                - generic [ref=e250]: "#Unreal Engine"
+                - generic [ref=e251]: "#Video Games"
+                - generic [ref=e252]: "#Game Development"
+          - generic [ref=e254]:
+            - generic [ref=e255]:
+              - link [ref=e256] [cursor=pointer]:
+                - /url: /articles/this-masonry-blender-generator-lets-you-lay-floor-bricks-with-ease
+              - img [ref=e261] [cursor=pointer]
+            - generic [ref=e263]:
+              - generic [ref=e264]:
+                - link "This Masonry Blender Generator Lets You Lay Floor Bricks With Ease" [ref=e265] [cursor=pointer]:
+                  - /url: /articles/this-masonry-blender-generator-lets-you-lay-floor-bricks-with-ease
+                  - heading "This Masonry Blender Generator Lets You Lay Floor Bricks With Ease" [level=1] [ref=e266]
+                - paragraph [ref=e267]:
+                  - generic [ref=e268]: 01 December 2025 -
+                  - text: Sho Fujita, also known as noveldrum, is working on a new update.
+              - generic [ref=e269]:
+                - generic [ref=e270]: "#News"
+                - generic [ref=e271]: "#Blender"
+          - generic [ref=e273]:
+            - generic [ref=e274]:
+              - link [ref=e275] [cursor=pointer]:
+                - /url: /articles/creepy-stingray-like-creature-dancing-in-this-impressive-animation
+              - img [ref=e280] [cursor=pointer]
+            - generic [ref=e282]:
+              - generic [ref=e283]:
+                - link "Creepy Stingray-Like Creature Dancing in This Impressive Animation" [ref=e284] [cursor=pointer]:
+                  - /url: /articles/creepy-stingray-like-creature-dancing-in-this-impressive-animation
+                  - heading "Creepy Stingray-Like Creature Dancing in This Impressive Animation" [level=1] [ref=e285]
+                - paragraph [ref=e286]:
+                  - generic [ref=e287]: 01 December 2025 -
+                  - text: Artem Shapiro's animations are smooth as always.
+              - generic [ref=e288]:
+                - generic [ref=e289]: "#News"
+                - generic [ref=e290]: "#Animation"
+          - list [ref=e291]:
+            - listitem [ref=e292]:
+              - link "1":
+                - /url: /articles/
+            - listitem [ref=e293]:
+              - link "2" [ref=e294] [cursor=pointer]:
+                - /url: /articles/
+            - listitem [ref=e295]:
+              - link "3" [ref=e296] [cursor=pointer]:
+                - /url: /articles/
+            - listitem [ref=e297]:
+              - link "4" [ref=e298] [cursor=pointer]:
+                - /url: /articles/
+            - listitem [ref=e299]:
+              - link "5" [ref=e300] [cursor=pointer]:
+                - /url: /articles/
+            - listitem [ref=e301]:
+              - link [ref=e302] [cursor=pointer]:
+                - /url: /articles/
+                - img [ref=e304]
+        - generic [ref=e306]:
+          - generic [ref=e307]:
+            - link [ref=e309] [cursor=pointer]:
+              - /url: https://80lv.gumroad.com/?utm_source=website_80lv&utm_medium=image-banner&utm_campaign=bf-2025
+            - generic [ref=e311]:
+              - link [ref=e312] [cursor=pointer]:
+                - /url: https://rapidpipeline.com/en/edu/?utm_source=80lv&utm_medium=cpc&utm_campaign=2025-q4-edu-square-side-banner
+              - generic [ref=e314] [cursor=pointer]: Sponsored Ad
+          - generic [ref=e316]:
+            - generic [ref=e317]:
+              - heading "Subscribe to newsletter" [level=2] [ref=e318]
+              - paragraph [ref=e319]: Don't miss our weekly newsletter
+            - generic [ref=e321]:
+              - textbox "Email address" [ref=e322]
+              - img "icon" [ref=e324] [cursor=pointer]
+            - img "essential" [ref=e325]
+          - generic [ref=e326]:
+            - generic [ref=e327]:
+              - img "job" [ref=e328]
+              - heading "Job board" [level=2] [ref=e329]
+            - generic [ref=e330]:
+              - generic [ref=e331] [cursor=pointer]:
+                - generic [ref=e332]:
+                  - img "Game Map Artist / Cartographer / Illustrator" [ref=e333]
+                  - generic [ref=e334]:
+                    - heading "Cold Symmetry" [level=3] [ref=e335]
+                    - paragraph [ref=e336]: Game Map Artist / Cartographer / Illustrator
+                - generic [ref=e337]:
+                  - paragraph [ref=e338]: On-site
+                  - paragraph [ref=e339]: Remote
+              - generic [ref=e340] [cursor=pointer]:
+                - generic [ref=e341]:
+                  - img "Software Engineering Architect - Game Security" [ref=e342]
+                  - generic [ref=e343]:
+                    - heading "Bungie" [level=3] [ref=e344]
+                    - paragraph [ref=e345]: Software Engineering Architect - Game Security
+                - generic [ref=e346]:
+                  - paragraph [ref=e347]: On-site
+                  - paragraph [ref=e348]: United States
+              - generic [ref=e349] [cursor=pointer]:
+                - generic [ref=e350]:
+                  - img "Senior Lighting Artist" [ref=e351]
+                  - generic [ref=e352]:
+                    - heading "Bungie" [level=3] [ref=e353]
+                    - paragraph [ref=e354]: Senior Lighting Artist
+                - generic [ref=e355]:
+                  - paragraph [ref=e356]: On-site
+                  - paragraph [ref=e357]: United States
+              - generic [ref=e358] [cursor=pointer]:
+                - generic [ref=e359]:
+                  - img "Game Services Engineering Architect" [ref=e360]
+                  - generic [ref=e361]:
+                    - heading "Bungie" [level=3] [ref=e362]
+                    - paragraph [ref=e363]: Game Services Engineering Architect
+                - generic [ref=e364]:
+                  - paragraph [ref=e365]: On-site
+                  - paragraph [ref=e366]: United States
+              - generic [ref=e367] [cursor=pointer]:
+                - generic [ref=e368]:
+                  - img "Data Reliability Engineer" [ref=e369]
+                  - generic [ref=e370]:
+                    - heading "Bungie" [level=3] [ref=e371]
+                    - paragraph [ref=e372]: Data Reliability Engineer
+                - generic [ref=e373]:
+                  - paragraph [ref=e374]: On-site
+                  - paragraph [ref=e375]: United States
+            - generic [ref=e376] [cursor=pointer]:
+              - img "arrow" [ref=e377]
+              - paragraph [ref=e378]: All vacancies
+          - generic [ref=e379]:
+            - generic [ref=e380]:
+              - heading "Partners" [level=2] [ref=e381]
+              - generic [ref=e382]:
+                - generic [ref=e383]:
+                  - button "Previous slide" [ref=e384] [cursor=pointer]:
+                    - img "Prev" [ref=e385]
+                  - button "Next slide" [ref=e386] [cursor=pointer]:
+                    - img "Next" [ref=e387]
+                - generic [ref=e390]:
+                  - link "Unreal Engine" [ref=e391] [cursor=pointer]:
+                    - /url: /partners/unreal-engine
+                    - img "Unreal Engine" [ref=e393]
+                  - link "Reallusion" [ref=e394] [cursor=pointer]:
+                    - /url: /partners/reallusion
+                    - img "Reallusion" [ref=e396]
+                  - link "Unity Technologies" [ref=e397] [cursor=pointer]:
+                    - /url: /partners/unity-technologies
+                    - img "Unity Technologies" [ref=e399]
+                  - link "CGMA" [ref=e400] [cursor=pointer]:
+                    - /url: /partners/cgma
+                    - img "CGMA" [ref=e402]
+                  - link "Vertex School" [ref=e403] [cursor=pointer]:
+                    - /url: /partners/vertex-school
+                    - img "Vertex School" [ref=e405]
+                  - link "Unreal Engine" [ref=e406] [cursor=pointer]:
+                    - /url: /partners/unreal-engine
+                    - img "Unreal Engine" [ref=e408]
+                  - link "Reallusion" [ref=e409] [cursor=pointer]:
+                    - /url: /partners/reallusion
+                    - img "Reallusion" [ref=e411]
+                  - link "Unity Technologies" [ref=e412] [cursor=pointer]:
+                    - /url: /partners/unity-technologies
+                    - img "Unity Technologies" [ref=e414]
+                  - link "CGMA" [ref=e415] [cursor=pointer]:
+                    - /url: /partners/cgma
+                    - img "CGMA" [ref=e417]
+                  - link "Vertex School" [ref=e418] [cursor=pointer]:
+                    - /url: /partners/vertex-school
+                    - img "Vertex School" [ref=e420]
+                  - link "Unreal Engine" [ref=e421] [cursor=pointer]:
+                    - /url: /partners/unreal-engine
+                    - img "Unreal Engine" [ref=e423]
+                  - link "Reallusion" [ref=e424] [cursor=pointer]:
+                    - /url: /partners/reallusion
+                    - img "Reallusion" [ref=e426]
+                  - link "Unity Technologies" [ref=e427] [cursor=pointer]:
+                    - /url: /partners/unity-technologies
+                    - img "Unity Technologies" [ref=e429]
+                  - link "CGMA" [ref=e430] [cursor=pointer]:
+                    - /url: /partners/cgma
+                    - img "CGMA" [ref=e432]
+                  - link "Vertex School" [ref=e433] [cursor=pointer]:
+                    - /url: /partners/vertex-school
+                    - img "Vertex School" [ref=e435]
+              - link "arrow Explore Partners" [ref=e437] [cursor=pointer]:
+                - /url: /partners
+                - img "arrow" [ref=e438]
+                - paragraph [ref=e439]: Explore Partners
+            - link "arrow Become a partner arrow" [ref=e440] [cursor=pointer]:
+              - /url: mailto:contact@80.lv
+              - img "arrow" [ref=e441]
+              - paragraph [ref=e442]: Become a partner
+              - img "arrow" [ref=e443]
+  - generic [ref=e444]:
+    - generic [ref=e445]:
+      - link [ref=e447] [cursor=pointer]:
+        - /url: https://80lv.gumroad.com/l/intro-to-geometry-nodes?utm_source=website_80lv&utm_medium=image-banner&utm_campaign=80levelcourses3
+      - link [ref=e450] [cursor=pointer]:
+        - /url: https://80lv.gumroad.com/l/robotic-wolf-vfx-in-blender?utm_source=website_80lv&utm_medium=image-banner&utm_campaign=80levelcourses4
+    - contentinfo [ref=e452]:
+      - generic [ref=e453]:
+        - heading "Subscribe" [level=2] [ref=e454]
+        - paragraph [ref=e455]: Start receiving our weekly newsletter
+        - generic [ref=e456]:
+          - textbox [ref=e459]:
+            - /placeholder: Email address
+          - button "Subscribe" [ref=e460] [cursor=pointer]:
+            - generic [ref=e461]: Subscribe
+        - list [ref=e462]:
+          - listitem [ref=e463]:
+            - paragraph [ref=e464]: Facebook
+            - link "@LevelEighty" [ref=e465] [cursor=pointer]:
+              - /url: https://www.facebook.com/LevelEighty
+          - listitem [ref=e466]:
+            - paragraph [ref=e467]: Twitter
+            - link "@80Level" [ref=e468] [cursor=pointer]:
+              - /url: https://twitter.com/80Level
+          - listitem [ref=e469]:
+            - paragraph [ref=e470]: YouTube
+            - link "@80lv" [ref=e471] [cursor=pointer]:
+              - /url: https://www.youtube.com/channel/UCI8IFlI7_0xU9Dc60xoZuiA
+          - listitem [ref=e472]:
+            - paragraph [ref=e473]: Instagram
+            - link "@eighty_level" [ref=e474] [cursor=pointer]:
+              - /url: https://www.instagram.com/eighty_level/
+          - listitem [ref=e475]:
+            - paragraph [ref=e476]: Podcasts
+            - link "Round Table" [ref=e477] [cursor=pointer]:
+              - /url: https://80levelroundtable.buzzsprout.com/
+        - generic [ref=e478]:
+          - paragraph [ref=e479]: © 2025. 80 level. All rights reserved
+          - list [ref=e480]:
+            - generic [ref=e481]:
+              - listitem [ref=e482]:
+                - link "About & Contact us" [ref=e483] [cursor=pointer]:
+                  - /url: /contact-us
+              - listitem [ref=e484]:
+                - link "Privacy Policy" [ref=e485] [cursor=pointer]:
+                  - /url: /privacy-policy
+            - generic [ref=e486]:
+              - listitem [ref=e487]:
+                - link "Republishing policy" [ref=e488] [cursor=pointer]:
+                  - /url: /republishing-policy
+              - listitem [ref=e489]:
+                - link "Terms of use" [ref=e490] [cursor=pointer]:
+                  - /url: /terms-of-use
+            - listitem [ref=e492]:
+              - link "Disclaimer" [ref=e493] [cursor=pointer]:
+                - /url: /disclaimer
+```
