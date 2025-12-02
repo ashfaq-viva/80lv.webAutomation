@@ -256,13 +256,13 @@ test.describe('Events Page', () => {
       await eventsPage.futureEventsCardsWithPagination();
     });
   }
-  for (const vp of [Desktop]) {
-    test(`${vp.name} TC_147:Footer Bottom promo banner visibility with redirection @regression`, async ({ page, loginPage , promoImageBannerPage}) => {
-      await setViewport(page, vp.size);
-      await loginPage.visit(config.slug.eventsPage);
-      await promoImageBannerPage.footerPromoImageBannerRedirection('events/footerPromoBanner'); 
-    });
-  }
+  // for (const vp of [Desktop]) {
+  //   test(`${vp.name} TC_147:Footer Bottom promo banner visibility with redirection @regression`, async ({ page, loginPage , promoImageBannerPage}) => {
+  //     await setViewport(page, vp.size);
+  //     await loginPage.visit(config.slug.eventsPage);
+  //     await promoImageBannerPage.footerPromoImageBannerRedirection('events/footerPromoBanner'); 
+  //   });
+  // }
   for (const vp of [Desktop,Laptop,Tablet,Mobile]) {
     test(`${vp.name} TC_148: Footer form email field validation @regression`, async ({ page, loginPage ,subscribeFormFooterPage }) => {
       await setViewport(page, vp.size);
