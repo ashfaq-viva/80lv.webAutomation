@@ -429,25 +429,25 @@ jobs:
 
       # Download all shard artifacts
       - name: Download Shard 1
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: allure-results-shard-1
           path: merged-results/shard-1
 
       - name: Download Shard 2
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: allure-results-shard-2
           path: merged-results/shard-2
 
       - name: Download Shard 3
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: allure-results-shard-3
           path: merged-results/shard-3
 
       - name: Download Shard 4
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: allure-results-shard-4
           path: merged-results/shard-4
