@@ -45,13 +45,12 @@ export default defineConfig({
   retries: process.env.CI ? 2 : 0,
   // retries: 2,
   /* Opt out of parallel tests on CI. */
-  workers: process.env.CI ? 5 : Math.min(os.cpus().length - 1, 5),
+  workers: process.env.CI ? 2 : Math.min(os.cpus().length - 1, 5),
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   // reporter: 'html',
-  reporter: [
-    ['list'],
-    ['allure-playwright']
-  ],
+  reporter: process.env.CI
+  ? [['line'], ['allure-playwright']]
+  : [['list'], ['allure-playwright']],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
      extraHTTPHeaders: {
