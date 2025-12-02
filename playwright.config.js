@@ -48,10 +48,16 @@ export default defineConfig({
   workers: process.env.CI ? 5 : Math.min(os.cpus().length - 1, 5),
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   // reporter: 'html',
-  reporter: [
-    ['list'],
-    ['allure-playwright']
-  ],
+  // reporter: [
+  //   ['list'],
+  //   ['allure-playwright']
+  // ],
+     reporter: process.env.CI
+  ? [['line']]
+  : [
+      ['list'], 
+      ['allure-playwright']
+    ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
      extraHTTPHeaders: {
