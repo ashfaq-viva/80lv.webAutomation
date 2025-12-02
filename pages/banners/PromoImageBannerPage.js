@@ -5,8 +5,8 @@ export class PromoImageBannerPage extends BasePage {
     super(page, context);
     this.footerPromoImageBanner1 = page.locator('#Image_benr_Bot1');
     this.footerPromoImageBanner2 = page.locator('#Image_benr_Bot2');
-    this.rightSidePromoImageBanner1 = page.locator('#Image_benr_Mid1');
-    this.rightSidePromoImageBanner2 = page.locator('#Image_benr_Mid2');
+    this.rightSidePromoImageBanner1 = page.locator('#Image_bner_Mid1');
+    this.rightSidePromoImageBanner2 = page.locator('#Image_bner_Mid2');
     this.footerSponsoredBannerLinks = this.page.locator("//div[contains(@class,'ImgPrmo26042024_default')][.//label[normalize-space()='Sponsored']]//a");
   }
 

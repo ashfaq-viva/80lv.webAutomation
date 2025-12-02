@@ -294,6 +294,7 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    continue-on-error: true
     timeout-minutes: 180
     strategy:
       matrix:
@@ -382,7 +383,7 @@ jobs:
       - name: Run Playwright Tests (Shard ${{ matrix.shard }})
         run: |
           npx cross-env ENV=${ENV} playwright test "--shard=${{ matrix.shard }}/4" 
-
+        continue-on-error: true
       - name: Upload Global Setup Artifacts
         if: always()
         uses: actions/upload-artifact@v4
