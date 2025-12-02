@@ -296,7 +296,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        shard: [1, 2, 3, 4] # 4 parallel shards
+        shard: [1, 2, 3, 4 , 5 , 6 , 7 , 8] # 4 parallel shards
     env:
       NODE_OPTIONS: "--max_old_space_size=4096"
       PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: 0
@@ -450,6 +450,26 @@ jobs:
         with:
           name: allure-results-shard-4
           path: merged-results/shard-4
+      - name: Download Shard 5
+        uses: actions/download-artifact@v3
+        with:
+          name: allure-results-shard-5
+          path: merged-results/shard-5
+      - name: Download Shard 6
+        uses: actions/download-artifact@v3
+        with:
+          name: allure-results-shard-6
+          path: merged-results/shard-6
+      - name: Download Shard 7
+        uses: actions/download-artifact@v3
+        with:
+          name: allure-results-shard-7
+          path: merged-results/shard-7
+      - name: Download Shard 8
+        uses: actions/download-artifact@v3
+        with:
+          name: allure-results-shard-8
+          path: merged-results/shard-8
 
       - name: Merge Allure Results
         run: |
