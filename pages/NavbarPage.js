@@ -157,6 +157,7 @@ export class NavbarPage extends BasePage {
       },
       'Profile Menu');
     await this.expectAndClick(this.bookmarkOption,'Bookmark Option');
+    await this.page.waitForLoadState('networkidle');
       await this.assert({
         toHaveURL: '/bookmarks',
         alias: 'Bookmark Page'
