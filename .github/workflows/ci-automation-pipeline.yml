@@ -20,8 +20,12 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    strategy:
+      matrix:
+        shard: [1, 2, 3, 4]
     env:
+        NODE_OPTIONS: "--max_old_space_size=4096"
+        PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: 0
         ENV: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' && '80LV_PROD' || github.event.inputs.target_env }}
         PROJECT_ID: ci
         REPORT_ID: ${{ github.run_number }}-${{ github.run_id }}
@@ -120,7 +124,8 @@ jobs:
 # 🔽 Run Test
 # ============
       - name: Run Playwright Tests
-        run: npx cross-env ENV=${ENV} playwright test
+        run: npx cross-env ENV=${ENV} playwright test \
+          --shard=${{ matrix.shard }}/4
 # =====================================================
 # 🔽 Always run uploads even if global setup/tests fail
 # =====================================================
