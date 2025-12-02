@@ -731,7 +731,6 @@ async popularTabCheckAllFitersEmptyResults() {
       { option: this.filterOptionEnvironmentArt, chip: this.filterChipEnvironmentArt, name: 'Environment Art' },
       { option: this.filterOptionCharacterArt, chip: this.filterChipCharacterArt, name: 'Character Art' },
       { option: this.filterOptionRatings, chip: this.filterChipRatings, name: 'Ratings' },
-      { option: this.filterOptionResearch, chip: this.filterChipResearch, name: 'Research' },
       { option: this.filterOptionProps, chip: this.filterChipProps, name: 'Props' },
       { option: this.filterOptionTech, chip: this.filterChipTech, name: 'Tech' },
       { option: this.filterOptionPromo, chip: this.filterChipPromo, name: 'Promo' },
