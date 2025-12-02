@@ -1,0 +1,12 @@
+✅ Clicked [Accept Cookies @ Laptop] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+⏭️ No Accept Cookies button found, skipping.
+✅ Clicked [About Menu Button (Step 1) @ Laptop] → "About Menu Button (Step 1)"
+✅ Clicked [About Menu Button (Step 2) @ Laptop] → "click_arrow"
+✅ Clicked [Partners SubMenu Button @ Laptop] → "Partners"
+🌐 Captured API: https://80.lv/api/partners?title=&sort=sort&tag=&offset=0 → GET | Status: 200
+🔗 Expected: https://80.lv/api/partners → GET | Status: 200
+✅ Assertion API: Passed
+🔹 Expected URL: https://80.lv/partners
+🔹 Actual URL:   https://80.lv/partners
+✅ Assert: page URL is "https://80.lv/partners" (Partners Page Redirection)

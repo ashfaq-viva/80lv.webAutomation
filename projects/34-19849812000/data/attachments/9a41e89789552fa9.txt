@@ -1,0 +1,9 @@
+✅ Clicked [Accept Cookies @ Tablet] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Clicked [Login Button (Step 1) @ Tablet] → "Login Button (Step 1)"
+✅ Clicked [Login Button (Step 2) @ Tablet] → "profile-login"
+✅ Clicked [Login with xsolla button @ Tablet] → "Log in with Xsolla"
+🌐 Captured API → GET https://login.xsolla.com/api/social/babka/login_url?projectId=8b83af12-0974-11e7-93ae-92361f002671&locale=en_US&login_url=https:%2F%2F80.lv%2Fapi%2Fuser%2Fauth&payload=%7B%22registration_source%22:%2280lv%22,%22redirectUrl%22:%22https:%2F%2F80.lv%2F%22%7D | Status: 200
+🌐 Captured API → GET https://login.xsolla.com/api/oauth2/auth?audience=https%3A%2F%2F80.lv%2F&client_id=5232&redirect_uri=https%3A%2F%2Flogin.xsolla.com%2Fapi%2Fsocial%2Foauth2%2Fcallback&response_type=code&scope=email&state=kneGPEEKoYIFF_aLZfFm3bMaGRKZSMt4cKj_Hx0Pq6tCr-b2aFTP6EbAyvCv9g32Z9uqA7aOXYL1aQZlrxpVCQ&trackId= | Status: 302
+🔹 Expected URL: /wallet\.xsolla\.com\/oauth2\/profile/
+🔹 Actual URL:   https://wallet.xsolla.com/oauth2/profile?audience=https%3A%2F%2F80.lv%2F&client_id=5232&disable_passwordless_email=false&disable_passwordless_phone=false&disable_socials=false&enable_post_message_login=false&is_trusted=true&is_xsolla_link=false&redirect_uri=https%3A%2F%2Flogin.xsolla.com%2Fapi%2Fsocial%2Foauth2%2Fcallback&refused_scope=&scope=email&state=kneGPEEKoYIFF_aLZfFm3bMaGRKZSMt4cKj_Hx0Pq6tCr-b2aFTP6EbAyvCv9g32Z9uqA7aOXYL1aQZlrxpVCQ&trackId=a20c0aacde72dfd0b1c2eb0964cfcf55&widget_only=false

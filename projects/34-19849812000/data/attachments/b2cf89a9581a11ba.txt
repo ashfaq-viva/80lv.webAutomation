@@ -1,0 +1,16 @@
+✅ Clicked [Accept Cookies @ Mobile] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+⏭️ No Accept Cookies button found, skipping.
+Generated Signup Email: ashfaq.ahmed+560@vivasoftltd.com
+📁 File created: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/signupEmails/signup_emailMobile_2025-12-02T06-50-50-691Z.txt
+✅ Email saved to: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/signupEmails/signup_emailMobile_2025-12-02T06-50-50-691Z.txt
+✅ Clicked [Login Button (Step 1) @ Mobile] → "Login Button (Step 1)"
+✅ Clicked [Login Button (Step 2) @ Mobile] → "profile-login"
+✅ Filled [Email @ Mobile] → "email" with: "ashfaq.ahmed+560@vivasoftltd.com"
+✅ Filled [Password @ Mobile] → "password" with: "Aa@1234"
+✅ Clicked [Create Account Button @ Mobile] → "CREATE ACCOUNT"
+🌐 Captured API → POST https://login.xsolla.com/api/user?projectId=8b83af12-0974-11e7-93ae-92361f002671&locale=en_US&login_url=https:%2F%2F80.lv%2Fapi%2Fuser%2Fauth&payload=%7B%22registration_source%22:%2280lv%22,%22redirectUrl%22:%22https:%2F%2F80.lv%2F%22%7D | Status: 204
+Using App Password method to fetch email
+📧 Email Subject: You missed messages in Bangladesh AI Community
+🔘 Button Name: 
+🔗 Confirmation Link: https://click.discord.com/ls/click?upn=u001.a0NJ38DJJG1sulNx5wS1jvdSQ2XvqHIrLV9yv-2FClqGMsQ561nXpQGbTcquM2dU3XayC7_JFbmjHmPkzL6KH1nKgtsJWTcm54W-2BM1zVyxDEShvjIp9qI5a-2Byd-2FdK-2FvalIwEcNmifvAPa5gf-2BVvBfGjHpCWDRBaVOg8laPFboBo1q0jGbL4IFYMdQfvWN7pJdqIZbmNzn-2FO1x3uDyMLie6pNpaEEdtTmAIw-2BQleFu6V-2BnXIAAYO3ZHtMafhHdxDDt99NVqqafKaz1TLeCCXzsTDaTjqqAE3acy-2Bmy8rxDeokWdI-2BflcwXrOc4krZNh2gH7mBlll

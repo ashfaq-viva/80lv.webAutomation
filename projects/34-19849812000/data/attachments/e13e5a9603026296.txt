@@ -1,0 +1,29 @@
+Error: Could not parse CSS stylesheet
+    at exports.createStylesheet (/home/runner/work/80lv.webAutomation/80lv.webAutomation/node_modules/jsdom/lib/jsdom/living/helpers/stylesheets.js:37:21)
+    at HTMLStyleElementImpl._updateAStyleBlock (/home/runner/work/80lv.webAutomation/80lv.webAutomation/node_modules/jsdom/lib/jsdom/living/nodes/HTMLStyleElement-impl.js:67:5)
+    at HTMLStyleElementImpl._poppedOffStackOfOpenElements (/home/runner/work/80lv.webAutomation/80lv.webAutomation/node_modules/jsdom/lib/jsdom/living/nodes/HTMLStyleElement-impl.js:41:10)
+    at JSDOMParse5Adapter.onItemPop (/home/runner/work/80lv.webAutomation/80lv.webAutomation/node_modules/jsdom/lib/jsdom/browser/parser/html.js:175:43)
+    at Parser.onItemPop (/home/runner/work/80lv.webAutomation/80lv.webAutomation/node_modules/parse5/dist/cjs/parser/index.js:176:90)
+    at OpenElementStack.pop (/home/runner/work/80lv.webAutomation/80lv.webAutomation/node_modules/parse5/dist/cjs/parser/open-element-stack.js:83:22)
+    at endTagInText (/home/runner/work/80lv.webAutomation/80lv.webAutomation/node_modules/parse5/dist/cjs/parser/index.js:2353:20)
+    at Parser._endTagOutsideForeignContent (/home/runner/work/80lv.webAutomation/80lv.webAutomation/node_modules/parse5/dist/cjs/parser/index.js:992:17)
+    at Parser.onEndTag (/home/runner/work/80lv.webAutomation/80lv.webAutomation/node_modules/parse5/dist/cjs/parser/index.js:957:18)
+    at Tokenizer.emitCurrentTagToken (/home/runner/work/80lv.webAutomation/80lv.webAutomation/node_modules/parse5/dist/cjs/tokenizer/index.js:385:26)
+    at Tokenizer.handleSpecialEndTag (/home/runner/work/80lv.webAutomation/80lv.webAutomation/node_modules/parse5/dist/cjs/tokenizer/index.js:1060:22)
+    at Tokenizer._stateRawtextEndTagName (/home/runner/work/80lv.webAutomation/80lv.webAutomation/node_modules/parse5/dist/cjs/tokenizer/index.js:1106:18)
+    at Tokenizer._stateRawtextEndTagOpen (/home/runner/work/80lv.webAutomation/80lv.webAutomation/node_modules/parse5/dist/cjs/tokenizer/index.js:1095:18)
+    at Tokenizer._callState (/home/runner/work/80lv.webAutomation/80lv.webAutomation/node_modules/parse5/dist/cjs/tokenizer/index.js:544:22)
+    at Tokenizer._runParsingLoop (/home/runner/work/80lv.webAutomation/80lv.webAutomation/node_modules/parse5/dist/cjs/tokenizer/index.js:216:22)
+    at Tokenizer.write (/home/runner/work/80lv.webAutomation/80lv.webAutomation/node_modules/parse5/dist/cjs/tokenizer/index.js:241:14)
+    at Function.parse (/home/runner/work/80lv.webAutomation/80lv.webAutomation/node_modules/parse5/dist/cjs/parser/index.js:116:26)
+    at Object.parse (/home/runner/work/80lv.webAutomation/80lv.webAutomation/node_modules/parse5/dist/cjs/index.js:43:30)
+    at parseIntoDocument (/home/runner/work/80lv.webAutomation/80lv.webAutomation/node_modules/jsdom/lib/jsdom/browser/parser/html.js:202:17)
+    at parseIntoDocument (/home/runner/work/80lv.webAutomation/80lv.webAutomation/node_modules/jsdom/lib/jsdom/browser/parser/index.js:31:10)
+    at new JSDOM (/home/runner/work/80lv.webAutomation/80lv.webAutomation/node_modules/jsdom/lib/api.js:42:5)
+    at file:///home/runner/work/80lv.webAutomation/80lv.webAutomation/utils/sigupUtils.js:128:29
+    at /home/runner/work/80lv.webAutomation/80lv.webAutomation/node_modules/mailparser/lib/simple-parser.js:106:17
+    at Immediate.processNext [as _onImmediate] (/home/runner/work/80lv.webAutomation/80lv.webAutomation/node_modules/mailparser/lib/mail-parser.js:1091:24)
+    at processImmediate (node:internal/timers:483:21)
+    at process.callbackTrampoline (node:internal/async_hooks:130:17) 
+          @import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+        
