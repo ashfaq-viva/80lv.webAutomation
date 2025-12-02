@@ -124,8 +124,8 @@ jobs:
 # 🔽 Run Test
 # ============
       - name: Run Playwright Tests
-        run: npx cross-env ENV=${ENV} playwright test \
-          --shard=${{ matrix.shard }}/4
+        run: |
+          npx cross-env ENV=${ENV} playwright test "--shard=${{ matrix.shard }}/4"
 # =====================================================
 # 🔽 Always run uploads even if global setup/tests fail
 # =====================================================
