@@ -380,7 +380,7 @@ jobs:
 
       - name: Run Playwright Tests (Shard ${{ matrix.shard }})
         run: |
-          npx cross-env ENV=${ENV} playwright test "--shard=${{ matrix.shard }}/4" --reporter=line
+          npx cross-env ENV=${ENV} playwright test "--shard=${{ matrix.shard }}/4" 
 
       - name: Upload Global Setup Artifacts
         if: always()
