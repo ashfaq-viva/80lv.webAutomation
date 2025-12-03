@@ -310,6 +310,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+# =============================================
+# ✅ Caches npm’s download cache automatically
+# =============================================
       - name: Setup NodeJS
         uses: actions/setup-node@v4
         with:
@@ -318,10 +321,14 @@ jobs:
           cache-dependency-path: |
             package-lock.json
             **/package-lock.json
-
+# ========================
+# 🔽 Install dependencies
+# ========================
       - name: Install dependencies
         run: npm ci
-
+# =========================================
+# ✅ Cache Playwright browsers (Linux path)
+# =========================================
       - name: Cache Playwright Browsers
         id: cache-pw
         uses: actions/cache@v3
@@ -329,11 +336,15 @@ jobs:
           path: ~/.cache/ms-playwright
           key: pw-browsers-${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
           restore-keys: pw-browsers-${{ runner.os }}-
-
+# ======================================
+# 🔽 Install browsers only if cache miss
+# ======================================
       - name: Install Playwright Browsers
         if: steps.cache-pw.outputs.cache-hit != 'true'
         run: npx playwright install
-
+# ===============================
+# ✅ Cache & Install Allure
+# ===============================
       - name: Cache Allure CLI
         id: cache-allure
         uses: actions/cache@v3
@@ -350,11 +361,11 @@ jobs:
           curl -L -o allure.tgz https://github.com/allure-framework/allure2/releases/download/2.24.0/allure-2.24.0.tgz
           sudo tar -zxvf allure.tgz -C /opt/
           echo "/opt/allure-2.24.0/bin" >> $GITHUB_PATH
-
+      # ✅ Use cached Allure (also add PATH)
       - name: Setup Allure from cache
         if: steps.cache-allure.outputs.cache-hit == 'true'
         run: echo "/opt/allure-2.24.0/bin" >> $GITHUB_PATH
-
+      # ✅ Verify Allure (separate step so PATH works)
       - name: Verify Allure
         run: allure --version
 
@@ -362,7 +373,9 @@ jobs:
         run: |
           rm -rf allure-results allure-report allure-history || true
           mkdir -p allure-results allure-report allure-history
-
+# ========================================================
+# 🔑 Create a .env for the tests from Variables + Secrets
+# ========================================================
       - name: Generate .env for tests
         shell: bash
         run: |
@@ -379,11 +392,16 @@ jobs:
           echo "----- .env (sanitized) -----"
           grep -E '^(ENV|BASE_URL)' .env || true
           echo "----------------------------"
-
+# ============
+# 🔽 Run Test
+# ============
       - name: Run Playwright Tests (Shard ${{ matrix.shard }})
         run: |
           npx cross-env ENV=${ENV} playwright test "--shard=${{ matrix.shard }}/4" 
         continue-on-error: true
+# # =====================================================
+# # 🔽 Always run uploads even if global setup/tests fail
+# # =====================================================
       - name: Upload Global Setup Artifacts
         if: always()
         uses: actions/upload-artifact@v4
@@ -391,6 +409,42 @@ jobs:
           name: global-setup-artifacts-${{ matrix.shard }}
           path: artifacts/global-setup/**/*
           if-no-files-found: ignore  
+# ===============================
+# 🔽 Allure GitHub Pages publish
+# ===============================
+      - name: Check gh-pages existence
+        id: has-ghpages
+        shell: bash
+        run: |
+          if git ls-remote --heads "https://github.com/${{ github.repository }}.git" gh-pages | grep gh-pages >/dev/null; then
+            echo "exists=true" >> "$GITHUB_OUTPUT"
+            echo "✅ gh-pages exists"
+          else
+            echo "exists=false" >> "$GITHUB_OUTPUT"
+            echo "ℹ️ gh-pages does not exist yet (first deploy)"
+          fi
+
+      # ✅ Only checkout gh-pages when it actually exists
+      - name: Checkout gh-pages (history restore)
+        if: always() && steps.has-ghpages.outputs.exists == 'true'
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: gh-pages
+          persist-credentials: false
+
+      - name: Restore Allure history
+        if: always()
+        run: |
+          if [ -d gh-pages/projects/${PROJECT_ID}/history ]; then
+            echo "🔁 Restoring Allure history from gh-pages/projects/${PROJECT_ID}/history"
+            rm -rf allure-history
+            mkdir -p allure-history
+            cp -r gh-pages/projects/${PROJECT_ID}/history allure-history
+          else
+            echo "ℹ️ No previous history found"
+          fi
+
 
       - name: Upload Allure Results (Shard-specific)
         if: always()
@@ -460,9 +514,21 @@ jobs:
 
       - name: Install Allure CLI
         run: npm install -g allure-commandline --unsafe-perm=true
+# ============================
+# 🔽 Merge history and upload
+# ============================
       - name: Generate Allure Report
         run: |
           allure generate allure-results --clean -o allure-report/projects/${{ env.REPORT_ID }}
+          ls -lah allure-report/projects/${REPORT_ID} || true
+
+      - name: Merge existing history with the new report
+        if: always()
+        run: |
+          if [ -d "allure-results/history" ]; then
+            cp -r allure-results/history/* allure-report/projects/${REPORT_ID}/history/
+          fi
+          touch allure-report/projects/${REPORT_ID}/.nojekyll
 
       - name: Setup Pages
         if: always()
@@ -490,6 +556,9 @@ jobs:
           echo "## ✅ Test Report" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "[👉 Click to view report](https://ashfaq-viva.github.io/80lv.webAutomation/projects/${{ env.REPORT_ID }})" >> $GITHUB_STEP_SUMMARY
+# # ===============================
+# # 🔽 Sent Email of results
+# # ===============================     
       - name: Install mailx
         run: sudo apt-get install -y mailutils
 
