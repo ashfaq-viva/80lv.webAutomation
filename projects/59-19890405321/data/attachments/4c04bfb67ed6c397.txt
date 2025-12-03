@@ -1,0 +1,14 @@
+✅ Clicked [Accept Cookies @ Laptop] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Extracted and saved data to: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/json/allArticles/allArticlesRedirectedArticle/card1TC_60_Laptop_2025-12-03T10-29-33-373Z.json
+✅ Clicked [Article card 1 Image @ Laptop] → "Article card 1 Image"
+🌐 Captured API → GET https://80.lv/api/articles/list?id=38021&offset=0&total=12&headers=%7B%7D | Status: 200
+🌐 Captured Article Redirection URL: https://80.lv/articles/check-out-this-stylized-kurt-cobain-created-in-blender
+📁 File created: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/allArticles/articleCardRedirection/card1UrlLaptop_2025-12-03T10-29-36-287Z.txt
+✅ Extracted and saved data to: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/json/allArticles/articlePage/TitleH1_Laptop_2025-12-03T10-29-36-985Z.json
+
+🔹 Comparing JSON file: card1TC_60_Desktop_2025-12-03T10-29-25-893Z.json to TitleH1_Desktop_2025-12-03T10-29-29-704Z.json
+Comparing value: h1: "Check Out This Stylized Kurt Cobain Created in Blender" → h1: "Check Out This Stylized Kurt Cobain Created in Blender"
+✅ MATCH OK
+
+🎉 All JSON comparisons completed with no mismatches!

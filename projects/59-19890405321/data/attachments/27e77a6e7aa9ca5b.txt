@@ -1,0 +1,9 @@
+✅ Clicked [Accept Cookies @ Laptop] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Clicked [Articles Menu Button (Step 1) @ Laptop] → "Articles Menu Button (Step 1)"
+✅ Clicked [Articles Menu Button (Step 2) @ Laptop] → "click_arrow"
+✅ Clicked [Digest SubMenu Button @ Laptop] → "Digest"
+🌐 Captured API → GET https://80.lv/api/jobs?sort=new&page=1 | Status: 200
+🔹 Expected URL: https://80.lv/articles/digest
+🔹 Actual URL:   https://80.lv/articles/digest
+✅ Assert: page URL is "https://80.lv/articles/digest" (Digest Page  Redirection)

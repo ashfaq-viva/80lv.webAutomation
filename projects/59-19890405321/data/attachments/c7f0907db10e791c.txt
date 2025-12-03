@@ -1,0 +1,8 @@
+✅ Clicked [Accept Cookies @ Mobile] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+⏭️ No Accept Cookies button found, skipping.
+✅ Clicked [Advertise Button (Step 1) @ Mobile] → "Advertise Button (Step 1)"
+✅ Clicked [Advertise Button (Step 2) @ Mobile] → "Advertise"
+🔹 Expected URL: https://80.lv/contact-us#Promote
+🔹 Actual URL:   https://80.lv/contact-us#Promote
+✅ Assert: page URL is "https://80.lv/contact-us#Promote" (Advertise Redirect)

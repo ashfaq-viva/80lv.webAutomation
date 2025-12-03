@@ -1,0 +1,11 @@
+✅ Clicked [Accept Cookies @ Mobile] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+⏭️ No Accept Cookies button found, skipping.
+✅ Clicked [Articles Menu Button (Step 1) @ Mobile] → "Articles Menu Button (Step 1)"
+✅ Clicked [Articles Menu Button (Step 2) @ Mobile] → "click_arrow"
+✅ Clicked [All Articles SubMenu Button @ Mobile] → "All Articles"
+🌐 Captured API → GET https://80.lv/api/jobs?sort=new&page=1 | Status: 200
+🌐 Captured API → GET https://80.lv/api/jobs?sort=new&page=1 | Status: 200
+🔹 Expected URL: https://80.lv/articles
+🔹 Actual URL:   https://80.lv/articles
+✅ Assert: page URL is "https://80.lv/articles" (All Articles Page  Redirection)

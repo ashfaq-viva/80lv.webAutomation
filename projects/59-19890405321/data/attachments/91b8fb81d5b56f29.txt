@@ -1,0 +1,10 @@
+✅ Clicked [Accept Cookies @ Mobile] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Assert: element is visible [All Events Tab @ Mobile]
+ℹ️ No CSS assert for [All Events Tab] at viewport Mobile
+Google Calendar URL: http://www.google.com/calendar/hosted/80.lv/render?cid=http://80.lv/events.ics&pli=1
+✅ Clicked [Google Calendar button redirection @ Mobile] → "Google"
+New Page URL: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fcalendar.google.com%2Fcalendar%2Frender%3Fcid%3Dhttp%3A%2F%2F80.lv%2Fevents.ics%26pli%3D1&dsh=S438505421%3A1764757618832937&followup=https%3A%2F%2Fcalendar.google.com%2Fcalendar%2Frender%3Fcid%3Dhttp%3A%2F%2F80.lv%2Fevents.ics%26pli%3D1&hd=80.lv&ifkv=ARESoU1vGt0SnELP_Vfjm5c2n5FnokWaZNmzCBL4uIrtVKSgJjmaI4onCSyrYAIkcDyx5ZZensq78Q&osid=1&rip=1&sacu=1&service=cl&flowName=WebLiteSignIn&flowEntry=ServiceLogin
+🔹 Expected URL: google.com
+🔹 Actual URL:   https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fcalendar.google.com%2Fcalendar%2Frender%3Fcid%3Dhttp%3A%2F%2F80.lv%2Fevents.ics%26pli%3D1&dsh=S438505421%3A1764757618832937&followup=https%3A%2F%2Fcalendar.google.com%2Fcalendar%2Frender%3Fcid%3Dhttp%3A%2F%2F80.lv%2Fevents.ics%26pli%3D1&hd=80.lv&ifkv=ARESoU1vGt0SnELP_Vfjm5c2n5FnokWaZNmzCBL4uIrtVKSgJjmaI4onCSyrYAIkcDyx5ZZensq78Q&osid=1&rip=1&sacu=1&service=cl&flowName=WebLiteSignIn&flowEntry=ServiceLogin
+✅ Assert: page URL contains "google.com" (Google Calendar Page URL)

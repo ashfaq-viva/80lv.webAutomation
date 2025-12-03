@@ -1,0 +1,21 @@
+✅ Restored session for company on 80.lv
+⏭️ No Accept Cookies button found, skipping.
+🖱️ Hovered on articleCard1bookmark (max) [id=38021].
+✅ Assert: element is visible [Remove Bookmark Tooltip @ Mobile]
+🗑️ articleCard1bookmark [38021] → Clicking to remove...
+🗑️ articleCard1bookmark [38021] → Remove clicked (response awaited).
+🔁 articleCard1bookmark [38021] → Bookmark re-added.
+✅ Extracted and saved data to: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/json/allArticles/allArticleBookmarkedArticle/card1TC_054_Mobile_2025-12-03T10-28-36-724Z.json
+✅ Clicked [Profile Menu @ Mobile] → "Profile Menu"
+✅ Clicked [Bookmark Option @ Mobile] → "Bookmarks"
+🌐 Captured API → GET https://80.lv/api/bookmark/me?sort=published_at | Status: 200
+🔹 Expected URL: /bookmarks
+🔹 Actual URL:   https://80.lv/bookmarks/ashfaq-ahmed-45b0f6de/bookmark-collectionn-9ytvpqh7vsz1qm3k
+✅ Assert: page URL contains "/bookmarks" (Bookmark Page)
+✅ Extracted and saved data to: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/json/bookmarkPageCard/card1_Mobile_2025-12-03T10-28-42-743Z.json
+
+🔹 Comparing JSON file: card1_Desktop_2025-12-03T10-28-21-521Z.json to card1TC_054_Mobile_2025-12-03T10-28-36-724Z.json
+Comparing value: h2: "Check Out This Stylized Kurt Cobain Created in Blender" → h1: "Check Out This Stylized Kurt Cobain Created in Blender"
+✅ MATCH OK
+
+🎉 All JSON comparisons completed with no mismatches!

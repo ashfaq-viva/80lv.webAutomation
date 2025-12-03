@@ -1,0 +1,6 @@
+✅ Clicked [Accept Cookies @ Mobile] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Clicked [About & Contact us Link @ Mobile] → "About & Contact us"
+🔹 Expected URL: https://80.lv/contact-us
+🔹 Actual URL:   https://80.lv/contact-us
+✅ Assert: page URL is "https://80.lv/contact-us" (About & Contact us redirection link)

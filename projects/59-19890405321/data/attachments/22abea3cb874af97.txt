@@ -1,0 +1,9 @@
+✅ Clicked [Accept Cookies @ Desktop] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Assert: element is visible [All Events Tab @ Desktop]
+✅ Assert: [All Events Tab] CSS property "background-color" = "rgb(72, 75, 50)" @ Desktop
+✅ Clicked [Online Events Tab @ Desktop] → "Online events"
+🌐 Captured API → GET https://80.lv/api/events?total=10&title=&page=1&sort=sort&online=1 | Status: 200
+Pagination not present, only one page of events.
+Total event cards present: 0
+No cards present to expand

@@ -1,0 +1,361 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - banner [ref=e5]:
+        - generic [ref=e6]:
+          - img "logo80lv" [ref=e9] [cursor=pointer]
+          - generic [ref=e10]:
+            - link "Monetize Your Game" [ref=e11] [cursor=pointer]:
+              - /url: https://80level.typeform.com/monetize-games?utm_source=80lv_website&utm_medium=header-button
+            - button "Menu" [ref=e12] [cursor=pointer]:
+              - img "Menu" [ref=e14]
+      - main [ref=e16]:
+        - generic [ref=e19]:
+          - link [ref=e20] [cursor=pointer]:
+            - /url: https://rapidpipeline.com/?utm_source=80lv&utm_medium=cpc&utm_campaign=2025-q4-all-plugins-and-edu-top-banner
+          - generic [ref=e22] [cursor=pointer]: Sponsored
+        - generic [ref=e23]:
+          - generic [ref=e24]:
+            - generic [ref=e26]:
+              - button "Category" [ref=e30] [cursor=pointer]:
+                - generic [ref=e31]:
+                  - text: Category
+                  - img [ref=e33]
+              - generic [ref=e35]:
+                - button "New" [ref=e36] [cursor=pointer]
+                - button "Popular" [ref=e37] [cursor=pointer]
+            - generic [ref=e38]:
+              - generic [ref=e39]:
+                - generic [ref=e41]:
+                  - generic [ref=e42]:
+                    - link [ref=e43] [cursor=pointer]:
+                      - /url: /articles/helldivers-2-now-takes-up-85-less-disk-space
+                    - img [ref=e48] [cursor=pointer]
+                  - generic [ref=e50]:
+                    - link "Helldivers 2 Now Takes Up 85% Less Disk Space" [ref=e52] [cursor=pointer]:
+                      - /url: /articles/helldivers-2-now-takes-up-85-less-disk-space
+                      - heading "Helldivers 2 Now Takes Up 85% Less Disk Space" [level=1] [ref=e53]
+                    - generic [ref=e54]:
+                      - generic [ref=e55]: "#News"
+                      - generic [ref=e56]: "#Video Games"
+                - generic [ref=e58]:
+                  - generic [ref=e59]:
+                    - link [ref=e60] [cursor=pointer]:
+                      - /url: /articles/fortiche-reimagines-arcane-characters-as-actors-and-these-behind-the-scenes-shots-will-warm-your-heart
+                    - img [ref=e65] [cursor=pointer]
+                  - generic [ref=e67]:
+                    - link "Fortiche Reimagines Arcane Characters as Actors, and These \"Behind-the-Scenes\" Shots Will Warm Your Heart" [ref=e69] [cursor=pointer]:
+                      - /url: /articles/fortiche-reimagines-arcane-characters-as-actors-and-these-behind-the-scenes-shots-will-warm-your-heart
+                      - heading "Fortiche Reimagines Arcane Characters as Actors, and These \"Behind-the-Scenes\" Shots Will Warm Your Heart" [level=1] [ref=e70]
+                    - generic [ref=e71]:
+                      - generic [ref=e72]: "#News"
+                      - generic [ref=e73]: "#Cinematics"
+                - generic [ref=e75]:
+                  - generic [ref=e76]:
+                    - link [ref=e77] [cursor=pointer]:
+                      - /url: /articles/former-bethesda-devs-switch-to-their-own-engine-for-daggerfall-inspired-game
+                    - img [ref=e82] [cursor=pointer]
+                  - generic [ref=e84]:
+                    - link "Former Bethesda Devs Switch To Their Own Engine For Daggerfall-Inspired Game" [ref=e86] [cursor=pointer]:
+                      - /url: /articles/former-bethesda-devs-switch-to-their-own-engine-for-daggerfall-inspired-game
+                      - heading "Former Bethesda Devs Switch To Their Own Engine For Daggerfall-Inspired Game" [level=1] [ref=e87]
+                    - generic [ref=e88]:
+                      - generic [ref=e89]: "#News"
+                      - generic [ref=e90]: "#Video Games"
+                - generic [ref=e92]:
+                  - generic [ref=e93]:
+                    - link [ref=e94] [cursor=pointer]:
+                      - /url: /articles/explore-moon-in-this-realistic-space-sim-created-with-observation-data
+                    - img [ref=e99] [cursor=pointer]
+                  - generic [ref=e101]:
+                    - link "Explore Moon in This Realistic Space Sim Created with Observation Data" [ref=e103] [cursor=pointer]:
+                      - /url: /articles/explore-moon-in-this-realistic-space-sim-created-with-observation-data
+                      - heading "Explore Moon in This Realistic Space Sim Created with Observation Data" [level=1] [ref=e104]
+                    - generic [ref=e105]:
+                      - generic [ref=e106]: "#News"
+                      - generic [ref=e107]: "#Unreal Engine"
+                      - generic [ref=e108]: "#Video Games"
+                - generic [ref=e109]:
+                  - generic [ref=e110]:
+                    - generic [ref=e111]:
+                      - link [ref=e112] [cursor=pointer]:
+                        - /url: /articles/realityscan-mobile-1-8-1-now-available
+                      - img [ref=e117] [cursor=pointer]
+                    - generic [ref=e119]:
+                      - link "RealityScan Mobile 1.8.1 Now Available" [ref=e121] [cursor=pointer]:
+                        - /url: /articles/realityscan-mobile-1-8-1-now-available
+                        - heading "RealityScan Mobile 1.8.1 Now Available" [level=1] [ref=e122]
+                      - generic [ref=e123]:
+                        - generic [ref=e124]: "#News"
+                        - generic [ref=e125]: "#Photogrammetry"
+                  - link "Ready to grow your game’s revenue worldwide? Talk to us" [ref=e126] [cursor=pointer]:
+                    - /url: https://80level.typeform.com/monetize-games?utm_source=80lv_website&utm_medium=bar-widget
+                    - generic [ref=e127]: Ready to grow your game’s revenue worldwide?
+                    - generic [ref=e128]: Talk to us
+                - generic [ref=e130]:
+                  - generic [ref=e131]:
+                    - link [ref=e132] [cursor=pointer]:
+                      - /url: /articles/saudi-arabia-s-fund-will-hold-more-than-93-of-ea-after-deal-completion
+                    - img [ref=e137] [cursor=pointer]
+                  - generic [ref=e139]:
+                    - link "Saudi Arabia's Fund Will Hold More Than 93% of EA After Deal Completion" [ref=e141] [cursor=pointer]:
+                      - /url: /articles/saudi-arabia-s-fund-will-hold-more-than-93-of-ea-after-deal-completion
+                      - heading "Saudi Arabia's Fund Will Hold More Than 93% of EA After Deal Completion" [level=1] [ref=e142]
+                    - generic [ref=e143]:
+                      - generic [ref=e144]: "#News"
+                      - generic [ref=e145]: "#Video Games"
+                      - generic [ref=e146]: "#Business"
+                - generic [ref=e148]:
+                  - generic [ref=e149]:
+                    - link [ref=e150] [cursor=pointer]:
+                      - /url: /articles/chinese-crafting-technique-recreated-using-substance-3d
+                    - img [ref=e155] [cursor=pointer]
+                  - generic [ref=e157]:
+                    - link "Chinese Crafting Technique Recreated Using Substance 3D" [ref=e159] [cursor=pointer]:
+                      - /url: /articles/chinese-crafting-technique-recreated-using-substance-3d
+                      - heading "Chinese Crafting Technique Recreated Using Substance 3D" [level=1] [ref=e160]
+                    - generic [ref=e161]:
+                      - generic [ref=e162]: "#News"
+                      - generic [ref=e163]: "#Substance 3D Designer"
+                      - generic [ref=e164]: "#Substance 3D Painter"
+                - generic [ref=e166]:
+                  - generic [ref=e167]:
+                    - link [ref=e168] [cursor=pointer]:
+                      - /url: /articles/artist-shows-behind-the-scenes-of-making-animation-for-zootopia-2
+                    - img [ref=e173] [cursor=pointer]
+                  - generic [ref=e175]:
+                    - link "Disney's Senior Animator Shows Behind-the-Scenes of Making Animation for Zootopia 2" [ref=e177] [cursor=pointer]:
+                      - /url: /articles/artist-shows-behind-the-scenes-of-making-animation-for-zootopia-2
+                      - heading "Disney's Senior Animator Shows Behind-the-Scenes of Making Animation for Zootopia 2" [level=1] [ref=e178]
+                    - generic [ref=e179]:
+                      - generic [ref=e180]: "#News"
+                      - generic [ref=e181]: "#Animation"
+                - generic [ref=e183]:
+                  - generic [ref=e184]:
+                    - link [ref=e185] [cursor=pointer]:
+                      - /url: /articles/bungie-has-compensated-the-artist-whose-works-they-stole-for-marathon
+                    - img [ref=e190] [cursor=pointer]
+                  - generic [ref=e192]:
+                    - link "Bungie Has Compensated the Artist Whose Works They Stole for Marathon" [ref=e194] [cursor=pointer]:
+                      - /url: /articles/bungie-has-compensated-the-artist-whose-works-they-stole-for-marathon
+                      - heading "Bungie Has Compensated the Artist Whose Works They Stole for Marathon" [level=1] [ref=e195]
+                    - generic [ref=e196]:
+                      - generic [ref=e197]: "#News"
+                      - generic [ref=e198]: "#Video Games"
+                - generic [ref=e200]:
+                  - generic [ref=e201]:
+                    - link [ref=e202] [cursor=pointer]:
+                      - /url: /articles/octanestudio-2026-launches-with-greyscalegorilla-plus-kitbash3d
+                    - img [ref=e207] [cursor=pointer]
+                  - generic [ref=e209]:
+                    - link "OctaneStudio+ 2026 Launches with Greyscalegorilla Plus & Kitbash3D" [ref=e211] [cursor=pointer]:
+                      - /url: /articles/octanestudio-2026-launches-with-greyscalegorilla-plus-kitbash3d
+                      - heading "OctaneStudio+ 2026 Launches with Greyscalegorilla Plus & Kitbash3D" [level=1] [ref=e212]
+                    - generic [ref=e213]:
+                      - generic [ref=e214]: "#News"
+                      - generic [ref=e215]: "#Octane Render"
+                - list [ref=e216]:
+                  - listitem [ref=e217]:
+                    - link "1":
+                      - /url: /articles/
+                  - listitem [ref=e218]:
+                    - link "2" [ref=e219] [cursor=pointer]:
+                      - /url: /articles/
+                  - listitem [ref=e220]:
+                    - link "3" [ref=e221] [cursor=pointer]:
+                      - /url: /articles/
+                  - listitem [ref=e222]:
+                    - link "4" [ref=e223] [cursor=pointer]:
+                      - /url: /articles/
+                  - listitem [ref=e224]:
+                    - link "5" [ref=e225] [cursor=pointer]:
+                      - /url: /articles/
+                  - listitem [ref=e226]:
+                    - link [ref=e227] [cursor=pointer]:
+                      - /url: /articles/
+                      - img [ref=e229]
+              - generic [ref=e231]:
+                - generic [ref=e232]:
+                  - generic [ref=e233]:
+                    - link [ref=e234] [cursor=pointer]:
+                      - /url: https://app.rapidpipeline.com/signup?utm_source=80lv&utm_medium=cpc&utm_campaign=2025-q4-maya-3dsmax-square-side-banner
+                    - generic [ref=e236] [cursor=pointer]: Sponsored Ad
+                  - generic [ref=e237]:
+                    - link [ref=e238] [cursor=pointer]:
+                      - /url: https://b3d.superhivemarket.com/rt4-80lv-sb
+                    - generic [ref=e240] [cursor=pointer]: Sponsored Ad
+                - generic [ref=e242]:
+                  - generic [ref=e243]:
+                    - heading "Subscribe" [level=2] [ref=e244]
+                    - paragraph [ref=e245]: Don't miss our weekly newsletter
+                  - generic [ref=e247]:
+                    - textbox "Email address" [ref=e248]
+                    - img "icon" [ref=e250] [cursor=pointer]
+                  - img "essential" [ref=e251]
+                - generic [ref=e252]:
+                  - generic [ref=e253]:
+                    - img "job" [ref=e254]
+                    - heading "Job board" [level=2] [ref=e255]
+                  - generic [ref=e256]:
+                    - generic [ref=e257] [cursor=pointer]:
+                      - generic [ref=e258]:
+                        - img "Game Map Artist / Cartographer / Illustrator" [ref=e259]
+                        - generic [ref=e260]:
+                          - heading "Cold Symmetry" [level=3] [ref=e261]
+                          - paragraph [ref=e262]: Game Map Artist / Cartographer / Illustrator
+                      - generic [ref=e263]:
+                        - paragraph [ref=e264]: On-site
+                        - paragraph [ref=e265]: Remote
+                    - generic [ref=e266] [cursor=pointer]:
+                      - generic [ref=e267]:
+                        - img "Character Modeler" [ref=e268]
+                        - generic [ref=e269]:
+                          - heading "FromSoftware" [level=3] [ref=e270]
+                          - paragraph [ref=e271]: Character Modeler
+                      - generic [ref=e272]:
+                        - paragraph [ref=e273]: On-site
+                        - paragraph [ref=e274]: Japan
+                    - generic [ref=e275] [cursor=pointer]:
+                      - generic [ref=e276]:
+                        - img "Concept Artist" [ref=e277]
+                        - generic [ref=e278]:
+                          - heading "FromSoftware" [level=3] [ref=e279]
+                          - paragraph [ref=e280]: Concept Artist
+                      - generic [ref=e281]:
+                        - paragraph [ref=e282]: On-site
+                        - paragraph [ref=e283]: Japan
+                    - generic [ref=e284] [cursor=pointer]:
+                      - generic [ref=e285]:
+                        - img "Environment Concept Artist" [ref=e286]
+                        - generic [ref=e287]:
+                          - heading "FromSoftware" [level=3] [ref=e288]
+                          - paragraph [ref=e289]: Environment Concept Artist
+                      - generic [ref=e290]:
+                        - paragraph [ref=e291]: On-site
+                        - paragraph [ref=e292]: Japan
+                    - generic [ref=e293] [cursor=pointer]:
+                      - generic [ref=e294]:
+                        - img "Motion Designer" [ref=e295]
+                        - generic [ref=e296]:
+                          - heading "FromSoftware" [level=3] [ref=e297]
+                          - paragraph [ref=e298]: Motion Designer
+                      - generic [ref=e299]:
+                        - paragraph [ref=e300]: On-site
+                        - paragraph [ref=e301]: Japan
+                  - generic [ref=e302] [cursor=pointer]:
+                    - img "arrow" [ref=e303]
+                    - paragraph [ref=e304]: All vacancies
+          - generic [ref=e306]:
+            - heading "Partners" [level=2] [ref=e307]
+            - generic [ref=e311]:
+              - link "Unreal Engine" [ref=e312] [cursor=pointer]:
+                - /url: /partners/unreal-engine
+                - img "Unreal Engine" [ref=e314]
+              - link "Reallusion" [ref=e315] [cursor=pointer]:
+                - /url: /partners/reallusion
+                - img "Reallusion" [ref=e317]
+              - link "Unity Technologies" [ref=e318] [cursor=pointer]:
+                - /url: /partners/unity-technologies
+                - img "Unity Technologies" [ref=e320]
+              - link "CGMA" [ref=e321] [cursor=pointer]:
+                - /url: /partners/cgma
+                - img "CGMA" [ref=e323]
+              - link "Vertex School" [ref=e324] [cursor=pointer]:
+                - /url: /partners/vertex-school
+                - img "Vertex School" [ref=e326]
+              - link "Unreal Engine" [ref=e327] [cursor=pointer]:
+                - /url: /partners/unreal-engine
+                - img "Unreal Engine" [ref=e329]
+              - link "Reallusion" [ref=e330] [cursor=pointer]:
+                - /url: /partners/reallusion
+                - img "Reallusion" [ref=e332]
+              - link "Unity Technologies" [ref=e333] [cursor=pointer]:
+                - /url: /partners/unity-technologies
+                - img "Unity Technologies" [ref=e335]
+              - link "CGMA" [ref=e336] [cursor=pointer]:
+                - /url: /partners/cgma
+                - img "CGMA" [ref=e338]
+              - link "Vertex School" [ref=e339] [cursor=pointer]:
+                - /url: /partners/vertex-school
+                - img "Vertex School" [ref=e341]
+              - link "Unreal Engine" [ref=e342] [cursor=pointer]:
+                - /url: /partners/unreal-engine
+                - img "Unreal Engine" [ref=e344]
+              - link "Reallusion" [ref=e345] [cursor=pointer]:
+                - /url: /partners/reallusion
+                - img "Reallusion" [ref=e347]
+              - link "Unity Technologies" [ref=e348] [cursor=pointer]:
+                - /url: /partners/unity-technologies
+                - img "Unity Technologies" [ref=e350]
+              - link "CGMA" [ref=e351] [cursor=pointer]:
+                - /url: /partners/cgma
+                - img "CGMA" [ref=e353]
+              - link "Vertex School" [ref=e354] [cursor=pointer]:
+                - /url: /partners/vertex-school
+                - img "Vertex School" [ref=e356]
+            - generic [ref=e357]:
+              - link "arrow Explore Partners arrow" [ref=e358] [cursor=pointer]:
+                - /url: /partners
+                - img "arrow" [ref=e359]
+                - paragraph [ref=e360]: Explore Partners
+                - img "arrow" [ref=e361]
+              - link "arrow Become a partner arrow" [ref=e362] [cursor=pointer]:
+                - /url: mailto:contact@80.lv
+                - img "arrow" [ref=e363]
+                - paragraph [ref=e364]: Become a partner
+                - img "arrow" [ref=e365]
+    - contentinfo [ref=e367]:
+      - generic [ref=e368]:
+        - heading "Subscribe" [level=2] [ref=e369]
+        - paragraph [ref=e370]: Start receiving our weekly newsletter
+        - generic [ref=e371]:
+          - textbox [ref=e374]:
+            - /placeholder: Email address
+          - button "Subscribe" [ref=e375] [cursor=pointer]:
+            - generic [ref=e376]: Subscribe
+        - list [ref=e377]:
+          - listitem [ref=e378]:
+            - img "Facebook" [ref=e379]
+            - link "@LevelEighty" [ref=e380] [cursor=pointer]:
+              - /url: https://www.facebook.com/LevelEighty
+          - listitem [ref=e381]:
+            - img "Twitter" [ref=e382]
+            - link "@80Level" [ref=e383] [cursor=pointer]:
+              - /url: https://twitter.com/80Level
+          - listitem [ref=e384]:
+            - img "YouTube" [ref=e385]
+            - link "@80lv" [ref=e386] [cursor=pointer]:
+              - /url: https://www.youtube.com/channel/UCI8IFlI7_0xU9Dc60xoZuiA
+          - listitem [ref=e387]:
+            - img "Instagram" [ref=e388]
+            - link "@eighty_level" [ref=e389] [cursor=pointer]:
+              - /url: https://www.instagram.com/eighty_level/
+          - listitem [ref=e390]:
+            - img "Podcasts" [ref=e391]
+            - link "Round Table" [ref=e392] [cursor=pointer]:
+              - /url: https://80levelroundtable.buzzsprout.com/
+        - generic [ref=e393]:
+          - paragraph [ref=e394]: © 2025. 80 level. All rights reserved
+          - list [ref=e395]:
+            - generic [ref=e396]:
+              - listitem [ref=e397]:
+                - link "About & Contact us" [ref=e398] [cursor=pointer]:
+                  - /url: /contact-us
+              - listitem [ref=e399]:
+                - link "Privacy Policy" [ref=e400] [cursor=pointer]:
+                  - /url: /privacy-policy
+            - generic [ref=e401]:
+              - listitem [ref=e402]:
+                - link "Republishing policy" [ref=e403] [cursor=pointer]:
+                  - /url: /republishing-policy
+              - listitem [ref=e404]:
+                - link "Terms of use" [ref=e405] [cursor=pointer]:
+                  - /url: /terms-of-use
+            - listitem [ref=e407]:
+              - link "Disclaimer" [ref=e408] [cursor=pointer]:
+                - /url: /disclaimer
+  - generic: Add bookmark
+```
