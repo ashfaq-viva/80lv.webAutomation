@@ -1,11 +1,25 @@
+import { Desktop } from '../../utils/viewports.js';
 import BasePage from '../BasePage.js';
 
 export class BigImageBannerPage extends BasePage {
   constructor(page, context) {
     super(page, context);
     this.bigImagebanner = page.locator('#Big_Image_bner');
+    this.artcleArrowBtn = page.locator('div').filter({ hasText: /^Articles$/ }).getByRole('img');
   }
 async bannerVisibilityAndRedirection(folderRoute) {
+  const locator = this.artcleArrowBtn; // your locator
+  try {
+    // Check if the element is visible and enabled
+    if (await locator.isVisible() && await locator.isEnabled()) {
+      await this.expectAndClick({ Desktop: locator }, 'Articles Arrow Button');
+      console.log('Clicked the Articles Arrow Button');
+    } else {
+      console.log('Articles Arrow Button not clickable, skipping...');
+    }
+  } catch (err) {
+    console.log('Error checking or clicking the element, skipping...', err);
+  }
   try {
     const [newPage] = await Promise.all([
       this.page.context().waitForEvent('page'), // listens for new page
