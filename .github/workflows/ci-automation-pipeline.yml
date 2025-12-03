@@ -578,10 +578,10 @@ jobs:
           if [ -f "$REPORT_PATH" ]; then
             jq -r '"80LV Automation Report(CI): Passed: \(.statistic.passed) | Failed: \(.statistic.failed) | Total: \(.statistic.total)"' $REPORT_PATH > summary.txt
             echo "" >> summary.txt
-            echo "👉 View full report(CI): https://ashfaq-viva.github.io/80lv.webAutomation/projects/${{ env.REPORT_ID }}" >> summary.txt
+            echo "View full report(CI): https://ashfaq-viva.github.io/80lv.webAutomation/projects/${{ env.REPORT_ID }}" >> summary.txt
           else
             echo "No summary found. Check if tests executed correctly." > summary.txt
             echo "" >> summary.txt
-            echo "👉 View full report(CI): https://ashfaq-viva.github.io/80lv.webAutomation/projects/${{ env.REPORT_ID }}" >> summary.txt
+            echo "View full report(CI): https://ashfaq-viva.github.io/80lv.webAutomation/projects/${{ env.REPORT_ID }}" >> summary.txt
           fi
           cat summary.txt | mailx -s "80LV Automation Test Report Summary"  ashfaq.ahmed@vivasoftltd.com
