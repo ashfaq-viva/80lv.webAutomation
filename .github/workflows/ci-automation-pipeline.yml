@@ -504,7 +504,12 @@ jobs:
       - name: Generate Allure Report
         run: |
           allure generate allure-results --clean -o allure-report/projects/${{ env.REPORT_ID }}
-          cp -r allure-history/* allure-report/projects/${{ env.REPORT_ID }}/history/
+          mkdir -p allure-report/projects/${{ env.REPORT_ID }}/history
+          if compgen -G "allure-history/*" > /dev/null; then
+            cp -r allure-history/* allure-report/projects/${{ env.REPORT_ID }}/history/
+          else
+            echo "ℹ️ No history to restore for ${REPORT_ID}"
+          fi
           touch allure-report/projects/${{ env.REPORT_ID }}/.nojekyll
 
       - name: Setup Pages
