@@ -1,0 +1,6 @@
+✅ Clicked [Accept Cookies @ Desktop] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Clicked [Articles Arrow Button @ Desktop] → "click_arrow"
+Clicked the Articles Arrow Button
+✅ Clicked [Big Image Banner @ Desktop] → "Big Image Banner"
+❌ Error during banner redirection check: browserContext.waitForEvent: Test timeout of 1200000ms exceeded.

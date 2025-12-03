@@ -1,0 +1,8 @@
+✅ Clicked [Accept Cookies @ Laptop] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+Button "Become a partner" HREF: mailto:contact@80.lv
+Expected pattern: /^mailto:contact@80\.lv$/
+📁 File created: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/events/buttonLinks/BecomePartnerButtonLinkLaptop_2025-12-03T13-23-07-864Z.txt
+   Actual:   mailto:contact@80.lv
+   Expected: /^mailto:contact@80\.lv$/
+✅ "Become a partner" href assertion passed

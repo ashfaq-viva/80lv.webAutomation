@@ -1,0 +1,19 @@
+✅ Restored session for company on 80.lv
+⏭️ No Accept Cookies button found, skipping.
+🖱️ Hovered on articleCard1bookmark (max) [id=38027].
+✅ Assert: element is visible [Add Bookmark Tooltip @ Desktop]
+✅ articleCard1bookmark [38027] → Bookmark added.
+✅ Extracted and saved data to: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/json/allArticles/allArticleBookmarkedArticle/card1TC_054_Desktop_2025-12-03T13-19-35-067Z.json
+✅ Clicked [Profile Menu @ Desktop] → "profile_loggedin"
+✅ Clicked [Bookmark Option @ Desktop] → "Bookmarks"
+🌐 Captured API → GET https://80.lv/api/bookmark/me?sort=published_at | Status: 200
+🔹 Expected URL: /bookmarks
+🔹 Actual URL:   https://80.lv/bookmarks/ashfaq-ahmed-45b0f6de/bookmark-collectionn-9ytvpqh7vsz1qm3k
+✅ Assert: page URL contains "/bookmarks" (Bookmark Page)
+✅ Extracted and saved data to: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/json/bookmarkPageCard/card1_Desktop_2025-12-03T13-19-42-058Z.json
+
+🔹 Comparing JSON file: card1_Desktop_2025-12-03T13-19-42-058Z.json to card1TC_054_Desktop_2025-12-03T13-19-35-067Z.json
+Comparing value: h2: "Monolith Soft Explains How To Simulate Wrench Spinning In Outer Space" → h1: "Monolith Soft Explains How To Simulate Wrench Spinning In Outer Space"
+✅ MATCH OK
+
+🎉 All JSON comparisons completed with no mismatches!

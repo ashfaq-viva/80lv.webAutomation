@@ -1,0 +1,15 @@
+✅ Clicked [Accept Cookies @ Mobile] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Assert: element is visible [Pagination1 Button @ Mobile]
+ℹ️ No CSS assert for [Pagination1 Button] at viewport Mobile
+Pagination is present
+✅ Clicked [Future Events Pagination 2 @ Mobile] → "2"
+✅ Assert: element is visible [Pagination 2 Button @ Mobile]
+ℹ️ No CSS assert for [Pagination 2 Button] at viewport Mobile
+✅ Assert: element is visible [Pagination Left Arrow Button @ Mobile]
+✅ Clicked [Future Events Pagination Left Arrow @ Mobile] → "Future Events Pagination Left Arrow"
+✅ Assert: element is visible [Pagination1 Button @ Mobile]
+ℹ️ No CSS assert for [Pagination1 Button] at viewport Mobile
+✅ Clicked [Future Events Pagination Right Arrow @ Mobile] → "Future Events Pagination Right Arrow"
+✅ Assert: element is visible [Pagination 2 Button @ Mobile]
+ℹ️ No CSS assert for [Pagination 2 Button] at viewport Mobile

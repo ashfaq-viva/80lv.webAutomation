@@ -1,0 +1,94 @@
+✅ Clicked [Accept Cookies @ Tablet] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Assert: element is visible [All Events Tab @ Tablet]
+✅ Assert: [All Events Tab] CSS property "background-color" = "rgb(72, 75, 50)" @ Tablet
+✅ Clicked [Offline Events Tab @ Tablet] → "Offline events"
+🌐 Captured API → GET https://80.lv/api/events?total=10&title=&page=1&sort=sort&online=0 | Status: 200
+✅ Assert: element is visible [Offline Events Tab @ Tablet]
+✅ Assert: [Offline Events Tab] CSS property "background-color" = "rgb(72, 75, 50)" @ Tablet
+Pagination not present, only one page of events.
+Total event cards present: 4
+✅ Clicked [Event card 1 Expanded @ Tablet] → "SIGGRAPH Asia 2025
+
+The 18th ACM SIGGRAPH Asia Conference on Computer Graphics and Interactive Techniques
+
+15–18 Dec. 2025
+
+Hong Kong"
+Event card 1 iCalendar HREF: webcal://80.lv/events/calendar/siggraph-asia-2025.ics
+Expected pattern: /^webcal:\/\/80\.lv\/events\/calendar\/.*\.ics$/
+📁 File created: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/events/offlineEventsICalenderRedirection/card1iCalenderTablet_2025-12-03T13-18-50-765Z.txt
+   Actual:   webcal://80.lv/events/calendar/siggraph-asia-2025.ics
+   Expected: /^webcal:\/\/80\.lv\/events\/calendar\/.*\.ics$/
+✅ Event card 1 iCalendar href assertion passed
+✅ Clicked [Event card 1 Collapsed @ Tablet] → "SIGGRAPH Asia 2025
+
+The 18th ACM SIGGRAPH Asia Conference on Computer Graphics and Interactive Techniques
+
+15–18 Dec. 2025
+
+Hong Kong"
+--------------------------------------------------
+✅ Clicked [Event card 2 Expanded @ Tablet] → "Taipei Game Show 2026
+
+Taipei Game Show is now back for the 2026 edition!
+
+29–30 Jan. 2026
+
+Taiwan"
+Event card 2 iCalendar HREF: webcal://80.lv/events/calendar/taipei-game-show-2026.ics
+Expected pattern: /^webcal:\/\/80\.lv\/events\/calendar\/.*\.ics$/
+📁 File created: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/events/offlineEventsICalenderRedirection/card2iCalenderTablet_2025-12-03T13-18-54-982Z.txt
+   Actual:   webcal://80.lv/events/calendar/taipei-game-show-2026.ics
+   Expected: /^webcal:\/\/80\.lv\/events\/calendar\/.*\.ics$/
+✅ Event card 2 iCalendar href assertion passed
+✅ Clicked [Event card 2 Collapsed @ Tablet] → "Taipei Game Show 2026
+
+Taipei Game Show is now back for the 2026 edition!
+
+29–30 Jan. 2026
+
+Taiwan"
+--------------------------------------------------
+✅ Clicked [Event card 3 Expanded @ Tablet] → "devcom leadership summit 2026
+
+Shape the Future of Gaming at the devcom leadership summit 2026
+
+25–27 Feb. 2026
+
+Portugal"
+Event card 3 iCalendar HREF: webcal://80.lv/events/calendar/devcom-leadership-summit-2026.ics
+Expected pattern: /^webcal:\/\/80\.lv\/events\/calendar\/.*\.ics$/
+📁 File created: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/events/offlineEventsICalenderRedirection/card3iCalenderTablet_2025-12-03T13-18-59-230Z.txt
+   Actual:   webcal://80.lv/events/calendar/devcom-leadership-summit-2026.ics
+   Expected: /^webcal:\/\/80\.lv\/events\/calendar\/.*\.ics$/
+✅ Event card 3 iCalendar href assertion passed
+✅ Clicked [Event card 3 Collapsed @ Tablet] → "devcom leadership summit 2026
+
+Shape the Future of Gaming at the devcom leadership summit 2026
+
+25–27 Feb. 2026
+
+Portugal"
+--------------------------------------------------
+✅ Clicked [Event card 4 Expanded @ Tablet] → "GDC 2026
+
+The GDC Festival of Gaming is where the entire B2B games industry comes together.
+
+9–13 Mar. 2026
+
+USA"
+Event card 4 iCalendar HREF: webcal://80.lv/events/calendar/gdc-2026.ics
+Expected pattern: /^webcal:\/\/80\.lv\/events\/calendar\/.*\.ics$/
+📁 File created: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/events/offlineEventsICalenderRedirection/card4iCalenderTablet_2025-12-03T13-19-03-465Z.txt
+   Actual:   webcal://80.lv/events/calendar/gdc-2026.ics
+   Expected: /^webcal:\/\/80\.lv\/events\/calendar\/.*\.ics$/
+✅ Event card 4 iCalendar href assertion passed
+✅ Clicked [Event card 4 Collapsed @ Tablet] → "GDC 2026
+
+The GDC Festival of Gaming is where the entire B2B games industry comes together.
+
+9–13 Mar. 2026
+
+USA"
+--------------------------------------------------

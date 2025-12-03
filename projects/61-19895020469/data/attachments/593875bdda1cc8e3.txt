@@ -1,0 +1,6 @@
+✅ Clicked [Accept Cookies @ Mobile] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+⏭️ No Accept Cookies button found, skipping.
+✅ Clicked [Header Widget Button @ Mobile] → "Monetize Your Game"
+🌐 Captured official website Redirection URL: https://80level.typeform.com/monetize-games?utm_source=80lv_website&utm_medium=header-button
+📁 File created: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/navbar/headerWidgetUrlMobile_2025-12-03T13-15-40-066Z.txt
