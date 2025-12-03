@@ -1,0 +1,7 @@
+✅ Clicked [Accept Cookies @ Tablet] → "Accept Cookies"
+🌐 Captured API → GET https://80.lv/api/jobs?sort=new&page=1 | Status: 200
+✅ Clicked Accept Cookies button.
+✅ Clicked [Instagram Link @ Tablet] → "@eighty_level"
+🔹 Expected URL: https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Feighty_level%2F&is_from_rle,https://www.instagram.com/eighty_level
+🔹 Actual URL:   https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Feighty_level%2F&is_from_rle
+✅ Assert: page URL matched one of the expected options (instagram redirection link)

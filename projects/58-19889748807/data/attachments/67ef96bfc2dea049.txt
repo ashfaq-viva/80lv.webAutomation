@@ -1,0 +1,6 @@
+✅ Clicked [Accept Cookies @ Desktop] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+⏭️ No Accept Cookies button found, skipping.
+✅ Clicked [Search @ Desktop] → "Search"
+✅ Clicked [Search @ Desktop] → "Search"
+✅ Assert: element is visible [Company logo visible @ Desktop]

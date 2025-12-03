@@ -1,0 +1,2 @@
+✅ Clicked [Accept Cookies @ Laptop] → "Accept Cookies"
+✅ Clicked Accept Cookies button.

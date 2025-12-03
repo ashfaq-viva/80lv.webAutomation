@@ -1,0 +1,7 @@
+✅ Clicked [Accept Cookies @ Tablet] → "Accept Cookies"
+🌐 Captured API → GET https://80.lv/api/jobs?sort=new&page=1 | Status: 200
+✅ Clicked Accept Cookies button.
+✅ Clicked [Youtube Link @ Tablet] → "@80lv"
+🔹 Expected URL: https://www.youtube.com/channel/UCI8IFlI7_0xU9Dc60xoZuiA
+🔹 Actual URL:   https://www.youtube.com/channel/UCI8IFlI7_0xU9Dc60xoZuiA
+✅ Assert: page URL is "https://www.youtube.com/channel/UCI8IFlI7_0xU9Dc60xoZuiA" (youtube redirection link)

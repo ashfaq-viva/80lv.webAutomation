@@ -1,0 +1,10 @@
+✅ Clicked [Accept Cookies @ Desktop] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Assert: element is visible [All Events Tab @ Desktop]
+✅ Assert: [All Events Tab] CSS property "background-color" = "rgb(72, 75, 50)" @ Desktop
+Google Calendar URL: http://www.google.com/calendar/hosted/80.lv/render?cid=http://80.lv/events.ics&pli=1
+✅ Clicked [Google Calendar button redirection @ Desktop] → "Google"
+New Page URL: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fcalendar.google.com%2Fcalendar%2Frender%3Fcid%3Dhttp%3A%2F%2F80.lv%2Fevents.ics%26pli%3D1&dsh=S20574561%3A1764756295776604&followup=https%3A%2F%2Fcalendar.google.com%2Fcalendar%2Frender%3Fcid%3Dhttp%3A%2F%2F80.lv%2Fevents.ics%26pli%3D1&hd=80.lv&ifkv=ARESoU1GVVqtIXW1dnup3_K-iu6HAGB7h6Kuk_jxPoYUznH5sXpPL75XqoTVpSekCQt7NQz4QbWZdw&osid=1&rip=1&sacu=1&service=cl&flowName=WebLiteSignIn&flowEntry=ServiceLogin
+🔹 Expected URL: google.com
+🔹 Actual URL:   https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fcalendar.google.com%2Fcalendar%2Frender%3Fcid%3Dhttp%3A%2F%2F80.lv%2Fevents.ics%26pli%3D1&dsh=S20574561%3A1764756295776604&followup=https%3A%2F%2Fcalendar.google.com%2Fcalendar%2Frender%3Fcid%3Dhttp%3A%2F%2F80.lv%2Fevents.ics%26pli%3D1&hd=80.lv&ifkv=ARESoU1GVVqtIXW1dnup3_K-iu6HAGB7h6Kuk_jxPoYUznH5sXpPL75XqoTVpSekCQt7NQz4QbWZdw&osid=1&rip=1&sacu=1&service=cl&flowName=WebLiteSignIn&flowEntry=ServiceLogin
+✅ Assert: page URL contains "google.com" (Google Calendar Page URL)

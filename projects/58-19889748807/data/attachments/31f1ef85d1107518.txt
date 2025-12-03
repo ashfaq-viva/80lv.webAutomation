@@ -1,0 +1,35 @@
+✅ Clicked [Accept Cookies @ Desktop] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+➡️ Clicking Partners Slider Right Arrow - 1
+✅ Clicked [Partners Slider Right Arrow (1) @ Desktop] → "Next slide"
+➡️ Clicking Partners Slider Right Arrow - 2
+✅ Clicked [Partners Slider Right Arrow (2) @ Desktop] → "Next slide"
+➡️ Clicking Partners Slider Right Arrow - 3
+✅ Clicked [Partners Slider Right Arrow (3) @ Desktop] → "Next slide"
+➡️ Clicking Partners Slider Right Arrow - 4
+✅ Clicked [Partners Slider Right Arrow (4) @ Desktop] → "Next slide"
+➡️ Clicking Partners Slider Right Arrow - 5
+✅ Clicked [Partners Slider Right Arrow (5) @ Desktop] → "Next slide"
+➡️ Clicking Partners Slider Right Arrow - 6
+✅ Clicked [Partners Slider Right Arrow (6) @ Desktop] → "Next slide"
+➡️ Clicking Partners Slider Right Arrow - 7
+✅ Clicked [Partners Slider Right Arrow (7) @ Desktop] → "Next slide"
+➡️ Clicking Partners Slider Right Arrow - 8
+✅ Clicked [Partners Slider Right Arrow (8) @ Desktop] → "Next slide"
+⬅️ Clicking Partners Slider Left Arrow - 1
+✅ Clicked [Partners Slider Left Arrow (1) @ Desktop] → "Previous slide"
+⬅️ Clicking Partners Slider Left Arrow - 2
+✅ Clicked [Partners Slider Left Arrow (2) @ Desktop] → "Previous slide"
+⬅️ Clicking Partners Slider Left Arrow - 3
+✅ Clicked [Partners Slider Left Arrow (3) @ Desktop] → "Previous slide"
+⬅️ Clicking Partners Slider Left Arrow - 4
+✅ Clicked [Partners Slider Left Arrow (4) @ Desktop] → "Previous slide"
+⬅️ Clicking Partners Slider Left Arrow - 5
+✅ Clicked [Partners Slider Left Arrow (5) @ Desktop] → "Previous slide"
+⬅️ Clicking Partners Slider Left Arrow - 6
+✅ Clicked [Partners Slider Left Arrow (6) @ Desktop] → "Previous slide"
+⬅️ Clicking Partners Slider Left Arrow - 7
+✅ Clicked [Partners Slider Left Arrow (7) @ Desktop] → "Previous slide"
+⬅️ Clicking Partners Slider Left Arrow - 8
+✅ Clicked [Partners Slider Left Arrow (8) @ Desktop] → "Previous slide"
+✅ Completed right and left slider navigation.

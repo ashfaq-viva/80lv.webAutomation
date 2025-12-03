@@ -1,0 +1,18 @@
+✅ Clicked [Accept Cookies @ Laptop] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Clicked [Popular Button @ Laptop] → "Popular"
+🌐 Captured API → GET https://80.lv/api/articles/list?category=&page=1&total=10&sort=popular | Status: 200
+✅ Clicked [Filter Field @ Laptop] → "Category"
+✅ Clicked [News Option @ Laptop] → "News"
+🌐 Captured API → GET https://80.lv/api/articles/category/news?page=1&sort=popular&is_chinese=0 | Status: 200
+✅ Clicked [Interviews Option @ Laptop] → "Interviews"
+🌐 Captured API → GET https://80.lv/api/articles/category/news,interview?page=1&sort=popular&is_chinese=0 | Status: 200
+✅ Clicked [Filter Field @ Laptop] → "Category"
+✅ Assert: element is visible [News Filter Chip @ Laptop]
+✅ Assert: element is visible [Interviews Filter Chip @ Laptop]
+🔹 Expected URL: https://80.lv/articles/news,interview
+🔹 Actual URL:   https://80.lv/articles/news,interview
+✅ Assert: page URL is "https://80.lv/articles/news,interview" (News and Interviews Filtered Articles Page URL)
+Pagination 2 Button is present, clicking it...
+✅ Assert: element is visible [Pagination 2 Button @ Laptop]
+ℹ️ No CSS assert for [Pagination 2 Button] at viewport Laptop

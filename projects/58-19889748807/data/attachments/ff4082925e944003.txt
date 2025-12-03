@@ -1,0 +1,24 @@
+✅ Clicked [Accept Cookies @ Laptop] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+🧩 Total partner links found: 5
+🖥️ Current viewport: Laptop
+🖱️ Attempting to click Partner #1: /partners/unreal-engine
+🌐 Partner #1 URL: https://80.lv/partners/unreal-engine
+📁 File created: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink1Laptop_2025-12-03T10-09-39-941Z.txt
+🗂️ Partner redirection URL saved at: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink1Laptop_2025-12-03T10-09-39-941Z.txt
+🖱️ Attempting to click Partner #2: /partners/reallusion
+🌐 Partner #2 URL: https://80.lv/partners/reallusion
+📁 File created: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink2Laptop_2025-12-03T10-09-45-687Z.txt
+🗂️ Partner redirection URL saved at: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink2Laptop_2025-12-03T10-09-45-687Z.txt
+🖱️ Attempting to click Partner #3: /partners/unity-technologies
+🌐 Partner #3 URL: https://80.lv/partners/unity-technologies
+📁 File created: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink3Laptop_2025-12-03T10-09-52-235Z.txt
+🗂️ Partner redirection URL saved at: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink3Laptop_2025-12-03T10-09-52-235Z.txt
+🖱️ Attempting to click Partner #4: /partners/cgma
+🌐 Partner #4 URL: https://80.lv/partners/cgma
+📁 File created: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink4Laptop_2025-12-03T10-09-57-242Z.txt
+🗂️ Partner redirection URL saved at: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink4Laptop_2025-12-03T10-09-57-242Z.txt
+🖱️ Attempting to click Partner #5: /partners/vertex-school
+🌐 Partner #5 URL: https://80.lv/partners/vertex-school
+📁 File created: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink5Laptop_2025-12-03T10-10-02-178Z.txt
+🗂️ Partner redirection URL saved at: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink5Laptop_2025-12-03T10-10-02-178Z.txt

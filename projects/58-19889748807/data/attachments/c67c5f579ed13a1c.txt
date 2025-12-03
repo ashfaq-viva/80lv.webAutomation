@@ -1,0 +1,21 @@
+✅ Restored session for company on 80.lv
+⏭️ No Accept Cookies button found, skipping.
+🖱️ Hovered on articleCard1bookmark (max) [id=38018].
+✅ Assert: element is visible [Remove Bookmark Tooltip @ Tablet]
+🗑️ articleCard1bookmark [38018] → Clicking to remove...
+🗑️ articleCard1bookmark [38018] → Remove clicked (response awaited).
+🔁 articleCard1bookmark [38018] → Bookmark re-added.
+✅ Extracted and saved data to: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/json/allArticles/allArticleBookmarkedArticle/card1TC_054_Tablet_2025-12-03T10-07-27-816Z.json
+✅ Clicked [Profile Menu @ Tablet] → "Profile Menu"
+✅ Clicked [Bookmark Option @ Tablet] → "Bookmarks"
+🌐 Captured API → GET https://80.lv/api/bookmark/me?sort=published_at | Status: 200
+🔹 Expected URL: /bookmarks
+🔹 Actual URL:   https://80.lv/bookmarks/ashfaq-ahmed-45b0f6de/bookmark-collectionn-9ytvpqh7vsz1qm3k
+✅ Assert: page URL contains "/bookmarks" (Bookmark Page)
+✅ Extracted and saved data to: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/json/bookmarkPageCard/card1_Tablet_2025-12-03T10-07-33-230Z.json
+
+🔹 Comparing JSON file: card1_Desktop_2025-12-03T10-07-19-025Z.json to card1TC_054_Tablet_2025-12-03T10-07-27-816Z.json
+Comparing value: h2: "Helldivers 2 Now Takes Up 85% Less Disk Space" → h1: "Helldivers 2 Now Takes Up 85% Less Disk Space"
+✅ MATCH OK
+
+🎉 All JSON comparisons completed with no mismatches!

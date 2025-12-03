@@ -1,0 +1,10 @@
+✅ Clicked [Accept Cookies @ Tablet] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Assert: element is visible [All Events Tab @ Tablet]
+✅ Assert: [All Events Tab] CSS property "background-color" = "rgb(72, 75, 50)" @ Tablet
+Button iCalendar HREF: webcal://80.lv/events/calendar/all.ics
+Expected pattern: /^webcal:\/\/80\.lv\/events\/calendar\/.*\.ics$/
+📁 File created: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/events/buttonICalender/iCalenderButtonLinkTablet_2025-12-03T10-05-02-727Z.txt
+   Actual:   webcal://80.lv/events/calendar/all.ics
+   Expected: /^webcal:\/\/80\.lv\/events\/calendar\/.*\.ics$/
+✅ Button iCalendar href assertion passed
