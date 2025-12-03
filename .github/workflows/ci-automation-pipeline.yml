@@ -241,6 +241,26 @@ jobs:
           fi
           touch allure-report/projects/${{ env.REPORT_ID }}/.nojekyll
 
+      - name: Prune oversized attachments for Pages
+        run: |
+          ATTACH_DIR="allure-report/projects/${{ env.REPORT_ID }}/data/attachments"
+          mkdir -p "$ATTACH_DIR"
+          mkdir -p "pruned-attachments/${{ env.REPORT_ID }}"
+          if find "$ATTACH_DIR" -type f -size +90M -print -quit | grep -q .; then
+            echo "🚫 Moving attachments >90MB out of Pages payload"
+            find "$ATTACH_DIR" -type f -size +90M -print -exec mv {} "pruned-attachments/${{ env.REPORT_ID }}/" \;
+          else
+            echo "ℹ️ No oversized attachments to prune"
+          fi
+
+      - name: Upload pruned attachments (artifact)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-attachments-${{ env.REPORT_ID }}
+          path: pruned-attachments/${{ env.REPORT_ID }}
+          if-no-files-found: ignore
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
