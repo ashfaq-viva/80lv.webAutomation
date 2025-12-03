@@ -1,0 +1,9 @@
+✅ Clicked [Accept Cookies @ Mobile] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+⏭️ No Accept Cookies button found, skipping.
+✅ Clicked [About Menu Button (Step 1) @ Mobile] → "About Menu Button (Step 1)"
+✅ Clicked [About Menu Button (Step 2) @ Mobile] → "click_arrow"
+✅ Clicked [Company SubMenu Button @ Mobile] → "Company"
+🔹 Expected URL: https://80.lv/contact-us#audience
+🔹 Actual URL:   https://80.lv/contact-us#audience
+✅ Assert: page URL is "https://80.lv/contact-us#audience" (Company Page  Redirection)

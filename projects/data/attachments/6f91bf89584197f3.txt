@@ -1,0 +1,14 @@
+✅ Clicked [Accept Cookies @ Tablet] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Clicked [Offline Events Tab @ Tablet] → "Offline events"
+🌐 Captured API → GET https://80.lv/api/events?total=10&title=&page=1&sort=sort&online=0 | Status: 200
+✅ Assert: element is visible [Offline Events Tab @ Tablet]
+✅ Assert: [Offline Events Tab] CSS property "background-color" = "rgb(72, 75, 50)" @ Tablet
+✅ Filled [Search Field @ Tablet] → "search" with: "asdfghjkl"
+🌐 API Captured: GET https://80.lv/api/events?total=10&title=asdfghjkl&page=1&sort=sort&online=0 | Status: 200
+🗂️ API responses saved at: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/apiResponses/events/GETOfflineEventsSearchInvalid.json
+✅ Key pressed: [Enter @ Tablet]
+⚠️ Response at path "events.items.title" is empty. Skipping verification.
+✅ Clicked [Search Cross Icon @ Tablet] → "Search Cross Icon"
+🌐 Captured API → GET https://80.lv/api/events?total=10&title=&page=1&sort=sort&online=0 | Status: 200
+✅ Assert: element is visible [Search Field after clearing @ Tablet]

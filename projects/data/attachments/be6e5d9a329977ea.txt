@@ -1,0 +1,15 @@
+✅ Clicked [Accept Cookies @ Mobile] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Clicked [Filter Field @ Mobile] → "Category"
+✅ Clicked [News Option @ Mobile] → "News"
+🌐 Captured API → GET https://80.lv/api/articles/category/news?page=1&sort=new&is_chinese=0 | Status: 200
+✅ Clicked [Filter Field @ Mobile] → "Category"
+✅ Assert: element is visible [News Filter Chip @ Mobile]
+✅ Clicked [News Filter Chip Removed @ Mobile] → "News"
+✅ Clicked [Filter Field @ Mobile] → "Category"
+✅ Clicked [All Articles Button @ Mobile] → "All articles"
+✅ Clicked [Filter Field @ Mobile] → "Category"
+✅ News Filter Chip is NOT visible as expected.
+🔹 Expected URL: https://80.lv/articles
+🔹 Actual URL:   https://80.lv/articles
+✅ Assert: page URL is "https://80.lv/articles" (All Articles Page URL after removing filter)

@@ -1,0 +1,8 @@
+✅ Clicked [Accept Cookies @ Desktop] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Clicked [Articles Menu Button @ Desktop] → "click_arrow"
+✅ Clicked [Marketplace SubMenu Button @ Desktop] → "Marketplace"
+🌐 Captured API → GET https://80.lv/api/jobs?sort=new&page=1 | Status: 200
+🔹 Expected URL: https://80.lv/articles/marketplace
+🔹 Actual URL:   https://80.lv/articles/marketplace
+✅ Assert: page URL is "https://80.lv/articles/marketplace" (Marketplace Page  Redirection)

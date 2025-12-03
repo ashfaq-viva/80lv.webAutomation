@@ -1,0 +1,15 @@
+✅ Clicked [Accept Cookies @ Tablet] → "Accept Cookies"
+🌐 Captured API → GET https://80.lv/api/jobs?sort=new&page=1 | Status: 200
+✅ Clicked Accept Cookies button.
+✅ Extracted and saved data to: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/json/allArticles/allArticlesRedirectedArticle/card1TC_60_Tablet_2025-12-03T09-11-15-739Z.json
+✅ Clicked [Article card 1 Image @ Tablet] → "Article card 1 Image"
+🌐 Captured API → GET https://80.lv/api/articles/list?id=38015&offset=0&total=12&headers=%7B%7D | Status: 200
+🌐 Captured Article Redirection URL: https://80.lv/articles/explore-moon-in-this-realistic-space-sim-created-with-observation-data
+📁 File created: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/allArticles/articleCardRedirection/card1UrlTablet_2025-12-03T09-11-19-003Z.txt
+✅ Extracted and saved data to: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/json/allArticles/articlePage/TitleH1_Tablet_2025-12-03T09-11-20-317Z.json
+
+🔹 Comparing JSON file: card1TC_60_Desktop_2025-12-03T09-11-05-793Z.json to TitleH1_Desktop_2025-12-03T09-11-10-394Z.json
+Comparing value: h1: "Explore Moon in This Realistic Space Sim Created with Observation Data" → h1: "Explore Moon in This Realistic Space Sim Created with Observation Data"
+✅ MATCH OK
+
+🎉 All JSON comparisons completed with no mismatches!

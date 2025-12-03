@@ -1,0 +1,14 @@
+✅ Clicked [Accept Cookies @ Desktop] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+⏭️ No Accept Cookies button found, skipping.
+Generated Signup Email: ashfaq.ahmed+7278@vivasoftltd.com
+📁 File created: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/signupEmails/signup_emailDesktop_2025-12-03T09-04-43-040Z.txt
+✅ Email saved to: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/signupEmails/signup_emailDesktop_2025-12-03T09-04-43-040Z.txt
+✅ Clicked [Login Button @ Desktop] → "profile_login"
+✅ Filled [Email @ Desktop] → "email" with: "ashfaq.ahmed+7278@vivasoftltd.com"
+✅ Filled [Password @ Desktop] → "password" with: "Aa@1234"
+✅ Clicked [Create Account Button @ Desktop] → "CREATE ACCOUNT"
+Using App Password method to fetch email
+📧 Email Subject: Did you just log in near Skipwith on a new device?
+🔘 Button Name: 
+🔗 Confirmation Link: https://www.facebook.com/profile.php?id=100050151726741

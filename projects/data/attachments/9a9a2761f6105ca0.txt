@@ -1,0 +1,8 @@
+✅ Clicked [Accept Cookies @ Mobile] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Filled [element @ Mobile] → "email" with: "ashfaq.ahmed@vivasoftltd.com"
+✅ Clicked [Subscribe Button @ Mobile] → "Subscribe"
+🌐 Captured API: https://80.lv/api/user/subscribe → POST | Status: 200
+🔗 Expected: https://80.lv/api/user/subscribe → POST | Status: 200
+✅ Assertion API: Passed
+✅ Assert: element is visible [Subscribe success message @ Mobile]

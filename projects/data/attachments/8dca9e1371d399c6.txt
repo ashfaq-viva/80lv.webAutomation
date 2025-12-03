@@ -1,0 +1,6 @@
+✅ Clicked [Accept Cookies @ Laptop] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Clicked [Big Image Banner @ Laptop] → "Big Image Banner"
+🌐 Captured Banner Redirection URL: https://80level.typeform.com/monetize-games?utm_source=80lv_website&utm_medium=big-image-banner&typeform-source=80.lv
+📁 File created: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/events/eventsBigImageBanner/BigImageBannnerLaptop_2025-12-03T09-06-01-954Z.txt
+🗂️ Banner redirection URL saved at: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/events/eventsBigImageBanner/BigImageBannnerLaptop_2025-12-03T09-06-01-954Z.txt
