@@ -1,0 +1,6 @@
+✅ Clicked [Accept Cookies @ Mobile] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Clicked [Podcasts Link @ Mobile] → "Round Table"
+🔹 Expected URL: https://80levelroundtable.buzzsprout.com/
+🔹 Actual URL:   https://80levelroundtable.buzzsprout.com
+✅ Assert: page URL is "https://80levelroundtable.buzzsprout.com/" (podcasts redirection link)

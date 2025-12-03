@@ -1,0 +1,13 @@
+✅ Clicked [Accept Cookies @ Tablet] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Assert: element is visible [All Events Tab @ Tablet]
+✅ Assert: [All Events Tab] CSS property "background-color" = "rgb(72, 75, 50)" @ Tablet
+✅ Clicked [Online Events Tab @ Tablet] → "Online events"
+🌐 Captured API: https://80.lv/api/events?total=10&title=&page=1&sort=sort&online=1 → GET | Status: 200
+🔗 Expected: https://80.lv/api/events?total=10&title=&page=1&sort=sort&online=1 → GET | Status: 200
+✅ Assertion API: Passed
+🗂️ API response saved at: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/apiResponses/events/GETOnlineEvents.json
+✅ Assert: element is visible [Online Events Tab @ Tablet]
+✅ Assert: [Online Events Tab] CSS property "background-color" = "rgb(72, 75, 50)" @ Tablet
+⚠️ Response at path "events.items.title" is empty. Skipping verification.
+Pagination not present, only one page of events.

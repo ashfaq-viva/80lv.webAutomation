@@ -1,0 +1,753 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e4]:
+    - banner [ref=e5]:
+      - generic [ref=e6]:
+        - generic [ref=e7]:
+          - img "logo80lv" [ref=e9] [cursor=pointer]
+          - generic [ref=e10] [cursor=pointer]:
+            - text: Articles
+            - img "click_arrow" [ref=e11]
+          - generic [ref=e12] [cursor=pointer]: Research
+          - generic [ref=e13] [cursor=pointer]:
+            - text: Talents
+            - img "click_arrow" [ref=e14]
+          - generic [ref=e15] [cursor=pointer]: Events
+          - generic [ref=e16] [cursor=pointer]: Workshops
+          - generic [ref=e17] [cursor=pointer]:
+            - text: About
+            - img "click_arrow" [ref=e18]
+        - generic [ref=e19]:
+          - generic [ref=e20]:
+            - link "Monetize Your Game" [ref=e21] [cursor=pointer]:
+              - /url: https://80level.typeform.com/monetize-games?utm_source=80lv_website&utm_medium=header-button
+            - generic [ref=e22] [cursor=pointer]:
+              - generic [ref=e23]: Advertise
+              - img "player" [ref=e24]
+          - button "search" [ref=e25] [cursor=pointer]:
+            - img "search" [ref=e27]
+          - generic [ref=e30] [cursor=pointer]:
+            - img "profile_login" [ref=e32]
+            - generic [ref=e33]: Log in
+    - main [ref=e34]:
+      - generic [ref=e37]:
+        - link [ref=e38] [cursor=pointer]:
+          - /url: https://home.otoy.com/render/octane-render/purchase/
+        - generic [ref=e40] [cursor=pointer]: Sponsored
+      - generic [ref=e42]:
+        - generic [ref=e44]:
+          - generic [ref=e48]:
+            - link [ref=e50] [cursor=pointer]:
+              - /url: /articles/news
+            - heading "News" [level=1] [ref=e53]:
+              - link "News" [ref=e54] [cursor=pointer]:
+                - /url: /articles/news
+            - list [ref=e55]:
+              - generic [ref=e57]:
+                - link [ref=e58] [cursor=pointer]:
+                  - /url: /articles/saudi-arabia-s-fund-will-hold-more-than-93-of-ea-after-deal-completion
+                - generic [ref=e61]:
+                  - heading "Saudi Arabia's Fund Will Hold More Than 93% of EA After Deal Completion" [level=3] [ref=e62]:
+                    - link "Saudi Arabia's Fund Will Hold More Than 93% of EA After Deal Completion" [ref=e63] [cursor=pointer]:
+                      - /url: /articles/saudi-arabia-s-fund-will-hold-more-than-93-of-ea-after-deal-completion
+                  - list [ref=e66]:
+                    - listitem [ref=e67] [cursor=pointer]:
+                      - link "News" [ref=e68]:
+                        - /url: /articles/news
+                    - listitem [ref=e69] [cursor=pointer]:
+                      - link "Video Games" [ref=e70]:
+                        - /url: /articles/video-game
+                    - listitem [ref=e71] [cursor=pointer]:
+                      - link "Business" [ref=e72]:
+                        - /url: /articles/business
+              - generic [ref=e74]:
+                - link [ref=e75] [cursor=pointer]:
+                  - /url: /articles/chinese-crafting-technique-recreated-using-substance-3d
+                - generic [ref=e78]:
+                  - heading "Chinese Crafting Technique Recreated Using Substance 3D" [level=3] [ref=e79]:
+                    - link "Chinese Crafting Technique Recreated Using Substance 3D" [ref=e80] [cursor=pointer]:
+                      - /url: /articles/chinese-crafting-technique-recreated-using-substance-3d
+                  - list [ref=e83]:
+                    - listitem [ref=e84] [cursor=pointer]:
+                      - link "News" [ref=e85]:
+                        - /url: /articles/news
+                    - listitem [ref=e86] [cursor=pointer]: "+2"
+              - generic [ref=e88]:
+                - link [ref=e89] [cursor=pointer]:
+                  - /url: /articles/artist-shows-behind-the-scenes-of-making-animation-for-zootopia-2
+                - generic [ref=e92]:
+                  - heading "Disney's Senior Animator Shows Behind-the-Scenes of Making Animation for Zootopia 2" [level=3] [ref=e93]:
+                    - link "Disney's Senior Animator Shows Behind-the-Scenes of Making Animation for Zootopia 2" [ref=e94] [cursor=pointer]:
+                      - /url: /articles/artist-shows-behind-the-scenes-of-making-animation-for-zootopia-2
+                  - list [ref=e97]:
+                    - listitem [ref=e98] [cursor=pointer]:
+                      - link "News" [ref=e99]:
+                        - /url: /articles/news
+                    - listitem [ref=e100] [cursor=pointer]:
+                      - link "Animation" [ref=e101]:
+                        - /url: /articles/animation
+              - generic [ref=e103]:
+                - link [ref=e104] [cursor=pointer]:
+                  - /url: /articles/bungie-has-compensated-the-artist-whose-works-they-stole-for-marathon
+                - generic [ref=e107]:
+                  - heading "Bungie Has Compensated the Artist Whose Works They Stole for Marathon" [level=3] [ref=e108]:
+                    - link "Bungie Has Compensated the Artist Whose Works They Stole for Marathon" [ref=e109] [cursor=pointer]:
+                      - /url: /articles/bungie-has-compensated-the-artist-whose-works-they-stole-for-marathon
+                  - list [ref=e112]:
+                    - listitem [ref=e113] [cursor=pointer]:
+                      - link "News" [ref=e114]:
+                        - /url: /articles/news
+                    - listitem [ref=e115] [cursor=pointer]:
+                      - link "Video Games" [ref=e116]:
+                        - /url: /articles/video-game
+              - generic [ref=e118]:
+                - link [ref=e119] [cursor=pointer]:
+                  - /url: /articles/octanestudio-2026-launches-with-greyscalegorilla-plus-kitbash3d
+                - generic [ref=e122]:
+                  - heading "OctaneStudio+ 2026 Launches with Greyscalegorilla Plus & Kitbash3D" [level=3] [ref=e123]:
+                    - link "OctaneStudio+ 2026 Launches with Greyscalegorilla Plus & Kitbash3D" [ref=e124] [cursor=pointer]:
+                      - /url: /articles/octanestudio-2026-launches-with-greyscalegorilla-plus-kitbash3d
+                  - list [ref=e127]:
+                    - listitem [ref=e128] [cursor=pointer]:
+                      - link "News" [ref=e129]:
+                        - /url: /articles/news
+                    - listitem [ref=e130] [cursor=pointer]:
+                      - link "Octane Render" [ref=e131]:
+                        - /url: /articles/octane-render
+              - generic [ref=e133]:
+                - link [ref=e134] [cursor=pointer]:
+                  - /url: /articles/zbrush-s-morph-uv-feature-recreated-in-maya
+                - generic [ref=e137]:
+                  - heading "ZBrush's Morph UV Feature Recreated In Maya" [level=3] [ref=e138]:
+                    - link "ZBrush's Morph UV Feature Recreated In Maya" [ref=e139] [cursor=pointer]:
+                      - /url: /articles/zbrush-s-morph-uv-feature-recreated-in-maya
+                  - list [ref=e142]:
+                    - listitem [ref=e143] [cursor=pointer]:
+                      - link "News" [ref=e144]:
+                        - /url: /articles/news
+                    - listitem [ref=e145] [cursor=pointer]:
+                      - link "Marketplace" [ref=e146]:
+                        - /url: /articles/marketplace
+                    - listitem [ref=e147] [cursor=pointer]: "+2"
+            - generic [ref=e148]:
+              - button "Subscribe to newsletter" [ref=e149] [cursor=pointer]:
+                - generic [ref=e150]:
+                  - text: Subscribe to newsletter
+                  - img [ref=e151]
+              - link "Check out the latest news" [ref=e153] [cursor=pointer]:
+                - /url: /articles/news
+                - generic [ref=e154]: Check out the latest news
+                - img [ref=e156]
+          - generic [ref=e159]:
+            - generic [ref=e161]:
+              - heading "Latest articles" [level=5] [ref=e163]
+              - generic [ref=e166]:
+                - article [ref=e168]:
+                  - generic [ref=e169]:
+                    - heading "Saudi Arabia's Fund Will Hold More Than 93% of EA After Deal Completion" [level=2] [ref=e170]:
+                      - link "Saudi Arabia's Fund Will Hold More Than 93% of EA After Deal Completion" [ref=e171] [cursor=pointer]:
+                        - /url: /articles/saudi-arabia-s-fund-will-hold-more-than-93-of-ea-after-deal-completion
+                    - generic [ref=e173]: Reportedly, only 6.6% of the gaming giant will belong to Silver Lake and Affinity Partners.
+                    - generic [ref=e174]:
+                      - link "Theodore McKenzie 03 December 2025" [ref=e175] [cursor=pointer]:
+                        - /url: /author/fedor-nikitin
+                        - paragraph [ref=e178]: Theodore McKenzie
+                        - paragraph [ref=e179]: 03 December 2025
+                      - img [ref=e182] [cursor=pointer]
+                  - generic [ref=e184]:
+                    - link [ref=e186] [cursor=pointer]:
+                      - /url: /articles/saudi-arabia-s-fund-will-hold-more-than-93-of-ea-after-deal-completion
+                    - list [ref=e191]:
+                      - listitem [ref=e192] [cursor=pointer]:
+                        - link "News" [ref=e193]:
+                          - /url: /articles/news
+                      - listitem [ref=e194] [cursor=pointer]:
+                        - link "Video Games" [ref=e195]:
+                          - /url: /articles/video-game
+                      - listitem [ref=e196] [cursor=pointer]:
+                        - link "Business" [ref=e197]:
+                          - /url: /articles/business
+                - article [ref=e199]:
+                  - generic [ref=e200]:
+                    - heading "Chinese Crafting Technique Recreated Using Substance 3D" [level=2] [ref=e201]:
+                      - link "Chinese Crafting Technique Recreated Using Substance 3D" [ref=e202] [cursor=pointer]:
+                        - /url: /articles/chinese-crafting-technique-recreated-using-substance-3d
+                    - generic [ref=e204]: Cino Lai shared another impressive work.
+                    - generic [ref=e205]:
+                      - link "Emma Collins 03 December 2025" [ref=e206] [cursor=pointer]:
+                        - /url: /author/emma-collins
+                        - paragraph [ref=e209]: Emma Collins
+                        - paragraph [ref=e210]: 03 December 2025
+                      - img [ref=e213] [cursor=pointer]
+                  - generic [ref=e215]:
+                    - link [ref=e217] [cursor=pointer]:
+                      - /url: /articles/chinese-crafting-technique-recreated-using-substance-3d
+                    - list [ref=e222]:
+                      - listitem [ref=e223] [cursor=pointer]:
+                        - link "News" [ref=e224]:
+                          - /url: /articles/news
+                      - listitem [ref=e225] [cursor=pointer]:
+                        - link "Substance 3D Designer" [ref=e226]:
+                          - /url: /articles/substance-designer
+                      - listitem [ref=e227] [cursor=pointer]: "+1"
+                - article [ref=e229]:
+                  - generic [ref=e230]:
+                    - heading "Disney's Senior Animator Shows Behind-the-Scenes of Making Animation for Zootopia 2" [level=2] [ref=e231]:
+                      - link "Disney's Senior Animator Shows Behind-the-Scenes of Making Animation for Zootopia 2" [ref=e232] [cursor=pointer]:
+                        - /url: /articles/artist-shows-behind-the-scenes-of-making-animation-for-zootopia-2
+                    - generic [ref=e234]: See how a scene where Judy and Nick eat worms was made.
+                    - generic [ref=e235]:
+                      - link "Emma Collins 03 December 2025" [ref=e236] [cursor=pointer]:
+                        - /url: /author/emma-collins
+                        - paragraph [ref=e239]: Emma Collins
+                        - paragraph [ref=e240]: 03 December 2025
+                      - img [ref=e243] [cursor=pointer]
+                  - generic [ref=e245]:
+                    - link [ref=e247] [cursor=pointer]:
+                      - /url: /articles/artist-shows-behind-the-scenes-of-making-animation-for-zootopia-2
+                    - list [ref=e252]:
+                      - listitem [ref=e253] [cursor=pointer]:
+                        - link "News" [ref=e254]:
+                          - /url: /articles/news
+                      - listitem [ref=e255] [cursor=pointer]:
+                        - link "Animation" [ref=e256]:
+                          - /url: /articles/animation
+            - complementary [ref=e257]:
+              - generic [ref=e258]:
+                - link [ref=e259] [cursor=pointer]:
+                  - /url: https://www.world-creator.com
+                - generic [ref=e261] [cursor=pointer]: Sponsored Ad
+              - generic [ref=e262]:
+                - heading "Trending articles" [level=5] [ref=e264]
+                - list [ref=e267]:
+                  - listitem [ref=e268]:
+                    - link "1 Microsoft AI CEO Puzzled by People Being \"Unimpressed\" by AI" [ref=e269] [cursor=pointer]:
+                      - /url: /articles/microsoft-ai-ceo-puzzled-by-people-being-unimpressed-by-ai
+                      - generic [ref=e270]:
+                        - generic [ref=e271]: "1"
+                        - img [ref=e273]
+                      - text: Microsoft AI CEO Puzzled by People Being "Unimpressed" by AI
+                  - listitem [ref=e275]:
+                    - link "2 Half-Life 3 Hype Reaches Apotheosis Ahead of the Possible Announcement" [ref=e276] [cursor=pointer]:
+                      - /url: /articles/half-life-3-hype-reaches-apotheosis-ahead-of-the-possible-announcement
+                      - generic [ref=e277]:
+                        - generic [ref=e278]: "2"
+                        - img [ref=e280]
+                      - text: Half-Life 3 Hype Reaches Apotheosis Ahead of the Possible Announcement
+                  - listitem [ref=e282]:
+                    - link "3 Frostpunk-Style City-Building Survival Game Set In Flooded World" [ref=e283] [cursor=pointer]:
+                      - /url: /articles/frostpunk-style-city-building-survival-game-set-in-flooded-world
+                      - generic [ref=e284]:
+                        - generic [ref=e285]: "3"
+                        - img [ref=e287]
+                      - text: Frostpunk-Style City-Building Survival Game Set In Flooded World
+                  - listitem [ref=e289]:
+                    - link "4 Eurogamer's 2/5 Arc Raiders Review Splits the Gaming Community" [ref=e290] [cursor=pointer]:
+                      - /url: /articles/eurogamer-s-2-5-arc-raiders-review-splits-the-gaming-community
+                      - generic [ref=e291]:
+                        - generic [ref=e292]: "4"
+                        - img [ref=e294]
+                      - text: Eurogamer's 2/5 Arc Raiders Review Splits the Gaming Community
+                  - listitem [ref=e296]:
+                    - link "5 Half-Life 3 Hype Cools Down as Nothing Happens on November 18-19" [ref=e297] [cursor=pointer]:
+                      - /url: /articles/half-life-3-hype-cools-down-as-nothing-happens-on-november-18-19
+                      - generic [ref=e298]:
+                        - generic [ref=e299]: "5"
+                        - img [ref=e301]
+                      - text: Half-Life 3 Hype Cools Down as Nothing Happens on November 18-19
+                  - listitem [ref=e303]:
+                    - link "6 This Animated Project From India Involving Ex-Arcane Artists Looks Insane" [ref=e304] [cursor=pointer]:
+                      - /url: /articles/this-animated-project-from-india-involving-ex-arcane-artists-looks-insane
+                      - generic [ref=e305]:
+                        - generic [ref=e306]: "6"
+                        - img [ref=e308]
+                      - text: This Animated Project From India Involving Ex-Arcane Artists Looks Insane
+                - button "Subscribe to newsletter" [ref=e310] [cursor=pointer]:
+                  - generic [ref=e311]:
+                    - text: Subscribe to newsletter
+                    - img [ref=e312]
+          - generic [ref=e316]:
+            - generic [ref=e317]:
+              - generic [ref=e318]:
+                - heading "Join a growing portfolio platform" [level=2] [ref=e319]
+                - heading "80 Level Talent is a human-powered job-matching platform for you and your creative portfolio" [level=3] [ref=e320]
+              - link "Explore more talents" [ref=e321] [cursor=pointer]:
+                - /url: /talent/
+                - button "Explore more talents" [ref=e322]
+            - generic [ref=e325]:
+              - link "Dung Phan 3d character artist" [ref=e326] [cursor=pointer]:
+                - /url: /talent/p/dung-phan
+                - generic [ref=e329]:
+                  - generic [ref=e331]: Dung Phan
+                  - generic [ref=e332]: 3d character artist
+              - link "Konstantinos Nikolopoulos ArchViz Artist" [ref=e333] [cursor=pointer]:
+                - /url: /talent/p/konstantinos-nikolopoulos
+                - generic [ref=e336]:
+                  - generic [ref=e338]: Konstantinos Nikolopoulos
+                  - generic [ref=e339]: ArchViz Artist
+              - link "Guillem Tenza (GTZAStudio) Architect/Solodev" [ref=e340] [cursor=pointer]:
+                - /url: /talent/p/gtza-studio
+                - generic [ref=e343]:
+                  - generic [ref=e345]: Guillem Tenza (GTZAStudio)
+                  - generic [ref=e346]: Architect/Solodev
+              - link "Max Bainbridge Environment Artist" [ref=e347] [cursor=pointer]:
+                - /url: /talent/p/max-bainbridge
+                - generic [ref=e350]:
+                  - generic [ref=e352]: Max Bainbridge
+                  - generic [ref=e353]: Environment Artist
+              - link "Adriano Riascos 3d Hard Surface Artist" [ref=e354] [cursor=pointer]:
+                - /url: /talent/p/adriano-riascos
+                - generic [ref=e357]:
+                  - generic [ref=e359]: Adriano Riascos
+                  - generic [ref=e360]: 3d Hard Surface Artist
+              - link "jeong sungkeun 3D character artisit" [ref=e361] [cursor=pointer]:
+                - /url: /talent/p/jeong-sungkeun
+                - generic [ref=e364]:
+                  - generic [ref=e366]: jeong sungkeun
+                  - generic [ref=e367]: 3D character artisit
+              - link "Pablo Narro Environment | Prop | Cinematic Artist" [ref=e368] [cursor=pointer]:
+                - /url: /talent/p/pablo-narro
+                - generic [ref=e371]:
+                  - generic [ref=e373]: Pablo Narro
+                  - generic [ref=e374]: Environment | Prop | Cinematic Artist
+              - link "Aliaksandr Beliakouski 3D Artist" [ref=e375] [cursor=pointer]:
+                - /url: /talent/p/aliaksandr-beliakouski
+                - generic [ref=e378]:
+                  - generic [ref=e380]: Aliaksandr Beliakouski
+                  - generic [ref=e381]: 3D Artist
+          - generic [ref=e383]:
+            - generic [ref=e385]:
+              - heading "Latest articles" [level=5] [ref=e387]
+              - generic [ref=e389]:
+                - article [ref=e391]:
+                  - generic [ref=e392]:
+                    - heading "Bungie Has Compensated the Artist Whose Works They Stole for Marathon" [level=2] [ref=e393]:
+                      - link "Bungie Has Compensated the Artist Whose Works They Stole for Marathon" [ref=e394] [cursor=pointer]:
+                        - /url: /articles/bungie-has-compensated-the-artist-whose-works-they-stole-for-marathon
+                    - generic [ref=e396]: It probably won't save the game, but at least justice was served.
+                    - generic [ref=e397]:
+                      - link "Theodore McKenzie 03 December 2025" [ref=e398] [cursor=pointer]:
+                        - /url: /author/fedor-nikitin
+                        - paragraph [ref=e401]: Theodore McKenzie
+                        - paragraph [ref=e402]: 03 December 2025
+                      - img [ref=e405] [cursor=pointer]
+                  - generic [ref=e407]:
+                    - link [ref=e409] [cursor=pointer]:
+                      - /url: /articles/bungie-has-compensated-the-artist-whose-works-they-stole-for-marathon
+                    - list [ref=e414]:
+                      - listitem [ref=e415] [cursor=pointer]:
+                        - link "News" [ref=e416]:
+                          - /url: /articles/news
+                      - listitem [ref=e417] [cursor=pointer]:
+                        - link "Video Games" [ref=e418]:
+                          - /url: /articles/video-game
+                - article [ref=e420]:
+                  - generic [ref=e421]:
+                    - heading "OctaneStudio+ 2026 Launches with Greyscalegorilla Plus & Kitbash3D" [level=2] [ref=e422]:
+                      - link "OctaneStudio+ 2026 Launches with Greyscalegorilla Plus & Kitbash3D" [ref=e423] [cursor=pointer]:
+                        - /url: /articles/octanestudio-2026-launches-with-greyscalegorilla-plus-kitbash3d
+                    - generic [ref=e425]: OTOY is inviting artists to a closed beta of Octane 2027.
+                    - generic [ref=e426]:
+                      - link "Gloria Levine 02 December 2025" [ref=e427] [cursor=pointer]:
+                        - /url: /author/gloria-levine
+                        - paragraph [ref=e430]: Gloria Levine
+                        - paragraph [ref=e431]: 02 December 2025
+                      - img [ref=e434] [cursor=pointer]
+                  - generic [ref=e436]:
+                    - link [ref=e438] [cursor=pointer]:
+                      - /url: /articles/octanestudio-2026-launches-with-greyscalegorilla-plus-kitbash3d
+                    - list [ref=e443]:
+                      - listitem [ref=e444] [cursor=pointer]:
+                        - link "News" [ref=e445]:
+                          - /url: /articles/news
+                      - listitem [ref=e446] [cursor=pointer]:
+                        - link "Octane Render" [ref=e447]:
+                          - /url: /articles/octane-render
+                - article [ref=e449]:
+                  - generic [ref=e450]:
+                    - heading "Using ZBrush & Maya to Create a Humanoid Bat Character" [level=2] [ref=e451]:
+                      - link "Using ZBrush & Maya to Create a Humanoid Bat Character" [ref=e452] [cursor=pointer]:
+                        - /url: /articles/using-zbrush-maya-to-create-a-humanoid-bat-character
+                    - generic [ref=e454]: Daniil "Split" Voskressenski explained how he created the Agatha, the Bat Knight character, discussing the sculpting pipeline and showing how the clothes were made with DynaMesh and ZModeler.
+                    - generic [ref=e455]:
+                      - link "Daniil \"Split\" Voskressenski 02 December 2025" [ref=e456] [cursor=pointer]:
+                        - /url: /author/daniil-split-voskressenski
+                        - paragraph [ref=e459]: Daniil "Split" Voskressenski
+                        - paragraph [ref=e460]: 02 December 2025
+                      - img [ref=e463] [cursor=pointer]
+                  - generic [ref=e465]:
+                    - link [ref=e467] [cursor=pointer]:
+                      - /url: /articles/using-zbrush-maya-to-create-a-humanoid-bat-character
+                    - list [ref=e472]:
+                      - listitem [ref=e473] [cursor=pointer]:
+                        - link "Character Art" [ref=e474]:
+                          - /url: /articles/character-art
+                      - listitem [ref=e475] [cursor=pointer]:
+                        - link "Interviews" [ref=e476]:
+                          - /url: /articles/interview
+                      - listitem [ref=e477] [cursor=pointer]: "+4"
+            - complementary [ref=e478]:
+              - generic [ref=e479]:
+                - link [ref=e480] [cursor=pointer]:
+                  - /url: https://home.otoy.com/render/octane-render/purchase/
+                - generic [ref=e482] [cursor=pointer]: Sponsored Ad
+              - generic [ref=e483]:
+                - heading "Popular discussions" [level=5] [ref=e485]
+                - list [ref=e487]:
+                  - listitem [ref=e488]:
+                    - link "Microsoft AI CEO Puzzled by People Being \"Unimpressed\" by AI Should I really be impressed by the supersmart AI in Office365 that ev... 1 · Zsolnai Feri Zsolnai" [ref=e489] [cursor=pointer]:
+                      - /url: /articles/microsoft-ai-ceo-puzzled-by-people-being-unimpressed-by-ai
+                      - paragraph [ref=e490]: Microsoft AI CEO Puzzled by People Being "Unimpressed" by AI
+                      - generic [ref=e491]: Should I really be impressed by the supersmart AI in Office365 that ev...
+                      - generic [ref=e492]:
+                        - button "1" [ref=e493]:
+                          - img [ref=e494]
+                          - generic [ref=e496]: "1"
+                        - generic [ref=e497]: ·
+                        - paragraph [ref=e498]: Zsolnai Feri Zsolnai
+                  - listitem [ref=e499]:
+                    - link "Microsoft AI CEO Puzzled by People Being \"Unimpressed\" by AI Yes... Let's also note that the \"People\" are already wa... 2 · Anonymous user" [ref=e500] [cursor=pointer]:
+                      - /url: /articles/microsoft-ai-ceo-puzzled-by-people-being-unimpressed-by-ai
+                      - paragraph [ref=e501]: Microsoft AI CEO Puzzled by People Being "Unimpressed" by AI
+                      - generic [ref=e502]: Yes... Let's also note that the "People" are already wa...
+                      - generic [ref=e503]:
+                        - button "2" [ref=e504]:
+                          - img [ref=e505]
+                          - generic [ref=e507]: "2"
+                        - generic [ref=e508]: ·
+                        - paragraph [ref=e509]: Anonymous user
+                  - listitem [ref=e510]:
+                    - link "Microsoft AI CEO Puzzled by People Being \"Unimpressed\" by AI The whole reason I'm sticking to Windows 10 is to avoid all the A... 2 · Anonymous user" [ref=e511] [cursor=pointer]:
+                      - /url: /articles/microsoft-ai-ceo-puzzled-by-people-being-unimpressed-by-ai
+                      - paragraph [ref=e512]: Microsoft AI CEO Puzzled by People Being "Unimpressed" by AI
+                      - generic [ref=e513]: The whole reason I'm sticking to Windows 10 is to avoid all the A...
+                      - generic [ref=e514]:
+                        - button "2" [ref=e515]:
+                          - img [ref=e516]
+                          - generic [ref=e518]: "2"
+                        - generic [ref=e519]: ·
+                        - paragraph [ref=e520]: Anonymous user
+                  - listitem [ref=e521]:
+                    - link "Microsoft AI CEO Puzzled by People Being \"Unimpressed\" by AI Guy sounds like a complete loser. 2 · Anonymous user" [ref=e522] [cursor=pointer]:
+                      - /url: /articles/microsoft-ai-ceo-puzzled-by-people-being-unimpressed-by-ai
+                      - paragraph [ref=e523]: Microsoft AI CEO Puzzled by People Being "Unimpressed" by AI
+                      - generic [ref=e524]: Guy sounds like a complete loser.
+                      - generic [ref=e525]:
+                        - button "2" [ref=e526]:
+                          - img [ref=e527]
+                          - generic [ref=e529]: "2"
+                        - generic [ref=e530]: ·
+                        - paragraph [ref=e531]: Anonymous user
+                - generic [ref=e532]:
+                  - heading "Join discussion" [level=6] [ref=e533]
+                  - paragraph [ref=e534]: "Talk to thousands of game designers and find tips & answers to your most burning questions. Sign up or log in to continue:"
+                  - generic [ref=e536] [cursor=pointer]:
+                    - button "Sign up" [ref=e537]:
+                      - generic [ref=e538]: Sign up
+                    - button "Log in" [ref=e539]:
+                      - generic [ref=e540]: Log in
+                      - img [ref=e542]
+          - generic [ref=e545]:
+            - generic [ref=e547]:
+              - heading "Latest articles" [level=5] [ref=e549]
+              - generic [ref=e551]:
+                - article [ref=e553]:
+                  - generic [ref=e554]:
+                    - 'heading "Nodevember 2025: How to Create a Realistic 3D Ice Cube" [level=2] [ref=e555]':
+                      - 'link "Nodevember 2025: How to Create a Realistic 3D Ice Cube" [ref=e556] [cursor=pointer]':
+                        - /url: /articles/nodevember-2025-how-to-create-a-realistic-3d-ice-cube
+                    - generic [ref=e558]: Simon Telezhkin explained how he created an ice cube for the annual Nodevember challenge, showing how he set up the shape, the internal fog volume, the bubble scattering, and the droplets, and then shaded each part.
+                    - generic [ref=e559]:
+                      - link "Simon Telezhkin 02 December 2025" [ref=e560] [cursor=pointer]:
+                        - /url: /author/simon-telezhkin
+                        - paragraph [ref=e563]: Simon Telezhkin
+                        - paragraph [ref=e564]: 02 December 2025
+                      - img [ref=e567] [cursor=pointer]
+                  - generic [ref=e569]:
+                    - link [ref=e571] [cursor=pointer]:
+                      - /url: /articles/nodevember-2025-how-to-create-a-realistic-3d-ice-cube
+                    - list [ref=e576]:
+                      - listitem [ref=e577] [cursor=pointer]:
+                        - link "Interviews" [ref=e578]:
+                          - /url: /articles/interview
+                      - listitem [ref=e579] [cursor=pointer]:
+                        - link "Materials" [ref=e580]:
+                          - /url: /articles/materials
+                      - listitem [ref=e581] [cursor=pointer]:
+                        - link "Blender" [ref=e582]:
+                          - /url: /articles/blender
+                      - listitem [ref=e583] [cursor=pointer]:
+                        - link "Houdini" [ref=e584]:
+                          - /url: /articles/houdini
+                - article [ref=e586]:
+                  - generic [ref=e587]:
+                    - 'heading "The Game Industry’s Annual Pulse Check: The State of the Game Industry 2026 Survey Is Now Open" [level=2] [ref=e588]':
+                      - 'link "The Game Industry’s Annual Pulse Check: The State of the Game Industry 2026 Survey Is Now Open" [ref=e589] [cursor=pointer]':
+                        - /url: /articles/the-game-industry-s-annual-pulse-check-the-state-of-the-game-industry-2026-survey-is-now-open
+                    - generic [ref=e591]: The State of the Game Industry 2026 survey, conducted by the GDC Festival of Gaming, has officially launched. This annual research initiative is one of the most trusted snapshots of the global games industry, providing a detailed look at trends, challenges, and opportunities shaping the year ahead.
+                    - generic [ref=e592]:
+                      - link "80 Level Editorial Team 02 December 2025" [ref=e593] [cursor=pointer]:
+                        - /url: /author/80-level-editorial-team
+                        - paragraph [ref=e596]: 80 Level Editorial Team
+                        - paragraph [ref=e597]: 02 December 2025
+                      - img [ref=e600] [cursor=pointer]
+                  - generic [ref=e602]:
+                    - link [ref=e604] [cursor=pointer]:
+                      - /url: /articles/the-game-industry-s-annual-pulse-check-the-state-of-the-game-industry-2026-survey-is-now-open
+                    - list [ref=e609]:
+                      - listitem [ref=e610] [cursor=pointer]:
+                        - link "News" [ref=e611]:
+                          - /url: /articles/news
+                - article [ref=e613]:
+                  - generic [ref=e614]:
+                    - heading "ZBrush's Morph UV Feature Recreated In Maya" [level=2] [ref=e615]:
+                      - link "ZBrush's Morph UV Feature Recreated In Maya" [ref=e616] [cursor=pointer]:
+                        - /url: /articles/zbrush-s-morph-uv-feature-recreated-in-maya
+                    - generic [ref=e618]: "\"Looks like footage from the dawn of 3D.\""
+                    - generic [ref=e619]:
+                      - link "Amber Rutherford 02 December 2025" [ref=e620] [cursor=pointer]:
+                        - /url: /author/amber-rutherford
+                        - paragraph [ref=e623]: Amber Rutherford
+                        - paragraph [ref=e624]: 02 December 2025
+                      - img [ref=e627] [cursor=pointer]
+                  - generic [ref=e629]:
+                    - link [ref=e631] [cursor=pointer]:
+                      - /url: /articles/zbrush-s-morph-uv-feature-recreated-in-maya
+                    - list [ref=e636]:
+                      - listitem [ref=e637] [cursor=pointer]:
+                        - link "News" [ref=e638]:
+                          - /url: /articles/news
+                      - listitem [ref=e639] [cursor=pointer]:
+                        - link "Marketplace" [ref=e640]:
+                          - /url: /articles/marketplace
+                      - listitem [ref=e641] [cursor=pointer]:
+                        - link "Maya" [ref=e642]:
+                          - /url: /articles/maya
+                      - listitem [ref=e643] [cursor=pointer]:
+                        - link "ZBrush" [ref=e644]:
+                          - /url: /articles/zbrush
+                - article [ref=e646]:
+                  - generic [ref=e647]:
+                    - heading "CodeMiko Brings Real Chair into Her Virtual World with New Motion Capture" [level=2] [ref=e648]:
+                      - link "CodeMiko Brings Real Chair into Her Virtual World with New Motion Capture" [ref=e649] [cursor=pointer]:
+                        - /url: /articles/codemiko-brings-real-chair-into-her-virtual-world-with-new-motion-capture
+                    - generic [ref=e651]: This prop test means she can "teleport" any object.
+                    - generic [ref=e652]:
+                      - link "Gloria Levine 02 December 2025" [ref=e653] [cursor=pointer]:
+                        - /url: /author/gloria-levine
+                        - paragraph [ref=e656]: Gloria Levine
+                        - paragraph [ref=e657]: 02 December 2025
+                      - img [ref=e660] [cursor=pointer]
+                  - generic [ref=e662]:
+                    - link [ref=e664] [cursor=pointer]:
+                      - /url: /articles/codemiko-brings-real-chair-into-her-virtual-world-with-new-motion-capture
+                    - list [ref=e669]:
+                      - listitem [ref=e670] [cursor=pointer]:
+                        - link "News" [ref=e671]:
+                          - /url: /articles/news
+                      - listitem [ref=e672] [cursor=pointer]:
+                        - link "Unreal Engine" [ref=e673]:
+                          - /url: /articles/unreal-engine
+                      - listitem [ref=e674] [cursor=pointer]:
+                        - link "VR" [ref=e675]:
+                          - /url: /articles/vr
+              - list [ref=e676]:
+                - listitem [ref=e677]:
+                  - button [disabled] [ref=e678] [cursor=pointer]:
+                    - img [ref=e680]
+                - listitem [ref=e682]:
+                  - link "1":
+                    - /url: /
+                - listitem [ref=e683]:
+                  - link "2" [ref=e684] [cursor=pointer]:
+                    - /url: /
+                - listitem [ref=e685]:
+                  - link "3" [ref=e686] [cursor=pointer]:
+                    - /url: /
+                - listitem [ref=e687]:
+                  - link "4" [ref=e688] [cursor=pointer]:
+                    - /url: /
+                - listitem [ref=e689]:
+                  - link "5" [ref=e690] [cursor=pointer]:
+                    - /url: /
+                - listitem [ref=e691]:
+                  - link [ref=e692] [cursor=pointer]:
+                    - /url: /
+                    - img [ref=e694]
+            - complementary [ref=e696]:
+              - generic [ref=e697]:
+                - generic [ref=e698]:
+                  - heading "Partners" [level=5] [ref=e700]
+                  - generic [ref=e710]:
+                    - generic [ref=e711]:
+                      - figure [ref=e712]:
+                        - link [ref=e713] [cursor=pointer]:
+                          - /url: /partners/vertex-school
+                      - paragraph [ref=e719]: Vertex School is a leader in online Game Design classes that offers intensive Bootcamps based on the ever-changing needs of the gaming industry.
+                    - generic [ref=e720]:
+                      - figure [ref=e721]:
+                        - link [ref=e722] [cursor=pointer]:
+                          - /url: /partners/unreal-engine
+                      - paragraph [ref=e726]: The world's most open and advanced real-time 3D creation tool for photoreal visuals and immersive experiences.
+                    - generic [ref=e727]:
+                      - figure [ref=e728]:
+                        - link [ref=e729] [cursor=pointer]:
+                          - /url: /partners/umodeler
+                      - paragraph [ref=e733]: UModeler is a Unity3D editor extension to empower you to design your level and mesh without leaving Unity.
+                    - generic [ref=e734]:
+                      - figure [ref=e735]:
+                        - link [ref=e736] [cursor=pointer]:
+                          - /url: /partners/reallusion
+                      - paragraph [ref=e740]: Reallusion software is a platform for digital human character creativity and animation. Emphasizing character scalability for creative and industry projects, Reallusion real-time characters are populating across Media and Entertainment, Metaverse, Digital Twin factories, Architectural visualizations, and AI Simulations.
+                    - generic [ref=e741]:
+                      - figure [ref=e742]:
+                        - link [ref=e743] [cursor=pointer]:
+                          - /url: /partners/adobe-substance-3d
+                      - paragraph [ref=e747]: Adobe Substance 3D brings you an ecosystem of apps and content that empower you to design 3D.
+                    - generic [ref=e748]:
+                      - figure [ref=e749]:
+                        - link [ref=e750] [cursor=pointer]:
+                          - /url: /partners/houdini
+                      - generic [ref=e753]: "Houdini combines superior performance and dramatic, ease-of-use to deliver a powerful and accessible 3D animation experience to CG artists creating feature films, commercials or video games. With its procedural node-based workflow, Houdini lets \x03you create more content faster to reduce timelines and enjoy enhanced flexibility in all your creative tasks. Houdini is ideal for modelers, lighters, character riggers and animators to use on its own or as a layout and lighting tool for visual effects created in Houdini FX."
+                    - generic [ref=e754]:
+                      - figure [ref=e755]:
+                        - link [ref=e756] [cursor=pointer]:
+                          - /url: /partners/nvidia
+                      - paragraph [ref=e760]: NVIDIA is a full-stack computing company with data-center-scale offerings that are reshaping industry.
+                    - generic [ref=e761]:
+                      - figure [ref=e762]:
+                        - link [ref=e763] [cursor=pointer]:
+                          - /url: /partners/vertex-school
+                      - paragraph [ref=e769]: Vertex School is a leader in online Game Design classes that offers intensive Bootcamps based on the ever-changing needs of the gaming industry.
+                    - generic [ref=e770]:
+                      - figure [ref=e771]:
+                        - link [ref=e772] [cursor=pointer]:
+                          - /url: /partners/unreal-engine
+                      - paragraph [ref=e776]: The world's most open and advanced real-time 3D creation tool for photoreal visuals and immersive experiences.
+                - link "Explore Partners" [ref=e777] [cursor=pointer]:
+                  - /url: /partners
+                  - generic [ref=e778]: Explore Partners
+                  - img [ref=e780]
+        - generic [ref=e783]:
+          - heading "Our partners" [level=3] [ref=e785]
+          - generic [ref=e786]:
+            - list [ref=e787]:
+              - listitem [ref=e788]:
+                - link "Autotroph" [ref=e789] [cursor=pointer]:
+                  - /url: /partners/autotroph
+              - listitem [ref=e791]:
+                - link "World Creator" [ref=e792] [cursor=pointer]:
+                  - /url: /partners/world-creator
+              - listitem [ref=e794]:
+                - link "Latent Technology" [ref=e795] [cursor=pointer]:
+                  - /url: /partners/latent-technology
+              - listitem [ref=e797]:
+                - link "CG Boost" [ref=e798] [cursor=pointer]:
+                  - /url: /partners/cg-boost
+            - generic [ref=e800]:
+              - link "More partners" [ref=e801] [cursor=pointer]:
+                - /url: /partners
+                - generic [ref=e802]: More partners
+                - img [ref=e804]
+              - link "Become a partner" [ref=e806] [cursor=pointer]:
+                - /url: mailto:contact@80.lv
+                - generic [ref=e807]: Become a partner
+    - generic [ref=e808]:
+      - generic [ref=e809]:
+        - link [ref=e811] [cursor=pointer]:
+          - /url: https://80lv.gumroad.com/l/3d-creature-production-and-animation?utm_source=website_80lv&utm_medium=image-banner&utm_campaign=80levelcourses2
+        - link [ref=e814] [cursor=pointer]:
+          - /url: https://80.lv/talent/?utm_source=website_80lv&utm_medium=image-banner&utm_campaign=january2025
+      - contentinfo [ref=e816]:
+        - generic [ref=e817]:
+          - heading "Subscribe" [level=2] [ref=e818]
+          - paragraph [ref=e819]: Start receiving our weekly newsletter
+          - generic [ref=e820]:
+            - textbox [ref=e823]:
+              - /placeholder: Email address
+            - button "Subscribe" [ref=e824] [cursor=pointer]:
+              - generic [ref=e825]: Subscribe
+          - list [ref=e826]:
+            - listitem [ref=e827]:
+              - paragraph [ref=e828]: Facebook
+              - link "@LevelEighty" [ref=e829] [cursor=pointer]:
+                - /url: https://www.facebook.com/LevelEighty
+            - listitem [ref=e830]:
+              - paragraph [ref=e831]: Twitter
+              - link "@80Level" [ref=e832] [cursor=pointer]:
+                - /url: https://twitter.com/80Level
+            - listitem [ref=e833]:
+              - paragraph [ref=e834]: YouTube
+              - link "@80lv" [ref=e835] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UCI8IFlI7_0xU9Dc60xoZuiA
+            - listitem [ref=e836]:
+              - paragraph [ref=e837]: Instagram
+              - link "@eighty_level" [ref=e838] [cursor=pointer]:
+                - /url: https://www.instagram.com/eighty_level/
+            - listitem [ref=e839]:
+              - paragraph [ref=e840]: Podcasts
+              - link "Round Table" [ref=e841] [cursor=pointer]:
+                - /url: https://80levelroundtable.buzzsprout.com/
+          - generic [ref=e842]:
+            - paragraph [ref=e843]: © 2025. 80 level. All rights reserved
+            - list [ref=e844]:
+              - generic [ref=e845]:
+                - listitem [ref=e846]:
+                  - link "About & Contact us" [ref=e847] [cursor=pointer]:
+                    - /url: /contact-us
+                - listitem [ref=e848]:
+                  - link "Privacy Policy" [ref=e849] [cursor=pointer]:
+                    - /url: /privacy-policy
+              - generic [ref=e850]:
+                - listitem [ref=e851]:
+                  - link "Republishing policy" [ref=e852] [cursor=pointer]:
+                    - /url: /republishing-policy
+                - listitem [ref=e853]:
+                  - link "Terms of use" [ref=e854] [cursor=pointer]:
+                    - /url: /terms-of-use
+              - listitem [ref=e856]:
+                - link "Disclaimer" [ref=e857] [cursor=pointer]:
+                  - /url: /disclaimer
+  - iframe [active] [ref=e865]:
+    - generic [ref=f1e6]:
+      - generic [ref=f1e8]:
+        - generic [ref=f1e9] [cursor=pointer]: Log in
+        - generic [ref=f1e10] [cursor=pointer]: Sign up
+      - generic [ref=f1e11]:
+        - button "Xsolla Cat with orb Log in with Xsolla" [ref=f1e12]:
+          - generic [ref=f1e13]:
+            - img "Xsolla Cat with orb" [ref=f1e16]
+            - paragraph [ref=f1e17]: Log in with Xsolla
+        - button "Login with Facebook" [ref=f1e18] [cursor=pointer]:
+          - generic [ref=f1e20]:
+            - img [ref=f1e23]
+            - text: Login with Facebook
+      - generic [ref=f1e25]:
+        - generic [ref=f1e27]:
+          - generic [ref=f1e28]: Email
+          - textbox [active] [ref=f1e32]
+        - generic [ref=f1e35]:
+          - generic [ref=f1e36]: Password
+          - generic [ref=f1e38]:
+            - textbox "Password" [ref=f1e39]
+            - button [ref=f1e41] [cursor=pointer]:
+              - img [ref=f1e43]
+        - button "Log in" [disabled]:
+          - generic: Log in
+        - contentinfo [ref=f1e46]:
+          - link "Forgot your password?" [ref=f1e48] [cursor=pointer]:
+            - /url: "/latest/password/reset?projectId=8b83af12-0974-11e7-93ae-92361f002671&locale=en_US&callbackUrl=https://80.lv/api/user/auth&payload={%22registration_source%22:%2280lv%22,%22redirectUrl%22:%22https%3A%2F%2F80.lv%2F%22}"
+      - generic [ref=f1e49]:
+        - generic [ref=f1e50]:
+          - generic [ref=f1e51]: or
+          - separator [ref=f1e52]
+        - generic [ref=f1e54]:
+          - button [ref=f1e55] [cursor=pointer]:
+            - img [ref=f1e58]
+          - button [ref=f1e64] [cursor=pointer]:
+            - img [ref=f1e67]
+          - button [ref=f1e69] [cursor=pointer]:
+            - img [ref=f1e72]
+```

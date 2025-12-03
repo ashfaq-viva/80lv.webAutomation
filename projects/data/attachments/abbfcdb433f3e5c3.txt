@@ -1,0 +1,16 @@
+✅ Clicked [Accept Cookies @ Laptop] → "Accept Cookies"
+🌐 Captured API → GET https://80.lv/api/jobs?sort=new&page=1 | Status: 200
+🌐 Captured API → GET https://80.lv/api/jobs?sort=new&page=1 | Status: 200
+✅ Clicked Accept Cookies button.
+✅ Extracted and saved data to: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/json/allArticles/allArticlesRedirectedArticle/card1TC_60_Laptop_2025-12-03T07-45-01-549Z.json
+✅ Clicked [Article card 1 Image @ Laptop] → "Article card 1 Image"
+🌐 Captured API → GET https://80.lv/api/articles/list?id=38013&offset=0&total=12&headers=%7B%7D | Status: 200
+🌐 Captured Article Redirection URL: https://80.lv/articles/saudi-arabia-s-fund-will-hold-more-than-93-of-ea-after-deal-completion
+📁 File created: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/allArticles/articleCardRedirection/card1UrlLaptop_2025-12-03T07-45-04-820Z.txt
+✅ Extracted and saved data to: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/json/allArticles/articlePage/TitleH1_Laptop_2025-12-03T07-45-05-511Z.json
+
+🔹 Comparing JSON file: card1TC_60_Desktop_2025-12-03T07-45-00-278Z.json to TitleH1_Desktop_2025-12-03T07-45-03-602Z.json
+Comparing value: h1: "Saudi Arabia's Fund Will Hold More Than 93% of EA After Deal Completion" → h1: "Saudi Arabia's Fund Will Hold More Than 93% of EA After Deal Completion"
+✅ MATCH OK
+
+🎉 All JSON comparisons completed with no mismatches!

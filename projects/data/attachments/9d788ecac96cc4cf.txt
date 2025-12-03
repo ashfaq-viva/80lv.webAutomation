@@ -1,0 +1,15 @@
+✅ Clicked [Accept Cookies @ Desktop] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+⏭️ No Accept Cookies button found, skipping.
+Generated Signup Email: ashfaq.ahmed+4697@vivasoftltd.com
+📁 File created: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/signupEmails/signup_emailDesktop_2025-12-03T07-38-04-676Z.txt
+✅ Email saved to: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/signupEmails/signup_emailDesktop_2025-12-03T07-38-04-676Z.txt
+✅ Clicked [Login Button @ Desktop] → "profile_login"
+✅ Filled [Email @ Desktop] → "email" with: "ashfaq.ahmed+4697@vivasoftltd.com"
+✅ Filled [Password @ Desktop] → "password" with: "Aa@1234"
+✅ Clicked [Create Account Button @ Desktop] → "CREATE ACCOUNT"
+Using App Password method to fetch email
+📧 Email Subject: You have 8 notifications about Mukti and others
+🔘 Button Name: 
+🔗 Confirmation Link: https://www.facebook.com/nd/?100050151726741&aref=1764746599960186&medium=email&mid=64506cc9f8ba8G5afebdc0de95G6450716358e7aG32b&bcode=2.1764746603.Ab1sosT2AtAnDbeiQmeDfjgsDAE&n_m=ashfaqahmed3339%40gmail.com&n_sg=Q6bPBAKaONEJR9B9EYXSZ-enVX6qfpAEFmLkC2-CtT8cX4VMog&lloc=logo&rms=v2&irms=1
+✅ Clicked [Logged-in Profile Icon (Step 1) @ Desktop]

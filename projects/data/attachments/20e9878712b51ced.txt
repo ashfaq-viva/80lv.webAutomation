@@ -1,0 +1,17 @@
+✅ Clicked [Accept Cookies @ Laptop] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Assert: element is visible [Pagination1 Button @ Laptop]
+ℹ️ No CSS assert for [Pagination1 Button] at viewport Laptop
+Pagination is present
+✅ Clicked [Future Events Pagination 2 @ Laptop] → "2"
+🌐 Captured API → GET https://80.lv/api/events/future?offset=4&total=12 | Status: 200
+✅ Assert: element is visible [Pagination 2 Button @ Laptop]
+ℹ️ No CSS assert for [Pagination 2 Button] at viewport Laptop
+✅ Assert: element is visible [Pagination Left Arrow Button @ Laptop]
+✅ Clicked [Future Events Pagination Left Arrow @ Laptop] → "Future Events Pagination Left Arrow"
+✅ Assert: element is visible [Pagination1 Button @ Laptop]
+ℹ️ No CSS assert for [Pagination1 Button] at viewport Laptop
+✅ Clicked [Future Events Pagination Right Arrow @ Laptop] → "Future Events Pagination Right Arrow"
+🌐 Captured API → GET https://80.lv/api/events/future?offset=4&total=12 | Status: 200
+✅ Assert: element is visible [Pagination 2 Button @ Laptop]
+ℹ️ No CSS assert for [Pagination 2 Button] at viewport Laptop

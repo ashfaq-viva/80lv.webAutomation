@@ -1,0 +1,3 @@
+✅ Clicked [Accept Cookies @ Desktop] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Clicked [Login Button @ Desktop] → "profile_login"
