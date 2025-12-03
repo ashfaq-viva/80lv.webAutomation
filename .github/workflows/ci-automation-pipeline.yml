@@ -463,7 +463,10 @@ jobs:
       - name: Generate Allure Report
         run: |
           allure generate allure-results --clean -o allure-report
-
+      - name: Prepare Allure report for Pages
+        run: |
+          mkdir -p allure-report/projects/${{ env.REPORT_ID }}
+          cp -r allure-report/* allure-report/projects/${{ env.REPORT_ID }}/
       - name: Setup Pages
         if: always()
         uses: actions/configure-pages@v5
