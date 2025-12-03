@@ -1,0 +1,6 @@
+✅ Clicked [Accept Cookies @ Tablet] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Clicked [Big Image Banner @ Tablet] → "Big Image Banner"
+🌐 Captured Banner Redirection URL: https://www.rebelway.net/learn
+📁 File created: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/events/eventsBigImageBanner/BigImageBannnerTablet_2025-12-03T07-59-02-485Z.txt
+🗂️ Banner redirection URL saved at: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/events/eventsBigImageBanner/BigImageBannnerTablet_2025-12-03T07-59-02-485Z.txt

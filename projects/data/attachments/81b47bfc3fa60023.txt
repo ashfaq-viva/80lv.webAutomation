@@ -1,0 +1,7 @@
+✅ Clicked [Accept Cookies @ Tablet] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Clicked [Pagination Right Arrow Button @ Tablet] → "Pagination Right Arrow Button"
+🌐 Captured API → GET https://80.lv/api/articles/list?category=&page=2&total=10&sort=new | Status: 200
+✅ Assert: element is visible [Pagination Left Arrow Button @ Tablet]
+✅ Assert: element is visible [Pagination 2 Button  @ Tablet]
+ℹ️ No CSS assert for [Pagination 2 Button ] at viewport Tablet

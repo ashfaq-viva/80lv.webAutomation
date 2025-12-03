@@ -1,0 +1,10 @@
+✅ Clicked [Accept Cookies @ Laptop] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Pagination Left Arrow Button is NOT visible as expected.
+✅ Clicked [Pagination 2 Button @ Laptop] → "2"
+🌐 Captured API → GET https://80.lv/api/articles/list?category=&page=2&total=10&sort=new | Status: 200
+✅ Assert: element is visible [Pagination Left Arrow Button @ Laptop]
+✅ Assert: element is visible [Pagination 2 Button  @ Laptop]
+ℹ️ No CSS assert for [Pagination 2 Button ] at viewport Laptop
+✅ Clicked [Pagination Left Arrow Button @ Laptop] → "Pagination Left Arrow Button"
+✅ Pagination Left Arrow Button is NOT visible as expected.

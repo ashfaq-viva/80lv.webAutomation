@@ -1,0 +1,5 @@
+✅ Clicked [Accept Cookies @ Mobile] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Filled [Invalid Email Address @ Mobile] → "email" with: "invalidEmail.com"
+✅ Clicked [Newsletter Submit Button @ Mobile] → "Newsletter Submit Button"
+✅ Assert: element is visible [Newsletter Error Text @ Mobile]

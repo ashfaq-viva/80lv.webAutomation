@@ -1,0 +1,10 @@
+✅ Clicked [Accept Cookies @ Desktop] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Clicked [Right side Promo Image Banner 1 @ Desktop] → "Right side Promo Image Banner 1"
+🌐 Captured Right side Promo Image Banner 1 Redirection URL: https://80level.typeform.com/monetize-games?utm_source=80lv_website&utm_medium=image-banner&typeform-source=80.lv
+📁 File created: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/allArticles/allArticlesRightSidePromImageBanner/PromoImageBanner1Desktop_2025-12-03T07-58-40-443Z.txt
+🗂️ Right side Promo Image Banner 1 redirection URL saved at: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/allArticles/allArticlesRightSidePromImageBanner/PromoImageBanner1Desktop_2025-12-03T07-58-40-443Z.txt
+✅ Clicked [Right side Promo Image Banner 2 @ Desktop] → "Right side Promo Image Banner 2"
+🌐 Captured Right side Promo Image Banner 2 Redirection URL: https://80lv.gumroad.com/l/intro-to-geometry-nodes?utm_source=website_80lv&utm_medium=image-banner&utm_campaign=80levelcourses3
+📁 File created: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/allArticles/allArticlesRightSidePromImageBanner/PromoImageBanner2Desktop_2025-12-03T07-58-43-183Z.txt
+🗂️ Right side Promo Image Banner 2 redirection URL saved at: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/allArticles/allArticlesRightSidePromImageBanner/PromoImageBanner2Desktop_2025-12-03T07-58-43-183Z.txt

@@ -1,0 +1,8 @@
+✅ Clicked [Accept Cookies @ Laptop] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Clicked [Explore Partners Button @ Laptop] → "Explore Partners"
+🌐 Captured API → GET https://80.lv/api/partners?title=&sort=sort&tag=&offset=0 | Status: 200
+🌐 Captured API → GET https://80.lv/api/partners?title=&sort=sort&tag=&offset=0 | Status: 200
+🔹 Expected URL: https://80.lv/partners
+🔹 Actual URL:   https://80.lv/partners
+✅ Assert: page URL is "https://80.lv/partners" (Partners Page)

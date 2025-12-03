@@ -1,0 +1,15 @@
+✅ Clicked [Accept Cookies @ Desktop] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+⏭️ No Accept Cookies button found, skipping.
+Generated Signup Email: ashfaq.ahmed+8596@vivasoftltd.com
+📁 File created: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/signupEmails/signup_emailDesktop_2025-12-03T07-57-34-303Z.txt
+✅ Email saved to: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/signupEmails/signup_emailDesktop_2025-12-03T07-57-34-303Z.txt
+✅ Clicked [Login Button @ Desktop] → "profile_login"
+✅ Filled [Email @ Desktop] → "email" with: "ashfaq.ahmed+8596@vivasoftltd.com"
+✅ Filled [Password @ Desktop] → "password" with: "Aa@1234"
+✅ Clicked [Create Account Button @ Desktop] → "CREATE ACCOUNT"
+🌐 Captured API → POST https://login.xsolla.com/api/user?projectId=8b83af12-0974-11e7-93ae-92361f002671&locale=en_US&login_url=https:%2F%2F80.lv%2Fapi%2Fuser%2Fauth&payload=%7B%22registration_source%22:%2280lv%22,%22redirectUrl%22:%22https:%2F%2F80.lv%2F%22%7D | Status: 204
+Using App Password method to fetch email
+📧 Email Subject: Did you just log in near Skipwith on a new device?
+🔘 Button Name: 
+🔗 Confirmation Link: https://www.facebook.com/profile.php?id=100050151726741
