@@ -1,0 +1,83 @@
+✅ Clicked [Accept Cookies @ Mobile] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Assert: element is visible [All Events Tab @ Mobile]
+ℹ️ No CSS assert for [All Events Tab] at viewport Mobile
+✅ Clicked [Offline Events Tab (Step 1) @ Mobile] → "Offline Events Tab (Step 1)"
+✅ Clicked [Offline Events Tab (Step 2) @ Mobile] → "Offline events"
+🌐 Captured API → GET https://80.lv/api/events?total=10&title=&page=1&sort=sort&online=0 | Status: 200
+✅ Assert: element is visible [Offline Events Tab @ Mobile]
+ℹ️ No CSS assert for [Offline Events Tab] at viewport Mobile
+Pagination not present, only one page of events.
+Total event cards present: 4
+✅ Clicked [Event card 1 Expanded @ Mobile] → "SIGGRAPH Asia 2025
+
+The 18th ACM SIGGRAPH Asia Conference on Computer Graphics and Interactive Techniques
+
+15–18 Dec. 2025
+
+Hong Kong"
+✅ Clicked [Official website redirection @ Mobile] → "asia.siggraph.org"
+🌐 Captured official website Redirection URL: https://asia.siggraph.org/2025/
+📁 File created: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/events/offlineEventsOfficialWebsiteredirection/card1officialWebsiteUrlMobile_2025-12-03T08-43-32-458Z.txt
+✅ Clicked [Event card 1 Collapsed @ Mobile] → "SIGGRAPH Asia 2025
+
+The 18th ACM SIGGRAPH Asia Conference on Computer Graphics and Interactive Techniques
+
+15–18 Dec. 2025
+
+Hong Kong"
+--------------------------------------------------
+✅ Clicked [Event card 2 Expanded @ Mobile] → "Taipei Game Show 2026
+
+Taipei Game Show is now back for the 2026 edition!
+
+29–30 Jan. 2026
+
+Taiwan"
+✅ Clicked [Official website redirection @ Mobile] → "tgs.tca.org.tw"
+🌐 Captured official website Redirection URL: https://tgs.tca.org.tw/index_e.php
+📁 File created: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/events/offlineEventsOfficialWebsiteredirection/card2officialWebsiteUrlMobile_2025-12-03T08-43-42-602Z.txt
+✅ Clicked [Event card 2 Collapsed @ Mobile] → "Taipei Game Show 2026
+
+Taipei Game Show is now back for the 2026 edition!
+
+29–30 Jan. 2026
+
+Taiwan"
+--------------------------------------------------
+✅ Clicked [Event card 3 Expanded @ Mobile] → "devcom leadership summit 2026
+
+Shape the Future of Gaming at the devcom leadership summit 2026
+
+25–27 Feb. 2026
+
+Portugal"
+✅ Clicked [Official website redirection @ Mobile] → "www.devcom.global"
+🌐 Captured official website Redirection URL: https://dev.gamescom.global/
+📁 File created: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/events/offlineEventsOfficialWebsiteredirection/card3officialWebsiteUrlMobile_2025-12-03T08-43-53-449Z.txt
+✅ Clicked [Event card 3 Collapsed @ Mobile] → "devcom leadership summit 2026
+
+Shape the Future of Gaming at the devcom leadership summit 2026
+
+25–27 Feb. 2026
+
+Portugal"
+--------------------------------------------------
+✅ Clicked [Event card 4 Expanded @ Mobile] → "GDC 2026
+
+The GDC Festival of Gaming is where the entire B2B games industry comes together.
+
+9–13 Mar. 2026
+
+USA"
+✅ Clicked [Official website redirection @ Mobile] → "gdconf.com"
+🌐 Captured official website Redirection URL: https://gdconf.com/
+📁 File created: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/events/offlineEventsOfficialWebsiteredirection/card4officialWebsiteUrlMobile_2025-12-03T08-44-10-868Z.txt
+✅ Clicked [Event card 4 Collapsed @ Mobile] → "GDC 2026
+
+The GDC Festival of Gaming is where the entire B2B games industry comes together.
+
+9–13 Mar. 2026
+
+USA"
+--------------------------------------------------

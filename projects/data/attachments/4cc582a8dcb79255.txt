@@ -1,0 +1,14 @@
+✅ Clicked [Accept Cookies @ Laptop] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Extracted and saved data to: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/json/allArticles/allArticlesRedirectedArticle/card1TC_60_Laptop_2025-12-03T08-49-08-796Z.json
+✅ Clicked [Article card 1 Image @ Laptop] → "Article card 1 Image"
+🌐 Captured API → GET https://80.lv/api/articles/list?id=38014&offset=0&total=12&headers=%7B%7D | Status: 200
+🌐 Captured Article Redirection URL: https://80.lv/articles/realityscan-mobile-1-8-1-now-available
+📁 File created: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/allArticles/articleCardRedirection/card1UrlLaptop_2025-12-03T08-49-11-815Z.txt
+✅ Extracted and saved data to: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/json/allArticles/articlePage/TitleH1_Laptop_2025-12-03T08-49-12-278Z.json
+
+🔹 Comparing JSON file: card1TC_60_Laptop_2025-12-03T08-49-08-796Z.json to TitleH1_Laptop_2025-12-03T08-49-12-278Z.json
+Comparing value: h1: "RealityScan Mobile 1.8.1 Now Available" → h1: "RealityScan Mobile 1.8.1 Now Available"
+✅ MATCH OK
+
+🎉 All JSON comparisons completed with no mismatches!

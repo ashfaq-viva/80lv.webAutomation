@@ -1,0 +1,12 @@
+✅ Clicked [Accept Cookies @ Mobile] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Assert: element is visible [All Events Tab @ Mobile]
+ℹ️ No CSS assert for [All Events Tab] at viewport Mobile
+✅ Filled [Search Field @ Mobile] → "search" with: "asdfghjkl"
+🌐 API Captured: GET https://80.lv/api/events?total=10&title=asdfghjkl&page=1&sort=sort&online= | Status: 200
+🗂️ API responses saved at: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/apiResponses/events/GETAllEventsSearchInvalid.json
+✅ Key pressed: [Enter @ Mobile]
+⚠️ Response at path "events.items.title" is empty. Skipping verification.
+✅ Clicked [Search Cross Icon @ Mobile] → "Search Cross Icon"
+🌐 Captured API → GET https://80.lv/api/events?total=10&title=&page=1&sort=sort&online= | Status: 200
+✅ Assert: element is visible [Search Field after clearing @ Mobile]

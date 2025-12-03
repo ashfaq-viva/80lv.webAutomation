@@ -1,0 +1,5 @@
+✅ Clicked [Accept Cookies @ Tablet] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Filled [element @ Tablet] → "email" with: "invalidEmail.com"
+✅ Clicked [Subscribe Button @ Tablet] → "Subscribe"
+✅ Assert: element is visible [Subscribe error message @ Tablet]
