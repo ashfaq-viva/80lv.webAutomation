@@ -1,0 +1,15 @@
+✅ Clicked [Accept Cookies @ Mobile] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+⏭️ No Accept Cookies button found, skipping.
+Generated Signup Email: ashfaq.ahmed+8666@vivasoftltd.com
+📁 File created: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/signupEmails/signup_emailMobile_2025-12-03T06-11-09-333Z.txt
+✅ Email saved to: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/signupEmails/signup_emailMobile_2025-12-03T06-11-09-333Z.txt
+✅ Clicked [Login Button (Step 1) @ Mobile] → "Login Button (Step 1)"
+✅ Clicked [Login Button (Step 2) @ Mobile] → "profile-login"
+✅ Filled [Email @ Mobile] → "email" with: "ashfaq.ahmed+8666@vivasoftltd.com"
+✅ Filled [Password @ Mobile] → "password" with: "Aa@1234"
+✅ Clicked [Create Account Button @ Mobile] → "CREATE ACCOUNT"
+Using App Password method to fetch email
+📧 Email Subject: 💡 Inside India’s startup patents graveyard
+🔘 Button Name: View in Browser
+🔗 Confirmation Link: https://api-esp-ap.piano.io/story/estored/161/45210/572703/5612745/271059/vib-cmipeio4f01cu01c9g9866qq8?sig=c2c84abe575a95913069fc646d12e43d0948f31a6714ffd7785504c0702cfadf&order=0

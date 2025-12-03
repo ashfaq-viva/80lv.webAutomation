@@ -1,0 +1,8 @@
+✅ Clicked [Accept Cookies @ Laptop] → "Accept Cookies"
+🌐 Captured API → GET https://80.lv/api/jobs?sort=new&page=1 | Status: 200
+✅ Clicked Accept Cookies button.
+✅ Clicked [Middle Banner @ Laptop] → "Ready to grow your game’s revenue worldwide?
+Talk to us"
+🌐 Captured Middle Banner Redirection URL: https://80level.typeform.com/monetize-games?utm_source=80lv_website&utm_medium=bar-widget
+📁 File created: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/allArticles/allArticlesMiddleBanner/middleBannnerLaptop_2025-12-03T06-07-18-026Z.txt
+🗂️ Middle Banner redirection URL saved at: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/allArticles/allArticlesMiddleBanner/middleBannnerLaptop_2025-12-03T06-07-18-026Z.txt

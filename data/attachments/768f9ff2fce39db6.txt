@@ -1,0 +1,10 @@
+✅ Clicked [Accept Cookies @ Mobile] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Pagination Left Arrow Button is NOT visible as expected.
+✅ Clicked [Pagination 2 Button @ Mobile] → "2"
+🌐 Captured API → GET https://80.lv/api/articles/list?category=&page=2&total=10&sort=new | Status: 200
+✅ Assert: element is visible [Pagination Left Arrow Button @ Mobile]
+✅ Assert: element is visible [Pagination 2 Button  @ Mobile]
+ℹ️ No CSS assert for [Pagination 2 Button ] at viewport Mobile
+✅ Clicked [Pagination Left Arrow Button @ Mobile] → "Pagination Left Arrow Button"
+✅ Pagination Left Arrow Button is NOT visible as expected.

@@ -1,0 +1,7 @@
+✅ Clicked [Accept Cookies @ Laptop] → "Accept Cookies"
+🌐 Captured API → GET https://80.lv/api/jobs?sort=new&page=1 | Status: 200
+✅ Clicked Accept Cookies button.
+✅ Clicked [Facebook Link @ Laptop] → "@LevelEighty"
+🔹 Expected URL: https://www.facebook.com/LevelEighty
+🔹 Actual URL:   https://www.facebook.com/LevelEighty
+✅ Assert: page URL is "https://www.facebook.com/LevelEighty" (facebook redirection link)

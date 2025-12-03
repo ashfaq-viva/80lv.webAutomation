@@ -1,0 +1,6 @@
+✅ Clicked [Accept Cookies @ Desktop] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Clicked [Republishing policy Link @ Desktop] → "Republishing policy"
+🔹 Expected URL: https://80.lv/republishing-policy
+🔹 Actual URL:   https://80.lv/republishing-policy
+✅ Assert: page URL is "https://80.lv/republishing-policy" (Republishing policy redirection link)

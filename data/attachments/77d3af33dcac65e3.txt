@@ -1,0 +1,10 @@
+✅ Clicked [Accept Cookies @ Tablet] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Restored session for company on 80.lv
+✅ Clicked [Talents Menu Button (Step 1) @ Tablet] → "Talents Menu Button (Step 1)"
+✅ Clicked [Talents Menu Button (Step 2) @ Tablet] → "click_arrow"
+✅ Clicked [Talent Platform submenu @ Tablet] → "Talent Platform"
+🔹 Expected URL: https://80.lv/talent
+🔹 Actual URL:   https://80.lv/talent
+✅ Assert: page URL is "https://80.lv/talent" (Talent Page  Redirection)
+✅ Assert: element is visible [Find the right Talent text @ Tablet]

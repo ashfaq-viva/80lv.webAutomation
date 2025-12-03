@@ -1,0 +1,5 @@
+✅ Clicked [Accept Cookies @ Laptop] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+🧩 Found 1 Sponsored tags on page.
+⚠️ Skipping first Sponsored tag (blocked) on Big Image Banner.
+✅ Clicked all visible Sponsored tags (1 total).

@@ -1,0 +1,6 @@
+✅ Clicked [Accept Cookies @ Desktop] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Clicked [Big Image Banner @ Desktop] → "Big Image Banner"
+🌐 Captured Banner Redirection URL: https://rapidpipeline.com/?utm_source=80lv&utm_medium=cpc&utm_campaign=2025-q4-all-plugins-and-edu-top-banner
+📁 File created: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/events/eventsBigImageBanner/BigImageBannnerDesktop_2025-12-03T06-10-53-424Z.txt
+🗂️ Banner redirection URL saved at: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/events/eventsBigImageBanner/BigImageBannnerDesktop_2025-12-03T06-10-53-424Z.txt
