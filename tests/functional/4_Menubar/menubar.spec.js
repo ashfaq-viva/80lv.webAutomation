@@ -11,14 +11,16 @@ test.describe('Menubar', () => {
       await menubarPage.navigateToAllArticles(); 
     });
   }
-  for (const vp of [Desktop,Laptop,Tablet,Mobile]) {
-    test(`${vp.name} TC_037:Successful redirection on research @regression`, async ({ page, loginPage, menubarPage  }) => {
-      await setViewport(page, vp.size);
-      await loginPage.visit();
-      await loginPage.acceptCookies();
-      await menubarPage.navigateToResearchTalentsSubmenu();
-    });
-  }
+  // Button has been removed from menubar
+
+  // for (const vp of [Desktop,Laptop,Tablet,Mobile]) {
+  //   test(`${vp.name} TC_037:Successful redirection on research @regression`, async ({ page, loginPage, menubarPage  }) => {
+  //     await setViewport(page, vp.size);
+  //     await loginPage.visit();
+  //     await loginPage.acceptCookies();
+  //     await menubarPage.navigateToResearchTalentsSubmenu();
+  //   });
+  // }
   for (const vp of [Desktop,Laptop,Tablet,Mobile]) {
     test(`${vp.name} TC_031:Successful redirection on Talent Platform submenu @regression`, async ({ page, loginPage, menubarPage  }) => {
       await setViewport(page, vp.size);
@@ -125,13 +127,15 @@ test.describe('Menubar', () => {
       await menubarPage.navigateToCharacterArt();
     });
   }
-  for (const vp of [Desktop,Laptop,Tablet,Mobile]) {
-    test(`${vp.name} TC_096:Successful Articles submenu Research Redirection @regression`, async ({ page, loginPage, menubarPage  }) => {
-      await setViewport(page, vp.size);
-      await loginPage.visit();
-      await menubarPage.navigateToResearchArticlesSubMenu();
-    });
-  } 
+  //Button has been removed from menubar
+
+  // for (const vp of [Desktop,Laptop,Tablet,Mobile]) {
+  //   test(`${vp.name} TC_096:Successful Articles submenu Research Redirection @regression`, async ({ page, loginPage, menubarPage  }) => {
+  //     await setViewport(page, vp.size);
+  //     await loginPage.visit();
+  //     await menubarPage.navigateToResearchArticlesSubMenu();
+  //   });
+  // } 
   for (const vp of [Desktop,Laptop,Tablet,Mobile]) {
     test(`${vp.name} TC_097:Successful Articles submenu VFX Redirection @regression`, async ({ page, loginPage, menubarPage  }) => {
       await setViewport(page, vp.size);

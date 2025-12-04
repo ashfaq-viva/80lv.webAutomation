@@ -473,7 +473,7 @@ async paginationOfEventsTabIfPresentRedirection(redirectionFn) {
             this.expectAndClick(locator, 'Google Calendar redirection')
           ]);
 
-          await newPage.waitForLoadState('load');
+          await newPage.waitForLoadState('networkidle');
           const newPageUrl = newPage.url();
           console.log('New Page URL:', newPageUrl);
 

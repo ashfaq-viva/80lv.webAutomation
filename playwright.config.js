@@ -28,7 +28,7 @@ export default defineConfig({
   globalSetup: './utils/global-setup.js',
   testDir: './tests',
   /* Maximum time one test can run for. */
-  timeout: 0,
+  timeout: process.env.CI ? 20 * 60 * 1000 : 0,
   expect: {
     /**
      * Maximum time expect() should wait for the condition to be met.
@@ -48,10 +48,9 @@ export default defineConfig({
   workers: process.env.CI ? 5 : Math.min(os.cpus().length - 1, 5),
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   // reporter: 'html',
-  reporter: [
-    ['list'],
-    ['allure-playwright']
-  ],
+  reporter: process.env.CI
+  ? [['line'], ['allure-playwright']]
+  : [['list'], ['allure-playwright']],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
      extraHTTPHeaders: {
@@ -63,9 +62,9 @@ export default defineConfig({
     actionTimeout: 0,
     ignoreHTTPSErrors: true,
     browserName: 'chromium',
-    headless: process.env.CI ? true : true,
+    headless: process.env.CI ? true : false,
     screenshot: 'only-on-failure',
-    video:'on',
+    video:process.env.CI ? 'retain-on-failure':'on',
     trace: 'retain-on-failure',
     geolocation: { latitude: 23.8103, longitude: 90.4125 },
     permissions: ['geolocation'],

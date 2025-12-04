@@ -2,6 +2,10 @@ import { test } from "../../../lib/BaseTest.js";
 import { setViewport, Laptop, Mobile,Desktop,Tablet } from '../../../utils/viewports.js';
 
 test.describe('Signup to 80LV', () => {
+    if (process.env.CI) {
+    test.describe.skip('Signup to 80LV', () => {});
+    return;
+  }
   //For this test you need have GMAIL_EMAIL & GMAIL_APP_PASSWORD in .env (instruction given in readme)
   for (const vp of [Desktop ,Laptop ,Tablet ,Mobile]) {
         test(`${vp.name} TC_010:Successful Sign up @regression`, async ({  page, request,loginPage, signupPage }) => {

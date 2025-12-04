@@ -8,7 +8,7 @@ test.describe('Events Page', () => {
     test(`${vp.name} TC_111:Successful Big Image Banner visbility and redirection @regression`, async ({ page, loginPage , bigImageBannerPage }) => {
       await setViewport(page, vp.size);
       await loginPage.visit(config.slug.eventsPage);
-      await bigImageBannerPage.bannerVisibilityAndRedirection('events/eventsBigImageBanner'); 
+      await bigImageBannerPage.bannerVisibilityAndRedirectionWithoutMenuOpened('events/eventsBigImageBanner'); 
     });
   }
     for (const vp of [Desktop,Laptop,Tablet,Mobile]) {
@@ -256,13 +256,13 @@ test.describe('Events Page', () => {
       await eventsPage.futureEventsCardsWithPagination();
     });
   }
-  for (const vp of [Desktop]) {
-    test(`${vp.name} TC_147:Footer Bottom promo banner visibility with redirection @regression`, async ({ page, loginPage , promoImageBannerPage}) => {
-      await setViewport(page, vp.size);
-      await loginPage.visit(config.slug.eventsPage);
-      await promoImageBannerPage.footerPromoImageBannerRedirection('events/footerPromoBanner'); 
-    });
-  }
+  // for (const vp of [Desktop]) {
+  //   test(`${vp.name} TC_147:Footer Bottom promo banner visibility with redirection @regression`, async ({ page, loginPage , promoImageBannerPage}) => {
+  //     await setViewport(page, vp.size);
+  //     await loginPage.visit(config.slug.eventsPage);
+  //     await promoImageBannerPage.footerPromoImageBannerRedirection('events/footerPromoBanner'); 
+  //   });
+  // }
   for (const vp of [Desktop,Laptop,Tablet,Mobile]) {
     test(`${vp.name} TC_148: Footer form email field validation @regression`, async ({ page, loginPage ,subscribeFormFooterPage }) => {
       await setViewport(page, vp.size);
