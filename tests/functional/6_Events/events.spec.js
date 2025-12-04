@@ -8,7 +8,7 @@ test.describe('Events Page', () => {
     test(`${vp.name} TC_111:Successful Big Image Banner visbility and redirection @regression`, async ({ page, loginPage , bigImageBannerPage }) => {
       await setViewport(page, vp.size);
       await loginPage.visit(config.slug.eventsPage);
-      await bigImageBannerPage.bannerVisibilityAndRedirection('events/eventsBigImageBanner'); 
+      await bigImageBannerPage.bannerVisibilityAndRedirectionWithoutMenuOpened('events/eventsBigImageBanner'); 
     });
   }
     for (const vp of [Desktop,Laptop,Tablet,Mobile]) {
