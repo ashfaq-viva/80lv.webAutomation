@@ -1,0 +1,6 @@
+✅ Clicked [Accept Cookies @ Mobile] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Clicked [Terms of use Link @ Mobile] → "Terms of use"
+🔹 Expected URL: https://80.lv/terms-of-use
+🔹 Actual URL:   https://80.lv/terms-of-use
+✅ Assert: page URL is "https://80.lv/terms-of-use" (Terms of use redirection link)

@@ -1,0 +1,5 @@
+✅ Clicked [Accept Cookies @ Desktop] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Filled [Invalid Email Address @ Desktop] → "email" with: "invalidEmail.com"
+✅ Clicked [Newsletter Submit Button @ Desktop] → "Newsletter Submit Button"
+✅ Assert: element is visible [Newsletter Error Text @ Desktop]

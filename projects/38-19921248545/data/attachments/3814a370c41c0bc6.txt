@@ -1,0 +1,18 @@
+✅ Clicked [Accept Cookies @ Laptop] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Clicked [Popular Button @ Laptop] → "Popular"
+🌐 Captured API: https://80.lv/api/articles/list?category=&page=1&total=10&sort=popular → GET | Status: 200
+🔗 Expected: https://80.lv/api/articles/list?category=&page=1&total=10&sort=popular → GET | Status: 200
+✅ Assertion API: Passed
+🗂️ API response saved at: /app/savedData/apiResponses/allArticles/GETPopularListPage1.json
+📝 Verifying 10 titles on the page...
+✅ [The Pinball Wizard: an Upcoming Magical Dungeon Crawler] found
+✅ [Stunning Photoreal Renders in Blender by Blitter] found
+✅ [Amazon Allegedly Replaced 40% of AWS DevOps Workers With AI Days Before Crash] found
+✅ [Game of Thrones Characters Created by AI from Book Descriptions] found
+✅ [Realistic vs. Stylized: Technique Overview] found
+✅ [Realistic Woman Model Rendered in Unreal Engine 5] found
+✅ [Helldivers II Was Built on an Archaic Engine That You Can't Access Anymore] found
+✅ [An Extremely-Realistic Version of Arcane's Jinx] found
+✅ [Mixing 2D & 3D Animation in Blender] found
+✅ [Stylized Nature: Vegetation, Animation, Shaders] found

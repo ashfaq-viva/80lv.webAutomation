@@ -1,0 +1,15 @@
+✅ Clicked [Accept Cookies @ Mobile] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Clicked [Articles Menu Button (Step 1) @ Mobile] → "Articles Menu Button (Step 1)"
+✅ Clicked [Articles Menu Button (Step 2) @ Mobile] → "click_arrow"
+✅ Clicked [All Articles SubMenu Button @ Mobile] → "All Articles"
+🌐 Captured API → GET https://80.lv/api/jobs?sort=new&page=1 | Status: 200
+🌐 Captured API → GET https://80.lv/api/jobs?sort=new&page=1 | Status: 200
+🔹 Expected URL: https://80.lv/articles
+🔹 Actual URL:   https://80.lv/articles
+✅ Assert: page URL is "https://80.lv/articles" (All Articles Page  Redirection)
+Articles Arrow Button not clickable, skipping...
+✅ Clicked [Big Image Banner @ Mobile] → "Big Image Banner"
+🌐 Captured Banner Redirection URL: https://superhivemarket.com/products/retopoflow?utm_source=80lv&utm_medium=top_banner&utm_campaign=cyber2025-rt4-80lv&utm_term=cyber2025
+📁 File created: /app/savedData/data/txt/allArticles/allArticlesBigImageBanner/BigImageBannnerMobile_2025-12-04T07-48-35-566Z.txt
+🗂️ Banner redirection URL saved at: /app/savedData/data/txt/allArticles/allArticlesBigImageBanner/BigImageBannnerMobile_2025-12-04T07-48-35-566Z.txt

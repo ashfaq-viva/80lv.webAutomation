@@ -1,0 +1,61 @@
+✅ Clicked [Accept Cookies @ Laptop] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Assert: element is visible [All Events Tab @ Laptop]
+✅ Assert: [All Events Tab] CSS property "background-color" = "rgb(72, 75, 50)" @ Laptop
+Total event cards present: 4
+✅ Clicked [Event card 1 Expanded @ Laptop] → "SIGGRAPH Asia 2025
+
+The 18th ACM SIGGRAPH Asia Conference on Computer Graphics and Interactive Techniques
+
+15–18 Dec. 2025
+
+Hong Kong"
+✅ Clicked [Event card 1 Collapsed @ Laptop] → "SIGGRAPH Asia 2025
+
+The 18th ACM SIGGRAPH Asia Conference on Computer Graphics and Interactive Techniques
+
+15–18 Dec. 2025
+
+Hong Kong"
+✅ Clicked [Event card 2 Expanded @ Laptop] → "Taipei Game Show 2026
+
+Taipei Game Show is now back for the 2026 edition!
+
+29–30 Jan. 2026
+
+Taiwan"
+✅ Clicked [Event card 2 Collapsed @ Laptop] → "Taipei Game Show 2026
+
+Taipei Game Show is now back for the 2026 edition!
+
+29–30 Jan. 2026
+
+Taiwan"
+✅ Clicked [Event card 3 Expanded @ Laptop] → "devcom leadership summit 2026
+
+Shape the Future of Gaming at the devcom leadership summit 2026
+
+25–27 Feb. 2026
+
+Portugal"
+✅ Clicked [Event card 3 Collapsed @ Laptop] → "devcom leadership summit 2026
+
+Shape the Future of Gaming at the devcom leadership summit 2026
+
+25–27 Feb. 2026
+
+Portugal"
+✅ Clicked [Event card 4 Expanded @ Laptop] → "GDC 2026
+
+The GDC Festival of Gaming is where the entire B2B games industry comes together.
+
+9–13 Mar. 2026
+
+USA"
+✅ Clicked [Event card 4 Collapsed @ Laptop] → "GDC 2026
+
+The GDC Festival of Gaming is where the entire B2B games industry comes together.
+
+9–13 Mar. 2026
+
+USA"

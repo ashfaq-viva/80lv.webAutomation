@@ -1,0 +1,5 @@
+✅ Clicked [Accept Cookies @ Desktop] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Clicked [New Button @ Desktop] → "New"
+✅ Clicked [Popular Button @ Desktop] → "Popular"
+📝 Verifying 10 titles on the page...
