@@ -1,0 +1,6 @@
+✅ Clicked [Accept Cookies @ Desktop] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+⏭️ No Accept Cookies button found, skipping.
+✅ Clicked [Search @ Desktop] → "Search"
+✅ Typed directly [Search Field] → "adasd"
+✅ Assert: element is visible [No result Text @ Desktop]

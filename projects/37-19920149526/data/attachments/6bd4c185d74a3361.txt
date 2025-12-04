@@ -1,0 +1,6 @@
+✅ Clicked [Accept Cookies @ Mobile] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+⏭️ No Accept Cookies button found, skipping.
+✅ Clicked [Search (Step 1) @ Mobile] → "Search (Step 1)"
+✅ Clicked [Search (Step 2) @ Mobile] → "search"
+✅ Assert: element is visible [Cross icon @ Mobile]

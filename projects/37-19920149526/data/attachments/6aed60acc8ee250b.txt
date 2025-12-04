@@ -1,0 +1,10 @@
+✅ Clicked [Accept Cookies @ Mobile] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Assert: element is visible [All Events Tab @ Mobile]
+ℹ️ No CSS assert for [All Events Tab] at viewport Mobile
+Button iCalendar HREF: webcal://80.lv/events/calendar/all.ics
+Expected pattern: /^webcal:\/\/80\.lv\/events\/calendar\/.*\.ics$/
+📁 File created: /app/savedData/data/txt/events/buttonICalender/iCalenderButtonLinkMobile_2025-12-04T06-50-13-405Z.txt
+   Actual:   webcal://80.lv/events/calendar/all.ics
+   Expected: /^webcal:\/\/80\.lv\/events\/calendar\/.*\.ics$/
+✅ Button iCalendar href assertion passed

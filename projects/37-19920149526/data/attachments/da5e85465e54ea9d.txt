@@ -1,0 +1,6 @@
+✅ Clicked [Accept Cookies @ Desktop] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+⏭️ No Accept Cookies button found, skipping.
+✅ Clicked [Header Widget Button @ Desktop] → "Monetize Your Game"
+🌐 Captured official website Redirection URL: https://80level.typeform.com/monetize-games?utm_source=80lv_website&utm_medium=header-button
+📁 File created: /app/savedData/data/txt/navbar/headerWidgetUrlDesktop_2025-12-04T06-46-54-437Z.txt

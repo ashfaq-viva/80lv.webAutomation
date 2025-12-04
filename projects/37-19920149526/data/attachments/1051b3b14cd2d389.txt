@@ -1,0 +1,13 @@
+✅ Clicked [Accept Cookies @ Tablet] → "Accept Cookies"
+🌐 Captured API → GET https://80.lv/api/jobs?sort=new&page=1 | Status: 200
+✅ Clicked Accept Cookies button.
+✅ Clicked [Popular Button @ Tablet] → "Popular"
+🌐 Captured API → GET https://80.lv/api/articles/list?category=&page=1&total=10&sort=popular | Status: 200
+✅ Clicked [Pagination Right Arrow Button 2 @ Tablet] → "2"
+🌐 Captured API → GET https://80.lv/api/articles/list?category=&page=2&total=10&sort=popular | Status: 200
+✅ Assert: element is visible [Pagination 2 Button  @ Tablet]
+ℹ️ No CSS assert for [Pagination 2 Button ] at viewport Tablet
+✅ Clicked [Pagination Right Arrow Button 2 @ Tablet] → "3"
+🌐 Captured API → GET https://80.lv/api/articles/list?category=&page=3&total=10&sort=popular | Status: 200
+✅ Assert: element is visible [Pagination 3 Button  @ Tablet]
+ℹ️ No CSS assert for [Pagination 3 Button ] at viewport Tablet

@@ -1,0 +1,14 @@
+✅ Clicked [Accept Cookies @ Mobile] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Extracted and saved data to: /app/savedData/data/json/allArticles/allArticlesRedirectedArticle/card1TC_60_Mobile_2025-12-04T06-54-01-797Z.json
+✅ Clicked [Article card 1 Image @ Mobile] → "Article card 1 Image"
+🌐 Captured API → GET https://80.lv/api/articles/list?id=38035&offset=0&total=12&headers=%7B%7D | Status: 200
+🌐 Captured Article Redirection URL: https://80.lv/articles/aaa-game-industry-is-dying-ex-nexon-ceo-believes
+📁 File created: /app/savedData/data/txt/allArticles/articleCardRedirection/card1UrlMobile_2025-12-04T06-54-04-696Z.txt
+✅ Extracted and saved data to: /app/savedData/data/json/allArticles/articlePage/TitleH1_Mobile_2025-12-04T06-54-05-418Z.json
+
+🔹 Comparing JSON file: card1TC_60_Desktop_2025-12-04T06-53-48-632Z.json to TitleH1_Desktop_2025-12-04T06-53-52-492Z.json
+Comparing value: h1: "AAA Game Industry is Dying, Ex-Nexon CEO Believes" → h1: "AAA Game Industry is Dying, Ex-Nexon CEO Believes"
+✅ MATCH OK
+
+🎉 All JSON comparisons completed with no mismatches!

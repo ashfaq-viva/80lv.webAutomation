@@ -1,0 +1,64 @@
+✅ Clicked [Accept Cookies @ Mobile] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+🧩 Total partner links found: 15
+🖥️ Current viewport: Mobile
+🖱️ Attempting to click Partner #1: /partners/unreal-engine
+🌐 Partner #1 URL: https://80.lv/partners/unreal-engine
+📁 File created: /app/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink1Mobile_2025-12-04T06-57-03-868Z.txt
+🗂️ Partner redirection URL saved at: /app/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink1Mobile_2025-12-04T06-57-03-868Z.txt
+🖱️ Attempting to click Partner #2: /partners/reallusion
+🌐 Partner #2 URL: https://80.lv/partners/reallusion
+📁 File created: /app/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink2Mobile_2025-12-04T06-57-09-659Z.txt
+🗂️ Partner redirection URL saved at: /app/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink2Mobile_2025-12-04T06-57-09-659Z.txt
+🖱️ Attempting to click Partner #3: /partners/unity-technologies
+🌐 Partner #3 URL: https://80.lv/partners/unity-technologies
+📁 File created: /app/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink3Mobile_2025-12-04T06-57-14-522Z.txt
+🗂️ Partner redirection URL saved at: /app/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink3Mobile_2025-12-04T06-57-14-522Z.txt
+🖱️ Attempting to click Partner #4: /partners/cgma
+🌐 Partner #4 URL: https://80.lv/partners/cgma
+📁 File created: /app/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink4Mobile_2025-12-04T06-57-19-055Z.txt
+🗂️ Partner redirection URL saved at: /app/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink4Mobile_2025-12-04T06-57-19-055Z.txt
+🖱️ Attempting to click Partner #5: /partners/vertex-school
+🌐 Partner #5 URL: https://80.lv/partners/vertex-school
+📁 File created: /app/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink5Mobile_2025-12-04T06-57-25-135Z.txt
+🗂️ Partner redirection URL saved at: /app/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink5Mobile_2025-12-04T06-57-25-135Z.txt
+🖱️ Attempting to click Partner #6: /partners/unreal-engine
+🌐 Partner #6 URL: https://80.lv/partners/unreal-engine
+📁 File created: /app/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink6Mobile_2025-12-04T06-57-29-733Z.txt
+🗂️ Partner redirection URL saved at: /app/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink6Mobile_2025-12-04T06-57-29-733Z.txt
+🖱️ Attempting to click Partner #7: /partners/reallusion
+🌐 Partner #7 URL: https://80.lv/partners/reallusion
+📁 File created: /app/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink7Mobile_2025-12-04T06-57-35-276Z.txt
+🗂️ Partner redirection URL saved at: /app/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink7Mobile_2025-12-04T06-57-35-276Z.txt
+🖱️ Attempting to click Partner #8: /partners/unity-technologies
+🌐 Partner #8 URL: https://80.lv/partners/unity-technologies
+📁 File created: /app/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink8Mobile_2025-12-04T06-57-40-829Z.txt
+🗂️ Partner redirection URL saved at: /app/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink8Mobile_2025-12-04T06-57-40-829Z.txt
+🖱️ Attempting to click Partner #9: /partners/cgma
+🌐 Partner #9 URL: https://80.lv/partners/cgma
+📁 File created: /app/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink9Mobile_2025-12-04T06-57-45-064Z.txt
+🗂️ Partner redirection URL saved at: /app/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink9Mobile_2025-12-04T06-57-45-064Z.txt
+🖱️ Attempting to click Partner #10: /partners/vertex-school
+🌐 Partner #10 URL: https://80.lv/partners/vertex-school
+📁 File created: /app/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink10Mobile_2025-12-04T06-57-48-830Z.txt
+🗂️ Partner redirection URL saved at: /app/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink10Mobile_2025-12-04T06-57-48-830Z.txt
+🖱️ Attempting to click Partner #11: /partners/unreal-engine
+🌐 Partner #11 URL: https://80.lv/partners/unreal-engine
+📁 File created: /app/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink11Mobile_2025-12-04T06-57-52-452Z.txt
+🗂️ Partner redirection URL saved at: /app/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink11Mobile_2025-12-04T06-57-52-452Z.txt
+🖱️ Attempting to click Partner #12: /partners/reallusion
+🌐 Partner #12 URL: https://80.lv/partners/reallusion
+📁 File created: /app/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink12Mobile_2025-12-04T06-57-56-174Z.txt
+🗂️ Partner redirection URL saved at: /app/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink12Mobile_2025-12-04T06-57-56-174Z.txt
+🖱️ Attempting to click Partner #13: /partners/unity-technologies
+🌐 Partner #13 URL: https://80.lv/partners/unity-technologies
+📁 File created: /app/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink13Mobile_2025-12-04T06-58-00-008Z.txt
+🗂️ Partner redirection URL saved at: /app/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink13Mobile_2025-12-04T06-58-00-008Z.txt
+🖱️ Attempting to click Partner #14: /partners/cgma
+🌐 Partner #14 URL: https://80.lv/partners/cgma
+📁 File created: /app/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink14Mobile_2025-12-04T06-58-03-751Z.txt
+🗂️ Partner redirection URL saved at: /app/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink14Mobile_2025-12-04T06-58-03-751Z.txt
+🖱️ Attempting to click Partner #15: /partners/vertex-school
+🌐 Partner #15 URL: https://80.lv/partners/vertex-school
+📁 File created: /app/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink15Mobile_2025-12-04T06-58-07-764Z.txt
+🗂️ Partner redirection URL saved at: /app/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink15Mobile_2025-12-04T06-58-07-764Z.txt

@@ -1,0 +1,24 @@
+✅ Clicked [Accept Cookies @ Tablet] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+🧩 Total partner links found: 5
+🖥️ Current viewport: Tablet
+🖱️ Attempting to click Partner #1: /partners/unreal-engine
+🌐 Partner #1 URL: https://80.lv/partners/unreal-engine
+📁 File created: /app/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink1Tablet_2025-12-04T06-55-58-738Z.txt
+🗂️ Partner redirection URL saved at: /app/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink1Tablet_2025-12-04T06-55-58-738Z.txt
+🖱️ Attempting to click Partner #2: /partners/reallusion
+🌐 Partner #2 URL: https://80.lv/partners/reallusion
+📁 File created: /app/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink2Tablet_2025-12-04T06-56-03-358Z.txt
+🗂️ Partner redirection URL saved at: /app/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink2Tablet_2025-12-04T06-56-03-358Z.txt
+🖱️ Attempting to click Partner #3: /partners/unity-technologies
+🌐 Partner #3 URL: https://80.lv/partners/unity-technologies
+📁 File created: /app/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink3Tablet_2025-12-04T06-56-07-754Z.txt
+🗂️ Partner redirection URL saved at: /app/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink3Tablet_2025-12-04T06-56-07-754Z.txt
+🖱️ Attempting to click Partner #4: /partners/cgma
+🌐 Partner #4 URL: https://80.lv/partners/cgma
+📁 File created: /app/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink4Tablet_2025-12-04T06-56-13-545Z.txt
+🗂️ Partner redirection URL saved at: /app/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink4Tablet_2025-12-04T06-56-13-545Z.txt
+🖱️ Attempting to click Partner #5: /partners/vertex-school
+🌐 Partner #5 URL: https://80.lv/partners/vertex-school
+📁 File created: /app/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink5Tablet_2025-12-04T06-56-18-390Z.txt
+🗂️ Partner redirection URL saved at: /app/savedData/data/txt/allArticles/allArticlesPartnersLinks/partnerLink5Tablet_2025-12-04T06-56-18-390Z.txt

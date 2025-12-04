@@ -1,0 +1,21 @@
+✅ Restored session for company on 80.lv
+⏭️ No Accept Cookies button found, skipping.
+🖱️ Hovered on articleCard1bookmark (max) [id=38035].
+✅ Assert: element is visible [Remove Bookmark Tooltip @ Laptop]
+🗑️ articleCard1bookmark [38035] → Clicking to remove...
+🗑️ articleCard1bookmark [38035] → Remove clicked (response awaited).
+🔁 articleCard1bookmark [38035] → Bookmark re-added.
+✅ Extracted and saved data to: /app/savedData/data/json/allArticles/allArticleBookmarkedArticle/card1TC_054_Laptop_2025-12-04T06-53-10-374Z.json
+✅ Clicked [Profile Menu @ Laptop] → "Profile Menu"
+✅ Clicked [Bookmark Option @ Laptop] → "Bookmarks"
+🌐 Captured API → GET https://80.lv/api/bookmark/me?sort=published_at | Status: 200
+🔹 Expected URL: /bookmarks
+🔹 Actual URL:   https://80.lv/bookmarks/ashfaq-ahmed-45b0f6de/bookmark-collectionn-9ytvpqh7vsz1qm3k
+✅ Assert: page URL contains "/bookmarks" (Bookmark Page)
+✅ Extracted and saved data to: /app/savedData/data/json/bookmarkPageCard/card1_Laptop_2025-12-04T06-53-15-773Z.json
+
+🔹 Comparing JSON file: card1_Desktop_2025-12-04T06-53-01-173Z.json to card1TC_054_Laptop_2025-12-04T06-53-10-374Z.json
+Comparing value: h2: "AAA Game Industry is Dying, Ex-Nexon CEO Believes" → h1: "AAA Game Industry is Dying, Ex-Nexon CEO Believes"
+✅ MATCH OK
+
+🎉 All JSON comparisons completed with no mismatches!

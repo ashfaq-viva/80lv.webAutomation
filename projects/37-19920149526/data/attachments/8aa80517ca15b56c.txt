@@ -1,0 +1,18 @@
+✅ Clicked [Accept Cookies @ Tablet] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Assert: element is visible [All Events Tab @ Tablet]
+✅ Assert: [All Events Tab] CSS property "background-color" = "rgb(72, 75, 50)" @ Tablet
+✅ Assert: element is visible [Selected Filter Option Oldest @ Tablet]
+✅ Clicked [Filter Arrow @ Tablet] → "Filter Arrow"
+✅ Clicked [Filter Option Z to A @ Tablet] → "Z-A"
+🌐 Captured API: https://80.lv/api/events?total=10&title=&page=1&sort=-title&online= → GET | Status: 200
+🔗 Expected: https://80.lv/api/events?total=10&title=&page=1&sort=-title&online= → GET | Status: 200
+✅ Assertion API: Passed
+🗂️ API response saved at: /app/savedData/apiResponses/events/GETalleventsFilterZToA.json
+✅ Assert: element is visible [Selected Filter Option Z to A @ Tablet]
+📝 Verifying 4 titles on the page...
+✅ [Taipei Game Show 2026] found
+✅ [SIGGRAPH Asia 2025] found
+✅ [GDC 2026] found
+✅ [devcom leadership summit 2026] found
+Pagination not present, only one page of events.
