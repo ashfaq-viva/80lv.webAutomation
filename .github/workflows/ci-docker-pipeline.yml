@@ -267,11 +267,11 @@ jobs:
           if [ -f "$REPORT_PATH" ]; then
             jq -r '"80LV Automation Report(Docker): Passed: \(.statistic.passed) | Failed: \(.statistic.failed) | Total: \(.statistic.total)"' $REPORT_PATH > summary.txt
             echo "" >> summary.txt
-            echo "👉 View full report(Docker): https://ashfaq-viva.github.io/80lv.webAutomation/projects/${{ env.REPORT_ID }}" >> summary.txt
+            echo "View full report(Docker): https://ashfaq-viva.github.io/80lv.webAutomation/projects/${{ env.REPORT_ID }}" >> summary.txt
           else
             echo "No summary found. Check if tests executed correctly." > summary.txt
             echo "" >> summary.txt
-            echo "👉 View full report(Docker): https://ashfaq-viva.github.io/80lv.webAutomation/projects/${{ env.REPORT_ID }}" >> summary.txt
+            echo "View full report(Docker): https://ashfaq-viva.github.io/80lv.webAutomation/projects/${{ env.REPORT_ID }}" >> summary.txt
           fi
         shell: /usr/bin/bash -e {0}
         env:
