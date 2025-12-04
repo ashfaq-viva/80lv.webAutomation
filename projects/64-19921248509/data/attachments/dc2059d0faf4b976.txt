@@ -1,0 +1,7 @@
+✅ Clicked [Accept Cookies @ Tablet] → "Accept Cookies"
+🌐 Captured API → GET https://80.lv/api/jobs?sort=new&page=1 | Status: 200
+✅ Clicked Accept Cookies button.
+✅ Clicked [About & Contact us Link @ Tablet] → "About & Contact us"
+🔹 Expected URL: https://80.lv/contact-us
+🔹 Actual URL:   https://80.lv/contact-us
+✅ Assert: page URL is "https://80.lv/contact-us" (About & Contact us redirection link)

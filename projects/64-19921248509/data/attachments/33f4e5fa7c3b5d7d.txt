@@ -1,0 +1,7 @@
+✅ Clicked [Accept Cookies @ Laptop] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Clicked [Login Button (Step 1) @ Laptop] → "Login Button (Step 1)"
+✅ Clicked [Login Button (Step 2) @ Laptop] → "profile-login"
+✅ Clicked [Login with Xsolla button @ Laptop] → "Login with Xsolla button"
+🌐 Captured API → GET https://login.xsolla.com/api/social/twitter/login_redirect?projectId=8b83af12-0974-11e7-93ae-92361f002671&login_url=https%3A%2F%2F80.lv%2Fapi%2Fuser%2Fauth&payload=%7B%22registration_source%22%3A%2280lv%22%2C%22redirectUrl%22%3A%22https%3A%2F%2F80.lv%2F%22%7D&locale=en_US&trackId= | Status: 302
+🌐 Captured API → GET https://80.lv/api/articles/list?page=1&total=10 | Status: 200

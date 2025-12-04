@@ -1,0 +1,8 @@
+✅ Clicked [Accept Cookies @ Laptop] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+⏭️ No Accept Cookies button found, skipping.
+✅ Clicked [Company Logo @ Laptop] → "logo80lv"
+🌐 Captured API → GET https://80.lv/api/articles/list?page=1&total=10 | Status: 200
+🔹 Expected URL: https://80.lv
+🔹 Actual URL:   https://80.lv
+✅ Assert: page URL is "https://80.lv" (Company Logo Redirection)

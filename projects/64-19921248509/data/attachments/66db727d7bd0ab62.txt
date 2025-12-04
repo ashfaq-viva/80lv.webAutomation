@@ -1,0 +1,8 @@
+✅ Clicked [Accept Cookies @ Laptop] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Clicked [Articles Menu Button (Step 1) @ Laptop] → "Articles Menu Button (Step 1)"
+✅ Clicked [Articles Menu Button (Step 2) @ Laptop] → "click_arrow"
+✅ Clicked [Eighty Level China SubMenu Button @ Laptop] → "80 Level China"
+🔹 Expected URL: https://80.lv/articles/80-level-china
+🔹 Actual URL:   https://80.lv/articles/80-level-china
+✅ Assert: page URL is "https://80.lv/articles/80-level-china" (Eighty Level China Page  Redirection)
