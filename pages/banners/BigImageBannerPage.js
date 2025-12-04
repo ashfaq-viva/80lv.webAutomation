@@ -41,18 +41,6 @@ async bannerVisibilityAndRedirection(folderRoute) {
   }
 }
 async bannerVisibilityAndRedirectionWithoutMenuOpened(folderRoute) {
-  const locator = this.artcleArrowBtn; // your locator
-  try {
-    // Check if the element is visible and enabled
-    if (await locator.isVisible() && await locator.isEnabled()) {
-      await this.expectAndClick({ Desktop: locator }, 'Articles Arrow Button');
-      console.log('Clicked the Articles Arrow Button');
-    } else {
-      console.log('Articles Arrow Button not clickable, skipping...');
-    }
-  } catch (err) {
-    console.log('Error checking or clicking the element, skipping...', err);
-  }
   try {
     const [newPage] = await Promise.all([
       this.page.context().waitForEvent('page'), // listens for new page

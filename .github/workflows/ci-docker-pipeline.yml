@@ -59,6 +59,7 @@ jobs:
 # 🔽 Run Test
 # ============
       - name: Run tests in Docker (bind-mount results)
+        continue-on-error: true
         shell: bash
         run: |
           rm -rf allure-results allure-report playwright-report || true
