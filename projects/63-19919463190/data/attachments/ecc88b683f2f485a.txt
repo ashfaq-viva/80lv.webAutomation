@@ -1,0 +1,14 @@
+✅ Clicked [Accept Cookies @ Desktop] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Extracted and saved data to: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/json/allArticles/allArticlesRedirectedArticle/card1TC_60_Desktop_2025-12-04T06-18-39-399Z.json
+✅ Clicked [Article card 1 Image @ Desktop] → "Article card 1 Image"
+🌐 Captured API → GET https://80.lv/api/articles/list?id=38031&offset=0&total=12&headers=%7B%7D | Status: 200
+🌐 Captured Article Redirection URL: https://80.lv/articles/developer-eidos-montr-al-fires-a-dozen-more-employees
+📁 File created: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/allArticles/articleCardRedirection/card1UrlDesktop_2025-12-04T06-18-42-860Z.txt
+✅ Extracted and saved data to: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/json/allArticles/articlePage/TitleH1_Desktop_2025-12-04T06-18-44-171Z.json
+
+🔹 Comparing JSON file: card1TC_60_Desktop_2025-12-04T06-18-39-399Z.json to TitleH1_Desktop_2025-12-04T06-18-44-171Z.json
+Comparing value: h1: "Developer Eidos-Montréal Fires a Dozen More Employees" → h1: "Developer Eidos-Montréal Fires a Dozen More Employees"
+✅ MATCH OK
+
+🎉 All JSON comparisons completed with no mismatches!

@@ -1,0 +1,10 @@
+✅ Clicked [Accept Cookies @ Laptop] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Clicked [Right side Promo Image Banner 1 @ Laptop] → "Right side Promo Image Banner 1"
+🌐 Captured Right side Promo Image Banner 1 Redirection URL: https://80lv.gumroad.com/l/procedural-techniques?utm_source=website_80lv&utm_medium=image-banner&utm_campaign=80levelcourses1
+📁 File created: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/allArticles/allArticlesRightSidePromImageBanner/PromoImageBanner1Laptop_2025-12-04T06-13-31-753Z.txt
+🗂️ Right side Promo Image Banner 1 redirection URL saved at: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/allArticles/allArticlesRightSidePromImageBanner/PromoImageBanner1Laptop_2025-12-04T06-13-31-753Z.txt
+✅ Clicked [Right side Promo Image Banner 2 @ Laptop] → "Right side Promo Image Banner 2"
+🌐 Captured Right side Promo Image Banner 2 Redirection URL: https://80level.typeform.com/monetize-games?utm_source=80lv_website&utm_medium=image-banner
+📁 File created: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/allArticles/allArticlesRightSidePromImageBanner/PromoImageBanner2Laptop_2025-12-04T06-13-34-420Z.txt
+🗂️ Right side Promo Image Banner 2 redirection URL saved at: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/allArticles/allArticlesRightSidePromImageBanner/PromoImageBanner2Laptop_2025-12-04T06-13-34-420Z.txt

@@ -1,0 +1,16 @@
+✅ Clicked [Accept Cookies @ Laptop] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+⏭️ No Accept Cookies button found, skipping.
+✅ Clicked [Login Button (Step 1) @ Laptop] → "Login Button (Step 1)"
+✅ Clicked [Login Button (Step 2) @ Laptop] → "profile-login"
+🌐 Captured API → GET https://login.xsolla.com/api/client/details | Status: 200
+🌐 Captured API → GET https://login.xsolla.com/api/projects/8b83af12-0974-11e7-93ae-92361f002671/settings/widget | Status: 200
+🌐 Captured API → GET https://login.xsolla.com/api/projects/8b83af12-0974-11e7-93ae-92361f002671/settings/socials/by_region | Status: 200
+🌐 Captured API → GET https://login.xsolla.com/api/client/details | Status: 200
+🌐 Captured API → GET https://login.xsolla.com/api/projects/8b83af12-0974-11e7-93ae-92361f002671/settings/auth | Status: 200
+✅ Filled [Email @ Laptop] → "email" with: "ashfaq.ahmed@vivasoftltd.com"
+✅ Filled [Password @ Laptop] → "password" with: "Ashfaq123"
+✅ Clicked [Login Button @ Laptop] → "LOG IN"
+🌐 Captured API: https://login.xsolla.com/api/login?projectId=8b83af12-0974-11e7-93ae-92361f002671&locale=en_US&login_url=https:%2F%2F80.lv%2Fapi%2Fuser%2Fauth&payload=%7B%22registration_source%22:%2280lv%22,%22redirectUrl%22:%22https:%2F%2F80.lv%2F%22%7D → POST | Status: 200
+🔗 Expected: https://login.xsolla.com/api/login → POST | Status: 200
+✅ Assertion API: Passed

@@ -1,0 +1,10 @@
+✅ Clicked [Accept Cookies @ Tablet] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Clicked [Articles Menu Button (Step 1) @ Tablet] → "Articles Menu Button (Step 1)"
+✅ Clicked [Articles Menu Button (Step 2) @ Tablet] → "click_arrow"
+✅ Clicked [Promo SubMenu Button @ Tablet] → "Promo"
+🌐 Captured API → GET https://80.lv/api/jobs?sort=new&page=1 | Status: 200
+🌐 Captured API → GET https://80.lv/api/jobs?sort=new&page=1 | Status: 200
+🔹 Expected URL: https://80.lv/articles/promo
+🔹 Actual URL:   https://80.lv/articles/promo
+✅ Assert: page URL is "https://80.lv/articles/promo" (Promo Page  Redirection)

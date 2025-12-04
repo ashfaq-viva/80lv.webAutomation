@@ -1,0 +1,22 @@
+✅ Clicked [Accept Cookies @ Tablet] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Assert: element is visible [All Events Tab @ Tablet]
+✅ Assert: [All Events Tab] CSS property "background-color" = "rgb(72, 75, 50)" @ Tablet
+✅ Clicked [Offline Events Tab @ Tablet] → "Offline events"
+🌐 Captured API → GET https://80.lv/api/events?total=10&title=&page=1&sort=sort&online=0 | Status: 200
+✅ Assert: element is visible [Offline Events Tab @ Tablet]
+✅ Assert: [Offline Events Tab] CSS property "background-color" = "rgb(72, 75, 50)" @ Tablet
+Pagination not present, only one page of events.
+Total event cards present: 4
+✅ Clicked [Event card 1 Expanded @ Tablet] → "SIGGRAPH Asia 2025
+
+The 18th ACM SIGGRAPH Asia Conference on Computer Graphics and Interactive Techniques
+
+15–18 Dec. 2025
+
+Hong Kong"
+Google Calendar URL: https://www.google.com/calendar/render?action=TEMPLATE&text=SIGGRAPH%20Asia%202025&details=%3Cp%3EThe%2018th%20ACM%20SIGGRAPH%20Asia%20Conference%20on%20Computer%20Graphics%20and%20Interactive%20Techniques%3C%2Fp%3E&location=Hong%20Kong%2C%20China%2C%20Hong%20Kong%20Convention%20and%20Exhibition%20Centre%20(HKCEC)&dates=20251215/20251218
+✅ Clicked [Google Calendar redirection @ Tablet] → "Google Calendar"
+New Page URL: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fcalendar.google.com%2Fcalendar%2Frender%3Faction%3DTEMPLATE%26text%3DSIGGRAPH%2BAsia%2B2025%26details%3D%253Cp%253EThe%2B18th%2BACM%2BSIGGRAPH%2BAsia%2BConference%2Bon%2BComputer%2BGraphics%2Band%2BInteractive%2BTechniques%253C%2Fp%253E%26location%3DHong%2BKong%2C%2BChina%2C%2BHong%2BKong%2BConvention%2Band%2BExhibition%2BCentre%2B%28HKCEC%29%26dates%3D20251215%2F20251218&dsh=S387104044%3A1764828947052433&emr=1&followup=https%3A%2F%2Fcalendar.google.com%2Fcalendar%2Frender%3Faction%3DTEMPLATE%26text%3DSIGGRAPH%2BAsia%2B2025%26details%3D%253Cp%253EThe%2B18th%2BACM%2BSIGGRAPH%2BAsia%2BConference%2Bon%2BComputer%2BGraphics%2Band%2BInteractive%2BTechniques%253C%2Fp%253E%26location%3DHong%2BKong%2C%2BChina%2C%2BHong%2BKong%2BConvention%2Band%2BExhibition%2BCentre%2B%28HKCEC%29%26dates%3D20251215%2F20251218&ifkv=ARESoU2QBdFbOVa5tnF75e8M447uBt3atMuXO7W5bRkwN2R87j6fQygcFCJoCp8Uds_fISMPsY6W&osid=1&passive=1209600&service=cl&flowName=WebLiteSignIn&flowEntry=ServiceLogin
+🔹 Expected URL: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fcalendar.google.com%2Fcalendar%2Frender%3Faction%3DTEMPLATE%26text%3DSIGGRAPH%2BAsia%2B2025%26details%3D%253Cp%253EThe%2B18th%2BACM%2BSIGGRAPH%2BAsia%2BConference%2Bon%2BComputer%2BGraphics%2Band%2BInteractive%2BTechniques%253C%2Fp%253E%26location%3DHong%2BKong%2C%2BChina%2C%2BHong%2BKong%2BConvention%2Band%2BExhibition%2BCentre%2B%28HKCEC%29%26dates%3D20251215%2F20251218&dsh=S387104044%3A1764828947052433&emr=1&followup=https%3A%2F%2Fcalendar.google.com%2Fcalendar%2Frender%3Faction%3DTEMPLATE%26text%3DSIGGRAPH%2BAsia%2B2025%26details%3D%253Cp%253EThe%2B18th%2BACM%2BSIGGRAPH%2BAsia%2BConference%2Bon%2BComputer%2BGraphics%2Band%2BInteractive%2BTechniques%253C%2Fp%253E%26location%3DHong%2BKong%2C%2BChina%2C%2BHong%2BKong%2BConvention%2Band%2BExhibition%2BCentre%2B%28HKCEC%29%26dates%3D20251215%2F20251218&ifkv=ARESoU2QBdFbOVa5tnF75e8M447uBt3atMuXO7W5bRkwN2R87j6fQygcFCJoCp8Uds_fISMPsY6W&osid=1&passive=1209600&service=cl&flowName=WebLiteSignIn&flowEntry=ServiceLogin
+🔹 Actual URL:   https://80.lv/events

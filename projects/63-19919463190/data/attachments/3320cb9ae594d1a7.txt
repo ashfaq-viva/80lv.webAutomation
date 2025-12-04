@@ -1,0 +1,6 @@
+✅ Clicked [Accept Cookies @ Laptop] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+✅ Clicked [Big Image Banner @ Laptop] → "Big Image Banner"
+🌐 Captured Banner Redirection URL: https://home.otoy.com/render/octane-render/purchase/
+📁 File created: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/events/eventsBigImageBanner/BigImageBannnerLaptop_2025-12-04T06-13-44-690Z.txt
+🗂️ Banner redirection URL saved at: /home/runner/work/80lv.webAutomation/80lv.webAutomation/savedData/data/txt/events/eventsBigImageBanner/BigImageBannnerLaptop_2025-12-04T06-13-44-690Z.txt

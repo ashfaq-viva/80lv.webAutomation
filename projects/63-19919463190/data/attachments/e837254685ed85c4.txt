@@ -1,0 +1,9 @@
+✅ Clicked [Accept Cookies @ Mobile] → "Accept Cookies"
+✅ Clicked Accept Cookies button.
+⏭️ No Accept Cookies button found, skipping.
+✅ Clicked [Talents Menu Button (Step 1) @ Mobile] → "Talents Menu Button (Step 1)"
+✅ Clicked [Talents Menu Button (Step 2) @ Mobile] → "click_arrow"
+✅ Clicked [Talent Platform submenu @ Mobile] → "Talent Platform"
+🔹 Expected URL: https://80.lv/talent
+🔹 Actual URL:   https://80.lv/talent
+✅ Assert: page URL is "https://80.lv/talent" (Talent Page  Redirection)
